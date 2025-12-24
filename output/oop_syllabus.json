@@ -1,0 +1,653 @@
+{
+  "num_weeks": 2,
+  "num_chapters_per_week": 5,
+  "num_practice_sessions": 0,
+  "weeks": {
+    "1": {
+      "week_num": 1,
+      "learning_goal": "Foundations of OOP: In this unit, students will build a foundational understanding of object-oriented programming by identifying and using core OOP concepts (class, object/instance, attribute, method, module), recognizing real-world and Python examples as objects with state and behavior, importing and working with built-in classes (like Random), defining simple custom classes (with and without constructors), creating multiple instances with independent state, writing and calling instance methods that use self and attributes, and composing small programs where objects from different classes interact.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Introduction to Object-Oriented Thinking",
+          "learning_goals": "Students will learn to think about programs in terms of objects that bundle data and behavior, and understand how classes act as blueprints for creating many similar objects. They will connect these ideas to real-world examples and familiar Python types, using correct OOP vocabulary (object, class, instance, state, behavior).",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "Welcome to OOP!",
+              "learning_outcomes": "Understand the overall goals of the OOP unit; Recognize how object-oriented programming will be used in upcoming lessons",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "What Is Object-Oriented Programming?",
+              "learning_outcomes": "Identify object-oriented programming as a programming paradigm; Recognize that object-oriented programming organizes programs around objects; Learn about the history of programming languages and OOP; Recognize that Python is also OOP oriented, and common Python types they have already used are objects",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Objects = Data + Behavior",
+              "learning_outcomes": "Identify an object as an entity that combines data attributes (state) and behavior (actions); Distinguish between the state and behavior of real-world objects using correct terminology",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Classes and Instances",
+              "learning_outcomes": "Identify a class as a blueprint that defines shared structure and behavior; Recognize that multiple instances can be created from the same class and relate this idea to real-world examples, as well as common python objects like lists; Recognize basic CaptialCase convention for Class names",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Object Hunt in Your Room",
+              "learning_outcomes": "Identify everyday objects as data + behavior and describe them using correct OOP vocabulary (object, state, behavior, class, instance).",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Story World Objects",
+              "learning_outcomes": "Translate a short story scene into objects, their state, and behavior, and distinguish between class “types” and specific instances in that scene.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Python Object Detective",
+              "learning_outcomes": "Inspect built-in Python objects (like strings and lists) to recognize that they are instances of classes with both attributes and methods.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Class vs Instance Matching Game",
+              "learning_outcomes": "Correctly match real-world class “blueprints” (e.g., Car, Book) with multiple possible instances and explain how they share structure but differ in state.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Mini Object Catalog",
+              "learning_outcomes": "Create a written or commented “catalog” of at least five classes and their example instances, clearly separating state (attributes) from behavior (actions).",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "First Steps with Objects",
+          "learning_goals": "In this chapter, students will learn the core ideas and vocabulary of object-oriented programming in Python, including classes, objects, attributes, methods, and modules. They will practice importing built-in modules, creating and using objects (like Random and custom classes), and clearly distinguishing between class definitions, instantiation, and the data produced by object methods.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "Challenge 1: Core terms of OOP",
+              "learning_outcomes": "Student demonstrates understanding and can successfully complete the required skills for this challenge",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Quick Detour: Built-In Modules",
+              "learning_outcomes": "Recognize a module as a collection of related Python code; Use an import statement to access code from a built-in module; Recognize that importing a module allows access to classes and objects defined inside it",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Objects in Action",
+              "learning_outcomes": "Recognize that calling Random() with parenthesis creates an object (instance) from a class; Understand that the object's actions are called and use methods on a Random object to trigger behavior and produce data; Distinguish between the object itself, its methods, and the data produced by those methods; Recognize that class names in Python are typically written using CapitalCase by convention",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Creating your First Class",
+              "learning_outcomes": "Ability to define a minimal Python class using the class keyword without providing an __init__ method; Ability to create objects from a basic class, inspect its type, and assign attributes to those objects after instantiation; Ability to diffrentiate between class definition and instantiation, prefereably using comments in code",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: OOP Core Terms Flashcards",
+              "learning_outcomes": "Use and explain core OOP terms (class, object, instance, attribute, method, module) accurately in the context of small code snippets.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Dice Roller with random Module",
+              "learning_outcomes": "Import a built-in module, create an object from a class inside it, and call its methods to generate and print random dice rolls.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Random Story Prompt Generator",
+              "learning_outcomes": "Use a Random object’s methods to produce randomized outputs while distinguishing clearly between the object, its methods, and the returned data.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: First Simple Class: Notebook",
+              "learning_outcomes": "Define a minimal class in Python, create Notebook objects from it, assign attributes after instantiation, and inspect their type.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Class Definition vs Instantiation Notes",
+              "learning_outcomes": "Write a short Python file with comments that clearly separate the class definition from instance creation and later attribute assignment.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Classes, Objects, and Methods",
+          "learning_goals": "Learn how to define simple classes, create multiple objects that each maintain their own independent state, and distinguish between variable names and object attributes. Begin using instance methods (with self) and dot notation to trigger behavior on different objects.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "Creating Multiple Objects from One Class",
+              "learning_outcomes": "Capability to explain that each object created from a class maintains its own independent set of attribute values; Ability to create a class from scratch, and then instantiate two or more objects from it and assign different attribute values, then observe those differences when printing; Ability to seperate between the variable name (the one that holds the instance) and the attributes inside an instance",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Challenge 2: Creating Classes, Instances & Object State",
+              "learning_outcomes": "Student demonstrates understanding and can successfully complete the required skills for this challenge",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Methods",
+              "learning_outcomes": "Ability to write a class definition with a method with self as its first parameter (without diving into what is self); Understand the self parameter in a shallow way (as a mandatory part of method definition), for now no need to understand the meaning of it or the value; Ability to create an object and call its instance method using dot notation to trigger the defined behavior",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Pet Profiles",
+              "learning_outcomes": "Define a Pet class, create multiple Pet objects with different attribute values, and demonstrate that each object maintains its own independent state.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Library Books Tracker",
+              "learning_outcomes": "Instantiate several Book objects from one class, assign distinct attributes, and print them to compare how instances differ while sharing the same blueprint.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Variable Name vs Attribute Name",
+              "learning_outcomes": "Create objects with different variable names but similar attributes to clearly distinguish the variable that holds the instance from the attributes inside it.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Greeting Card Method",
+              "learning_outcomes": "Write a class with a simple instance method using self and call that method on multiple objects to trigger behavior through dot notation.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Cafe Order Tickets - Part 1",
+              "learning_outcomes": "Define an Order class, create multiple Order instances with different customer and item attributes, and print them to observe independent object state.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Cafe Order Tickets - Part 2",
+              "learning_outcomes": "Add an instance method to the Order class that prints a formatted ticket using self, and show how calling it on different orders reflects each order’s state.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Building and Using Python Objects",
+          "learning_goals": "Learn how to define classes, use `self`, and write constructors to create and manage object state, then combine multiple interacting objects in small, real-world-style Python programs.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "The self param, and Methods That Use Attributes",
+              "learning_outcomes": "Understand the meaning of the self param; Ability to write an instance method that accesses attributes via self to produce output such as printing a stored name; Capability to reason about how changes to object attributes affect the behavior of instance methods that reference those attributes",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Integrated Practice: Using and Creating Objects Together",
+              "learning_outcomes": "Ability to compose a small Python program that defines and uses classes and objects, representing real life entities; Capability to trace how objects created from different classes interact through method calls and attribute access in a simple application",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Constructors: Where Objects Begin",
+              "learning_outcomes": "Understand the __init__ syntax, and the idea of a constructor; Recognize that __init__ runs automatically when an object is created using print; Write a class with an __init__ method that assigns default attribute values on self; Create an object and access attributes initialized in the constructor",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Name Tag Printer",
+              "learning_outcomes": "Write a class with an instance method that uses self to read attributes and print a personalized “name tag,” then observe how changing attributes changes output.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Character Stats and Actions",
+              "learning_outcomes": "Create a simple game character class where methods use self to reference and display attributes, demonstrating how attribute changes affect method behavior.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Student and Course Roster",
+              "learning_outcomes": "Compose a small program with at least two classes (e.g., Student and Course) whose objects interact via method calls and attribute access.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: To-Do List App - Part 1",
+              "learning_outcomes": "Define basic classes (e.g., Task and TaskList), create objects, and write methods that use self to access and print stored task information.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: To-Do List App - Part 2",
+              "learning_outcomes": "Extend the To-Do list classes with methods that modify attributes via self (like marking tasks complete) and observe how behavior changes with state.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Constructor-Based Profile Setup",
+              "learning_outcomes": "Write a class with an __init__ constructor that assigns default attribute values on self, then create and inspect objects to confirm initialization behavior.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 90,
+              "type": "Lesson"
+            },
+            {
+              "title": "Prep Lesson",
+              "learning_outcomes": "Prep lesson for the weekly review",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Ask questions and get clarification",
+              "time_minutes": 240,
+              "type": "Assessment"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "week_num": 2,
+      "learning_goal": "Object State & Inheritance: In this unit, students will learn to design and work with stateful objects by using constructors, validation, and encapsulation (getters/setters), then build on this to create and override behavior in class hierarchies using inheritance.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Mastering Object State and Constructors",
+          "learning_goals": "In this chapter, students will learn how to read, compare, and predict object state, as well as design and use constructors with inputs and validation. They will practice keeping objects in safe, consistent states through real-world examples and applied coding challenges.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "Challenge 1: Object State in Action",
+              "learning_outcomes": "Student demonstrates understanding and can successfully complete the required skills for this challenge",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Reading Object State",
+              "learning_outcomes": "Read and interpret the current state of an object by inspecting its attributes; Compare the state of multiple objects and explain why their values differ; Predict object state after a sequence of constructor and method calls; Identify which attributes changed and which remained the same during execution",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Constructors with Inputs",
+              "learning_outcomes": "Write an __init__ method that receives parameters and assigns them to attributes; Instantiate objects by passing arguments to the constructor; Recognize that required constructor parameters must be provided; Predict initial object state based on constructor arguments",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Keeping Objects Valid",
+              "learning_outcomes": "Add validation logic inside __init__; Apply safe fallback values when constructor inputs are invalid; Reason about how validation prevents bugs in later method behavior; Recognize validation as part of responsible object design, with real life examples",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Student profile tracker",
+              "learning_outcomes": "Practice reading and comparing object state by inspecting attributes of multiple instances and explaining why their values differ.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Book order receipt",
+              "learning_outcomes": "Predict and verify object state after a sequence of constructor and method calls that update order details.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Event ticket constructor",
+              "learning_outcomes": "Use constructors with inputs to instantiate objects and accurately predict their initial state based on constructor arguments.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Fitness app user setup",
+              "learning_outcomes": "Add validation logic inside __init__ to keep objects in a valid state and apply safe fallback values for invalid input.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Library membership validator",
+              "learning_outcomes": "Combine constructor parameters and validation to ensure new objects always start in a safe, consistent state.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Encapsulation & Stateful Objects",
+          "learning_goals": "Learn to design and work with stateful objects using constructors, instance variables, and methods, while tracing how object state changes over time. Apply encapsulation through getters and setters—with validation—to protect and manage internal state in practical scenarios like bank accounts, playlists, to-do lists, and thermostats.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "Challenge 2: Constructors & Object Validity",
+              "learning_outcomes": "Student demonstrates understanding and can successfully complete the required skills for this challenge",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice: Stateful Objects",
+              "learning_outcomes": "Implement a small stateful class from scrath, that combines constructor parameters, instance variables, and methods; Trace object behavior across creation, method calls, state changes, and validation",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Encapsulation: Owning Object State",
+              "learning_outcomes": "Explain the principle of encapsulation, as one of the core OOP principles; Use internal attributes to store object state; Use getter methods to read object data instead of direct access",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Encapsulation: Protecting Object State",
+              "learning_outcomes": "Use setter methods to update object state; Apply simple validation rules inside setters to prevent invalid state; Understand the power of protecting object state with encapsulation",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Bank account state",
+              "learning_outcomes": "Implement a small stateful class from scratch and trace its state across deposits, withdrawals, and balance checks.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Music playlist encapsulation",
+              "learning_outcomes": "Use internal attributes and getter methods to read object data without directly exposing internal state.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: To-do list manager - Part 1",
+              "learning_outcomes": "Implement a stateful class that owns its state, using methods to add and inspect tasks via getters.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: To-do list manager - Part 2",
+              "learning_outcomes": "Add setter-style methods with validation to safely update and protect the internal state of the to-do list.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Thermostat controller",
+              "learning_outcomes": "Apply encapsulation with getters and setters to enforce valid temperature ranges and prevent invalid state changes.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Encapsulation and Inheritance in Practice",
+          "learning_goals": "Learn how to design classes that hide and protect internal state using getters and setters, and apply validation to control how data is accessed and modified. Build on this by creating inheritance hierarchies where subclasses reuse and extend behavior from parent classes in practical, real-world scenarios.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "Practice: Encapsulation in Action",
+              "learning_outcomes": "Implement a small class from scratch using internal attributes, getters, and setters; Update and read object state safely through methods",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Challenge: Encapsulation",
+              "learning_outcomes": "Apply encapsulation by designing a class that hides internal state; Use getters and setters with validation to control how data is accessed and modified",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Inheritance",
+              "learning_outcomes": "Explain the principle of inheritance, as one of the core OOP principles; Create a subclass that inherits attributes and methods from a parent class; Use inherited behavior on subclass objects",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Recipe card encapsulation",
+              "learning_outcomes": "Implement a class that hides its internal attributes and uses getters and setters to manage recipe details safely.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: User profile privacy",
+              "learning_outcomes": "Apply encapsulation to protect sensitive profile fields and control how they can be read and updated.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Game character stats",
+              "learning_outcomes": "Use getters and setters with validation to manage character health, experience, and level while preventing invalid values.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Vehicle inheritance basics",
+              "learning_outcomes": "Create a subclass that inherits attributes and methods from a parent Vehicle class and use inherited behavior on subclass objects.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Notification system hierarchy - Part 1",
+              "learning_outcomes": "Design a base Notification class with encapsulated state and methods for sending generic notifications.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Notification system hierarchy - Part 2",
+              "learning_outcomes": "Create specialized subclasses that inherit from the base class and use encapsulated behavior through getters and setters.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Inheritance and Overriding in Action",
+          "learning_goals": "Learn how to design and implement class hierarchies using inheritance, override methods to customize behavior, and predict which implementations run at runtime across diverse, related objects.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class"
+            },
+            {
+              "title": "Inheritance: Sometimes kids are not like their parents",
+              "learning_outcomes": "Override a method in a subclass to change behavior; Predict which method implementation runs for a subclass object",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice: Inheritance in Action",
+              "learning_outcomes": "Implement a small class hierarchy with overridden behavior; Use different subclass objects in the same program",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Challenge: Inheritance",
+              "learning_outcomes": "Design a small set of related classes using inheritance and overriding",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Animal sounds override",
+              "learning_outcomes": "Override methods in subclasses to change behavior and predict which implementation runs for each animal object.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Discount calculator inheritance",
+              "learning_outcomes": "Use inheritance and method overriding so different customer types apply different discount rules in a shared system.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Transport tickets hierarchy - Part 1",
+              "learning_outcomes": "Implement a small class hierarchy for tickets that shares common behavior through a base class.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Transport tickets hierarchy - Part 2",
+              "learning_outcomes": "Override pricing or validation methods in subclasses to customize behavior for different ticket types.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Shape drawing tools",
+              "learning_outcomes": "Use a set of related shape classes with inheritance and overriding to produce different drawing outputs from a common interface.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: RPG ability system",
+              "learning_outcomes": "Design related classes using inheritance and overriding so different abilities share a base design but behave differently when used.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 90,
+              "type": "Lesson"
+            },
+            {
+              "title": "Prep Lesson",
+              "learning_outcomes": "Prep lesson for the weekly review",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Ask questions and get clarification",
+              "time_minutes": 240,
+              "type": "Assessment"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

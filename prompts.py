@@ -28,6 +28,7 @@ Continue for all lessons. Use the exact titles as written in the content.
 If a lesson has multiple learning outcomes (separated by newlines), combine ALL of them into a SINGLE line separated by semicolons (;).
 Keep all outcomes on one line after "OUTCOMES:".
 If you see learning outcomes that are teacher-directed (like "follow the lesson plan" or "Introduce the topic at a high level"), remove them.
+If a lesson is missing learning outcomes, write them on your own (1 or 2 of them).
 
 
 
@@ -88,14 +89,17 @@ Practice sessions needed per chapter:
 {instructions_text}
 
 Each practice session should:
-1. Have a title that starts with "Practice Session: "
+1. Have a title that starts with "Practice Lesson: "
 2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
 3. Include hands-on exercises, projects, or practical applications
 4. Have clear learning outcomes, one sentence.
 5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
-6. It could be a practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+6. The theme could be one of those:
+    a. A practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+    b. A classic programming exercise or practic, for example - a calculator, passwrod generator, prime number calculation, filtering or parsing data, etc.
 7. Have clear learning outcomes, one sentence
 8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+9. If the practice session is bigger than others, add two items with 'Part 1' and 'Part 2' to the title. For example, "Practice Lesson: To-Do list - Part 1" and "Practice Lesson: To-Do list - Part 2".
 
 Week {week_num} Chapters:
 {chapters_text}

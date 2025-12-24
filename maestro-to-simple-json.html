@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lesson JSON Extractor</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 16px; background:#f6f7f9; }
+    textarea { width: 100%; min-height: 300px; margin-top: 8px; font-family: monospace; }
+    button { margin-top: 8px; padding: 8px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h2>Input JSON</h2>
+<textarea id="input" placeholder="Paste curriculum JSON here..."></textarea>
+<button id="generateBtn">Generate Output</button>
+
+<h2>Output JSON</h2>
+<textarea id="output" readonly></textarea>
+<button id="copyBtn">Copy to Clipboard</button>
+
+<script>
+  function extractLessons(data) {
+    const lessons = [];
+
+    if (!Array.isArray(data.units)) return { lessons };
+
+    for (const unit of data.units) {
+      if (!Array.isArray(unit.lessons)) continue;
+
+      for (const lesson of unit.lessons) {
+        lessons.push({
+          lessonTitle: lesson.title || "",
+          masteryOutcomes: Array.isArray(lesson.masteryOutcomes)
+            ? lesson.masteryOutcomes
+            : []
+        });
+      }
+    }
+
+    return { lessons };
+  }
+
+  document.getElementById("generateBtn").addEventListener("click", () => {
+    try {
+      const input = JSON.parse(document.getElementById("input").value);
+      const output = extractLessons(input);
+      document.getElementById("output").value = JSON.stringify(output, null, 2);
+    } catch (e) {
+      alert("Invalid JSON");
+    }
+  });
+
+  document.getElementById("copyBtn").addEventListener("click", async () => {
+    const output = document.getElementById("output").value;
+    if (!output) return alert("Nothing to copy");
+
+    try {
+      await navigator.clipboard.writeText(output);
+      alert("Copied to clipboard!");
+    } catch {
+      alert("Copy failed. Please copy manually.");
+    }
+  });
+</script>
+
+</body>
+</html>

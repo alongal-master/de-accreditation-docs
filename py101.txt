@@ -1,0 +1,214 @@
+### 1. Recap: printing and comments
+
+- Use print() with comma-separated values and explain that print() adds a newline by default.
+- Write clear single-line comments that explain intent (best-practice checklist).
+
+### 2. Recap: variables, types, and strings essentials
+
+- Explain variable name vs value; state that types belong to values, not variables.
+- Use type() to identify int, float, and str; fix common variable errors (NameError, unintended type switches).
+- Create string literals with correct quoting/escaping; concatenate and repeat with + and * and predict the result.
+- Use f-strings to combine text with values of any type.
+
+### 3. Expressions and operator precedence
+
+- Control the order of expression evaluation in Python through operator precedence and parentheses.
+
+### 4. Updating values and printing expressions
+
+- Update numeric variables with compound assignment (+=, -=) and predict final values.
+- Print expressions that mix numbers and text (via commas) and explain the output behavior.
+
+### 5. Modeling real-world calculations
+
+- Translate a two-step word problem into an arithmetic expression and compute the result.
+- Do arithmetic directly inside print() to produce clear, useful outputs.
+- Compare two equivalent formulations and choose the clearer one.
+
+### 6. Division modes: / vs // with quotient and remainder
+
+- Compute and contrast true division (/) and floor division (//) on integers; explain the difference.
+- Use // and % together to derive quotient and remainder for practical cases (e.g., packing/scheduling).
+
+### 7. Modulo in practice: parity, cycles, positions
+
+- Use x % 2 to detect parity and explain why it works.
+- Apply modulo to cyclic positions (e.g., every Nth item, rotating shifts) to simplify branching.
+
+### 8. Rounding, and money format
+
+- Use round(x, n) to control numeric precision.
+- Format prices with f"{x:.2f}" as a quick money-format (value vs representation).
+
+### 9. Talking to your program: getting input from users
+
+- Explain why programs interact with users and when input() is appropriate; collect input with clear prompts.
+- Convert numeric inputs to the correct type before computing and print a friendly summary.
+
+### 10. Functions i: why, define, and call
+
+- Understand how functions reduce repetition and improve reuse.
+- Understand the structure of Python functions.
+- Define a function with one or two parameters and call it with literals and variables.
+
+### 11. Functions ii: Inside the function
+
+- Understand the structure of a function, including its name, parameters, indentation, and return value.
+- Call functions with arguments correctly and trace how values are passed from the call site to parameters, verifying the flow using print statements.
+
+### 12. Functions iii: return vs print and early return
+
+- Differentiate printing vs returning values.
+- Use return to pass results and apply early returns.
+
+### 13. Scope and local variables
+
+- Understand that variables created inside a function exist only within that function’s scope (local).
+- Explain how local and global scopes differ and identify when each is used.
+- Demonstrate how data can be passed into functions through parameters instead of relying on global variables.
+
+### 14. Python errors: meet the traceback
+
+- Identify key parts of a traceback, including the error type, and a short explanation of what went wrong.
+
+### 15. Introduction to debugging
+
+- Define debugging as the process of finding and fixing errors in a program.
+- Use print statements to observe variable values and trace the program’s flow step by step.
+- Insert and remove targeted print statements to test assumptions and confirm how the code behaves.
+
+### 16. Weekly review: Café receipt
+Create a program that acts as a mini receipt calculator. 
+
+
+### 1. Control flow overview: decisions vs repetition
+
+- Identify when a task requires selection (if/else) versus repetition (loop) and provide an example of each.
+- Write a 3–5 line text-only flow outline in comments and map each line to if/else or loop constructs.
+
+### 2. If/else: syntax, indentation, mental model
+
+- Introduce indentation as Python’s rule for defining code blocks.
+- Write a basic if/else using comparison operators (==, !=, <, >, <=, >=).
+- Differentiate assignment (=) from equality (==) in conditions.
+
+### 3. Logical operators: and/or/not and short-circuiting
+
+- Combine comparisons with and, or, not to form compound conditions.
+- Show short-circuit behavior by adding prints to the right-hand side expression.
+
+### 4. Booleans and comparisons: equality vs identity
+
+- Use True/False in expressions and store boolean results in variables.
+- Differentiate between '==' (value equality) and 'is' (identity equality).
+
+### 5. String membership with 'in' in conditions
+
+- Test substring membership with 'in' and negate with 'not in'.
+- Use membership checks inside if/elif branches to drive simple decisions.
+
+### 6. Elif and refactoring nested decisions
+
+- Refactor a nested if/else into an equivalent if/elif/else chain.
+- Order conditions to avoid overlaps and unreachable branches.
+
+### 7. Decision tables to branching logic
+
+- Translate a 3–5 row decision table into clear if/elif/else code.
+- Verify mutual exclusivity and completeness of the conditions.
+
+### 8. For loops and range(): counting iterations
+
+- Write for loops with range(stop), range(start, stop), range(start, stop, step).
+- Accumulate a total across iterations and print the result.
+- Generate even/odd sequences and countdowns with range.
+
+### 9. Meet the while loop
+
+- Understand what a while loop is and when it is more suitable than for.
+- Understand the risk of infinite loops and explain how to prevent them.
+- Write a while loop to repeat actions until a condition changes.
+
+### 10. Loop control: break and continue
+
+- Understand when to exit a loop early with break versus letting it complete naturally.
+- Insert break to exit early on a condition and continue to skip an iteration.
+
+### 11. Counters and totals
+
+- Initialize and update a counter and running total correctly inside a loop.
+- Print the final counts and totals after the loop completes.
+
+### 12. Weekly Review: Score trackerScore tracker
+You need to build a score tracker program. The program should prompt the user to enter the names of two teams and set a maximum score that determines when the game ends.  After that, the program should repeatedly ask the user to enter the updated scores for each team.
+
+
+### 1. String skills upgrade i: indexing and slicing
+
+- Access individual characters in a string using 0-based indexing.
+- Use slice notation [start:stop] and [start:stop:step] to extract substrings.
+- Use negative indices to access characters from the end of a string.
+
+### 2. String skills upgrade ii: common methods
+
+- Use strip, lower, replace, and find to clean and search text.
+
+### 3. String skills upgrade iii: splitting and joining text
+
+- Split delimited lines into fields and re-join using a chosen delimiter.
+- Handle extra whitespace and empty fields during splitting.
+
+### 4. Lists i: creating lists
+
+- Create lists with literals and from range(); print length with len().
+- Explain that lists are mutable and show a visible effect of mutation.
+- Understand when a list is a better choice than separate variables.
+
+### 5. Lists ii: indexing and slicing
+
+- Access list elements by index and understand how indexing works.
+- Modify list elements and create sublists using slicing.
+- Handle out-of-range errors (IndexError) in list access.
+
+### 6. Lists iii: mastering list iteration
+
+- Use a for loop with range() and len() to iterate over indices and access list elements by their position.
+- Use a for loop to iterate directly over the values in a list and perform actions on each element.
+
+### 7. Lists iv: common methods
+
+- Modify a list in place with append, insert, remove, pop, and extend.
+
+### 8. Ordering lists: sorted() vs .sort()
+
+- Sort a list in place with .sort() and create a sorted copy with sorted().
+- Use .sorted() parameters ('key' and 'reverse') to customize ordering and explain stability.
+
+### 9. Dictionaries i: keys and values
+
+- Create dictionaries and access values by key; add and update key–value pairs.
+- Explain valid key types and why mutability matters for keys.
+
+### 10. Dictionaries ii: iteration patterns
+
+- Iterate over a dictionary’s keys, values, and key–value pairs.
+- Select the most suitable iteration pattern (keys, values, or items) based on the task’s goal.
+
+### 11. Updates and copy semantics
+
+- Show the difference between assignment (aliasing) and shallow copy for lists and dicts.
+- Explain that list slicing (x[:]) creates a new list independent of the original.
+- Use list(x) / x.copy() / dict(x) appropriately to avoid unintended aliasing.
+
+### 12. Nested structures and safe mutation
+
+- Access and modify data inside nested lists and dictionaries step by step.
+- Use safe methods like get() to read values.
+
+### 13. Parsing text to list of dicts: tokenize and map fields
+
+- Map split fields into a dict with named keys for a single line.
+- Extend the approach to multiple lines to build a list of dicts.
+
+### 14. Weekly Review: Personal music manager
+Build a program that helps a user manage their music playlist. Students will create a list of song dictionaries (title, artist, duration, genre), add and remove songs, sort the playlist by different fields, and display summaries like total songs by genre or average duration.

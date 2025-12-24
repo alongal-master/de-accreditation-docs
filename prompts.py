@@ -5,6 +5,8 @@ This file contains all the prompts used by the OpenAI API to generate
 learning goals, chapter information, and parse course content.
 """
 
+from typing import List
+
 def get_lesson_parsing_prompt(content: str) -> str:
     """Prompt for parsing free text course content into structured lesson data."""
     return f"""
@@ -61,10 +63,29 @@ GOALS: [learning goals]
 """
 
 
-def get_practice_sessions_for_week_prompt(chapters_text: str, week_num: int, num_chapters: int, num_sessions_per_chapter: int, total_sessions: int) -> str:
-    """Prompt for generating practice sessions for all chapters in a week."""
+def get_practice_sessions_for_week_prompt(chapters_text: str, week_num: int, num_chapters: int, practice_sessions_needed: List[int], total_sessions: int) -> str:
+    """Prompt for generating practice sessions for all chapters in a week.
+    
+    Args:
+        chapters_text: Text description of all chapters and their lessons
+        week_num: Week number
+        num_chapters: Number of chapters in the week
+        practice_sessions_needed: List of practice session counts needed per chapter
+        total_sessions: Total number of practice sessions to generate
+    """
+    # Build instructions for each chapter
+    chapter_instructions = []
+    for chapter_idx, session_count in enumerate(practice_sessions_needed, 1):
+        if session_count > 0:
+            chapter_instructions.append(f"Chapter {chapter_idx}: {session_count} practice session(s)")
+    
+    instructions_text = "\n".join(chapter_instructions)
+    
     return f"""
-Create {num_sessions_per_chapter} practice session(s) for EACH of the {num_chapters} chapters below (total {total_sessions} practice sessions).
+Create practice sessions for the {num_chapters} chapters below (total {total_sessions} practice sessions).
+
+Practice sessions needed per chapter:
+{instructions_text}
 
 Each practice session should:
 1. Have a title that starts with "Practice Session: "
@@ -85,17 +106,14 @@ CHAPTER: 1
 TITLE: Practice Session: [Session Title for Chapter 1]
 OUTCOMES: [Learning outcomes for this practice session]
 
-TITLE: Practice Session: [Another Session Title for Chapter 1]
+TITLE: Practice Session: [Another Session Title for Chapter 1 if needed]
 OUTCOMES: [Learning outcomes for this practice session]
 
 CHAPTER: 2
 TITLE: Practice Session: [Session Title for Chapter 2]
 OUTCOMES: [Learning outcomes for this practice session]
 
-TITLE: Practice Session: [Another Session Title for Chapter 2]
-OUTCOMES: [Learning outcomes for this practice session]
-
-Continue for all {num_chapters} chapters with {num_sessions_per_chapter} practice session(s) each.
+Continue for all {num_chapters} chapters. Generate exactly the number of practice sessions specified for each chapter above.
 """
 
 def get_maestro_json_prompt(units_template: str, num_weeks: int, weeks_lessons_text: str) -> str:

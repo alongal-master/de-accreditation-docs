@@ -27,20 +27,54 @@ from prompts import (
 
 # Course structure constants
 NUM_OF_WEEKS = 4
-NUM_OF_CHAPTERS_PER_WEEK = 5
-NUM_PRACTICE_SESSIONS_PER_CHAPTER = 1
-NUM_LIVE_SESSIONS_PER_CHAPTER = 1
-LIVE_SESSION_TITLE = "Sync Session: Q&A"
+NUM_OF_CHAPTERS_PER_WEEK = 5  # Days
+NUM_LESSONS_PER_CHAPTER = 9  # Number of lessons per day (excluding live sessions and reviews)
 NUM_WEEKLY_REVIEW_PER_WEEK = 1
 WEEKLY_REVIEW_TITLE = "Weekly Review"
 
+# Custom weekly review day configuration
+# Set to True to use custom weekly review days with manually defined items
+USE_CUSTOM_WEEKLY_REVIEW_DAYS = True
+
+# Set to True to use the same review day content for all weeks
+# If True, DEFAULT_WEEKLY_REVIEW_DAY will be used for all weeks
+USE_SAME_REVIEW_FOR_ALL_WEEKS = True
+
+# Default weekly review day content (used for all weeks if USE_SAME_REVIEW_FOR_ALL_WEEKS is True)
+# Each item is a dict with: 'title', 'learning_outcomes', 'time_minutes'
+DEFAULT_WEEKLY_REVIEW_DAY = [
+    {'title': 'Weekly Review Prep Session', 'learning_outcomes': 'We\'ll review key concepts and prepare for the assessment', 'time_minutes': 90},
+    {'title': 'Prep Lesson', 'learning_outcomes': 'Prep lesson for the weekly review', 'time_minutes': 30},
+    {'title': 'Weekly Review Assessment', 'learning_outcomes': 'Ask questions and get clarification', 'time_minutes': 30}
+]
+
+# Custom weekly review day content (used if USE_SAME_REVIEW_FOR_ALL_WEEKS is False)
+# Dictionary mapping week number to a list of items for that week's review day
+# Each item is a dict with: 'title', 'learning_outcomes', 'time_minutes'
+# If USE_CUSTOM_WEEKLY_REVIEW_DAYS is True, this replaces the automatic weekly review
+#CUSTOM_WEEKLY_REVIEW_DAYS = {
+#1: [
+#{'title': 'Weekly Review Prep Session', 'learning_outcomes': 'We\'ll review key concepts and prepare for the assessment', 'time_minutes': 90},
+#{'title': 'Prep Lesson', 'learning_outcomes': 'Prep lesson for the weekly review', 'time_minutes': 30},
+#{'title': 'Weekly Review Assessment', 'learning_outcomes': '', 'time_minutes': 240}
+#],
+#}
+
+# Live session configuration
+# Dictionary mapping live session titles to their duration in minutes
+# Sessions are added to each chapter in the order they appear here
+LIVE_SESSIONS = {
+    "Opening session and Q&A": 60,
+    "Closing session": 30
+}
+
 # Base time estimates (in minutes) for different lesson types
 BASE_TIME_ESTIMATES = {
-    "practice": 60,
-    "weekly review": 120,
+    "practice": 30,
+    "weekly review": 240,
     "final assessment": 120,
     "sync session": 90,
-    "default": 45
+    "default": 30
 }
 
 # Export options
@@ -109,14 +143,8 @@ class SyllabusGenerator:
         return openai.OpenAI(api_key=self.api_key)
     
     def _get_max_tokens_param(self, max_tokens_value: int) -> dict:
-        """Get the correct max tokens parameter based on model version.
-        
-        gpt-5.1 uses max_completion_tokens, older models use max_tokens.
-        """
-        if self.model.startswith("gpt-5"):
-            return {"max_completion_tokens": max_tokens_value}
-        else:
-            return {"max_tokens": max_tokens_value}
+        """Get max_completion_tokens parameter for GPT-5 models."""
+        return {"max_completion_tokens": max_tokens_value}
     
     def _calculate_cost(self, input_tokens: int, output_tokens: int) -> float:
         """Calculate the cost of an API call based on token usage."""
@@ -164,8 +192,7 @@ class SyllabusGenerator:
                 messages=[{"role": "user", "content": prompt}],
                 **self._get_max_tokens_param(4000),
                 temperature=0.1,
-                stream=True,
-                stream_options={"include_usage": True}
+                stream=True
             )
             
             # Collect chunks and track usage
@@ -245,8 +272,9 @@ class SyllabusGenerator:
     
     def distribute_lessons(self, lessons: List[Dict[str, str]]) -> Dict[int, List[List[Dict[str, str]]]]:
         """
-        Distribute lessons across all weeks and chapters.
+        Distribute lessons evenly across all weeks and chapters.
         Each chapter should have a clear topic.
+        Lessons are distributed evenly without controlling per-day count.
         """
         total_lessons = len(lessons)
         lessons_per_week = total_lessons // NUM_OF_WEEKS
@@ -275,62 +303,139 @@ class SyllabusGenerator:
         
         return distribution
     
-    def add_practice_sessions_to_week(self, week_lessons: List[List[Dict[str, str]]], week_num: int, num_practice_sessions: int) -> List[List[Dict[str, str]]]:
-        """Add practice sessions to each chapter in a week using AI."""
+    def add_practice_sessions_to_week(self, week_lessons: List[List[Dict[str, str]]], week_num: int) -> List[List[Dict[str, str]]]:
+        """Add practice sessions, live sessions, and weekly reviews to each chapter in a week.
+        
+        Ensures each chapter has NUM_LESSONS_PER_CHAPTER lessons by generating practice sessions
+        if needed. Then adds live sessions and weekly reviews.
+        If USE_CUSTOM_WEEKLY_REVIEW_DAYS is True and a custom review day is defined for this week,
+        the last chapter is replaced entirely with the custom content.
+        """
+        # Check if we should use custom weekly review day for the last chapter
+        if USE_CUSTOM_WEEKLY_REVIEW_DAYS:
+            if USE_SAME_REVIEW_FOR_ALL_WEEKS:
+                # Use the same review day for all weeks
+                use_custom_review = True
+                custom_review_content = DEFAULT_WEEKLY_REVIEW_DAY
+            else:
+                # Use week-specific review days
+                use_custom_review = week_num in CUSTOM_WEEKLY_REVIEW_DAYS
+                custom_review_content = CUSTOM_WEEKLY_REVIEW_DAYS.get(week_num, [])
+        else:
+            use_custom_review = False
+            custom_review_content = []
+        
+        last_chapter_index = len(week_lessons) - 1
+        
         week_lessons_with_practice = []
         
-        # Generate practice sessions for ALL chapters in ONE API call
-        all_practice_sessions = self.generate_practice_sessions_for_week(week_lessons, week_num, num_practice_sessions)
+        # Calculate how many practice sessions each chapter needs (excluding custom review day)
+        practice_sessions_needed = []
+        for chapter_idx, chapter_lessons in enumerate(week_lessons):
+            if use_custom_review and chapter_idx == last_chapter_index:
+                # Skip practice session calculation for custom review day
+                practice_sessions_needed.append(0)
+            else:
+                regular_lessons_count = len(chapter_lessons)
+                practice_sessions_needed_count = max(0, NUM_LESSONS_PER_CHAPTER - regular_lessons_count)
+                practice_sessions_needed.append(practice_sessions_needed_count)
         
-        for chapter_num, (chapter_lessons, practice_sessions) in enumerate(zip(week_lessons, all_practice_sessions), 1):
-            # Add original lessons
-            chapter_with_practice = chapter_lessons.copy()
-            
-            # Add practice sessions to the chapter (already generated above)
-            chapter_with_practice.extend(practice_sessions)
-            
-            # Add live sessions to the chapter
-            for _ in range(NUM_LIVE_SESSIONS_PER_CHAPTER):
-                live_session = {
-                    'title': LIVE_SESSION_TITLE,
-                    'learning_outcomes': 'Ask questions, clarify concepts, and engage with instructors and peers in real-time.'
-                }
-                chapter_with_practice = [live_session] + chapter_with_practice  # add to the start
-            
-            week_lessons_with_practice.append(chapter_with_practice)
+        # Generate practice sessions for chapters that need them (excluding custom review day)
+        chapters_needing_practice = [ch for idx, ch in enumerate(week_lessons) if not (use_custom_review and idx == last_chapter_index)]
+        practice_sessions_needed_filtered = [count for idx, count in enumerate(practice_sessions_needed) if not (use_custom_review and idx == last_chapter_index)]
         
-        # Add weekly reviews to the end of the last chapter
-        if week_lessons_with_practice:
+        all_practice_sessions = []
+        if sum(practice_sessions_needed_filtered) > 0:
+            all_practice_sessions = self.generate_practice_sessions_for_week(chapters_needing_practice, week_num, practice_sessions_needed_filtered)
+        
+        # Insert practice sessions back into the full list (skipping custom review day position)
+        practice_sessions_with_gaps = []
+        practice_idx = 0
+        for chapter_idx in range(len(week_lessons)):
+            if use_custom_review and chapter_idx == last_chapter_index:
+                practice_sessions_with_gaps.append([])
+            else:
+                practice_sessions_with_gaps.append(all_practice_sessions[practice_idx])
+                practice_idx += 1
+        
+        for chapter_num, (chapter_lessons, practice_sessions) in enumerate(zip(week_lessons, practice_sessions_with_gaps), 1):
+            # Check if this is the custom review day
+            if use_custom_review and chapter_num - 1 == last_chapter_index:
+                # Start with custom review day content
+                custom_review_items = custom_review_content.copy()
+                # Ensure each item has time_minutes
+                for item in custom_review_items:
+                    if 'time_minutes' not in item:
+                        item['time_minutes'] = BASE_TIME_ESTIMATES.get("weekly review", 240)
+                
+                # Add live sessions to custom review day (in reverse order so first one is at the start)
+                for live_session_title in reversed(LIVE_SESSIONS.keys()):
+                    live_session = {
+                        'title': live_session_title,
+                        'learning_outcomes': 'Ask questions, clarify concepts, and engage with instructors and peers in real-time.',
+                        'time_minutes': LIVE_SESSIONS[live_session_title]  # Store the time with the session
+                    }
+                    custom_review_items = [live_session] + custom_review_items  # add to the start
+                
+                week_lessons_with_practice.append(custom_review_items)
+            else:
+                # Start with original lessons
+                chapter_with_practice = chapter_lessons.copy()
+                
+                # Add practice sessions to the chapter
+                chapter_with_practice.extend(practice_sessions)
+                
+                # Add live sessions to the chapter (in reverse order so first one is at the start)
+                for live_session_title in reversed(LIVE_SESSIONS.keys()):
+                    live_session = {
+                        'title': live_session_title,
+                        'learning_outcomes': 'Ask questions, clarify concepts, and engage with instructors and peers in real-time.',
+                        'time_minutes': LIVE_SESSIONS[live_session_title]  # Store the time with the session
+                    }
+                    chapter_with_practice = [live_session] + chapter_with_practice  # add to the start
+                
+                week_lessons_with_practice.append(chapter_with_practice)
+        
+        # Add default weekly review to the last chapter if not using custom review day
+        if week_lessons_with_practice and not use_custom_review:
             for _ in range(NUM_WEEKLY_REVIEW_PER_WEEK):
                 weekly_review = {
                     'title': WEEKLY_REVIEW_TITLE,
-                    'learning_outcomes': 'Review the concepts learned in this week and complete weekly assessment.'
+                    'learning_outcomes': 'Review the concepts learned in this week and complete weekly assessment.',
+                    'time_minutes': BASE_TIME_ESTIMATES.get("weekly review", 240)
                 }
                 week_lessons_with_practice[-1].append(weekly_review)
         
         return week_lessons_with_practice
     
-    def generate_practice_sessions_for_week(self, week_lessons: List[List[Dict[str, str]]], week_num: int, num_sessions_per_chapter: int) -> List[List[Dict[str, str]]]:
-        """Generate practice sessions for all chapters in a week using ONE AI call."""
+    def generate_practice_sessions_for_week(self, week_lessons: List[List[Dict[str, str]]], week_num: int, practice_sessions_needed: List[int]) -> List[List[Dict[str, str]]]:
+        """Generate practice sessions for all chapters in a week using ONE AI call.
+        
+        Args:
+            week_lessons: List of chapters, each containing a list of lessons
+            week_num: Week number
+            practice_sessions_needed: List of practice session counts needed per chapter
+        """
         # Build prompt with all chapters
         chapters_text = ""
         for chapter_num, chapter_lessons in enumerate(week_lessons, 1):
             lessons_text = "\n".join([f"  - {lesson['title']}: {lesson['learning_outcomes']}" for lesson in chapter_lessons])
             chapters_text += f"\nCHAPTER {chapter_num}:\n{lessons_text}\n"
         
-        total_sessions = len(week_lessons) * num_sessions_per_chapter
+        total_sessions = sum(practice_sessions_needed)
         
         prompt = get_practice_sessions_for_week_prompt(
             chapters_text, 
             week_num, 
             len(week_lessons), 
-            num_sessions_per_chapter, 
+            practice_sessions_needed, 
             total_sessions
         )
         
         try:
             client = self._get_openai_client()
-            print(f"Generating practice sessions for Week {week_num} ({len(week_lessons)} chapters, {num_sessions_per_chapter} sessions per chapter)...")
+            sessions_summary = ", ".join([f"Ch{i+1}: {count}" for i, count in enumerate(practice_sessions_needed)])
+            print(f"Generating practice sessions for Week {week_num} ({len(week_lessons)} chapters, {sessions_summary}, total {total_sessions} sessions)...")
             
             # Use streaming for real-time feedback
             stream = client.chat.completions.create(
@@ -338,8 +443,7 @@ class SyllabusGenerator:
                 messages=[{"role": "user", "content": prompt}],
                 **self._get_max_tokens_param(2000),  # Increased for multiple chapters
                 temperature=0.7,
-                stream=True,
-                stream_options={"include_usage": True}
+                stream=True
             )
             
             # Collect chunks and track usage
@@ -404,6 +508,11 @@ class SyllabusGenerator:
             if len(all_practice_sessions) != len(week_lessons):
                 raise ValueError(f"Mismatch in chapter count: expected {len(week_lessons)}, got {len(all_practice_sessions)}")
             
+            # Validate each chapter has the correct number of practice sessions
+            for chapter_idx, (expected_count, actual_sessions) in enumerate(zip(practice_sessions_needed, all_practice_sessions), 1):
+                if len(actual_sessions) != expected_count:
+                    print(f"Warning: Chapter {chapter_idx} expected {expected_count} practice sessions but got {len(actual_sessions)}")
+            
             print(f"Generated {sum(len(sessions) for sessions in all_practice_sessions)} practice sessions across {len(all_practice_sessions)} chapters")
             return all_practice_sessions
             
@@ -411,10 +520,10 @@ class SyllabusGenerator:
             print(f"Error generating practice sessions for week: {e}")
             raise RuntimeError(f"Failed to generate practice sessions for week {week_num}: {e}")
     
-    def generate_learning_goals(self, week_lessons: List[List[Dict[str, str]]], week_num: int, num_practice_sessions: int = 1) -> Tuple[str, List[List[Dict[str, str]]]]:
-        """Generate learning goals for a week using OpenAI and return lessons with practice sessions."""
-        # Add practice sessions to each chapter
-        week_lessons_with_practice = self.add_practice_sessions_to_week(week_lessons, week_num, num_practice_sessions)
+    def generate_learning_goals(self, week_lessons: List[List[Dict[str, str]]], week_num: int) -> Tuple[str, List[List[Dict[str, str]]]]:
+        """Generate learning goals for a week using OpenAI and return lessons with live sessions and reviews."""
+        # Add live sessions and weekly reviews to each chapter
+        week_lessons_with_practice = self.add_practice_sessions_to_week(week_lessons, week_num)
         
         all_lessons = [lesson for chapter in week_lessons_with_practice for lesson in chapter]
         lessons_text = "\n".join([f"- {lesson['title']}: {lesson['learning_outcomes']}" for lesson in all_lessons])
@@ -430,8 +539,7 @@ class SyllabusGenerator:
                 messages=[{"role": "user", "content": prompt}],
                 **self._get_max_tokens_param(200),
                 temperature=0.7,
-                stream=True,
-                stream_options={"include_usage": True}
+                stream=True
             )
             
             # Collect chunks and track usage
@@ -478,8 +586,7 @@ class SyllabusGenerator:
                 messages=[{"role": "user", "content": prompt}],
                 **self._get_max_tokens_param(150),
                 temperature=0.7,
-                stream=True,
-                stream_options={"include_usage": True}
+                stream=True
             )
             
             # Collect chunks and track usage
@@ -517,6 +624,10 @@ class SyllabusGenerator:
     
     def estimate_lesson_time(self, lesson: Dict[str, str], week_lessons: List[List[Dict[str, str]]]) -> int:
         """Estimate time to complete a lesson in minutes."""
+        # Check if lesson already has a time stored (e.g., from live sessions)
+        if 'time_minutes' in lesson:
+            return lesson['time_minutes']
+        
         # Simple estimation based on lesson title keywords
         title_lower = lesson['title'].lower()
         
@@ -525,6 +636,12 @@ class SyllabusGenerator:
         for keyword, time in BASE_TIME_ESTIMATES.items():
             if keyword != "default" and keyword in title_lower:
                 base_time = time
+                break
+        
+        # Check if it's a live session (any of the configured live session titles)
+        for live_title, live_time in LIVE_SESSIONS.items():
+            if live_title.lower() in title_lower:
+                base_time = live_time
                 break
         
         return max(30, base_time)  # Minimum 30 minutes
@@ -760,8 +877,7 @@ class SyllabusGenerator:
                 messages=[{"role": "user", "content": prompt}],
                 **self._get_max_tokens_param(3600),  # Balanced for gpt-4; use gpt-4-turbo for larger outputs
                 temperature=0.3,
-                stream=True,
-                stream_options={"include_usage": True}
+                stream=True
             )
             
             # Collect chunks and track usage
@@ -868,19 +984,22 @@ class SyllabusGenerator:
         print("Generating learning goals and creating syllabus...")
         for week_num in range(1, NUM_OF_WEEKS + 1):
             week_lessons = distribution[week_num]
-            week_learning_goal, week_lessons_with_practice = self.generate_learning_goals(week_lessons, week_num, NUM_PRACTICE_SESSIONS_PER_CHAPTER)
+            week_learning_goal, week_lessons_with_practice = self.generate_learning_goals(week_lessons, week_num)
             weeks_data[week_num] = (week_learning_goal, week_lessons_with_practice)
             self.add_week_data(week_num, week_lessons_with_practice, week_learning_goal)
             print(f"Week {week_num} completed")
         
         # Save all syllabus data to a backup json file
         if EXPORT_TO_LESSONS_JSON:
-            self.save_syllabus_backup(lessons, weeks_data, NUM_PRACTICE_SESSIONS_PER_CHAPTER)
+            self.save_syllabus_backup(lessons, weeks_data, 0)  # No practice sessions added
         
         # Export to Maestro JSON format
         if EXPORT_TO_MAESTRO_JSON:
-            export_maestro_json(lessons, weeks_data, output_file)
+            self.export_maestro_json(lessons, weeks_data, output_file)
 
+        # Ensure output directory exists
+        os.makedirs('output', exist_ok=True)
+        
         print(f"Saving syllabus to {output_file}...")
         self.workbook.save("output/" + output_file)
         print("Syllabus generated successfully!")

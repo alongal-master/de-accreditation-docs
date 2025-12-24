@@ -1,0 +1,616 @@
+{
+  "description": "Object Oriented Programming (Alon)",
+  "credits": 4,
+
+    {
+      "_id": "69402a3a96750f6c9875e965",
+      "title": "Foundations of Object-Oriented Programming",
+      "description": "Introduces OOP principles and contrasts them with procedural programming. Students also learn to use built-in Python modules and interact with existing objects.",
+      "lessons": [
+        {
+          "_id": "6949156d1304a2a04f18fd80",
+          "title": "Welcome to OOP!",
+          "topic": "",
+          "masteryOutcomes": [],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": "custom-instructions",
+
+        {
+          "_id": "694ab72d16c8bf53bc31d1f6",
+          "title": "What Is Object-Oriented Programming?",
+          "topic": "",
+          "masteryOutcomes": [
+            "Identify object-oriented programming as a programming paradigm.",
+            "Recognize that object-oriented programming organizes programs around objects.",
+            "Learn about the history of programming languages and OOP,",
+            "Recognize that Python is also OOP oriented, and common Python types they have already used are objects."
+          ],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "694ab72d16c8bf53bc31d1f7",
+          "title": "Objects = Data + Behavior",
+          "topic": "",
+          "masteryOutcomes": [
+            "Identify an object as an entity that combines data attributes (state) and behavior (actions).",
+            "Distinguish between the state and behavior of real-world objects using correct terminology."
+          ],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson"
+        },
+        {
+          "_id": "694ab72d16c8bf53bc31d1f8",
+          "title": "Classes and Instances",
+          "topic": "",
+          "masteryOutcomes": [
+            "Identify a class as a blueprint that defines shared structure and behavior.",
+            "Recognize that multiple instances can be created from the same class and relate this idea to real-world examples, as well as common python objects like lists.",
+            "Recognize basic CaptialCase convention for Class names"
+          ],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson. Use CapitalCase for classnames and snake_case for instances."
+        },
+        {
+          "_id": "69402a3a96750f6c9875e96b",
+          "title": "Challenge 1: Core terms of OOP",
+          "topic": "",
+          "masteryOutcomes": [
+            "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+          ],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+
+        },
+        {
+          "_id": "694abdd4b82367d9c13e726b",
+          "title": "Quick Detour: Built-In Modules",
+          "topic": "",
+          "masteryOutcomes": [
+            "Recognize a module as a collection of related Python code.",
+            "Use an import statement to access code from a built-in module.",
+            "Recognize that importing a module allows access to classes and objects defined inside it."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "This lesson begins a short detour before creating our own classes, please mention that modules on their own are not part of the OOP topic. We introduce built-in modules only to enable the use of existing objects. The goal is not to learn Python libraries in depth, but to prepare for object-oriented programming by working with real objects."
+        },
+        {
+          "_id": "694abdd4b82367d9c13e726c",
+          "title": "Objects in Action",
+          "topic": "",
+          "masteryOutcomes": [
+            "Recognize that calling Random() with parenthesis, creates an object (instance) from a class.",
+            "Understand that the object's actions are called and use methods on a Random object to trigger behavior and produce data.",
+            "Distinguish between the object itself, its methods, and the data produced by those methods.",
+            "Recognize that class names in Python are typically written using CapitalCase by convention."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "In this lesson, students use the random module and the Random class as a concrete example of object-oriented programming. The CapitalCase name of Random is used to introduce the common Python convention for class names. By creating a Random object and calling its methods, students reinforce the meaning of object, instance, method, data, and behavior before creating their own classes."
+        },
+        {
+          "_id": "69402a3a96750f6c9875e96f",
+          "title": "Creating your First Class",
+          "topic": "",
+          "masteryOutcomes": [
+            "Ability to define a minimal Python class using the class keyword without providing an **init** method.",
+            "Ability to create objects from a basic class, inspect it's type, and assign attributes to those objects after instantiation.",
+            "Ability to diffrentiate between class definition and instantiation, prefereably using comments in code"
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson"
+        },
+        {
+          "_id": "69402a3a96750f6c9875e970",
+          "title": "Creating Multiple Objects from One Class",
+          "topic": "",
+          "masteryOutcomes": [
+            "Capability to explain that each object created from a class maintains its own independent set of attribute values.",
+            "Ability to create a class from scratch, and then instantiate two or more objects from it and assign different attribute values, then observe those differences when printing.",
+            "Ability to seperate between the variable name (the one that holds the instance) and the attributes inside an instance."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "69402a3a96750f6c9875e971",
+          "title": "Challenge 2: Creating Classes, Instances & Object State",
+          "topic": "",
+          "masteryOutcomes": [
+            "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+
+        },
+        {
+          "_id": "69402a3a96750f6c9875e972",
+          "title": "Methods",
+          "topic": "",
+          "masteryOutcomes": [
+            "Ability to write a class definition with a method with self as its first parameter (without diving into what is self)",
+            "Understand the self parameter in a shallow way (as a mandatory part of method definition), for now no need to understand the meaning of it or the value",
+            "Ability to create an object and call its instance method using dot notation to trigger the defined behavior."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson. Write docstrings on methods and mention it. Use comments to clearly separate the class definition section from the main program section."
+        },
+        {
+          "_id": "69402a3a96750f6c9875e973",
+          "title": "The self param, and Methods That Use Attributes",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand the meaning of the self param",
+            "Ability to write an instance method that accesses attributes via self to produce output such as printing a stored name.",
+            "Capability to reason about how changes to object attributes affect the behavior of instance methods that reference those attributes."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "69402a3a96750f6c9875e974",
+          "title": "Integrated Practice: Using and Creating Objects Together",
+          "topic": "",
+          "masteryOutcomes": [
+            "Ability to compose a small Python program that defines and uses classes and objects, representing real life entities.",
+            "Capability to trace how objects created from different classes interact through method calls and attribute access in a simple application."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Don't use unit's regular orbject theme, use another one. start with explaining the real world model of the objects, using a small story."
+        }
+      ],
+
+    },
+    {
+      "_id": "69402a3a96750f6c9875e975",
+      "title": "Bringing Objects to Life",
+      "description": "Students learn how objects are created, how they start with state, how that state is used and changed over time, and how constructors ensure objects begin life in a valid condition.",
+      "lessons": [
+        {
+          "_id": "694c04429dd735baba9a38d6",
+          "title": "Constructors: Where Objects Begin",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand the __init__ syntax, and the idea of a constructor",
+            "Recognize that __init__ runs automatically when an object is created using print.",
+            "Write a class with an __init__ method that assigns default attribute values on self.",
+            "Create an object and access attributes initialized in the constructor."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson. Constructor parameters will be introduced later."
+        },
+        {
+          "_id": "694c04429dd735baba9a38d7",
+          "title": "Methods That Use Object State",
+          "topic": "",
+          "masteryOutcomes": [
+            "Recognize that the constructor defines an object's starting state.",
+            "Write an instance method that reads attributes using self.",
+            "Use object attributes inside a method to produce output or return a value.",
+            "Predict method results based on the object's current attribute values."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Focus on read-only methods. Avoid changing object state in this lesson. Use docstrings on all methods. Use comments to clearly separate the class definition section from the main program section."
+        },
+        {
+          "_id": "694c04429dd735baba9a38d8",
+          "title": "Methods That Change Object State",
+          "topic": "",
+          "masteryOutcomes": [
+            "Write an instance method that updates attributes on self.",
+            "Trace how a single method call changes an object's state.",
+            "Predict final attribute values after multiple method calls.",
+            "Recognize that state changes persist on the object between method calls."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson."
+        },
+        {
+          "_id": "694c04429dd735baba9a38d9",
+          "title": "Many Objects, One Class",
+          "topic": "",
+          "masteryOutcomes": [
+            "Create multiple objects from the same class with identical starting state.",
+            "Modify the state of one object without affecting the others.",
+            "Compare and interpret the state of multiple objects after different method calls."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "694c04429dd735baba9a38da",
+          "title": "Challenge 1: Object State in Action",
+          "topic": "",
+          "masteryOutcomes": [
+            "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+
+        },
+        {
+          "_id": "694c04429dd735baba9a38db",
+          "title": "Reading Object State",
+          "topic": "",
+          "masteryOutcomes": [
+            "Read and interpret the current state of an object by inspecting its attributes.",
+            "Compare the state of multiple objects and explain why their values differ.",
+            "Predict object state after a sequence of constructor and method calls.",
+            "Identify which attributes changed and which remained the same during execution."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Frame this lesson as a reasoning and debugging exercise. Focus on inspecting object state, predicting values, and explaining differences. Avoid introducing debugging tools or new syntax."
+        },
+        {
+          "_id": "694c04429dd735baba9a38dc",
+          "title": "Constructors with Inputs",
+          "topic": "",
+          "masteryOutcomes": [
+            "Write an __init__ method that receives parameters and assigns them to attributes.",
+            "Instantiate objects by passing arguments to the constructor.",
+            "Recognize that required constructor parameters must be provided.",
+            "Predict initial object state based on constructor arguments."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": " "
+        },
+        {
+          "_id": "694c04429dd735baba9a38dd",
+          "title": "Keeping Objects Valid",
+          "topic": "",
+          "masteryOutcomes": [
+            "Add validation logic inside __init__.",
+            "Apply safe fallback values when constructor inputs are invalid.",
+            "Reason about how validation prevents bugs in later method behavior.",
+            "Recognize validation as part of responsible object design, with real life examples."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Use real-world constraints. Do not introduce exceptions; focus on correction and safety."
+        },
+        {
+          "_id": "694c04429dd735baba9a38de",
+          "title": "Challenge 2: Constructors & Object Validity",
+          "topic": "",
+          "masteryOutcomes": [
+            "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+
+        },
+        {
+          "_id": "694c04429dd735baba9a38df",
+          "title": "Practice: Stateful Objects",
+          "topic": "",
+          "masteryOutcomes": [
+            "Implement a small stateful class from scrath, that combines constructor parameters, instance variables, and methods.",
+            "Trace object behavior across creation, method calls, state changes, and validation."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "start with explaining the real world model of the objects, using a small story."
+        }
+      ],
+
+    },
+    {
+      "_id": "694c0bb418b3c95202e99639",
+      "title": "Encapsulation, Inheritance, and other scary words",
+      "description": "Students learn how objects own and protect their internal state through encapsulation, reuse and change behavior through inheritance, and apply these core object-oriented principles in complete programs.",
+      "lessons": [
+        {
+          "_id": "694c0bb418b3c95202e9963a",
+          "title": "Encapsulation: Owning Object State",
+          "topic": "",
+          "masteryOutcomes": [
+            "Explain the principle of encapsulation, as one of the core OOP principles",
+            "Use internal attributes to store object state.",
+            "Use getter methods to read object data instead of direct access."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson. Introduce internal attributes as a convention using a single leading underscore. Demonstrate getter methods for accessing state. Use docstrings on all methods. Use comments to clearly separate the class definition section from the main program section."
+        },
+        {
+          "_id": "694c0bb418b3c95202e9963b",
+          "title": "Encapsulation: Protecting Object State",
+          "topic": "",
+          "masteryOutcomes": [
+            "Use setter methods to update object state.",
+            "Apply simple validation rules inside setters to prevent invalid state.",
+            "Understand the power of protecting object state with encapsulation"
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Focus on object responsibility for maintaining valid state. Validation logic should live inside setter methods. Use clear docstrings explaining what each setter validates. Maintain comments that mark class definitions and the main program."
+        },
+        {
+          "_id": "694c0bb418b3c95202e9963c",
+          "title": "Practice: Encapsulation in Action",
+          "topic": "",
+          "masteryOutcomes": [
+            "Implement a small class from scratch using internal attributes, getters, and setters.",
+            "Update and read object state safely through methods."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Students implement a small class independently. start with explaining the real world model of the objects, using a small story."
+        },
+        {
+          "_id": "694c0bb418b3c95202e9963d",
+          "title": "Challenge: Encapsulation",
+          "topic": "",
+          "masteryOutcomes": [
+            ""
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+
+        },
+        {
+          "_id": "694c0bb418b3c95202e9963e",
+          "title": "Inheritance",
+          "topic": "",
+          "masteryOutcomes": [
+            "Explain the principle of inheritance, as one of the core OOP principles",
+            "Create a subclass that inherits attributes and methods from a parent class.",
+            "Use inherited behavior on subclass objects."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson. Introduce inheritance as behavior reuse. Avoid use of super(). use docstrings on inherited and defined methods. Use comments to clearly show parent and subclass definitions."
+        },
+        {
+          "_id": "694c0bb418b3c95202e9963f",
+          "title": "Inheritance: Sometimes kids are not like their parents",
+          "topic": "",
+          "masteryOutcomes": [
+            "Override a method in a subclass to change behavior.",
+            "Predict which method implementation runs for a subclass object."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "⚠ Core Concept Lesson.  Demonstrate overriding by changing method behavior in subclasses. use  docstrings describing overridden behavior. Maintain clear code structure comments."
+        },
+        {
+          "_id": "694c0bb418b3c95202e99640",
+          "title": "Practice: Inheritance in Action",
+          "topic": "",
+          "masteryOutcomes": [
+            "Implement a small class hierarchy with overridden behavior.",
+            "Use different subclass objects in the same program."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Students implement a short runnable program using inheritance. start with explaining the real world model of the objects, using a small story."
+        },
+        {
+          "_id": "694c0bb418b3c95202e99641",
+          "title": "Challenge: Inheritance",
+          "topic": "",
+          "masteryOutcomes": [
+            "Design a small set of related classes using inheritance and overriding."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+
+        },
+        {
+          "_id": "694c0bb418b3c95202e99642",
+          "title": "Building Objects from Input",
+          "topic": "",
+          "masteryOutcomes": [
+            "Create objects using user input inside a loop.",
+            "Store created objects in a list."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Demonstrate creating objects dynamically from input. Emphasize constructors. use comments separating class code from input-handling logic."
+        },
+        {
+          "_id": "694c0bb418b3c95202e99643",
+          "title": "Working with Lists of Objects",
+          "topic": "",
+          "masteryOutcomes": [
+            "Iterate over a list of objects to access their data or behavior.",
+            "Call object methods while processing a collection of objects."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Focus on iteration over objects"
+        },
+        {
+          "_id": "694c0bb418b3c95202e99644",
+          "title": "Manipulating Objects in Programs",
+          "topic": "",
+          "masteryOutcomes": [
+            "Modify object state while iterating over a list of objects.",
+            "Use object data and behavior to produce program-level results."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Students update, filter, or summarize objects in a list. Reinforce that objects are active participants in programs. Require docstrings and clear comments marking class definitions and main program logic."
+        }
+      ],
+
+    }
+  ]
+}

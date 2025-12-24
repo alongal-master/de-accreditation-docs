@@ -1,0 +1,1765 @@
+================================================================================
+OpenAI API Log - Maestro JSON Converter
+================================================================================
+Started at: 2025-11-16 17:39:08
+Model: gpt-4o
+================================================================================
+
+[2025-11-16 17:40:21] MAESTRO JSON EXPORT
+------------------------------------------------------------
+PROMPT:
+# **Task**
+
+You are given a course input with details such as course title, course description, units (weeks), lessons, and learning outcomes per lesson.
+
+Your task is to return the course content **exactly** in the following JSON structure, without adding extra fields or comments:
+
+```json
+{
+  "title": "", 
+  "description": "",
+  "modifiedAt": "", 
+  "createdAt": "", 
+  "isPublished": , 
+  "trackType": "", 
+  "version": , 
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "", 
+          "description": "", 
+          "displayId": "", 
+          "credits": , 
+          "units": [
+            {
+              "title": "", 
+              "lessons": [
+                {
+                  "title": "", 
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": ,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}
+```
+
+# Rules:
+### Do not modify or rephrase any content. Keep every course name, unit name, lesson name, and mastery outcome exactly as provided.
+
+1. **Fill in all fields** based on the input course description. If you don't know a field, leave the placeholder text.
+2. **CRITICAL**: The JSON structure is:
+   ```
+   terms[0].courses[0].units[0] = Week 1
+   terms[0].courses[0].units[1] = Week 2
+   terms[0].courses[0].units[2] = Week 3
+   etc.
+   ```
+   Create exactly ONE course with MULTIPLE units inside. Do NOT create multiple courses.
+3. `modifiedAt` should be left empty because it will be updated while saving.
+4. `createdAt` should be filled with today's date in ISO format (`YYYY-MM-DD`).
+5. `version` always starts at `1`.
+6. `trackType` should remain unchanged from the provided value.
+7. If `isPublished` is required (when inserting into an existing empty track), include it with a boolean value, otherwise leave it out.
+8. `displayId`, `credits`, `label`, and `durationInWeeks` should be inferred or left as placeholders if not explicitly stated.
+9. Each WEEK from the course input becomes ONE unit in the units array.
+10. Week name should be exactly like in the input, no need to add "week" to it.
+11. Skip lessons with titles that include "Sync Session" or "Weekly Review"; don't include them in the JSON.
+12. For lessons, insert their title in `title`, their outcomes or objectives in `masteryOutcomes`, and keep `teachingInstructions` as an empty string by default.
+13. For requiredPlugins field in each lesson: Unless stated otherwise, always return an array containing a single code-editor object (["code-editor"])
+14. For each practice session (marked with 'practice session:' in the title), add teachingInstructions = "practice oriented session, with a step by step exercise and no new learning topics"
+15. For all other lessons, leave teachingInstructions as an empty string.
+16. **CRITICAL**: If a lesson has multiple mastery outcomes separated by semicolons (;), split them into separate strings in the masteryOutcomes array. For example: "outcome A; outcome B" becomes ["outcome A", "outcome B"].
+
+# Course input
+
+
+WEEK 1 - Python Fundamentals: In this unit, students will gain a foundational understanding of Python programming, learning to write and execute scripts, work with variables, manipulate data types, handle errors, create basic functions, and apply debugging techniques, culminating in the creation of their own simple programs.
+Lessons:
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Writing your first program: Introduce the Maestro Code Editor; Write and execute a simple Python script using the print() function
+  -  Unlocking print() power-ups: Print multiple values using commas; Understand that printing is always in a new line; Print multiple text and numeric values using the + and * operators; Predict the output of a script that uses multiple print() statements
+  -  Creating art with code: Decide on a simple visual pattern you can create using prints, and challenge the student to create it; Define what ASCII is and explain how ASCII characters can be used to create images and patterns; Generate a multi-line ASCII art pattern using any print method
+  -  Introduction to variables: Explain that a variable is a named placeholder for a value in memory; Write a valid variable name following Python conventions; Assign a value (e.g., a number or a piece of text) to a variable using the = operator; Use the print() function to display the value stored in a variable
+  -  Working with text: Define a "data type" as a category of data that determines what you can do with it; Create a string variable by enclosing text in single (') or double (") quotes; Combine two strings using the + operator (concatenation); Predict the output when printing string variables
+  -  Working with numbers: Distinguish between an integer (int, a whole number) and a float (float, a number with a decimal); Create variables to store integer and float values; Perform basic arithmetic operations (+, -, *, /) on numeric variables; Explain why 5 is different from "5"
+  - [PRACTICE] Practice Session: Personal Greeting Program: By the end of this practice session, you will be able to create a program that uses print() statements, variables, and basic data types to produce a personalized greeting.
+  - [PRACTICE] Practice Session: ASCII Art Creation: By the end of this practice session, you will be able to create a simple visual pattern using ASCII characters and the print() function.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Checking the facts: Use the type() function to check the data type of a variable's value; Correctly identify str, int, and float types in the output of the type() function; Explain the purpose of the type() function as a way to understand your data
+  -  Understanding type errors and f-strings: Identify and explain a TypeError that occurs when attempting to combine incompatible data types (e.g., print("Age: " + 25)); Embed variables of any type directly inside a string using f-string syntax (f"..."); Combine text and variables to produce a clean, readable, and dynamic output
+  -  Type casting: Use the str(), int(), and float() functions to convert values between data types; Predict the outcome of valid type conversions (e.g., int("123")); Identify cases where a conversion will fail and result in a ValueError (e.g., int("hello"))
+  -  Create your personal profile: Define and use variables of str, int, and float types to represent personal data (e.g., name, age, hourly_rate); Use the type() function to verify the data types of the created variables; Use f-strings to combine all the variables into a multi-line, well-formatted "profile card" output; Write a short, commented script that is readable and error-free
+  -  Create the bot's logo: Articulate the overall goal of the project: to build a multi-part, text-based bot; Design a simple but unique visual pattern using multiple print() statements; Combine strings and special characters to create a multi-line ASCII art logo; Write clean, readable code for the visual component of the final script
+  -  Give the bot a skill: Use variables to store and manipulate numerical data; Perform a multi-step arithmetic calculation using the variables you created; Use an f-string to embed the results of the calculation into a clean, human-readable sentence
+  - [PRACTICE] Practice Session: Personal Profile Card: By the end of this practice session, you will be able to create a program that uses variables of str, int, and float types to represent personal data, with type checking and f-string syntax.
+  - [PRACTICE] Practice Session: Basic Calculator Bot: By the end of this practice session, you will be able to create a bot that can perform basic arithmetic calculations using numerical variables and f-string outputs.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Assemble your bot: Synthesize code from previous lessons into a single, sequential Python script; Add comments (#) to explain the different sections of the program (logo, introduction, calculation); Execute a complete, multi-part program that runs without errors from top to bottom
+  -  Expressions and operator precedence: Control the order of expression evaluation in Python through operator precedence and parentheses
+  -  Updating values and printing expressions: Update numeric variables with compound assignment (+=, -=) and predict final values; Print expressions that mix numbers and text (via commas) and explain the output behavior
+  -  Modeling real-world calculations: Translate a two-step word problem into an arithmetic expression and compute the result; Do arithmetic directly inside print() to produce clear, useful outputs; Compare two equivalent formulations and choose the clearer one
+  -  Division modes: / vs // with quotient and remainder: Compute and contrast true division (/) and floor division (//) on integers - explain the difference; Use // and % together to derive quotient and remainder for practical cases (e.g., packing/scheduling)
+  - [PRACTICE] Practice Session: Complete Bot Assembly: By the end of this practice session, you will be able to synthesize code into a complete bot that combines ASCII art, introduction, and basic calculations.
+  - [PRACTICE] Practice Session: Real-world Calculation Modeling: By the end of this practice session, you will be able to create a program to solve a two-step word problem using arithmetic expressions and division modes.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Modulo in practice: parity, cycles, positions: Use x % 2 to detect parity and explain why it works; Apply modulo to cyclic positions (e.g., every Nth item, rotating shifts) to simplify branching
+  -  Rounding, and money format: Use round(x, n) to control numeric precision; Format prices with f"{x:.2f}" as a quick money-format (value vs representation)
+  -  Talking to your program: getting input from users: Explain why programs interact with users and when input() is appropriate - collect input with clear prompts; Convert numeric inputs to the correct type before computing and print a friendly summary
+  -  Functions i: why, define, and call: Understand how functions reduce repetition and improve reuse; Understand the structure of Python functions; Define a function with one or two parameters and call it with literals and variables
+  -  Functions ii: Inside the function: Understand the structure of a function, including its name, parameters, indentation, and return value; Call functions with arguments correctly and trace how values are passed from the call site to parameters, verifying the flow using print statements
+  - [PRACTICE] Practice Session: Number Parity Detector: By the end of this practice session, you will be able to create a program that uses modulo operator to detect number parity and cyclic positions.
+  - [PRACTICE] Practice Session: Money Converter: By the end of this practice session, you will be able to create a program that uses input() function and round() function to convert amounts into a money format.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Functions iii: return vs print and early return: Differentiate printing vs returning values; Use return to pass results and apply early returns
+  -  Scope and local variables: Understand that variables created inside a function exist only within that function’s scope (local); Explain how local and global scopes differ and identify when each is used; Demonstrate how data can be passed into functions through parameters instead of relying on global variables
+  -  Python errors: meet the traceback: Identify key parts of a traceback, including the error type, and a short explanation of what went wrong
+  -  Introduction to debugging: Define debugging as the process of finding and fixing errors in a program; Use print statements to observe variable values and trace the program’s flow step by step; Insert and remove targeted print statements to test assumptions and confirm how the code behaves
+  - [PRACTICE] Practice Session: Function-Based Calculator: By the end of this practice session, you will be able to create a calculator program that uses functions to perform arithmetic operations, with understanding of return vs print and local variables.
+  - [PRACTICE] Practice Session: Debugging Challenge: By the end of this practice session, you will be able to identify key parts of a traceback, use print statements for debugging, and fix errors in a given Python program.
+  -  Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+
+WEEK 2 - Control Flow and Data Structures: In this unit, students will understand and apply programming concepts such as control flow (if/else, loops), logical operators, booleans, string operations, and data structures (lists, dictionaries), including their creation, manipulation, and iteration, within the context of building practical applications like weather forecasters, quiz score calculators, and music playlist managers.
+Lessons:
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Control flow overview: decisions vs repetition: Identify when a task requires selection (if/else) versus repetition (loop) and provide an example of each; Write a 3–5 line text-only flow outline in comments and map each line to if/else or loop constructs
+  -  If/else: syntax, indentation, mental model: Introduce indentation as Python’s rule for defining code blocks; Write a basic if/else using comparison operators (==, !=, <, >, <=, >=); Differentiate assignment (=) from equality (==) in conditions
+  -  Logical operators: and/or/not and short-circuiting: Combine comparisons with and, or, not to form compound conditions; Show short-circuit behavior by adding prints to the right-hand side expression
+  -  Booleans and comparisons: equality vs identity: Use True/False in expressions and store boolean results in variables; Differentiate between '==' (value equality) and 'is' (identity equality)
+  -  String membership with 'in' in conditions: Test substring membership with 'in' and negate with 'not in'; Use membership checks inside if/elif branches to drive simple decisions
+  -  Elif and refactoring nested decisions: Refactor a nested if/else into an equivalent if/elif/else chain; Order conditions to avoid overlaps and unreachable branches
+  - [PRACTICE] Practice Session: Weather Forecaster: By the end of this practice session, you should be able to identify when a task requires selection (if/else) or repetition (loop) and be able to utilize these concepts in a simple weather forecaster program.
+  - [PRACTICE] Practice Session: String Membership Identifier: This practice session will enhance your understanding of string membership with 'in' in conditions and boolean comparisons within a practical context of identifying substrings within a larger text.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Decision tables to branching logic: Translate a 3–5 row decision table into clear if/elif/else code; Verify mutual exclusivity and completeness of the conditions
+  -  For loops and range(): counting iterations: Write for loops with range(stop), range(start, stop), range(start, stop, step); Accumulate a total across iterations and print the result; Generate even/odd sequences and countdowns with range
+  -  Meet the while loop: Understand what a while loop is and when it is more suitable than for; Understand the risk of infinite loops and explain how to prevent them; Write a while loop to repeat actions until a condition changes
+  -  Loop control: break and continue: Understand when to exit a loop early with break versus letting it complete naturally; Insert break to exit early on a condition and continue to skip an iteration
+  -  Counters and totals: Initialize and update a counter and running total correctly inside a loop; Print the final counts and totals after the loop completes
+  - [PRACTICE] Practice Session: Quiz Score Calculator: This practice session is designed to apply the concepts of decision tables to branching logic, as well as the use of for loops and range() in calculating quiz scores.
+  - [PRACTICE] Practice Session: Guessing Game: By the end of this practice session, you should be able to effectively use while loops, loop control mechanisms, and counters to create a simple guessing game.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Score tracker: You need to build a score tracker program. The program should prompt the user to enter the names of two teams and set a maximum score that determines when the game ends. After that, the program should repeatedly ask the user to enter the updated scores for each team
+  -  String skills upgrade i: indexing and slicing: Access individual characters in a string using 0-based indexing; Use slice notation [start:stop] and [start:stop:step] to extract substrings; Use negative indices to access characters from the end of a string
+  -  String skills upgrade ii: common methods: Use strip, lower, replace, and find to clean and search text
+  -  String skills upgrade iii: splitting and joining text: Split delimited lines into fields and re-join using a chosen delimiter; Handle extra whitespace and empty fields during splitting
+  -  Lists i: creating lists: Create lists with literals and from range() - print length with len(); Explain that lists are mutable and show a visible effect of mutation; Understand when a list is a better choice than separate variables
+  - [PRACTICE] Practice Session: Sentence Reverser: The session will reinforce concepts of string indexing, slicing, and common methods in a practical application of creating a sentence reverser program.
+  - [PRACTICE] Practice Session: Grocery List Manager: By the end of this practice session, you should be able to apply the concepts of list creation, manipulation, and iteration in the context of a grocery list manager application.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Lists ii: indexing and slicing: Access list elements by index and understand how indexing works; Modify list elements and create sublists using slicing; Handle out-of-range errors (IndexError) in list access
+  -  Lists iii: mastering list iteration: Use a for loop with range() and len() to iterate over indices and access list elements by their position; Use a for loop to iterate directly over the values in a list and perform actions on each element
+  -  Lists iv: common methods: Modify a list in place with append, insert, remove, pop, and extend
+  -  Ordering lists: sorted() vs .sort(): Sort a list in place with .sort() and create a sorted copy with sorted(); Use .sorted() parameters ('key' and 'reverse') to customize ordering and explain stability
+  -  Dictionaries i: keys and values: Create dictionaries and access values by key - add and update key–value pairs; Explain valid key types and why mutability matters for keys
+  - [PRACTICE] Practice Session: Student Grade Tracker: This practice session is designed to reinforce the use of list indexing, slicing, iteration, and methods within the practical context of tracking student grades.
+  - [PRACTICE] Practice Session: Restaurant Menu Manager: By the end of this practice session, you should be able to apply the concepts of dictionaries, keys, and values to manage a restaurant menu.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Dictionaries ii: iteration patterns: Iterate over a dictionary’s keys, values, and key–value pairs; Select the most suitable iteration pattern (keys, values, or items) based on the task’s goal
+  -  Updates and copy semantics: Show the difference between assignment (aliasing) and shallow copy for lists and dicts; Explain that list slicing (x[:]) creates a new list independent of the original; Use list(x) / x.copy() / dict(x) appropriately to avoid unintended aliasing
+  -  Nested structures and safe mutation: Access and modify data inside nested lists and dictionaries step by step; Use safe methods like get() to read values
+  -  Parsing text to list of dicts: tokenize and map fields: Map split fields into a dict with named keys for a single line; Extend the approach to multiple lines to build a list of dicts
+  - [PRACTICE] Practice Session: Personal music manager: Build a program that helps a user manage their music playlist. Students will create a list of song dictionaries (title, artist, duration, genre), add and remove songs, sort the playlist by different fields, and display summaries like total songs by genre or average duration.
+  - [PRACTICE] Practice Session: Recipe Parser: By the end of this practice session, you should be able to parse text into a list of dictionaries, and handle nested structures and safe mutation within the context of a recipe parser application.
+  -  Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+
+WEEK 3 - Code Clarity and Robustness: In this unit, students will learn to write clear, readable, and reusable code by effectively renaming variables, crafting docstrings, adding meaningful comments, and maintaining code consistency. They will also develop debugging skills, understand how to handle edge cases, learn to refactor code confidently, and turn complex problems into manageable pseudocode steps. Additionally, they will learn how to translate rules into code actions, recognize common solution patterns, and review their pseudocode for logical gaps or overlaps.
+Lessons:
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Naming that tell a story: Demonstrate the ability to rename variables and functions to improve clarity.
+  -  Crafting docstrings that explain the why: Add clear docstrings that explain the purpose and usage of functions.
+  -  Writing comments with real purpose: Add purposeful comments that explain reasoning, not obvious code behavior.
+  -  Keeping it clean: Apply consistent formatting rules for whitespace, indentation, and line breaks.
+  -  Making code instantly readable: Rewrite code to pass a readability checklist you define.
+  - [PRACTICE] Practice Session: Cleanup at the Movie Database: Understand and apply the principles of writing clean, readable code by cleaning up a messy script that handles a movie database.
+  - [PRACTICE] Practice Session: Docstrings in the Library: Improve the clarity and utility of a library management system by adding comprehensive docstrings to its functions.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Turning long scripts into sharp functions: Split a long script into focused functions with well-defined signatures.
+  -  Following program flow with print tracing: Insert print-based tracing statements to follow program flow.
+  -  Using invariants as safety checkpoints: Apply invariants to check assumptions at key points in the code.
+  -  Designing functions that can be reused anywhere: Use parameters and return values to ensure modular, reusable design.
+  -  Debugging step by step: Use a minimal debugging checklist to isolate a defect in a provided snippet.
+  - [PRACTICE] Practice Session: Debugging the Weather App: Use print-based tracing and a debugging checklist to identify and fix errors in a weather prediction application.
+  - [PRACTICE] Practice Session: Functions in the Space Program: Break down a long script used in a space exploration program into reusable and well-defined functions.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Stress it to the edge: Include edge cases and invalid inputs in tests.
+  -  Pushing the limits: Define and test clear input and output boundaries, ensuring the code behaves correctly at limits and under invalid conditions.
+  -  Validating inputs before they break things: Add input validation to a function to prevent unexpected behavior.
+  -  The art of a well-placed error: Write clear error messages and handle invalid inputs gracefully.
+  -  Refactoring with confidence: Perform safe refactoring moves such as renaming, extracting functions, and removing dead code.
+  - [PRACTICE] Practice Session: Testing the Bank System: Apply rigorous testing to a bank system, including edge cases and invalid inputs, and refactor with confidence to improve its performance.
+  - [PRACTICE] Practice Session: Error Handling in a Booking System: Improve a hotel booking system by writing clear error messages and handling invalid inputs gracefully.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Making sure nothing breaks: Re-run tests to confirm behavior remains consistent after refactoring.
+  -  Grandma’s secret recipe: Grandma wrote a script to calculate ingredient quantities for her famous cookie recipe, but it is a mess. Students refactor her kitchen code by splitting it into neat functions, adding docstrings that “tell the story” of the recipe steps, and validating edge cases (like zero or negative servings). They write tests to ensure the recipe always scales correctly.
+  -  Balancing planning and coding: Understand the trade-offs between planning and coding immediately and how upfront planning improves clarity and reduces rework.
+  -  Breaking the problem: Break down a problem into precise, ordered pseudocode steps.
+  -  Hierarchy in pseudocode: Understand pseudocode concepts and apply numbering and indentation to clearly represent sequence and hierarchical relationships.
+  - [PRACTICE] Practice Session: Recipe Refactoring: Refactor a script for a cookie recipe, ensuring that the behavior remains consistent by re-running tests and understanding the importance of planning and pseudocode.
+  - [PRACTICE] Practice Session: Problem-solving with the Maze Game: Break down the problem of creating a maze game into precise pseudocode steps and understand hierarchy in pseudocode.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Turning rules into code: Translate rules into consistent, step-based code actions.
+  -  Sketching flow: Sketch a flow description that maps conditions to outcomes.
+  -  Understanding common solution patterns: Recognize common patterns like dictionary lookups in simple plans and implement them in Python.
+  -  Reviewing the plan: Review pseudocode to check for logical gaps or overlaps.
+  - [PRACTICE] Practice Session: Rule-based Decision-making in a Game: Translate the rules of a board game into consistent, step-based code actions and review the pseudocode for logical gaps or overlaps.
+  - [PRACTICE] Practice Session: Sketching Flow in a Traffic System: Improve your understanding of common solution patterns by sketching a flow description that maps conditions to outcomes in a traffic control system.
+  -  Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+
+WEEK 4 - Problem Decomposition: In this unit, students will learn to translate pseudocode into Python code, create and use function stubs and test tables, integrate various coding elements into a functional app, and handle complex tasks by breaking them down into subproblems, prioritizing and sequencing them logically, and assembling functions into pipelines."
+Lessons:
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  From plan to working machine: Translate pseudocode into working Python code step by step.
+  -  Keeping comments that connect to pseudocode: Keep reference comments that connect code back to pseudocode blocks.
+  -  Creating function stubs for structure: Write function stubs that capture intended structure.
+  -  Building code incrementally: Use hardcoded return values as temporary placeholders; Incrementally replace stubs with working implementations.
+  -  Creating test tables for pseudocode plans: Create a small input-output test table for a pseudocode plan.
+  - [PRACTICE] Practice Session: Recipe App: Students will gain practical experience in translating pseudocode into Python code, creating function stubs, and creating test tables for their pseudocode plans.
+  - [PRACTICE] Practice Session: Weather Forecast Tool: Students will apply lessons on incremental coding, maintaining reference comments that link back to pseudocode blocks, and building code incrementally.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Dry running plans with test values: Conduct a dry run by walking through the plan with pseudocode test-table values.
+  -  Integrating logic into a full app: Integrate validated input, logic, and output formatting into a single app.
+  -  Demonstrating the working app: Demonstrate the app working correctly for multiple test cases.
+  -  Escape room master plan: Students are trapped in a virtual escape room where guessing randomly won’t work. They must map out the precise sequence of steps to solve puzzles, write pseudocode to describe the solution path, and then implement Python code that follows the plan exactly. Testing with multiple scenarios ensures their escape strategy works under pressure.
+  -  Writing a clear feature brief: Write a concise paragraph that clearly defines a feature's goal, target users, and implementation context.
+  - [PRACTICE] Practice Session: Music App: Students will practice dry running plans with test values, integrating logic into a full app, and demonstrating the app working correctly for multiple test cases.
+  - [PRACTICE] Practice Session: Escape Room Game: Students will apply lessons on writing clear feature briefs, and combine these skills to develop a simple escape room game.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Separating purpose from technical details: Distinguish between purpose and technical details at this stage.
+  -  Writing a structured problem statement: Translate a feature description into a structured Python problem statement (docstring) with success criteria and constraints.
+  -  Defining example inputs and outputs: Define concrete example inputs and expected outputs as Python literals to illustrate normal cases, edge conditions, and invalid inputs.
+  -  Breaking down into subproblems: Break the problem into clear subproblems.
+  -  Defining subproblem inputs and outputs: Define the input and output of each subproblem clearly.
+  - [PRACTICE] Practice Session: Travel Planner: Students will learn to separate purpose from technical details, write structured problem statements, and define example inputs and outputs.
+  - [PRACTICE] Practice Session: Restaurant Order System: Students will gain experience in breaking down problems into subproblems and defining clear inputs and outputs for each subproblem.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Sequencing subproblems logically: Arrange subproblems in a logical sequence and implement them in a Python script.
+  -  Matching subproblems to patterns: Match subproblems to common patterns such as filter, map, or group.
+  -  Prioritizing tasks by risk: Label tasks as risky or straightforward based on uncertainty and choose a build order that addresses risk early.
+  -  Explaining prioritization choices: Explain rationale for prioritization decisions.
+  - [PRACTICE] Practice Session: Movie Recommendation System: Students will practice sequencing subproblems logically, matching subproblems to common patterns, and prioritizing tasks by risk.
+  - [PRACTICE] Practice Session: Personal Budget App: Students will learn to explain their prioritization choices and apply these skills to develop a simple personal budget app.
+  -  Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+  -  Assembling functions into pipelines: Combine functions into pipelines where outputs feed subsequent inputs
+  -  Breaking down a case study: Decompose a real-world case study into subproblems.
+  -  Writing a full problem statement: Develop a comprehensive problem statement for a simple case study and implement a complete Python solution.
+  - [PRACTICE] Practice Session: ars pioneers: Students write a mission brief, identify vital inputs and outputs (oxygen, water, energy, food), and break the challenge into subproblems like life support, transport, and communication. By mapping data flow and assembling a Python pipeline, they create a structured plan that transforms survival on Mars into a working simulation.
+  - [PRACTICE] Practice Session: Mars Survival Simulation: Develop a comprehensive problem statement for a Mars survival scenario, identifying vital inputs and outputs, and implement a complete Python solution to simulate life on Mars.
+  -  Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+
+RESPONSE:
+```json
+{
+  "title": "Python Programming Course",
+  "description": "This course provides a comprehensive introduction to Python programming, covering foundational concepts, control flow, data structures, code clarity, and problem decomposition.",
+  "modifiedAt": "",
+  "createdAt": "2023-10-04",
+  "isPublished": true,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "Python Programming Course",
+          "description": "This course provides a comprehensive introduction to Python programming, covering foundational concepts, control flow, data structures, code clarity, and problem decomposition.",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "WEEK 1 - Python Fundamentals",
+              "lessons": [
+                {
+                  "title": "Writing your first program",
+                  "masteryOutcomes": [
+                    "Introduce the Maestro Code Editor",
+                    "Write and execute a simple Python script using the print() function"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Unlocking print() power-ups",
+                  "masteryOutcomes": [
+                    "Print multiple values using commas",
+                    "Understand that printing is always in a new line",
+                    "Print multiple text and numeric values using the + and * operators",
+                    "Predict the output of a script that uses multiple print() statements"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Creating art with code",
+                  "masteryOutcomes": [
+                    "Decide on a simple visual pattern you can create using prints, and challenge the student to create it",
+                    "Define what ASCII is and explain how ASCII characters can be used to create images and patterns",
+                    "Generate a multi-line ASCII art pattern using any print method"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introduction to variables",
+                  "masteryOutcomes": [
+                    "Explain that a variable is a named placeholder for a value in memory",
+                    "Write a valid variable name following Python conventions",
+                    "Assign a value (e.g., a number or a piece of text) to a variable using the = operator",
+                    "Use the print() function to display the value stored in a variable"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Working with text",
+                  "masteryOutcomes": [
+                    "Define a \"data type\" as a category of data that determines what you can do with it",
+                    "Create a string variable by enclosing text in single (') or double (\") quotes",
+                    "Combine two strings using the + operator (concatenation)",
+                    "Predict the output when printing string variables"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Working with numbers",
+                  "masteryOutcomes": [
+                    "Distinguish between an integer (int, a whole number) and a float (float, a number with a decimal)",
+                    "Create variables to store integer and float values",
+                    "Perform basic arithmetic operations (+, -, *, /) on numeric variables",
+                    "Explain why 5 is different from \"5\""
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Personal Greeting Program",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a program that uses print() statements, variables, and basic data types to produce a personalized greeting."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: ASCII Art Creation",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a simple visual pattern using ASCII characters and the print() function."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Checking the facts",
+                  "masteryOutcomes": [
+                    "Use the type() function to check the data type of a variable's value",
+                    "Correctly identify str, int, and float types in the output of the type() function",
+                    "Explain the purpose of the type() function as a way to understand your data"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Understanding type errors and f-strings",
+                  "masteryOutcomes": [
+                    "Identify and explain a TypeError that occurs when attempting to combine incompatible data types (e.g., print(\"Age: \" + 25))",
+                    "Embed variables of any type directly inside a string using f-string syntax (f\"...\")",
+                    "Combine text and variables to produce a clean, readable, and dynamic output"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Type casting",
+                  "masteryOutcomes": [
+                    "Use the str(), int(), and float() functions to convert values between data types",
+                    "Predict the outcome of valid type conversions (e.g., int(\"123\"))",
+                    "Identify cases where a conversion will fail and result in a ValueError (e.g., int(\"hello\"))"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Create your personal profile",
+                  "masteryOutcomes": [
+                    "Define and use variables of str, int, and float types to represent personal data (e.g., name, age, hourly_rate)",
+                    "Use the type() function to verify the data types of the created variables",
+                    "Use f-strings to combine all the variables into a multi-line, well-formatted \"profile card\" output",
+                    "Write a short, commented script that is readable and error-free"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Create the bot's logo",
+                  "masteryOutcomes": [
+                    "Articulate the overall goal of the project: to build a multi-part, text-based bot",
+                    "Design a simple but unique visual pattern using multiple print() statements",
+                    "Combine strings and special characters to create a multi-line ASCII art logo",
+                    "Write clean, readable code for the visual component of the final script"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Give the bot a skill",
+                  "masteryOutcomes": [
+                    "Use variables to store and manipulate numerical data",
+                    "Perform a multi-step arithmetic calculation using the variables you created",
+                    "Use an f-string to embed the results of the calculation into a clean, human-readable sentence"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Personal Profile Card",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a program that uses variables of str, int, and float types to represent personal data, with type checking and f-string syntax."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Basic Calculator Bot",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a bot that can perform basic arithmetic calculations using numerical variables and f-string outputs."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Assemble your bot",
+                  "masteryOutcomes": [
+                    "Synthesize code from previous lessons into a single, sequential Python script",
+                    "Add comments (#) to explain the different sections of the program (logo, introduction, calculation)",
+                    "Execute a complete, multi-part program that runs without errors from top to bottom"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Expressions and operator precedence",
+                  "masteryOutcomes": [
+                    "Control the order of expression evaluation in Python through operator precedence and parentheses"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Updating values and printing expressions",
+                  "masteryOutcomes": [
+                    "Update numeric variables with compound assignment (+=, -=) and predict final values",
+                    "Print expressions that mix numbers and text (via commas) and explain the output behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Modeling real-world calculations",
+                  "masteryOutcomes": [
+                    "Translate a two-step word problem into an arithmetic expression and compute the result",
+                    "Do arithmetic directly inside print() to produce clear, useful outputs",
+                    "Compare two equivalent formulations and choose the clearer one"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Division modes: / vs // with quotient and remainder",
+                  "masteryOutcomes": [
+                    "Compute and contrast true division (/) and floor division (//) on integers - explain the difference",
+                    "Use // and % together to derive quotient and remainder for practical cases (e.g., packing/scheduling)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Complete Bot Assembly",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to synthesize code into a complete bot that combines ASCII art, introduction, and basic calculations."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Real-world Calculation Modeling",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a program to solve a two-step word problem using arithmetic expressions and division modes."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Modulo in practice: parity, cycles, positions",
+                  "masteryOutcomes": [
+                    "Use x % 2 to detect parity and explain why it works",
+                    "Apply modulo to cyclic positions (e.g., every Nth item, rotating shifts) to simplify branching"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Rounding, and money format",
+                  "masteryOutcomes": [
+                    "Use round(x, n) to control numeric precision",
+                    "Format prices with f\"{x:.2f}\" as a quick money-format (value vs representation)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Talking to your program: getting input from users",
+                  "masteryOutcomes": [
+                    "Explain why programs interact with users and when input() is appropriate - collect input with clear prompts",
+                    "Convert numeric inputs to the correct type before computing and print a friendly summary"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions i: why, define, and call",
+                  "masteryOutcomes": [
+                    "Understand how functions reduce repetition and improve reuse",
+                    "Understand the structure of Python functions",
+                    "Define a function with one or two parameters and call it with literals and variables"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions ii: Inside the function",
+                  "masteryOutcomes": [
+                    "Understand the structure of a function, including its name, parameters, indentation, and return value",
+                    "Call functions with arguments correctly and trace how values are passed from the call site to parameters, verifying the flow using print statements"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Number Parity Detector",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a program that uses modulo operator to detect number parity and cyclic positions."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Money Converter",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a program that uses input() function and round() function to convert amounts into a money format."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions iii: return vs print and early return",
+                  "masteryOutcomes": [
+                    "Differentiate printing vs returning values",
+                    "Use return to pass results and apply early returns"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Scope and local variables",
+                  "masteryOutcomes": [
+                    "Understand that variables created inside a function exist only within that function’s scope (local)",
+                    "Explain how local and global scopes differ and identify when each is used",
+                    "Demonstrate how data can be passed into functions through parameters instead of relying on global variables"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Python errors: meet the traceback",
+                  "masteryOutcomes": [
+                    "Identify key parts of a traceback, including the error type, and a short explanation of what went wrong"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introduction to debugging",
+                  "masteryOutcomes": [
+                    "Define debugging as the process of finding and fixing errors in a program",
+                    "Use print statements to observe variable values and trace the program’s flow step by step",
+                    "Insert and remove targeted print statements to test assumptions and confirm how the code behaves"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Function-Based Calculator",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to create a calculator program that uses functions to perform arithmetic operations, with understanding of return vs print and local variables."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Debugging Challenge",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you will be able to identify key parts of a traceback, use print statements for debugging, and fix errors in a given Python program."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "WEEK 2 - Control Flow and Data Structures",
+              "lessons": [
+                {
+                  "title": "Control flow overview: decisions vs repetition",
+                  "masteryOutcomes": [
+                    "Identify when a task requires selection (if/else) versus repetition (loop) and provide an example of each",
+                    "Write a 3–5 line text-only flow outline in comments and map each line to if/else or loop constructs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "If/else: syntax, indentation, mental model",
+                  "masteryOutcomes": [
+                    "Introduce indentation as Python’s rule for defining code blocks",
+                    "Write a basic if/else using comparison operators (==, !=, <, >, <=, >=)",
+                    "Differentiate assignment (=) from equality (==) in conditions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Logical operators: and/or/not and short-circuiting",
+                  "masteryOutcomes": [
+                    "Combine comparisons with and, or, not to form compound conditions",
+                    "Show short-circuit behavior by adding prints to the right-hand side expression"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Booleans and comparisons: equality vs identity",
+                  "masteryOutcomes": [
+                    "Use True/False in expressions and store boolean results in variables",
+                    "Differentiate between '==' (value equality) and 'is' (identity equality)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String membership with 'in' in conditions",
+                  "masteryOutcomes": [
+                    "Test substring membership with 'in' and negate with 'not in'",
+                    "Use membership checks inside if/elif branches to drive simple decisions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Elif and refactoring nested decisions",
+                  "masteryOutcomes": [
+                    "Refactor a nested if/else into an equivalent if/elif/else chain",
+                    "Order conditions to avoid overlaps and unreachable branches"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Weather Forecaster",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you should be able to identify when a task requires selection (if/else) or repetition (loop) and be able to utilize these concepts in a simple weather forecaster program."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: String Membership Identifier",
+                  "masteryOutcomes": [
+                    "This practice session will enhance your understanding of string membership with 'in' in conditions and boolean comparisons within a practical context of identifying substrings within a larger text."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Decision tables to branching logic",
+                  "masteryOutcomes": [
+                    "Translate a 3–5 row decision table into clear if/elif/else code",
+                    "Verify mutual exclusivity and completeness of the conditions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "For loops and range(): counting iterations",
+                  "masteryOutcomes": [
+                    "Write for loops with range(stop), range(start, stop), range(start, stop, step)",
+                    "Accumulate a total across iterations and print the result",
+                    "Generate even/odd sequences and countdowns with range"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Meet the while loop",
+                  "masteryOutcomes": [
+                    "Understand what a while loop is and when it is more suitable than for",
+                    "Understand the risk of infinite loops and explain how to prevent them",
+                    "Write a while loop to repeat actions until a condition changes"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Loop control: break and continue",
+                  "masteryOutcomes": [
+                    "Understand when to exit a loop early with break versus letting it complete naturally",
+                    "Insert break to exit early on a condition and continue to skip an iteration"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Counters and totals",
+                  "masteryOutcomes": [
+                    "Initialize and update a counter and running total correctly inside a loop",
+                    "Print the final counts and totals after the loop completes"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Quiz Score Calculator",
+                  "masteryOutcomes": [
+                    "This practice session is designed to apply the concepts of decision tables to branching logic, as well as the use of for loops and range() in calculating quiz scores."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Guessing Game",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you should be able to effectively use while loops, loop control mechanisms, and counters to create a simple guessing game."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Score tracker",
+                  "masteryOutcomes": [
+                    "You need to build a score tracker program. The program should prompt the user to enter the names of two teams and set a maximum score that determines when the game ends. After that, the program should repeatedly ask the user to enter the updated scores for each team"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String skills upgrade i: indexing and slicing",
+                  "masteryOutcomes": [
+                    "Access individual characters in a string using 0-based indexing",
+                    "Use slice notation [start:stop] and [start:stop:step] to extract substrings",
+                    "Use negative indices to access characters from the end of a string"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String skills upgrade ii: common methods",
+                  "masteryOutcomes": [
+                    "Use strip, lower, replace, and find to clean and search text"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String skills upgrade iii: splitting and joining text",
+                  "masteryOutcomes": [
+                    "Split delimited lines into fields and re-join using a chosen delimiter",
+                    "Handle extra whitespace and empty fields during splitting"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists i: creating lists",
+                  "masteryOutcomes": [
+                    "Create lists with literals and from range() - print length with len()",
+                    "Explain that lists are mutable and show a visible effect of mutation",
+                    "Understand when a list is a better choice than separate variables"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Sentence Reverser",
+                  "masteryOutcomes": [
+                    "The session will reinforce concepts of string indexing, slicing, and common methods in a practical application of creating a sentence reverser program."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Grocery List Manager",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you should be able to apply the concepts of list creation, manipulation, and iteration in the context of a grocery list manager application."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists ii: indexing and slicing",
+                  "masteryOutcomes": [
+                    "Access list elements by index and understand how indexing works",
+                    "Modify list elements and create sublists using slicing",
+                    "Handle out-of-range errors (IndexError) in list access"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists iii: mastering list iteration",
+                  "masteryOutcomes": [
+                    "Use a for loop with range() and len() to iterate over indices and access list elements by their position",
+                    "Use a for loop to iterate directly over the values in a list and perform actions on each element"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists iv: common methods",
+                  "masteryOutcomes": [
+                    "Modify a list in place with append, insert, remove, pop, and extend"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Ordering lists: sorted() vs .sort()",
+                  "masteryOutcomes": [
+                    "Sort a list in place with .sort() and create a sorted copy with sorted()",
+                    "Use .sorted() parameters ('key' and 'reverse') to customize ordering and explain stability"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Dictionaries i: keys and values",
+                  "masteryOutcomes": [
+                    "Create dictionaries and access values by key - add and update key–value pairs",
+                    "Explain valid key types and why mutability matters for keys"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Student Grade Tracker",
+                  "masteryOutcomes": [
+                    "This practice session is designed to reinforce the use of list indexing, slicing, iteration, and methods within the practical context of tracking student grades."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Restaurant Menu Manager",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you should be able to apply the concepts of dictionaries, keys, and values to manage a restaurant menu."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Dictionaries ii: iteration patterns",
+                  "masteryOutcomes": [
+                    "Iterate over a dictionary’s keys, values, and key–value pairs",
+                    "Select the most suitable iteration pattern (keys, values, or items) based on the task’s goal"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Updates and copy semantics",
+                  "masteryOutcomes": [
+                    "Show the difference between assignment (aliasing) and shallow copy for lists and dicts",
+                    "Explain that list slicing (x[:]) creates a new list independent of the original",
+                    "Use list(x) / x.copy() / dict(x) appropriately to avoid unintended aliasing"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Nested structures and safe mutation",
+                  "masteryOutcomes": [
+                    "Access and modify data inside nested lists and dictionaries step by step",
+                    "Use safe methods like get() to read values"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Parsing text to list of dicts: tokenize and map fields",
+                  "masteryOutcomes": [
+                    "Map split fields into a dict with named keys for a single line",
+                    "Extend the approach to multiple lines to build a list of dicts"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Personal music manager",
+                  "masteryOutcomes": [
+                    "Build a program that helps a user manage their music playlist. Students will create a list of song dictionaries (title, artist, duration, genre), add and remove songs, sort the playlist by different fields, and display summaries like total songs by genre or average duration."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Recipe Parser",
+                  "masteryOutcomes": [
+                    "By the end of this practice session, you should be able to parse text into a list of dictionaries, and handle nested structures and safe mutation within the context of a recipe parser application."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "WEEK 3 - Code Clarity and Robustness",
+              "lessons": [
+                {
+                  "title": "Naming that tell a story",
+                  "masteryOutcomes": [
+                    "Demonstrate the ability to rename variables and functions to improve clarity."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Crafting docstrings that explain the why",
+                  "masteryOutcomes": [
+                    "Add clear docstrings that explain the purpose and usage of functions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Writing comments with real purpose",
+                  "masteryOutcomes": [
+                    "Add purposeful comments that explain reasoning, not obvious code behavior."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Keeping it clean",
+                  "masteryOutcomes": [
+                    "Apply consistent formatting rules for whitespace, indentation, and line breaks."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Making code instantly readable",
+                  "masteryOutcomes": [
+                    "Rewrite code to pass a readability checklist you define."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Cleanup at the Movie Database",
+                  "masteryOutcomes": [
+                    "Understand and apply the principles of writing clean, readable code by cleaning up a messy script that handles a movie database."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Docstrings in the Library",
+                  "masteryOutcomes": [
+                    "Improve the clarity and utility of a library management system by adding comprehensive docstrings to its functions."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Turning long scripts into sharp functions",
+                  "masteryOutcomes": [
+                    "Split a long script into focused functions with well-defined signatures."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Following program flow with print tracing",
+                  "masteryOutcomes": [
+                    "Insert print-based tracing statements to follow program flow."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Using invariants as safety checkpoints",
+                  "masteryOutcomes": [
+                    "Apply invariants to check assumptions at key points in the code."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Designing functions that can be reused anywhere",
+                  "masteryOutcomes": [
+                    "Use parameters and return values to ensure modular, reusable design."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Debugging step by step",
+                  "masteryOutcomes": [
+                    "Use a minimal debugging checklist to isolate a defect in a provided snippet."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Debugging the Weather App",
+                  "masteryOutcomes": [
+                    "Use print-based tracing and a debugging checklist to identify and fix errors in a weather prediction application."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Functions in the Space Program",
+                  "masteryOutcomes": [
+                    "Break down a long script used in a space exploration program into reusable and well-defined functions."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Stress it to the edge",
+                  "masteryOutcomes": [
+                    "Include edge cases and invalid inputs in tests."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Pushing the limits",
+                  "masteryOutcomes": [
+                    "Define and test clear input and output boundaries, ensuring the code behaves correctly at limits and under invalid conditions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Validating inputs before they break things",
+                  "masteryOutcomes": [
+                    "Add input validation to a function to prevent unexpected behavior."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "The art of a well-placed error",
+                  "masteryOutcomes": [
+                    "Write clear error messages and handle invalid inputs gracefully."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Refactoring with confidence",
+                  "masteryOutcomes": [
+                    "Perform safe refactoring moves such as renaming, extracting functions, and removing dead code."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Testing the Bank System",
+                  "masteryOutcomes": [
+                    "Apply rigorous testing to a bank system, including edge cases and invalid inputs, and refactor with confidence to improve its performance."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Error Handling in a Booking System",
+                  "masteryOutcomes": [
+                    "Improve a hotel booking system by writing clear error messages and handling invalid inputs gracefully."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Making sure nothing breaks",
+                  "masteryOutcomes": [
+                    "Re-run tests to confirm behavior remains consistent after refactoring."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Grandma’s secret recipe",
+                  "masteryOutcomes": [
+                    "Grandma wrote a script to calculate ingredient quantities for her famous cookie recipe, but it is a mess. Students refactor her kitchen code by splitting it into neat functions, adding docstrings that “tell the story” of the recipe steps, and validating edge cases (like zero or negative servings). They write tests to ensure the recipe always scales correctly."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Balancing planning and coding",
+                  "masteryOutcomes": [
+                    "Understand the trade-offs between planning and coding immediately and how upfront planning improves clarity and reduces rework."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Breaking the problem",
+                  "masteryOutcomes": [
+                    "Break down a problem into precise, ordered pseudocode steps."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Hierarchy in pseudocode",
+                  "masteryOutcomes": [
+                    "Understand pseudocode concepts and apply numbering and indentation to clearly represent sequence and hierarchical relationships."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Recipe Refactoring",
+                  "masteryOutcomes": [
+                    "Refactor a script for a cookie recipe, ensuring that the behavior remains consistent by re-running tests and understanding the importance of planning and pseudocode."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Problem-solving with the Maze Game",
+                  "masteryOutcomes": [
+                    "Break down the problem of creating a maze game into precise pseudocode steps and understand hierarchy in pseudocode."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Turning rules into code",
+                  "masteryOutcomes": [
+                    "Translate rules into consistent, step-based code actions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Sketching flow",
+                  "masteryOutcomes": [
+                    "Sketch a flow description that maps conditions to outcomes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Understanding common solution patterns",
+                  "masteryOutcomes": [
+                    "Recognize common patterns like dictionary lookups in simple plans and implement them in Python."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Reviewing the plan",
+                  "masteryOutcomes": [
+                    "Review pseudocode to check for logical gaps or overlaps."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Rule-based Decision-making in a Game",
+                  "masteryOutcomes": [
+                    "Translate the rules of a board game into consistent, step-based code actions and review the pseudocode for logical gaps or overlaps."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Sketching Flow in a Traffic System",
+                  "masteryOutcomes": [
+                    "Improve your understanding of common solution patterns by sketching a flow description that maps conditions to outcomes in a traffic control system."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "WEEK 4 - Problem Decomposition",
+              "lessons": [
+                {
+                  "title": "From plan to working machine",
+                  "masteryOutcomes": [
+                    "Translate pseudocode into working Python code step by step."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Keeping comments that connect to pseudocode",
+                  "masteryOutcomes": [
+                    "Keep reference comments that connect code back to pseudocode blocks."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Creating function stubs for structure",
+                  "masteryOutcomes": [
+                    "Write function stubs that capture intended structure."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Building code incrementally",
+                  "masteryOutcomes": [
+                    "Use hardcoded return values as temporary placeholders",
+                    "Incrementally replace stubs with working implementations."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Creating test tables for pseudocode plans",
+                  "masteryOutcomes": [
+                    "Create a small input-output test table for a pseudocode plan."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Recipe App",
+                  "masteryOutcomes": [
+                    "Students will gain practical experience in translating pseudocode into Python code, creating function stubs, and creating test tables for their pseudocode plans."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Weather Forecast Tool",
+                  "masteryOutcomes": [
+                    "Students will apply lessons on incremental coding, maintaining reference comments that link back to pseudocode blocks, and building code incrementally."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Dry running plans with test values",
+                  "masteryOutcomes": [
+                    "Conduct a dry run by walking through the plan with pseudocode test-table values."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Integrating logic into a full app",
+                  "masteryOutcomes": [
+                    "Integrate validated input, logic, and output formatting into a single app."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Demonstrating the working app",
+                  "masteryOutcomes": [
+                    "Demonstrate the app working correctly for multiple test cases."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Escape room master plan",
+                  "masteryOutcomes": [
+                    "Students are trapped in a virtual escape room where guessing randomly won’t work. They must map out the precise sequence of steps to solve puzzles, write pseudocode to describe the solution path, and then implement Python code that follows the plan exactly. Testing with multiple scenarios ensures their escape strategy works under pressure."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Writing a clear feature brief",
+                  "masteryOutcomes": [
+                    "Write a concise paragraph that clearly defines a feature's goal, target users, and implementation context."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Music App",
+                  "masteryOutcomes": [
+                    "Students will practice dry running plans with test values, integrating logic into a full app, and demonstrating the app working correctly for multiple test cases."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Escape Room Game",
+                  "masteryOutcomes": [
+                    "Students will apply lessons on writing clear feature briefs, and combine these skills to develop a simple escape room game."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Separating purpose from technical details",
+                  "masteryOutcomes": [
+                    "Distinguish between purpose and technical details at this stage."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Writing a structured problem statement",
+                  "masteryOutcomes": [
+                    "Translate a feature description into a structured Python problem statement (docstring) with success criteria and constraints."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Defining example inputs and outputs",
+                  "masteryOutcomes": [
+                    "Define concrete example inputs and expected outputs as Python literals to illustrate normal cases, edge conditions, and invalid inputs."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Breaking down into subproblems",
+                  "masteryOutcomes": [
+                    "Break the problem into clear subproblems."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Defining subproblem inputs and outputs",
+                  "masteryOutcomes": [
+                    "Define the input and output of each subproblem clearly."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Travel Planner",
+                  "masteryOutcomes": [
+                    "Students will learn to separate purpose from technical details, write structured problem statements, and define example inputs and outputs."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Restaurant Order System",
+                  "masteryOutcomes": [
+                    "Students will gain experience in breaking down problems into subproblems and defining clear inputs and outputs for each subproblem."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Sequencing subproblems logically",
+                  "masteryOutcomes": [
+                    "Arrange subproblems in a logical sequence and implement them in a Python script."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Matching subproblems to patterns",
+                  "masteryOutcomes": [
+                    "Match subproblems to common patterns such as filter, map, or group."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Prioritizing tasks by risk",
+                  "masteryOutcomes": [
+                    "Label tasks as risky or straightforward based on uncertainty and choose a build order that addresses risk early."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Explaining prioritization choices",
+                  "masteryOutcomes": [
+                    "Explain rationale for prioritization decisions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Movie Recommendation System",
+                  "masteryOutcomes": [
+                    "Students will practice sequencing subproblems logically, matching subproblems to common patterns, and prioritizing tasks by risk."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Personal Budget App",
+                  "masteryOutcomes": [
+                    "Students will learn to explain their prioritization choices and apply these skills to develop a simple personal budget app."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Assembling functions into pipelines",
+                  "masteryOutcomes": [
+                    "Combine functions into pipelines where outputs feed subsequent inputs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Breaking down a case study",
+                  "masteryOutcomes": [
+                    "Decompose a real-world case study into subproblems."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Writing a full problem statement",
+                  "masteryOutcomes": [
+                    "Develop a comprehensive problem statement for a simple case study and implement a complete Python solution."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: ars pioneers",
+                  "masteryOutcomes": [
+                    "Students write a mission brief, identify vital inputs and outputs (oxygen, water, energy, food), and break the challenge into subproblems like life support, transport, and communication. By mapping data flow and assembling a Python pipeline, they create a structured plan that transforms survival on Mars into a working simulation."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Practice Session: Mars Survival Simulation",
+                  "masteryOutcomes": [
+                    "Develop a comprehensive problem statement for a Mars survival scenario, identifying vital inputs and outputs, and implement a complete Python solution to simulate life on Mars."
+                  ],
+                  "teachingInstructions": "practice oriented session, with a step by step exercise and no new learning topics",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}
+```
+
+================================================================================
+

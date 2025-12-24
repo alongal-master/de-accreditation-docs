@@ -1,0 +1,697 @@
+{
+  "lessons": [
+    {
+      "title": "Naming that tell a story",
+      "learning_outcomes": "Demonstrate the ability to rename variables and functions to improve clarity."
+    },
+    {
+      "title": "Crafting docstrings that explain the why",
+      "learning_outcomes": "Add clear docstrings that explain the purpose and usage of functions."
+    },
+    {
+      "title": "Writing comments with real purpose",
+      "learning_outcomes": "Add purposeful comments that explain reasoning, not obvious code behavior."
+    },
+    {
+      "title": "Keeping it clean",
+      "learning_outcomes": "Apply consistent formatting rules for whitespace, indentation, and line breaks."
+    },
+    {
+      "title": "Making code instantly readable",
+      "learning_outcomes": "Rewrite code to pass a readability checklist you define."
+    },
+    {
+      "title": "Turning long scripts into sharp functions",
+      "learning_outcomes": "Split a long script into focused functions with well-defined signatures."
+    },
+    {
+      "title": "Following program flow with print tracing",
+      "learning_outcomes": "Insert print-based tracing statements to follow program flow."
+    },
+    {
+      "title": "Using invariants as safety checkpoints",
+      "learning_outcomes": "Apply invariants to check assumptions at key points in the code."
+    },
+    {
+      "title": "Designing functions that can be reused anywhere",
+      "learning_outcomes": "Use parameters and return values to ensure modular, reusable design."
+    },
+    {
+      "title": "Debugging step by step",
+      "learning_outcomes": "Use a minimal debugging checklist to isolate a defect in a provided snippet."
+    },
+    {
+      "title": "Stress it to the edge",
+      "learning_outcomes": "Include edge cases and invalid inputs in tests."
+    },
+    {
+      "title": "Pushing the limits",
+      "learning_outcomes": "Define and test clear input and output boundaries, ensuring the code behaves correctly at limits and under invalid conditions."
+    },
+    {
+      "title": "Validating inputs before they break things",
+      "learning_outcomes": "Add input validation to a function to prevent unexpected behavior."
+    },
+    {
+      "title": "The art of a well-placed error",
+      "learning_outcomes": "Write clear error messages and handle invalid inputs gracefully."
+    },
+    {
+      "title": "Refactoring with confidence",
+      "learning_outcomes": "Perform safe refactoring moves such as renaming, extracting functions, and removing dead code."
+    },
+    {
+      "title": "Making sure nothing breaks",
+      "learning_outcomes": "Re-run tests to confirm behavior remains consistent after refactoring."
+    },
+    {
+      "title": "Balancing planning and coding",
+      "learning_outcomes": "Understand the trade-offs between planning and coding immediately and how upfront planning improves clarity and reduces rework."
+    },
+    {
+      "title": "Breaking the problem",
+      "learning_outcomes": "Break down a problem into precise, ordered pseudocode steps."
+    },
+    {
+      "title": "Hierarchy in pseudocode",
+      "learning_outcomes": "Understand pseudocode concepts and apply numbering and indentation to clearly represent sequence and hierarchical relationships."
+    },
+    {
+      "title": "Turning rules into code",
+      "learning_outcomes": "Translate rules into consistent, step-based code actions."
+    },
+    {
+      "title": "Sketching flow",
+      "learning_outcomes": "Sketch a flow description that maps conditions to outcomes."
+    },
+    {
+      "title": "Understanding common solution patterns",
+      "learning_outcomes": "Recognize common patterns like dictionary lookups in simple plans and implement them in Python."
+    },
+    {
+      "title": "Reviewing the plan",
+      "learning_outcomes": "Review pseudocode to check for logical gaps or overlaps."
+    },
+    {
+      "title": "From plan to working machine",
+      "learning_outcomes": "Translate pseudocode into working Python code step by step."
+    },
+    {
+      "title": "Keeping comments that connect to pseudocode",
+      "learning_outcomes": "Keep reference comments that connect code back to pseudocode blocks."
+    },
+    {
+      "title": "Creating function stubs for structure",
+      "learning_outcomes": "Write function stubs that capture intended structure."
+    },
+    {
+      "title": "Building code incrementally",
+      "learning_outcomes": "Use hardcoded return values as temporary placeholders and incrementally replace stubs with working implementations."
+    },
+    {
+      "title": "Creating test tables for pseudocode plans",
+      "learning_outcomes": "Create a small input-output test table for a pseudocode plan."
+    },
+    {
+      "title": "Dry running plans with test values",
+      "learning_outcomes": "Conduct a dry run by walking through the plan with pseudocode test-table values."
+    },
+    {
+      "title": "Integrating logic into a full app",
+      "learning_outcomes": "Integrate validated input, logic, and output formatting into a single app."
+    },
+    {
+      "title": "Demonstrating the working app",
+      "learning_outcomes": "Demonstrate the app working correctly for multiple test cases."
+    },
+    {
+      "title": "Writing a clear feature brief",
+      "learning_outcomes": "Write a concise paragraph that clearly defines a feature's goal, target users, and implementation context."
+    },
+    {
+      "title": "Separating purpose from technical details",
+      "learning_outcomes": "Distinguish between purpose and technical details at this stage."
+    },
+    {
+      "title": "Writing a structured problem statement",
+      "learning_outcomes": "Translate a feature description into a structured Python problem statement (docstring) with success criteria and constraints."
+    },
+    {
+      "title": "Defining example inputs and outputs",
+      "learning_outcomes": "Define concrete example inputs and expected outputs as Python literals to illustrate normal cases, edge conditions, and invalid inputs."
+    },
+    {
+      "title": "Breaking down into subproblems",
+      "learning_outcomes": "Break the problem into clear subproblems."
+    },
+    {
+      "title": "Defining subproblem inputs and outputs",
+      "learning_outcomes": "Define the input and output of each subproblem clearly."
+    },
+    {
+      "title": "Sequencing subproblems logically",
+      "learning_outcomes": "Arrange subproblems in a logical sequence and implement them in a Python script."
+    },
+    {
+      "title": "Matching subproblems to patterns",
+      "learning_outcomes": "Match subproblems to common patterns such as filter, map, or group."
+    },
+    {
+      "title": "Prioritizing tasks by risk",
+      "learning_outcomes": "Label tasks as risky or straightforward based on uncertainty and choose a build order that addresses risk early."
+    },
+    {
+      "title": "Explaining prioritization choices",
+      "learning_outcomes": "Explain rationale for prioritization decisions."
+    },
+    {
+      "title": "Assembling functions into pipelines",
+      "learning_outcomes": "Assemble multiple functions into a working pipeline, showing how outputs of one feed into inputs of another."
+    },
+    {
+      "title": "Breaking down a case study",
+      "learning_outcomes": "Decompose a real-world case study into subproblems."
+    },
+    {
+      "title": "Writing a full problem statement",
+      "learning_outcomes": "Develop a comprehensive problem statement for a simple case study and implement a complete Python solution."
+    }
+  ],
+  "num_weeks": 2,
+  "num_chapters_per_week": 5,
+  "num_practice_sessions": 3,
+  "weeks": {
+    "1": {
+      "week_num": 1,
+      "learning_goal": "\"Code Clarity and Efficiency: In this unit, students will learn how to improve code readability through effective naming, commenting and formatting, debug and trace program flow, handle edge cases and invalid inputs, refactor code confidently, and translate rules into consistent code actions, all while understanding common solution patterns and the importance of planning ahead.\"",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Enhancing Code Readability",
+          "learning_goals": "Students will learn various strategies to improve the clarity and readability of their code, such as renaming variables and functions, crafting meaningful docstrings and comments, and applying consistent formatting rules. The chapter will also emphasize the importance of these practices in team projects and code maintenance.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Naming that tell a story",
+              "learning_outcomes": "Demonstrate the ability to rename variables and functions to improve clarity.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Crafting docstrings that explain the why",
+              "learning_outcomes": "Add clear docstrings that explain the purpose and usage of functions.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Writing comments with real purpose",
+              "learning_outcomes": "Add purposeful comments that explain reasoning, not obvious code behavior.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Keeping it clean",
+              "learning_outcomes": "Apply consistent formatting rules for whitespace, indentation, and line breaks.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Making code instantly readable",
+              "learning_outcomes": "Rewrite code to pass a readability checklist you define.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Improving Code Clarity through Renaming",
+              "learning_outcomes": "After this session, students should be able to rename variables and functions to make the code more understandable and easier to read.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Crafting Detailed Docstrings",
+              "learning_outcomes": "After completing this exercise, students will be able to write clear docstrings that explain the purpose and usage of functions.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Writing Purposeful Comments",
+              "learning_outcomes": "After this session, students will be able to write meaningful comments that explain the reasoning behind the code, rather than the obvious behavior of the code.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Advanced Script Debugging and Optimization",
+          "learning_goals": "Students will learn to optimize long scripts into concise, reusable functions and use various debugging techniques, including print-based tracing, invariants, and a minimal debugging checklist to track, locate, and fix defects in code. This will enhance their understanding of program flow, code modularity, and error resolution.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Turning long scripts into sharp functions",
+              "learning_outcomes": "Split a long script into focused functions with well-defined signatures.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Following program flow with print tracing",
+              "learning_outcomes": "Insert print-based tracing statements to follow program flow.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Using invariants as safety checkpoints",
+              "learning_outcomes": "Apply invariants to check assumptions at key points in the code.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Designing functions that can be reused anywhere",
+              "learning_outcomes": "Use parameters and return values to ensure modular, reusable design.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Debugging step by step",
+              "learning_outcomes": "Use a minimal debugging checklist to isolate a defect in a provided snippet.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Breaking Down Long Scripts",
+              "learning_outcomes": "After this session, students will be able to break down long scripts into concise functions with clear signatures.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Tracing Program Flow with Print Statements",
+              "learning_outcomes": "After this session, students will be able to insert print-based tracing statements to follow the flow of a program.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Debugging with a Checklist",
+              "learning_outcomes": "After completing this exercise, students will be able to use a minimal debugging checklist to locate and fix a defect in a code snippet.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Robust Coding: Handling Edge Cases and Errors",
+          "learning_goals": "Students will learn how to effectively include and test edge cases and invalid inputs for robust coding. They will also gain skills in input validation, error message crafting, and the graceful handling of invalid inputs to prevent unexpected program behavior.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Stress it to the edge",
+              "learning_outcomes": "Include edge cases and invalid inputs in tests.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Pushing the limits",
+              "learning_outcomes": "Define and test clear input and output boundaries, ensuring the code behaves correctly at limits and under invalid conditions.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Validating inputs before they break things",
+              "learning_outcomes": "Add input validation to a function to prevent unexpected behavior.",
+              "time_minutes": 45
+            },
+            {
+              "title": "The art of a well-placed error",
+              "learning_outcomes": "Write clear error messages and handle invalid inputs gracefully.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Testing Edge Cases",
+              "learning_outcomes": "After this session, students will be able to include edge cases and invalid inputs in their tests.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Validating Inputs",
+              "learning_outcomes": "After this session, students will be able to add input validation to a function to prevent unexpected behavior.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Writing Clear Error Messages",
+              "learning_outcomes": "After completing this exercise, students will be able to write clear error messages and handle invalid inputs gracefully.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Effective Coding and Refactoring Techniques",
+          "learning_goals": "Students will learn how to safely refactor code, understand the importance of balancing planning and coding, and master the skill of breaking down problems into precise pseudocode steps. This chapter enhances students' ability to maintain clean, efficient code and develop efficient problem-solving strategies.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Refactoring with confidence",
+              "learning_outcomes": "Perform safe refactoring moves such as renaming, extracting functions, and removing dead code.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Making sure nothing breaks",
+              "learning_outcomes": "Re-run tests to confirm behavior remains consistent after refactoring.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Balancing planning and coding",
+              "learning_outcomes": "Understand the trade-offs between planning and coding immediately and how upfront planning improves clarity and reduces rework.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Breaking the problem",
+              "learning_outcomes": "Break down a problem into precise, ordered pseudocode steps.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Refactoring Code with Confidence",
+              "learning_outcomes": "After this session, students will be able to safely refactor code by renaming, extracting functions, and removing dead code.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Balancing Planning and Coding",
+              "learning_outcomes": "After this session, students will understand the trade-offs between planning and coding and how upfront planning can improve clarity and reduce rework.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Breaking Down Problems into Pseudocode",
+              "learning_outcomes": "After completing this exercise, students will be able to break down a problem into precise, ordered pseudocode steps.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Pseudocode to Python: Transition and Techniques",
+          "learning_goals": "Students will learn how to translate rules into consistent, step-based code actions with Python, and understand how to apply hierarchy in pseudocode. They will also be able to recognize common solution patterns, effectively utilize them in their coding practices, and actively participate in discussions to clarify their concepts.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Hierarchy in pseudocode",
+              "learning_outcomes": "Understand pseudocode concepts and apply numbering and indentation to clearly represent sequence and hierarchical relationships.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Turning rules into code",
+              "learning_outcomes": "Translate rules into consistent, step-based code actions.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Sketching flow",
+              "learning_outcomes": "Sketch a flow description that maps conditions to outcomes.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Understanding common solution patterns",
+              "learning_outcomes": "Recognize common patterns like dictionary lookups in simple plans and implement them in Python.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Applying Hierarchy in Pseudocode",
+              "learning_outcomes": "After this session, students will understand and be able to apply numbering and indentation in pseudocode to represent sequence and hierarchical relationships.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Translating Rules into Code",
+              "learning_outcomes": "After this session, students will be able to translate rules into consistent, step-based code actions.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Recognizing Common Patterns in Solutions",
+              "learning_outcomes": "After completing this exercise, students will be able to recognize common patterns like dictionary lookups in plans and implement them in Python.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Weekly Review",
+              "learning_outcomes": "Review the concepts learned in this week and complete weekly assessment.",
+              "time_minutes": 120
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "week_num": 2,
+      "learning_goal": "\"Code Development: In this unit, students will learn to translate pseudocode into Python, build code incrementally, create test tables, integrate logic into a full app, define and sequence subproblems, prioritize tasks, assemble functions into pipelines, and write clear problem statements and feature briefs while maintaining a constant feedback loop with instructors and peers through interactive Q&A sessions.\"",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Translating Pseudocode into Python",
+          "learning_goals": "Students will learn how to effectively translate pseudocode into working Python code, while maintaining reference comments and using function stubs. They will also acquire skills in incremental code development and understand how to troubleshoot for logical gaps or overlaps.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Reviewing the plan",
+              "learning_outcomes": "Review pseudocode to check for logical gaps or overlaps.",
+              "time_minutes": 45
+            },
+            {
+              "title": "From plan to working machine",
+              "learning_outcomes": "Translate pseudocode into working Python code step by step.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Keeping comments that connect to pseudocode",
+              "learning_outcomes": "Keep reference comments that connect code back to pseudocode blocks.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Creating function stubs for structure",
+              "learning_outcomes": "Write function stubs that capture intended structure.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Building code incrementally",
+              "learning_outcomes": "Use hardcoded return values as temporary placeholders and incrementally replace stubs with working implementations.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Pseudocode Review and Python Translation",
+              "learning_outcomes": "Strengthen your skills in reviewing pseudocode for logical gaps and overlaps, and translating them into functional Python code.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Pseudocode to Code with Comments and Stubs",
+              "learning_outcomes": "Learn to maintain reference comments that connect code back to pseudocode, and to write function stubs that capture the intended structure.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Incremental Code Development",
+              "learning_outcomes": "Understand how to use hardcoded return values as temporary placeholders and to replace stubs with working implementations incrementally.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Pseudocode to App Development",
+          "learning_goals": "Students will learn how to create test tables for pseudocode plans, run these plans with test values, integrate logic into a complete app, and demonstrate its functionality. They will also develop the ability to write clear feature briefs and engage in interactive learning sessions.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Creating test tables for pseudocode plans",
+              "learning_outcomes": "Create a small input-output test table for a pseudocode plan.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Dry running plans with test values",
+              "learning_outcomes": "Conduct a dry run by walking through the plan with pseudocode test-table values.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Integrating logic into a full app",
+              "learning_outcomes": "Integrate validated input, logic, and output formatting into a single app.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Demonstrating the working app",
+              "learning_outcomes": "Demonstrate the app working correctly for multiple test cases.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Writing a clear feature brief",
+              "learning_outcomes": "Write a concise paragraph that clearly defines a feature's goal, target users, and implementation context.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Test Tables and Dry Runs for Pseudocode",
+              "learning_outcomes": "Master the creation of input-output test tables for pseudocode and conducting dry runs with these values.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: From Logic to Full App",
+              "learning_outcomes": "Gain experience in integrating validated input, logic, and output formatting into a single working app.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: App Demonstration and Feature Brief Writing",
+              "learning_outcomes": "Demonstrate the ability to showcase a working app for multiple test cases and write a clear feature brief.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Python Problem Solving",
+          "learning_goals": "Students will learn how to effectively translate feature descriptions into structured problem statements, distinguish purpose from technical details, and break down larger problems into manageable subproblems. They will also learn how to define example inputs and expected outputs in Python, and enhance these skills through practical exercises.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Separating purpose from technical details",
+              "learning_outcomes": "Distinguish between purpose and technical details at this stage.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Writing a structured problem statement",
+              "learning_outcomes": "Translate a feature description into a structured Python problem statement (docstring) with success criteria and constraints.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Defining example inputs and outputs",
+              "learning_outcomes": "Define concrete example inputs and expected outputs as Python literals to illustrate normal cases, edge conditions, and invalid inputs.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Breaking down into subproblems",
+              "learning_outcomes": "Break the problem into clear subproblems.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Structured Problem Statement Writing",
+              "learning_outcomes": "Improve your ability to distinguish between purpose and technical details, and to translate feature descriptions into structured problem statements.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Defining Inputs and Outputs",
+              "learning_outcomes": "Practice defining concrete example inputs and expected outputs as Python literals for various cases.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Problem Decomposition",
+              "learning_outcomes": "Gain proficiency in breaking larger problems into clear, manageable subproblems.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Mastering Subproblem Sequencing and Risk Management",
+          "learning_goals": "Students will learn how to define, sequence, and match subproblems to various common patterns within Python scripts. They will also learn to prioritize tasks based on risk factors, enabling them to work more efficiently and effectively.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Defining subproblem inputs and outputs",
+              "learning_outcomes": "Define the input and output of each subproblem clearly.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Sequencing subproblems logically",
+              "learning_outcomes": "Arrange subproblems in a logical sequence and implement them in a Python script.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Matching subproblems to patterns",
+              "learning_outcomes": "Match subproblems to common patterns such as filter, map, or group.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Prioritizing tasks by risk",
+              "learning_outcomes": "Label tasks as risky or straightforward based on uncertainty and choose a build order that addresses risk early.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Subproblem Definition and Sequencing",
+              "learning_outcomes": "Enhance your skills in defining the input and output of each subproblem and arranging them in a logical sequence.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Risk Assessment in Task Prioritization",
+              "learning_outcomes": "Learn to label tasks as risky or straightforward based on uncertainty and to choose a build order that addresses risk early.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Subproblem Matching to Common Patterns",
+              "learning_outcomes": "Understand how to match subproblems to common patterns such as filter, map, or group.",
+              "time_minutes": 60
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Prioritization and Pipeline Assembly in Python",
+          "learning_goals": "Students will learn how to make and justify prioritization decisions, assemble functions into a working pipeline, and break down real-world case studies into manageable subproblems. They will also gain practice in writing comprehensive problem statements and implementing complete Python solutions.",
+          "lessons": [
+            {
+              "title": "Sync Session: Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Explaining prioritization choices",
+              "learning_outcomes": "Explain rationale for prioritization decisions.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Assembling functions into pipelines",
+              "learning_outcomes": "Assemble multiple functions into a working pipeline, showing how outputs of one feed into inputs of another.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Breaking down a case study",
+              "learning_outcomes": "Decompose a real-world case study into subproblems.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Writing a full problem statement",
+              "learning_outcomes": "Develop a comprehensive problem statement for a simple case study and implement a complete Python solution.",
+              "time_minutes": 45
+            },
+            {
+              "title": "Practice Session: Prioritization Decision Making",
+              "learning_outcomes": "Develop your ability to explain the rationale for your prioritization decisions.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Function Assembly into Pipelines",
+              "learning_outcomes": "Strengthen your ability to assemble multiple functions into a working pipeline.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Practice Session: Case Study Breakdown and Problem Statement Writing",
+              "learning_outcomes": "Learn how to decompose a real-world case study into subproblems, and to develop a comprehensive problem statement for a simple case study.",
+              "time_minutes": 60
+            },
+            {
+              "title": "Weekly Review",
+              "learning_outcomes": "Review the concepts learned in this week and complete weekly assessment.",
+              "time_minutes": 120
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

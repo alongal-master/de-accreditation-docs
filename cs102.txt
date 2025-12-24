@@ -1,0 +1,244 @@
+UNIT 1 — FOUNDATIONS OF DATA STRUCTURES AND ARRAYS
+
+Welcome to CS102
+--- Follow the orientation flow step by step: welcome, overview, what you will learn, structure, and closing congratulations.
+--- Stay focused on orientation only and avoid teaching new material or deep dives.
+--- Defer advanced questions to later sessions.
+
+What is a data structure
+--- Explain the purpose of data structures in organizing and managing data.
+--- Describe why different types of data structures are necessary.
+--- Introduce data structures at a high level without detailed explanations.
+
+Index based data structures
+--- Explain the idea of indexing and sequential access.
+--- Recognize which structures support index-based access.
+
+Understanding arrays
+--- Identify arrays as ordered collections with fixed positions.
+--- Explain how indices map to element locations.
+
+Accessing elements in arrays
+--- Apply index-based logic to identify elements in a list.
+--- Validate index boundaries and recognize out-of-range conditions.
+
+Updating and replacing array values
+--- Modify elements at specific indices.
+--- Apply replacement logic to update first, middle, and last elements.
+--- Evaluate the effect of in-place updates on the structure.
+
+Removing elements from arrays
+--- Remove elements using operations such as pop from various positions.
+--- Predict how deletion affects subsequent index positions.
+
+Challenge: basic array operations
+--- Pick the second item in a list using its index.
+--- Change the first item to a new one.
+--- Remove the last item.
+--- Complete three closed, beginner-friendly questions focused on access, update, and remove in simple scenarios.
+
+Combined array operations in sequence
+--- Execute multiple operations in the correct order: access, update, remove.
+--- Return multiple values from an array manipulation function.
+
+Using arrays for structured problem solving
+--- Break a problem into steps based on array operations.
+--- Translate requirements into index-based actions.
+--- Design input and output structures for array tasks.
+
+Introducing high dimensional arrays
+--- Describe what a high-dimensional array is.
+--- Identify real-world scenarios requiring multi-level representation.
+
+Implementing high dimensional arrays in Python
+--- Create nested lists using multiple indices.
+--- Modify elements inside nested lists while maintaining structure.
+
+Edge cases and reliability in array operations
+--- Evaluate behavior when arrays contain fewer than three elements.
+--- Adjust logic to avoid index errors or accessing empty structures.
+
+Challenge: advanced array operations
+--- Demonstrate multiple array skills (access, update, remove, nested, edge cases).
+--- Solve six playful, single-concept closed questions using simple scenarios.
+
+UNIT 2 — STACKS AND QUEUES
+
+What is LIFO
+--- Define the LIFO principle.
+--- Identify real-world examples of LIFO behavior.
+
+Introduce the Stack
+--- Define the Stack data structure.
+--- Relate the stack to the LIFO principle.
+
+Stack operations: push and pop
+--- Implement push to add items to the top.
+--- Implement pop to remove the most recent item.
+--- Predict stack content after sequences of operations.
+
+Building a stack using lists
+--- Construct a stack with list-based operations.
+--- Simulate stack growth and reduction.
+--- Identify when a stack is empty.
+
+Applying stacks to undo behavior
+--- Translate user actions into stack entries.
+--- Remove recent actions using pop.
+--- Produce the stack state after undo actions.
+
+Challenge: stacks
+--- Integrate and apply all stack concepts learned.
+--- Solve a practical, enjoyable wrap-up challenge.
+
+What is FIFO
+--- Define the FIFO principle.
+--- Identify real-world systems using queue order.
+--- Explain why FIFO is needed in addition to LIFO.
+
+Introduce the Queue
+--- Define the Queue data structure.
+--- Connect queues directly to FIFO behavior.
+
+Queue operations: enqueue and dequeue
+--- Implement enqueue to add items at the end.
+--- Implement dequeue to remove the first item.
+--- Trace queue behavior across sequences.
+
+Implementing queues with deque
+--- Construct a queue using deque.
+--- Apply popleft for FIFO removal.
+
+Challenge: queues
+--- Apply all queue concepts in a wrap-up exercise.
+--- Connect queue operations to a real-world scenario.
+
+Integrating stacks and queues
+--- Compare LIFO and FIFO behaviors in data processing.
+--- Choose when to use a stack or queue.
+--- Simulate a scenario involving characters moving through a queue while carrying a stack of items.
+
+UNIT 3 — ALGORITHMS ANALYSIS
+
+Welcome to algorithms
+--- Describe what the unit covers and its connection to previous topics.
+--- Identify how algorithm skills support future coding and problem solving.
+
+Why we need algorithms in real life
+--- Explain what an algorithm is using everyday examples.
+--- Identify real-world processes that behave like algorithms.
+
+Turning everyday problems into step-by-step solutions
+--- Break a simple problem into ordered steps.
+--- Write steps as pseudocode or numbered instructions.
+
+Challenge: Algorithms
+--- Convert a short story into pseudocode with clear inputs and outputs.
+--- Check that pseudocode includes all required steps.
+
+Counting work: how many steps an algorithm takes
+--- Trace an algorithm and count its steps for a small input.
+--- Describe how step counts change as input size grows.
+
+Complexity: what it means and why it matters
+--- Define algorithmic complexity in simple terms.
+--- Explain why two correct algorithms can have different running times.
+--- Relate complexity to user experience.
+
+Difference between complexity and efficiency
+--- Distinguish theoretical complexity from real-world efficiency.
+--- List performance factors beyond complexity.
+--- Identify whether statements describe complexity or efficiency.
+
+Big O notation without the scary math
+--- Match simple growth patterns to O(1), O(n), and O(n²).
+--- Identify Big O classes by examining step growth.
+--- Explain Big O in plain language.
+
+Challenge: algorithms analysis
+--- Compare two algorithm snippets and determine which grows faster.
+--- Justify the choice using Big O terminology.
+
+Comparing two solutions to the same problem
+--- Evaluate two algorithms by time complexity and number of operations.
+--- Identify trade-offs such as readability vs. speed.
+--- Choose an appropriate algorithm for a simple scenario.
+
+Safe algorithms: handling edge cases and bad input
+--- Identify edge cases such as empty lists or missing values.
+--- Modify pseudocode to handle edge cases safely.
+--- Predict behavior for invalid input.
+
+Challenge: advanced algorithms analysis
+--- Analyze code or pseudocode and describe its Big O complexity.
+--- Select the most suitable algorithm for a given scenario.
+
+UNIT 4 — SEARCHING AND SORTING
+
+Why searching matters
+--- Describe everyday situations where searching is needed.
+--- Explain why good search methods save time.
+
+How searching works with simple examples
+--- Trace simple search processes in small collections.
+--- Identify when a process is performing a search.
+
+Linear search with small and unsorted data
+--- Describe linear search in your own words.
+--- Apply linear search to find an item.
+--- Identify when linear search is appropriate.
+
+Binary search with large sorted collections
+--- Describe binary search as repeatedly halving the search space.
+--- Perform it step by step.
+--- Explain why it requires sorted data.
+
+Comparing linear and binary search
+--- Compare how many steps each method takes for different list sizes.
+--- Select the appropriate method for a scenario.
+--- Use informal complexity language such as “grows linearly” or “grows slower.”
+
+Challenge: searching
+--- Choose an appropriate search method for several scenarios.
+--- Trace the method on small lists to confirm correctness.
+
+Why sorting is useful
+--- Explain how sorting supports searching and decision making.
+--- Identify real-world tasks improved by sorting.
+
+Sorting: different approaches
+--- Describe high-level sorting approaches such as swapping neighbors or selecting the smallest.
+--- Match stories or visuals to the correct sorting method.
+
+Bubble sort step-by-step
+--- Describe bubble sort as swapping out-of-order neighbors.
+--- Trace bubble sort through multiple passes.
+--- Predict what happens during a full pass.
+
+Selection sort
+--- Describe selection sort as repeatedly choosing the smallest remaining element.
+--- Perform it step by step.
+--- Compare its approach with bubble sort.
+
+Bubble vs. Selection
+--- Compare bubble sort and selection sort in how they scan and move values.
+--- Identify scenarios where one may be slightly preferable.
+--- Recognize that both have similar time complexity.
+
+Challenge: sorting
+--- Choose a simple sorting algorithm for beginner scenarios.
+--- Trace it on small lists to verify results.
+
+Using Python sorting tools in practice
+--- Use sorted and list.sort for ascending and descending sorts.
+--- Apply key functions to sort custom data.
+--- Connect Python’s built-in sorting tools to manual algorithms.
+
+Advanced sorting with Python tools
+--- Combine key and reverse parameters for richer tasks.
+--- Design simple sortable data structures.
+--- Decide when to rely on Python’s built-in tools.
+
+Challenge: advanced sorting
+--- Apply Python sorting tools to multi-field data.
+--- Explain how the chosen sort order answers a real-world question.

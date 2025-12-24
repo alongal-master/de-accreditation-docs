@@ -1,0 +1,1461 @@
+================================================================================
+OpenAI API Log - Syllabus Generator
+================================================================================
+Started at: 2025-11-24 14:17:38
+Model: gpt-5.1
+================================================================================
+
+[2025-11-24 14:17:53] LESSON PARSING (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Parse the following course content and extract lesson titles and learning outcomes.
+Lesson names are followed by learning outcome for each lesson. All learning outcomes lines start with "--- ".
+
+Return the result in this exact format:
+
+TITLE: [Lesson Title]
+OUTCOMES: [Learning outcomes description]
+
+TITLE: [Next Lesson Title]
+OUTCOMES: [Next learning outcomes description]
+
+TITLE: [Practice Session Title]
+OUTCOMES: [learning outcomes description]
+
+Continue for all lessons. Use the exact titles as written in the content. 
+If a lesson has multiple learning outcomes (separated by newlines), combine ALL of them into a SINGLE line separated by semicolons (;).
+Keep all outcomes on one line after "OUTCOMES:".
+If you see learning outcomes that are teacher-directed (like "follow the lesson plan" or "Introduce the topic at a high level"), remove them.
+
+
+
+Content:
+UNIT 1 — FOUNDATIONS OF DATA STRUCTURES AND ARRAYS
+
+Welcome to CS102
+--- Follow the orientation flow step by step: welcome, overview, what you will learn, structure, and closing congratulations.
+--- Stay focused on orientation only and avoid teaching new material or deep dives.
+--- Defer advanced questions to later sessions.
+
+What is a data structure
+--- Explain the purpose of data structures in organizing and managing data.
+--- Describe why different types of data structures are necessary.
+--- Introduce data structures at a high level without detailed explanations.
+
+Index based data structures
+--- Explain the idea of indexing and sequential access.
+--- Recognize which structures support index-based access.
+
+Understanding arrays
+--- Identify arrays as ordered collections with fixed positions.
+--- Explain how indices map to element locations.
+
+Accessing elements in arrays
+--- Apply index-based logic to identify elements in a list.
+--- Validate index boundaries and recognize out-of-range conditions.
+
+Updating and replacing array values
+--- Modify elements at specific indices.
+--- Apply replacement logic to update first, middle, and last elements.
+--- Evaluate the effect of in-place updates on the structure.
+
+Removing elements from arrays
+--- Remove elements using operations such as pop from various positions.
+--- Predict how deletion affects subsequent index positions.
+
+Challenge: basic array operations
+--- Pick the second item in a list using its index.
+--- Change the first item to a new one.
+--- Remove the last item.
+--- Complete three closed, beginner-friendly questions focused on access, update, and remove in simple scenarios.
+
+Combined array operations in sequence
+--- Execute multiple operations in the correct order: access, update, remove.
+--- Return multiple values from an array manipulation function.
+
+Using arrays for structured problem solving
+--- Break a problem into steps based on array operations.
+--- Translate requirements into index-based actions.
+--- Design input and output structures for array tasks.
+
+Introducing high dimensional arrays
+--- Describe what a high-dimensional array is.
+--- Identify real-world scenarios requiring multi-level representation.
+
+Implementing high dimensional arrays in Python
+--- Create nested lists using multiple indices.
+--- Modify elements inside nested lists while maintaining structure.
+
+Edge cases and reliability in array operations
+--- Evaluate behavior when arrays contain fewer than three elements.
+--- Adjust logic to avoid index errors or accessing empty structures.
+
+Challenge: advanced array operations
+--- Demonstrate multiple array skills (access, update, remove, nested, edge cases).
+--- Solve six playful, single-concept closed questions using simple scenarios.
+
+UNIT 2 — STACKS AND QUEUES
+
+What is LIFO
+--- Define the LIFO principle.
+--- Identify real-world examples of LIFO behavior.
+
+Introduce the Stack
+--- Define the Stack data structure.
+--- Relate the stack to the LIFO principle.
+
+Stack operations: push and pop
+--- Implement push to add items to the top.
+--- Implement pop to remove the most recent item.
+--- Predict stack content after sequences of operations.
+
+Building a stack using lists
+--- Construct a stack with list-based operations.
+--- Simulate stack growth and reduction.
+--- Identify when a stack is empty.
+
+Applying stacks to undo behavior
+--- Translate user actions into stack entries.
+--- Remove recent actions using pop.
+--- Produce the stack state after undo actions.
+
+Challenge: stacks
+--- Integrate and apply all stack concepts learned.
+--- Solve a practical, enjoyable wrap-up challenge.
+
+What is FIFO
+--- Define the FIFO principle.
+--- Identify real-world systems using queue order.
+--- Explain why FIFO is needed in addition to LIFO.
+
+Introduce the Queue
+--- Define the Queue data structure.
+--- Connect queues directly to FIFO behavior.
+
+Queue operations: enqueue and dequeue
+--- Implement enqueue to add items at the end.
+--- Implement dequeue to remove the first item.
+--- Trace queue behavior across sequences.
+
+Implementing queues with deque
+--- Construct a queue using deque.
+--- Apply popleft for FIFO removal.
+
+Challenge: queues
+--- Apply all queue concepts in a wrap-up exercise.
+--- Connect queue operations to a real-world scenario.
+
+Integrating stacks and queues
+--- Compare LIFO and FIFO behaviors in data processing.
+--- Choose when to use a stack or queue.
+--- Simulate a scenario involving characters moving through a queue while carrying a stack of items.
+
+UNIT 3 — ALGORITHMS ANALYSIS
+
+Welcome to algorithms
+--- Describe what the unit covers and its connection to previous topics.
+--- Identify how algorithm skills support future coding and problem solving.
+
+Why we need algorithms in real life
+--- Explain what an algorithm is using everyday examples.
+--- Identify real-world processes that behave like algorithms.
+
+Turning everyday problems into step-by-step solutions
+--- Break a simple problem into ordered steps.
+--- Write steps as pseudocode or numbered instructions.
+
+Challenge: Algorithms
+--- Convert a short story into pseudocode with clear inputs and outputs.
+--- Check that pseudocode includes all required steps.
+
+Counting work: how many steps an algorithm takes
+--- Trace an algorithm and count its steps for a small input.
+--- Describe how step counts change as input size grows.
+
+Complexity: what it means and why it matters
+--- Define algorithmic complexity in simple terms.
+--- Explain why two correct algorithms can have different running times.
+--- Relate complexity to user experience.
+
+Difference between complexity and efficiency
+--- Distinguish theoretical complexity from real-world efficiency.
+--- List performance factors beyond complexity.
+--- Identify whether statements describe complexity or efficiency.
+
+Big O notation without the scary math
+--- Match simple growth patterns to O(1), O(n), and O(n²).
+--- Identify Big O classes by examining step growth.
+--- Explain Big O in plain language.
+
+Challenge: algorithms analysis
+--- Compare two algorithm snippets and determine which grows faster.
+--- Justify the choice using Big O terminology.
+
+Comparing two solutions to the same problem
+--- Evaluate two algorithms by time complexity and number of operations.
+--- Identify trade-offs such as readability vs. speed.
+--- Choose an appropriate algorithm for a simple scenario.
+
+Safe algorithms: handling edge cases and bad input
+--- Identify edge cases such as empty lists or missing values.
+--- Modify pseudocode to handle edge cases safely.
+--- Predict behavior for invalid input.
+
+Challenge: advanced algorithms analysis
+--- Analyze code or pseudocode and describe its Big O complexity.
+--- Select the most suitable algorithm for a given scenario.
+
+UNIT 4 — SEARCHING AND SORTING
+
+Why searching matters
+--- Describe everyday situations where searching is needed.
+--- Explain why good search methods save time.
+
+How searching works with simple examples
+--- Trace simple search processes in small collections.
+--- Identify when a process is performing a search.
+
+Linear search with small and unsorted data
+--- Describe linear search in your own words.
+--- Apply linear search to find an item.
+--- Identify when linear search is appropriate.
+
+Binary search with large sorted collections
+--- Describe binary search as repeatedly halving the search space.
+--- Perform it step by step.
+--- Explain why it requires sorted data.
+
+Comparing linear and binary search
+--- Compare how many steps each method takes for different list sizes.
+--- Select the appropriate method for a scenario.
+--- Use informal complexity language such as “grows linearly” or “grows slower.”
+
+Challenge: searching
+--- Choose an appropriate search method for several scenarios.
+--- Trace the method on small lists to confirm correctness.
+
+Why sorting is useful
+--- Explain how sorting supports searching and decision making.
+--- Identify real-world tasks improved by sorting.
+
+Sorting: different approaches
+--- Describe high-level sorting approaches such as swapping neighbors or selecting the smallest.
+--- Match stories or visuals to the correct sorting method.
+
+Bubble sort step-by-step
+--- Describe bubble sort as swapping out-of-order neighbors.
+--- Trace bubble sort through multiple passes.
+--- Predict what happens during a full pass.
+
+Selection sort
+--- Describe selection sort as repeatedly choosing the smallest remaining element.
+--- Perform it step by step.
+--- Compare its approach with bubble sort.
+
+Bubble vs. Selection
+--- Compare bubble sort and selection sort in how they scan and move values.
+--- Identify scenarios where one may be slightly preferable.
+--- Recognize that both have similar time complexity.
+
+Challenge: sorting
+--- Choose a simple sorting algorithm for beginner scenarios.
+--- Trace it on small lists to verify results.
+
+Using Python sorting tools in practice
+--- Use sorted and list.sort for ascending and descending sorts.
+--- Apply key functions to sort custom data.
+--- Connect Python’s built-in sorting tools to manual algorithms.
+
+Advanced sorting with Python tools
+--- Combine key and reverse parameters for richer tasks.
+--- Design simple sortable data structures.
+--- Decide when to rely on Python’s built-in tools.
+
+Challenge: advanced sorting
+--- Apply Python sorting tools to multi-field data.
+--- Explain how the chosen sort order answers a real-world question.
+
+
+RESPONSE:
+TITLE: Welcome to CS102  
+OUTCOMES: [removed – only teacher-directed outcomes present]
+
+TITLE: What is a data structure  
+OUTCOMES: Explain the purpose of data structures in organizing and managing data; Describe why different types of data structures are necessary
+
+TITLE: Index based data structures  
+OUTCOMES: Explain the idea of indexing and sequential access; Recognize which structures support index-based access
+
+TITLE: Understanding arrays  
+OUTCOMES: Identify arrays as ordered collections with fixed positions; Explain how indices map to element locations
+
+TITLE: Accessing elements in arrays  
+OUTCOMES: Apply index-based logic to identify elements in a list; Validate index boundaries and recognize out-of-range conditions
+
+TITLE: Updating and replacing array values  
+OUTCOMES: Modify elements at specific indices; Apply replacement logic to update first, middle, and last elements; Evaluate the effect of in-place updates on the structure
+
+TITLE: Removing elements from arrays  
+OUTCOMES: Remove elements using operations such as pop from various positions; Predict how deletion affects subsequent index positions
+
+TITLE: Challenge: basic array operations  
+OUTCOMES: Pick the second item in a list using its index; Change the first item to a new one; Remove the last item; Complete three closed, beginner-friendly questions focused on access, update, and remove in simple scenarios
+
+TITLE: Combined array operations in sequence  
+OUTCOMES: Execute multiple operations in the correct order: access, update, remove; Return multiple values from an array manipulation function
+
+TITLE: Using arrays for structured problem solving  
+OUTCOMES: Break a problem into steps based on array operations; Translate requirements into index-based actions; Design input and output structures for array tasks
+
+TITLE: Introducing high dimensional arrays  
+OUTCOMES: Describe what a high-dimensional array is; Identify real-world scenarios requiring multi-level representation
+
+TITLE: Implementing high dimensional arrays in Python  
+OUTCOMES: Create nested lists using multiple indices; Modify elements inside nested lists while maintaining structure
+
+TITLE: Edge cases and reliability in array operations  
+OUTCOMES: Evaluate behavior when arrays contain fewer than three elements; Adjust logic to avoid index errors or accessing empty structures
+
+TITLE: Challenge: advanced array operations  
+OUTCOMES: Demonstrate multiple array skills (access, update, remove, nested, edge cases); Solve six playful, single-concept closed questions using simple scenarios
+
+TITLE: What is LIFO  
+OUTCOMES: Define the LIFO principle; Identify real-world examples of LIFO behavior
+
+TITLE: Introduce the Stack  
+OUTCOMES: Define the Stack data structure; Relate the stack to the LIFO principle
+
+TITLE: Stack operations: push and pop  
+OUTCOMES: Implement push to add items to the top; Implement pop to remove the most recent item; Predict stack content after sequences of operations
+
+TITLE: Building a stack using lists  
+OUTCOMES: Construct a stack with list-based operations; Simulate stack growth and reduction; Identify when a stack is empty
+
+TITLE: Applying stacks to undo behavior  
+OUTCOMES: Translate user actions into stack entries; Remove recent actions using pop; Produce the stack state after undo actions
+
+TITLE: Challenge: stacks  
+OUTCOMES: Integrate and apply all stack concepts learned; Solve a practical, enjoyable wrap-up challenge
+
+TITLE: What is FIFO  
+OUTCOMES: Define the FIFO principle; Identify real-world systems using queue order; Explain why FIFO is needed in addition to LIFO
+
+TITLE: Introduce the Queue  
+OUTCOMES: Define the Queue data structure; Connect queues directly to FIFO behavior
+
+TITLE: Queue operations: enqueue and dequeue  
+OUTCOMES: Implement enqueue to add items at the end; Implement dequeue to remove the first item; Trace queue behavior across sequences
+
+TITLE: Implementing queues with deque  
+OUTCOMES: Construct a queue using deque; Apply popleft for FIFO removal
+
+TITLE: Challenge: queues  
+OUTCOMES: Apply all queue concepts in a wrap-up exercise; Connect queue operations to a real-world scenario
+
+TITLE: Integrating stacks and queues  
+OUTCOMES: Compare LIFO and FIFO behaviors in data processing; Choose when to use a stack or queue; Simulate a scenario involving characters moving through a queue while carrying a stack of items
+
+TITLE: Welcome to algorithms  
+OUTCOMES: Describe what the unit covers and its connection to previous topics; Identify how algorithm skills support future coding and problem solving
+
+TITLE: Why we need algorithms in real life  
+OUTCOMES: Explain what an algorithm is using everyday examples; Identify real-world processes that behave like algorithms
+
+TITLE: Turning everyday problems into step-by-step solutions  
+OUTCOMES: Break a simple problem into ordered steps; Write steps as pseudocode or numbered instructions
+
+TITLE: Challenge: Algorithms  
+OUTCOMES: Convert a short story into pseudocode with clear inputs and outputs; Check that pseudocode includes all required steps
+
+TITLE: Counting work: how many steps an algorithm takes  
+OUTCOMES: Trace an algorithm and count its steps for a small input; Describe how step counts change as input size grows
+
+TITLE: Complexity: what it means and why it matters  
+OUTCOMES: Define algorithmic complexity in simple terms; Explain why two correct algorithms can have different running times; Relate complexity to user experience
+
+TITLE: Difference between complexity and efficiency  
+OUTCOMES: Distinguish theoretical complexity from real-world efficiency; List performance factors beyond complexity; Identify whether statements describe complexity or efficiency
+
+TITLE: Big O notation without the scary math  
+OUTCOMES: Match simple growth patterns to O(1), O(n), and O(n²); Identify Big O classes by examining step growth; Explain Big O in plain language
+
+TITLE: Challenge: algorithms analysis  
+OUTCOMES: Compare two algorithm snippets and determine which grows faster; Justify the choice using Big O terminology
+
+TITLE: Comparing two solutions to the same problem  
+OUTCOMES: Evaluate two algorithms by time complexity and number of operations; Identify trade-offs such as readability vs. speed; Choose an appropriate algorithm for a simple scenario
+
+TITLE: Safe algorithms: handling edge cases and bad input  
+OUTCOMES: Identify edge cases such as empty lists or missing values; Modify pseudocode to handle edge cases safely; Predict behavior for invalid input
+
+TITLE: Challenge: advanced algorithms analysis  
+OUTCOMES: Analyze code or pseudocode and describe its Big O complexity; Select the most suitable algorithm for a given scenario
+
+TITLE: Why searching matters  
+OUTCOMES: Describe everyday situations where searching is needed; Explain why good search methods save time
+
+TITLE: How searching works with simple examples  
+OUTCOMES: Trace simple search processes in small collections; Identify when a process is performing a search
+
+TITLE: Linear search with small and unsorted data  
+OUTCOMES: Describe linear search in your own words; Apply linear search to find an item; Identify when linear search is appropriate
+
+TITLE: Binary search with large sorted collections  
+OUTCOMES: Describe binary search as repeatedly halving the search space; Perform it step by step; Explain why it requires sorted data
+
+TITLE: Comparing linear and binary search  
+OUTCOMES: Compare how many steps each method takes for different list sizes; Select the appropriate method for a scenario; Use informal complexity language such as “grows linearly” or “grows slower.”
+
+TITLE: Challenge: searching  
+OUTCOMES: Choose an appropriate search method for several scenarios; Trace the method on small lists to confirm correctness
+
+TITLE: Why sorting is useful  
+OUTCOMES: Explain how sorting supports searching and decision making; Identify real-world tasks improved by sorting
+
+TITLE: Sorting: different approaches  
+OUTCOMES: Describe high-level sorting approaches such as swapping neighbors or selecting the smallest; Match stories or visuals to the correct sorting method
+
+TITLE: Bubble sort step-by-step  
+OUTCOMES: Describe bubble sort as swapping out-of-order neighbors; Trace bubble sort through multiple passes; Predict what happens during a full pass
+
+TITLE: Selection sort  
+OUTCOMES: Describe selection sort as repeatedly choosing the smallest remaining element; Perform it step by step; Compare its approach with bubble sort
+
+TITLE: Bubble vs. Selection  
+OUTCOMES: Compare bubble sort and selection sort in how they scan and move values; Identify scenarios where one may be slightly preferable; Recognize that both have similar time complexity
+
+TITLE: Challenge: sorting  
+OUTCOMES: Choose a simple sorting algorithm for beginner scenarios; Trace it on small lists to verify results
+
+TITLE: Using Python sorting tools in practice  
+OUTCOMES: Use sorted and list.sort for ascending and descending sorts; Apply key functions to sort custom data; Connect Python’s built-in sorting tools to manual algorithms
+
+TITLE: Advanced sorting with Python tools  
+OUTCOMES: Combine key and reverse parameters for richer tasks; Design simple sortable data structures; Decide when to rely on Python’s built-in tools
+
+TITLE: Challenge: advanced sorting  
+OUTCOMES: Apply Python sorting tools to multi-field data; Explain how the chosen sort order answers a real-world question
+
+================================================================================
+
+[2025-11-24 14:17:56] WEEK 1 ALL CHAPTERS PRACTICE SESSIONS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create 1 practice session(s) for EACH of the 5 chapters below (total 5 practice sessions).
+
+Each practice session should:
+1. Have a title that starts with "Practice Session: "
+2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
+3. Include hands-on exercises, projects, or practical applications
+4. Have clear learning outcomes, one sentence.
+5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
+6. It could be a practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+7. Have clear learning outcomes, one sentence
+8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+
+Week 1 Chapters:
+
+CHAPTER 1:
+  - Welcome to CS102: [removed – only teacher-directed outcomes present]
+  - What is a data structure: Explain the purpose of data structures in organizing and managing data; Describe why different types of data structures are necessary
+  - Index based data structures: Explain the idea of indexing and sequential access; Recognize which structures support index-based access
+
+CHAPTER 2:
+  - Understanding arrays: Identify arrays as ordered collections with fixed positions; Explain how indices map to element locations
+  - Accessing elements in arrays: Apply index-based logic to identify elements in a list; Validate index boundaries and recognize out-of-range conditions
+  - Updating and replacing array values: Modify elements at specific indices; Apply replacement logic to update first, middle, and last elements; Evaluate the effect of in-place updates on the structure
+
+CHAPTER 3:
+  - Removing elements from arrays: Remove elements using operations such as pop from various positions; Predict how deletion affects subsequent index positions
+  - Challenge: basic array operations: Pick the second item in a list using its index; Change the first item to a new one; Remove the last item; Complete three closed, beginner-friendly questions focused on access, update, and remove in simple scenarios
+  - Combined array operations in sequence: Execute multiple operations in the correct order: access, update, remove; Return multiple values from an array manipulation function
+
+CHAPTER 4:
+  - Using arrays for structured problem solving: Break a problem into steps based on array operations; Translate requirements into index-based actions; Design input and output structures for array tasks
+  - Introducing high dimensional arrays: Describe what a high-dimensional array is; Identify real-world scenarios requiring multi-level representation
+  - Implementing high dimensional arrays in Python: Create nested lists using multiple indices; Modify elements inside nested lists while maintaining structure
+
+CHAPTER 5:
+  - Edge cases and reliability in array operations: Evaluate behavior when arrays contain fewer than three elements; Adjust logic to avoid index errors or accessing empty structures
+  - Challenge: advanced array operations: Demonstrate multiple array skills (access, update, remove, nested, edge cases); Solve six playful, single-concept closed questions using simple scenarios
+
+
+Return in this exact format:
+
+CHAPTER: 1
+TITLE: Practice Session: [Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+CHAPTER: 2
+TITLE: Practice Session: [Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+Continue for all 5 chapters with 1 practice session(s) each.
+
+
+RESPONSE:
+CHAPTER: 1  
+TITLE: Practice Session: Library bookshelf  
+OUTCOMES: Practice choosing and using appropriate index-based data structures to organize, locate, and compare items efficiently in a small “digital bookshelf” scenario.
+
+CHAPTER: 2  
+TITLE: Practice Session: Music playlist  
+OUTCOMES: Practice using array indices to access, validate, and update song entries at specific positions in a fixed-order playlist.
+
+CHAPTER: 3  
+TITLE: Practice Session: Cafe order queue  
+OUTCOMES: Practice combining access, update, and removal operations on an array to manage a changing list of customer orders in sequence.
+
+CHAPTER: 4  
+TITLE: Practice Session: Cinema seat map  
+OUTCOMES: Practice creating and modifying nested lists to represent and update a 2D seating layout using multi-level indices.
+
+CHAPTER: 5  
+TITLE: Practice Session: Emergency contact list  
+OUTCOMES: Practice handling edge cases and mixed array operations, including nested arrays and small or empty lists, to safely manage a set of prioritized contacts.
+
+================================================================================
+
+[2025-11-24 14:17:58] WEEK 1 LEARNING GOALS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create a learning goal for week 1 of a programming course.
+The week includes these lessons, with the following learning outcomes per each:
+
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Welcome to CS102: [removed – only teacher-directed outcomes present]
+- What is a data structure: Explain the purpose of data structures in organizing and managing data; Describe why different types of data structures are necessary
+- Index based data structures: Explain the idea of indexing and sequential access; Recognize which structures support index-based access
+- Practice Session: Library bookshelf: Practice choosing and using appropriate index-based data structures to organize, locate, and compare items efficiently in a small “digital bookshelf” scenario.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Understanding arrays: Identify arrays as ordered collections with fixed positions; Explain how indices map to element locations
+- Accessing elements in arrays: Apply index-based logic to identify elements in a list; Validate index boundaries and recognize out-of-range conditions
+- Updating and replacing array values: Modify elements at specific indices; Apply replacement logic to update first, middle, and last elements; Evaluate the effect of in-place updates on the structure
+- Practice Session: Music playlist: Practice using array indices to access, validate, and update song entries at specific positions in a fixed-order playlist.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Removing elements from arrays: Remove elements using operations such as pop from various positions; Predict how deletion affects subsequent index positions
+- Challenge: basic array operations: Pick the second item in a list using its index; Change the first item to a new one; Remove the last item; Complete three closed, beginner-friendly questions focused on access, update, and remove in simple scenarios
+- Combined array operations in sequence: Execute multiple operations in the correct order: access, update, remove; Return multiple values from an array manipulation function
+- Practice Session: Cafe order queue: Practice combining access, update, and removal operations on an array to manage a changing list of customer orders in sequence.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Using arrays for structured problem solving: Break a problem into steps based on array operations; Translate requirements into index-based actions; Design input and output structures for array tasks
+- Introducing high dimensional arrays: Describe what a high-dimensional array is; Identify real-world scenarios requiring multi-level representation
+- Implementing high dimensional arrays in Python: Create nested lists using multiple indices; Modify elements inside nested lists while maintaining structure
+- Practice Session: Cinema seat map: Practice creating and modifying nested lists to represent and update a 2D seating layout using multi-level indices.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Edge cases and reliability in array operations: Evaluate behavior when arrays contain fewer than three elements; Adjust logic to avoid index errors or accessing empty structures
+- Challenge: advanced array operations: Demonstrate multiple array skills (access, update, remove, nested, edge cases); Solve six playful, single-concept closed questions using simple scenarios
+- Practice Session: Emergency contact list: Practice handling edge cases and mixed array operations, including nested arrays and small or empty lists, to safely manage a set of prioritized contacts.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Format: "Title: Description of what students will achieve and learn."
+The title should be 2-4 words, followed by a colon, then "In this unit, " and then a one sentence description of learning outcomes.
+Make it clear and specific to the lessons covered. Don't add asterisk (*) to the unit name or goal.
+
+
+RESPONSE:
+Arrays and Data Structures: In this unit, students will explain why different data structures are needed, use Python arrays (lists) to access, update, remove, and combine elements in sequence (including in 2D nested arrays), handle edge cases safely, and apply these skills to structured, real-world style problems like bookshelves, playlists, queues, seat maps, and contact lists.
+
+================================================================================
+
+[2025-11-24 14:17:59] WEEK 1 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Welcome to CS102: [removed – only teacher-directed outcomes present]
+- What is a data structure: Explain the purpose of data structures in organizing and managing data; Describe why different types of data structures are necessary
+- Index based data structures: Explain the idea of indexing and sequential access; Recognize which structures support index-based access
+- Practice Session: Library bookshelf: Practice choosing and using appropriate index-based data structures to organize, locate, and compare items efficiently in a small “digital bookshelf” scenario.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Organizing Data with Index-Based Structures  
+GOALS: Learn why data structures are essential for organizing and managing information, how index-based and sequential access work, and which structures support index-based access. Apply these ideas in a practical “digital bookshelf” scenario to choose and use appropriate data structures for efficient searching and comparison.
+
+================================================================================
+
+[2025-11-24 14:18:01] WEEK 1 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Understanding arrays: Identify arrays as ordered collections with fixed positions; Explain how indices map to element locations
+- Accessing elements in arrays: Apply index-based logic to identify elements in a list; Validate index boundaries and recognize out-of-range conditions
+- Updating and replacing array values: Modify elements at specific indices; Apply replacement logic to update first, middle, and last elements; Evaluate the effect of in-place updates on the structure
+- Practice Session: Music playlist: Practice using array indices to access, validate, and update song entries at specific positions in a fixed-order playlist.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Working with Arrays
+
+GOALS: Learn how arrays store ordered data, how to access and update elements using indices, and how to avoid out-of-range errors. Practice these skills through interactive Q&A and a hands-on music playlist activity.
+
+================================================================================
+
+[2025-11-24 14:18:02] WEEK 1 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Removing elements from arrays: Remove elements using operations such as pop from various positions; Predict how deletion affects subsequent index positions
+- Challenge: basic array operations: Pick the second item in a list using its index; Change the first item to a new one; Remove the last item; Complete three closed, beginner-friendly questions focused on access, update, and remove in simple scenarios
+- Combined array operations in sequence: Execute multiple operations in the correct order: access, update, remove; Return multiple values from an array manipulation function
+- Practice Session: Cafe order queue: Practice combining access, update, and removal operations on an array to manage a changing list of customer orders in sequence.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Array Access and Removal  
+GOALS: Students will learn to access, update, and remove elements from arrays in sequence, and understand how these changes affect index positions. They will apply these skills in practical scenarios, including managing a dynamic queue of items.
+
+================================================================================
+
+[2025-11-24 14:18:07] WEEK 1 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Using arrays for structured problem solving: Break a problem into steps based on array operations; Translate requirements into index-based actions; Design input and output structures for array tasks
+- Introducing high dimensional arrays: Describe what a high-dimensional array is; Identify real-world scenarios requiring multi-level representation
+- Implementing high dimensional arrays in Python: Create nested lists using multiple indices; Modify elements inside nested lists while maintaining structure
+- Practice Session: Cinema seat map: Practice creating and modifying nested lists to represent and update a 2D seating layout using multi-level indices.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Structured Problem Solving with Arrays
+
+GOALS: In this chapter, students will learn to use one-dimensional and high-dimensional arrays (nested lists) to structure problem solving, translate requirements into index-based operations, and design clear input/output data layouts. They will also practice implementing and modifying 2D array representations in Python, such as a cinema seating map, while using live Q&A to clarify concepts.
+
+================================================================================
+
+[2025-11-24 14:18:09] WEEK 1 CHAPTER 5 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Edge cases and reliability in array operations: Evaluate behavior when arrays contain fewer than three elements; Adjust logic to avoid index errors or accessing empty structures
+- Challenge: advanced array operations: Demonstrate multiple array skills (access, update, remove, nested, edge cases); Solve six playful, single-concept closed questions using simple scenarios
+- Practice Session: Emergency contact list: Practice handling edge cases and mixed array operations, including nested arrays and small or empty lists, to safely manage a set of prioritized contacts.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Robust Array Operations  
+GOALS: Learn to safely access, update, and remove array elements—including nested and very small or empty arrays—while avoiding index and reliability errors, and apply these skills to practical scenarios and assessments.
+
+================================================================================
+
+[2025-11-24 14:18:13] WEEK 2 ALL CHAPTERS PRACTICE SESSIONS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create 1 practice session(s) for EACH of the 5 chapters below (total 5 practice sessions).
+
+Each practice session should:
+1. Have a title that starts with "Practice Session: "
+2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
+3. Include hands-on exercises, projects, or practical applications
+4. Have clear learning outcomes, one sentence.
+5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
+6. It could be a practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+7. Have clear learning outcomes, one sentence
+8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+
+Week 2 Chapters:
+
+CHAPTER 1:
+  - What is LIFO: Define the LIFO principle; Identify real-world examples of LIFO behavior
+  - Introduce the Stack: Define the Stack data structure; Relate the stack to the LIFO principle
+  - Stack operations: push and pop: Implement push to add items to the top; Implement pop to remove the most recent item; Predict stack content after sequences of operations
+
+CHAPTER 2:
+  - Building a stack using lists: Construct a stack with list-based operations; Simulate stack growth and reduction; Identify when a stack is empty
+  - Applying stacks to undo behavior: Translate user actions into stack entries; Remove recent actions using pop; Produce the stack state after undo actions
+  - Challenge: stacks: Integrate and apply all stack concepts learned; Solve a practical, enjoyable wrap-up challenge
+
+CHAPTER 3:
+  - What is FIFO: Define the FIFO principle; Identify real-world systems using queue order; Explain why FIFO is needed in addition to LIFO
+  - Introduce the Queue: Define the Queue data structure; Connect queues directly to FIFO behavior
+  - Queue operations: enqueue and dequeue: Implement enqueue to add items at the end; Implement dequeue to remove the first item; Trace queue behavior across sequences
+
+CHAPTER 4:
+  - Implementing queues with deque: Construct a queue using deque; Apply popleft for FIFO removal
+  - Challenge: queues: Apply all queue concepts in a wrap-up exercise; Connect queue operations to a real-world scenario
+
+CHAPTER 5:
+  - Integrating stacks and queues: Compare LIFO and FIFO behaviors in data processing; Choose when to use a stack or queue; Simulate a scenario involving characters moving through a queue while carrying a stack of items
+  - Welcome to algorithms: Describe what the unit covers and its connection to previous topics; Identify how algorithm skills support future coding and problem solving
+
+
+Return in this exact format:
+
+CHAPTER: 1
+TITLE: Practice Session: [Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+CHAPTER: 2
+TITLE: Practice Session: [Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+Continue for all 5 chapters with 1 practice session(s) each.
+
+
+RESPONSE:
+CHAPTER: 1  
+TITLE: Practice Session: Browser history stack  
+OUTCOMES: Learners will use push and pop operations on a stack to simulate browser navigation and predict the stack’s contents after sequences of actions.
+
+CHAPTER: 2  
+TITLE: Practice Session: Drawing app undo stack  
+OUTCOMES: Learners will build a list-based stack to record drawing actions and implement multi-step undo behavior by inspecting and popping items until the stack is empty.
+
+CHAPTER: 3  
+TITLE: Practice Session: Theme park ride queue  
+OUTCOMES: Learners will implement enqueue and dequeue operations to manage a ride line and trace how people move through the queue across a sequence of arrivals and boardings.
+
+CHAPTER: 4  
+TITLE: Practice Session: Customer support ticket queue  
+OUTCOMES: Learners will construct a deque-based queue to add and resolve support tickets, using popleft to model FIFO processing in a realistic workflow.
+
+CHAPTER: 5  
+TITLE: Practice Session: Dungeon gate and backpack  
+OUTCOMES: Learners will decide when to use a queue versus a stack by simulating adventurers waiting in a queue while each carries a stack-based backpack of items that are added and removed in LIFO order.
+
+================================================================================
+
+[2025-11-24 14:18:15] WEEK 2 LEARNING GOALS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create a learning goal for week 2 of a programming course.
+The week includes these lessons, with the following learning outcomes per each:
+
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What is LIFO: Define the LIFO principle; Identify real-world examples of LIFO behavior
+- Introduce the Stack: Define the Stack data structure; Relate the stack to the LIFO principle
+- Stack operations: push and pop: Implement push to add items to the top; Implement pop to remove the most recent item; Predict stack content after sequences of operations
+- Practice Session: Browser history stack: Learners will use push and pop operations on a stack to simulate browser navigation and predict the stack’s contents after sequences of actions.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Building a stack using lists: Construct a stack with list-based operations; Simulate stack growth and reduction; Identify when a stack is empty
+- Applying stacks to undo behavior: Translate user actions into stack entries; Remove recent actions using pop; Produce the stack state after undo actions
+- Challenge: stacks: Integrate and apply all stack concepts learned; Solve a practical, enjoyable wrap-up challenge
+- Practice Session: Drawing app undo stack: Learners will build a list-based stack to record drawing actions and implement multi-step undo behavior by inspecting and popping items until the stack is empty.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What is FIFO: Define the FIFO principle; Identify real-world systems using queue order; Explain why FIFO is needed in addition to LIFO
+- Introduce the Queue: Define the Queue data structure; Connect queues directly to FIFO behavior
+- Queue operations: enqueue and dequeue: Implement enqueue to add items at the end; Implement dequeue to remove the first item; Trace queue behavior across sequences
+- Practice Session: Theme park ride queue: Learners will implement enqueue and dequeue operations to manage a ride line and trace how people move through the queue across a sequence of arrivals and boardings.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Implementing queues with deque: Construct a queue using deque; Apply popleft for FIFO removal
+- Challenge: queues: Apply all queue concepts in a wrap-up exercise; Connect queue operations to a real-world scenario
+- Practice Session: Customer support ticket queue: Learners will construct a deque-based queue to add and resolve support tickets, using popleft to model FIFO processing in a realistic workflow.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Integrating stacks and queues: Compare LIFO and FIFO behaviors in data processing; Choose when to use a stack or queue; Simulate a scenario involving characters moving through a queue while carrying a stack of items
+- Welcome to algorithms: Describe what the unit covers and its connection to previous topics; Identify how algorithm skills support future coding and problem solving
+- Practice Session: Dungeon gate and backpack: Learners will decide when to use a queue versus a stack by simulating adventurers waiting in a queue while each carries a stack-based backpack of items that are added and removed in LIFO order.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Format: "Title: Description of what students will achieve and learn."
+The title should be 2-4 words, followed by a colon, then "In this unit, " and then a one sentence description of learning outcomes.
+Make it clear and specific to the lessons covered. Don't add asterisk (*) to the unit name or goal.
+
+
+RESPONSE:
+Stacks and Queues: In this unit, learners will implement and apply LIFO stacks and FIFO queues using lists and deques, predict and trace their behavior through real-world scenarios like undo systems, browser history, and ticket queues, and decide when to use each structure while beginning to connect these ideas to basic algorithms.
+
+================================================================================
+
+[2025-11-24 14:18:16] WEEK 2 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What is LIFO: Define the LIFO principle; Identify real-world examples of LIFO behavior
+- Introduce the Stack: Define the Stack data structure; Relate the stack to the LIFO principle
+- Stack operations: push and pop: Implement push to add items to the top; Implement pop to remove the most recent item; Predict stack content after sequences of operations
+- Practice Session: Browser history stack: Learners will use push and pop operations on a stack to simulate browser navigation and predict the stack’s contents after sequences of actions.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Stacks and the LIFO Principle  
+GOALS: In this chapter, learners will understand the Last-In, First-Out (LIFO) principle and how it underpins the stack data structure. They will implement and reason about stack operations (push and pop) and apply them to real-world scenarios such as browser history navigation.
+
+================================================================================
+
+[2025-11-24 14:18:17] WEEK 2 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Building a stack using lists: Construct a stack with list-based operations; Simulate stack growth and reduction; Identify when a stack is empty
+- Applying stacks to undo behavior: Translate user actions into stack entries; Remove recent actions using pop; Produce the stack state after undo actions
+- Challenge: stacks: Integrate and apply all stack concepts learned; Solve a practical, enjoyable wrap-up challenge
+- Practice Session: Drawing app undo stack: Learners will build a list-based stack to record drawing actions and implement multi-step undo behavior by inspecting and popping items until the stack is empty.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Working with Stacks
+
+GOALS: Learn how to build and manipulate stacks using lists, model real-world undo behavior with stack operations, and apply these skills in an interactive drawing app scenario and challenge.
+
+================================================================================
+
+[2025-11-24 14:18:18] WEEK 2 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What is FIFO: Define the FIFO principle; Identify real-world systems using queue order; Explain why FIFO is needed in addition to LIFO
+- Introduce the Queue: Define the Queue data structure; Connect queues directly to FIFO behavior
+- Queue operations: enqueue and dequeue: Implement enqueue to add items at the end; Implement dequeue to remove the first item; Trace queue behavior across sequences
+- Practice Session: Theme park ride queue: Learners will implement enqueue and dequeue operations to manage a ride line and trace how people move through the queue across a sequence of arrivals and boardings.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: First-In, First-Out Queues
+
+GOALS: In this chapter, students will learn the FIFO principle and see how it appears in real-world systems. They will define the Queue data structure, implement enqueue and dequeue operations, and trace how items move through a queue across sequences of operations.
+
+================================================================================
+
+[2025-11-24 14:18:20] WEEK 2 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Implementing queues with deque: Construct a queue using deque; Apply popleft for FIFO removal
+- Challenge: queues: Apply all queue concepts in a wrap-up exercise; Connect queue operations to a real-world scenario
+- Practice Session: Customer support ticket queue: Learners will construct a deque-based queue to add and resolve support tickets, using popleft to model FIFO processing in a realistic workflow.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Working with Queues
+
+GOALS: In this chapter, learners will build and manipulate queues using Python’s `deque`, including adding elements and using `popleft` for FIFO processing. They will apply these skills in a realistic customer support ticket workflow and a wrap-up challenge, reinforcing conceptual understanding through practice and live Q&A.
+
+================================================================================
+
+[2025-11-24 14:18:21] WEEK 2 CHAPTER 5 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Integrating stacks and queues: Compare LIFO and FIFO behaviors in data processing; Choose when to use a stack or queue; Simulate a scenario involving characters moving through a queue while carrying a stack of items
+- Welcome to algorithms: Describe what the unit covers and its connection to previous topics; Identify how algorithm skills support future coding and problem solving
+- Practice Session: Dungeon gate and backpack: Learners will decide when to use a queue versus a stack by simulating adventurers waiting in a queue while each carries a stack-based backpack of items that are added and removed in LIFO order.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Stacks, Queues, and Algorithms
+
+GOALS: In this chapter, students will compare LIFO and FIFO behaviors, decide when to use stacks versus queues, and apply them in simulated scenarios. They will also connect these data structures to core algorithmic thinking and problem-solving skills that support future coding work.
+
+================================================================================
+
+[2025-11-24 14:18:25] WEEK 3 ALL CHAPTERS PRACTICE SESSIONS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create 1 practice session(s) for EACH of the 5 chapters below (total 5 practice sessions).
+
+Each practice session should:
+1. Have a title that starts with "Practice Session: "
+2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
+3. Include hands-on exercises, projects, or practical applications
+4. Have clear learning outcomes, one sentence.
+5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
+6. It could be a practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+7. Have clear learning outcomes, one sentence
+8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+
+Week 3 Chapters:
+
+CHAPTER 1:
+  - Why we need algorithms in real life: Explain what an algorithm is using everyday examples; Identify real-world processes that behave like algorithms
+  - Turning everyday problems into step-by-step solutions: Break a simple problem into ordered steps; Write steps as pseudocode or numbered instructions
+  - Challenge: Algorithms: Convert a short story into pseudocode with clear inputs and outputs; Check that pseudocode includes all required steps
+
+CHAPTER 2:
+  - Counting work: how many steps an algorithm takes: Trace an algorithm and count its steps for a small input; Describe how step counts change as input size grows
+  - Complexity: what it means and why it matters: Define algorithmic complexity in simple terms; Explain why two correct algorithms can have different running times; Relate complexity to user experience
+  - Difference between complexity and efficiency: Distinguish theoretical complexity from real-world efficiency; List performance factors beyond complexity; Identify whether statements describe complexity or efficiency
+
+CHAPTER 3:
+  - Big O notation without the scary math: Match simple growth patterns to O(1), O(n), and O(n²); Identify Big O classes by examining step growth; Explain Big O in plain language
+  - Challenge: algorithms analysis: Compare two algorithm snippets and determine which grows faster; Justify the choice using Big O terminology
+  - Comparing two solutions to the same problem: Evaluate two algorithms by time complexity and number of operations; Identify trade-offs such as readability vs. speed; Choose an appropriate algorithm for a simple scenario
+
+CHAPTER 4:
+  - Safe algorithms: handling edge cases and bad input: Identify edge cases such as empty lists or missing values; Modify pseudocode to handle edge cases safely; Predict behavior for invalid input
+  - Challenge: advanced algorithms analysis: Analyze code or pseudocode and describe its Big O complexity; Select the most suitable algorithm for a given scenario
+
+CHAPTER 5:
+  - Why searching matters: Describe everyday situations where searching is needed; Explain why good search methods save time
+  - How searching works with simple examples: Trace simple search processes in small collections; Identify when a process is performing a search
+
+
+Return in this exact format:
+
+CHAPTER: 1
+TITLE: Practice Session: [Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+CHAPTER: 2
+TITLE: Practice Session: [Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+Continue for all 5 chapters with 1 practice session(s) each.
+
+
+RESPONSE:
+CHAPTER: 1  
+TITLE: Practice Session: Morning routine planner  
+OUTCOMES: You will turn an everyday morning routine story into clear, step-by-step pseudocode with defined inputs, outputs, and ordered actions.
+
+CHAPTER: 2  
+TITLE: Practice Session: Laundry machine scheduler  
+OUTCOMES: You will trace different “laundry scheduling” algorithms, count their steps for various loads, and explain how and why their complexity and real-world efficiency differ.
+
+CHAPTER: 3  
+TITLE: Practice Session: Music playlist organizer  
+OUTCOMES: You will compare two playlist-organizing algorithms, label their Big O complexity (O(1), O(n), O(n²)), and choose the better option by balancing speed and readability.
+
+CHAPTER: 4  
+TITLE: Practice Session: Online ticket booking helper  
+OUTCOMES: You will write and refine pseudocode for a ticket-booking process that safely handles edge cases (sold out, invalid input, missing data) and justify your algorithm choice using Big O.
+
+CHAPTER: 5  
+TITLE: Practice Session: Lost item finder  
+OUTCOMES: You will model and trace search processes for finding a lost item in different “house layouts” and explain when and why better search methods save time.
+
+================================================================================
+
+[2025-11-24 14:18:27] WEEK 3 LEARNING GOALS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create a learning goal for week 3 of a programming course.
+The week includes these lessons, with the following learning outcomes per each:
+
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Why we need algorithms in real life: Explain what an algorithm is using everyday examples; Identify real-world processes that behave like algorithms
+- Turning everyday problems into step-by-step solutions: Break a simple problem into ordered steps; Write steps as pseudocode or numbered instructions
+- Challenge: Algorithms: Convert a short story into pseudocode with clear inputs and outputs; Check that pseudocode includes all required steps
+- Practice Session: Morning routine planner: You will turn an everyday morning routine story into clear, step-by-step pseudocode with defined inputs, outputs, and ordered actions.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Counting work: how many steps an algorithm takes: Trace an algorithm and count its steps for a small input; Describe how step counts change as input size grows
+- Complexity: what it means and why it matters: Define algorithmic complexity in simple terms; Explain why two correct algorithms can have different running times; Relate complexity to user experience
+- Difference between complexity and efficiency: Distinguish theoretical complexity from real-world efficiency; List performance factors beyond complexity; Identify whether statements describe complexity or efficiency
+- Practice Session: Laundry machine scheduler: You will trace different “laundry scheduling” algorithms, count their steps for various loads, and explain how and why their complexity and real-world efficiency differ.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Big O notation without the scary math: Match simple growth patterns to O(1), O(n), and O(n²); Identify Big O classes by examining step growth; Explain Big O in plain language
+- Challenge: algorithms analysis: Compare two algorithm snippets and determine which grows faster; Justify the choice using Big O terminology
+- Comparing two solutions to the same problem: Evaluate two algorithms by time complexity and number of operations; Identify trade-offs such as readability vs. speed; Choose an appropriate algorithm for a simple scenario
+- Practice Session: Music playlist organizer: You will compare two playlist-organizing algorithms, label their Big O complexity (O(1), O(n), O(n²)), and choose the better option by balancing speed and readability.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Safe algorithms: handling edge cases and bad input: Identify edge cases such as empty lists or missing values; Modify pseudocode to handle edge cases safely; Predict behavior for invalid input
+- Challenge: advanced algorithms analysis: Analyze code or pseudocode and describe its Big O complexity; Select the most suitable algorithm for a given scenario
+- Practice Session: Online ticket booking helper: You will write and refine pseudocode for a ticket-booking process that safely handles edge cases (sold out, invalid input, missing data) and justify your algorithm choice using Big O.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Why searching matters: Describe everyday situations where searching is needed; Explain why good search methods save time
+- How searching works with simple examples: Trace simple search processes in small collections; Identify when a process is performing a search
+- Practice Session: Lost item finder: You will model and trace search processes for finding a lost item in different “house layouts” and explain when and why better search methods save time.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Format: "Title: Description of what students will achieve and learn."
+The title should be 2-4 words, followed by a colon, then "In this unit, " and then a one sentence description of learning outcomes.
+Make it clear and specific to the lessons covered. Don't add asterisk (*) to the unit name or goal.
+
+
+RESPONSE:
+Algorithm Thinking & Analysis: In this unit, students will turn everyday processes into clear pseudocode, analyze and compare algorithms using step counts and Big O notation (O(1), O(n), O(n²)), consider real-world efficiency and edge cases, and apply basic search ideas to choose safe, effective solutions for simple problems.
+
+================================================================================
+
+[2025-11-24 14:18:28] WEEK 3 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Why we need algorithms in real life: Explain what an algorithm is using everyday examples; Identify real-world processes that behave like algorithms
+- Turning everyday problems into step-by-step solutions: Break a simple problem into ordered steps; Write steps as pseudocode or numbered instructions
+- Challenge: Algorithms: Convert a short story into pseudocode with clear inputs and outputs; Check that pseudocode includes all required steps
+- Practice Session: Morning routine planner: You will turn an everyday morning routine story into clear, step-by-step pseudocode with defined inputs, outputs, and ordered actions.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Everyday Algorithms
+
+GOALS: Students will learn what algorithms are, recognize them in daily life, and practice turning everyday situations into clear, step-by-step pseudocode with defined inputs and outputs. They will build confidence by asking questions, refining their thinking, and checking that their algorithmic steps are complete and logically ordered.
+
+================================================================================
+
+[2025-11-24 14:18:29] WEEK 3 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Counting work: how many steps an algorithm takes: Trace an algorithm and count its steps for a small input; Describe how step counts change as input size grows
+- Complexity: what it means and why it matters: Define algorithmic complexity in simple terms; Explain why two correct algorithms can have different running times; Relate complexity to user experience
+- Difference between complexity and efficiency: Distinguish theoretical complexity from real-world efficiency; List performance factors beyond complexity; Identify whether statements describe complexity or efficiency
+- Practice Session: Laundry machine scheduler: You will trace different “laundry scheduling” algorithms, count their steps for various loads, and explain how and why their complexity and real-world efficiency differ.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Understanding Algorithm Complexity
+
+GOALS: In this chapter, you will learn how to trace algorithms, count their steps, and describe how those step counts grow with input size. You will also learn to distinguish between theoretical complexity and real-world efficiency, and apply these ideas to compare and explain different algorithms using a laundry scheduling example.
+
+================================================================================
+
+[2025-11-24 14:18:31] WEEK 3 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Big O notation without the scary math: Match simple growth patterns to O(1), O(n), and O(n²); Identify Big O classes by examining step growth; Explain Big O in plain language
+- Challenge: algorithms analysis: Compare two algorithm snippets and determine which grows faster; Justify the choice using Big O terminology
+- Comparing two solutions to the same problem: Evaluate two algorithms by time complexity and number of operations; Identify trade-offs such as readability vs. speed; Choose an appropriate algorithm for a simple scenario
+- Practice Session: Music playlist organizer: You will compare two playlist-organizing algorithms, label their Big O complexity (O(1), O(n), O(n²)), and choose the better option by balancing speed and readability.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Comparing Algorithm Efficiency  
+GOALS: Students will learn to describe algorithm performance using basic Big O notation, compare the efficiency of different code snippets, and balance trade-offs between speed, readability, and practicality when choosing solutions.
+
+================================================================================
+
+[2025-11-24 14:18:32] WEEK 3 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Safe algorithms: handling edge cases and bad input: Identify edge cases such as empty lists or missing values; Modify pseudocode to handle edge cases safely; Predict behavior for invalid input
+- Challenge: advanced algorithms analysis: Analyze code or pseudocode and describe its Big O complexity; Select the most suitable algorithm for a given scenario
+- Practice Session: Online ticket booking helper: You will write and refine pseudocode for a ticket-booking process that safely handles edge cases (sold out, invalid input, missing data) and justify your algorithm choice using Big O.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Robust Algorithms in Practice  
+GOALS: Students will learn to design and analyze algorithms that safely handle edge cases and invalid input, and to reason about their efficiency using Big O notation. They will apply these skills by writing and refining pseudocode for real-world scenarios like an online ticket-booking system.
+
+================================================================================
+
+[2025-11-24 14:18:33] WEEK 3 CHAPTER 5 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Why searching matters: Describe everyday situations where searching is needed; Explain why good search methods save time
+- How searching works with simple examples: Trace simple search processes in small collections; Identify when a process is performing a search
+- Practice Session: Lost item finder: You will model and trace search processes for finding a lost item in different “house layouts” and explain when and why better search methods save time.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Smart Ways to Search
+
+GOALS: In this chapter, students will explore why searching matters in everyday life, learn to recognize and trace simple search processes, and compare different ways of searching to see how better methods save time. They will apply these ideas through practice activities, discussion, and a weekly review and assessment.
+
+================================================================================
+
+[2025-11-24 14:18:36] WEEK 4 ALL CHAPTERS PRACTICE SESSIONS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create 1 practice session(s) for EACH of the 5 chapters below (total 5 practice sessions).
+
+Each practice session should:
+1. Have a title that starts with "Practice Session: "
+2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
+3. Include hands-on exercises, projects, or practical applications
+4. Have clear learning outcomes, one sentence.
+5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
+6. It could be a practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+7. Have clear learning outcomes, one sentence
+8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+
+Week 4 Chapters:
+
+CHAPTER 1:
+  - Linear search with small and unsorted data: Describe linear search in your own words; Apply linear search to find an item; Identify when linear search is appropriate
+  - Binary search with large sorted collections: Describe binary search as repeatedly halving the search space; Perform it step by step; Explain why it requires sorted data
+  - Comparing linear and binary search: Compare how many steps each method takes for different list sizes; Select the appropriate method for a scenario; Use informal complexity language such as “grows linearly” or “grows slower.”
+
+CHAPTER 2:
+  - Challenge: searching: Choose an appropriate search method for several scenarios; Trace the method on small lists to confirm correctness
+  - Why sorting is useful: Explain how sorting supports searching and decision making; Identify real-world tasks improved by sorting
+  - Sorting: different approaches: Describe high-level sorting approaches such as swapping neighbors or selecting the smallest; Match stories or visuals to the correct sorting method
+
+CHAPTER 3:
+  - Bubble sort step-by-step: Describe bubble sort as swapping out-of-order neighbors; Trace bubble sort through multiple passes; Predict what happens during a full pass
+  - Selection sort: Describe selection sort as repeatedly choosing the smallest remaining element; Perform it step by step; Compare its approach with bubble sort
+  - Bubble vs. Selection: Compare bubble sort and selection sort in how they scan and move values; Identify scenarios where one may be slightly preferable; Recognize that both have similar time complexity
+
+CHAPTER 4:
+  - Challenge: sorting: Choose a simple sorting algorithm for beginner scenarios; Trace it on small lists to verify results
+  - Using Python sorting tools in practice: Use sorted and list.sort for ascending and descending sorts; Apply key functions to sort custom data; Connect Python’s built-in sorting tools to manual algorithms
+
+CHAPTER 5:
+  - Advanced sorting with Python tools: Combine key and reverse parameters for richer tasks; Design simple sortable data structures; Decide when to rely on Python’s built-in tools
+  - Challenge: advanced sorting: Apply Python sorting tools to multi-field data; Explain how the chosen sort order answers a real-world question
+
+
+Return in this exact format:
+
+CHAPTER: 1
+TITLE: Practice Session: [Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]
+
+CHAPTER: 2
+TITLE: Practice Session: [Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+TITLE: Practice Session: [Another Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]
+
+Continue for all 5 chapters with 1 practice session(s) each.
+
+
+RESPONSE:
+CHAPTER: 1  
+TITLE: Practice Session: Lost Library Book  
+OUTCOMES: Practice choosing and tracing linear vs. binary search on book ID lists and explain which search grows faster for different collection sizes.
+
+CHAPTER: 2  
+TITLE: Practice Session: Movie Night Planner  
+OUTCOMES: Practice picking a search method and simple sort strategy to organize and find movies in a watchlist, and explain how sorting makes searching and decisions easier.
+
+CHAPTER: 3  
+TITLE: Practice Session: Toy Store Shelf  
+OUTCOMES: Practice tracing bubble sort and selection sort step by step on toy prices, compare how they move items, and decide which is slightly preferable in simple scenarios.
+
+CHAPTER: 4  
+TITLE: Practice Session: Student Scoreboard  
+OUTCOMES: Practice choosing a basic manual sort, then using Python’s sorted and list.sort with key and reverse to organize student scores and verify the results.
+
+CHAPTER: 5  
+TITLE: Practice Session: Job Candidate Tracker  
+OUTCOMES: Practice designing sortable candidate records and using Python’s sorting with key and reverse to answer multi-field questions about applicants.
+
+================================================================================
+
+[2025-11-24 14:18:37] WEEK 4 LEARNING GOALS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create a learning goal for week 4 of a programming course.
+The week includes these lessons, with the following learning outcomes per each:
+
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Linear search with small and unsorted data: Describe linear search in your own words; Apply linear search to find an item; Identify when linear search is appropriate
+- Binary search with large sorted collections: Describe binary search as repeatedly halving the search space; Perform it step by step; Explain why it requires sorted data
+- Comparing linear and binary search: Compare how many steps each method takes for different list sizes; Select the appropriate method for a scenario; Use informal complexity language such as “grows linearly” or “grows slower.”
+- Practice Session: Lost Library Book: Practice choosing and tracing linear vs. binary search on book ID lists and explain which search grows faster for different collection sizes.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Challenge: searching: Choose an appropriate search method for several scenarios; Trace the method on small lists to confirm correctness
+- Why sorting is useful: Explain how sorting supports searching and decision making; Identify real-world tasks improved by sorting
+- Sorting: different approaches: Describe high-level sorting approaches such as swapping neighbors or selecting the smallest; Match stories or visuals to the correct sorting method
+- Practice Session: Movie Night Planner: Practice picking a search method and simple sort strategy to organize and find movies in a watchlist, and explain how sorting makes searching and decisions easier.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Bubble sort step-by-step: Describe bubble sort as swapping out-of-order neighbors; Trace bubble sort through multiple passes; Predict what happens during a full pass
+- Selection sort: Describe selection sort as repeatedly choosing the smallest remaining element; Perform it step by step; Compare its approach with bubble sort
+- Bubble vs. Selection: Compare bubble sort and selection sort in how they scan and move values; Identify scenarios where one may be slightly preferable; Recognize that both have similar time complexity
+- Practice Session: Toy Store Shelf: Practice tracing bubble sort and selection sort step by step on toy prices, compare how they move items, and decide which is slightly preferable in simple scenarios.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Challenge: sorting: Choose a simple sorting algorithm for beginner scenarios; Trace it on small lists to verify results
+- Using Python sorting tools in practice: Use sorted and list.sort for ascending and descending sorts; Apply key functions to sort custom data; Connect Python’s built-in sorting tools to manual algorithms
+- Practice Session: Student Scoreboard: Practice choosing a basic manual sort, then using Python’s sorted and list.sort with key and reverse to organize student scores and verify the results.
+- Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Advanced sorting with Python tools: Combine key and reverse parameters for richer tasks; Design simple sortable data structures; Decide when to rely on Python’s built-in tools
+- Challenge: advanced sorting: Apply Python sorting tools to multi-field data; Explain how the chosen sort order answers a real-world question
+- Practice Session: Job Candidate Tracker: Practice designing sortable candidate records and using Python’s sorting with key and reverse to answer multi-field questions about applicants.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Format: "Title: Description of what students will achieve and learn."
+The title should be 2-4 words, followed by a colon, then "In this unit, " and then a one sentence description of learning outcomes.
+Make it clear and specific to the lessons covered. Don't add asterisk (*) to the unit name or goal.
+
+
+RESPONSE:
+Searching and Sorting: In this unit, students will learn to choose and trace linear vs. binary search, explain why sorting improves searching and decisions, compare bubble and selection sort on small lists, and use Python’s built-in sorting tools (including key and reverse) to organize and analyze real-world style data.
+
+================================================================================
+
+[2025-11-24 14:18:39] WEEK 4 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Linear search with small and unsorted data: Describe linear search in your own words; Apply linear search to find an item; Identify when linear search is appropriate
+- Binary search with large sorted collections: Describe binary search as repeatedly halving the search space; Perform it step by step; Explain why it requires sorted data
+- Comparing linear and binary search: Compare how many steps each method takes for different list sizes; Select the appropriate method for a scenario; Use informal complexity language such as “grows linearly” or “grows slower.”
+- Practice Session: Lost Library Book: Practice choosing and tracing linear vs. binary search on book ID lists and explain which search grows faster for different collection sizes.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Searching Smarter
+
+GOALS: Learn how to find items efficiently in lists by using and comparing linear and binary search. You’ll practice choosing the right search method for different situations, tracing each step, and informally describing how their performance grows as collections get larger.
+
+================================================================================
+
+[2025-11-24 14:18:41] WEEK 4 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Challenge: searching: Choose an appropriate search method for several scenarios; Trace the method on small lists to confirm correctness
+- Why sorting is useful: Explain how sorting supports searching and decision making; Identify real-world tasks improved by sorting
+- Sorting: different approaches: Describe high-level sorting approaches such as swapping neighbors or selecting the smallest; Match stories or visuals to the correct sorting method
+- Practice Session: Movie Night Planner: Practice picking a search method and simple sort strategy to organize and find movies in a watchlist, and explain how sorting makes searching and decisions easier.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Searching and Sorting in Action  
+GOALS: In this chapter, students will learn how different searching and sorting strategies work together to make finding information and making decisions easier. They will practice choosing and tracing search methods, comparing simple sorting approaches, and applying these ideas to realistic scenarios like organizing a movie watchlist.
+
+================================================================================
+
+[2025-11-24 14:18:43] WEEK 4 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Bubble sort step-by-step: Describe bubble sort as swapping out-of-order neighbors; Trace bubble sort through multiple passes; Predict what happens during a full pass
+- Selection sort: Describe selection sort as repeatedly choosing the smallest remaining element; Perform it step by step; Compare its approach with bubble sort
+- Bubble vs. Selection: Compare bubble sort and selection sort in how they scan and move values; Identify scenarios where one may be slightly preferable; Recognize that both have similar time complexity
+- Practice Session: Toy Store Shelf: Practice tracing bubble sort and selection sort step by step on toy prices, compare how they move items, and decide which is slightly preferable in simple scenarios.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Comparing Simple Sorting Algorithms  
+GOALS: Students will learn how bubble sort and selection sort work step by step, how they scan and move values differently, and how to trace each algorithm through multiple passes. They will also compare their behavior and efficiency, and decide which is slightly preferable in simple, real-world scenarios.
+
+================================================================================
+
+[2025-11-24 14:18:44] WEEK 4 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Challenge: sorting: Choose a simple sorting algorithm for beginner scenarios; Trace it on small lists to verify results
+- Using Python sorting tools in practice: Use sorted and list.sort for ascending and descending sorts; Apply key functions to sort custom data; Connect Python’s built-in sorting tools to manual algorithms
+- Practice Session: Student Scoreboard: Practice choosing a basic manual sort, then using Python’s sorted and list.sort with key and reverse to organize student scores and verify the results.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Sorting Basics in Python  
+GOALS: Learn to choose and trace simple manual sorting algorithms, then apply Python’s built-in sorting tools (sorted, list.sort, key, reverse) to organize and verify data, including practical scenarios like a student scoreboard, with opportunities for live Q&A and practice.
+
+================================================================================
+
+[2025-11-24 14:18:46] WEEK 4 CHAPTER 5 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Sync Session: Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Advanced sorting with Python tools: Combine key and reverse parameters for richer tasks; Design simple sortable data structures; Decide when to rely on Python’s built-in tools
+- Challenge: advanced sorting: Apply Python sorting tools to multi-field data; Explain how the chosen sort order answers a real-world question
+- Practice Session: Job Candidate Tracker: Practice designing sortable candidate records and using Python’s sorting with key and reverse to answer multi-field questions about applicants.
+- Weekly Review: Review the concepts learned in this week and complete weekly assessment.
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Advanced Python Sorting
+
+GOALS: Learn to design sortable data structures and use Python’s sorting tools—especially key and reverse—to handle multi-field, real-world data. Develop the ability to choose appropriate sort orders, explain how they answer practical questions, and apply these skills to scenarios like tracking job candidates.
+
+================================================================================
+
+[2025-11-24 14:18:46] PROCESS COMPLETED
+------------------------------------------------------------
+Syllabus saved to: cs102-4weeks.xlsx
+Total lessons processed: 53
+================================================================================
+

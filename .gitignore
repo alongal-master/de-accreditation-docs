@@ -1,1 +1,5 @@
 .env
+output/*
+output_json/*
+input/*
+input-1101/*

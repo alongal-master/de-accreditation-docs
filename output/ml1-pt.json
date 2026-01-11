@@ -1,0 +1,899 @@
+{
+  "num_weeks": 4,
+  "num_chapters_per_week": 5,
+  "num_practice_sessions": 0,
+  "weeks": {
+    "1": {
+      "week_num": 1,
+      "learning_goal": "Foundations of AI: In this unit, students will build a practical, non-sci-fi understanding of what AI is, how it evolved from rule-based to data-driven systems, distinguish symbolic/statistical and narrow/general AI, correctly use terms like ML, DL, and LLMs, and apply these concepts to classify real-world examples and everyday applications.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Foundations of Artificial Intelligence",
+          "learning_goals": "Build a practical, non-sci‑fi understanding of what AI is, how it differs from traditional software, and how it developed from rule-based systems to data-driven approaches, while practicing classification of real-world examples and mapping key milestones on an AI timeline.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "What Is Artificial Intelligence?",
+              "learning_outcomes": "Define Artificial Intelligence in practical, non-sci-fi terms; Identify what makes a system “intelligent” in practice; Distinguish AI systems from traditional software",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "A Short History of AI",
+              "learning_outcomes": "Describe how early AI systems were built; Explain why early AI relied on rules and logic; Identify what changed when data became central",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Theory Practice Lesson: Spot the AI",
+              "learning_outcomes": "Identify whether real-world examples are AI, traditional software, or not software at all, and justify the classification. Output: A completed worksheet where each example is labeled and explained as AI, non-AI software, or non-software.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Theory Practice Lesson: AI Timeline and Turning Points",
+              "learning_outcomes": "Reconstruct a simplified timeline of AI history and connect each era to its core idea (rules vs data). Output: A filled-in timeline chart with key AI milestones, their characteristics, and short explanations of what changed at each turning point.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Foundations of Rule-Based and Data-Driven AI",
+          "learning_goals": "In this chapter, students will distinguish between rule-based (symbolic) and data-driven (statistical) AI by defining each approach, exploring their strengths and limitations, and practicing both through hands-on activities. They will design a simple rule engine, build a basic data-driven recommendation process, and use Q&A sessions to clarify concepts and connect them to real-world applications.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Rule-Based AI",
+              "learning_outcomes": "Define rule-based (symbolic) AI; Explain how rules are written and applied; Identify strengths and limitations of rule-based systems",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Data-Driven AI",
+              "learning_outcomes": "Define data-driven (statistical) AI; Explain how data replaces explicit rules; Describe why data-driven systems scale better",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Practice Lesson: Coffee Shop Rule Engine",
+              "learning_outcomes": "Design and test a small set of explicit IF–THEN rules to simulate how a barista decides drink prices and discounts. Output: A written or pseudo-coded rule set that, given an order description, determines the correct price and discount.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Practice Lesson: Movie Recommendation Cards",
+              "learning_outcomes": "Build a simple “data-driven” recommendation process using example user data instead of explicit rules. Output: A filled-out set of cards or a table that shows how different user viewing histories lead to different recommended movies based on patterns in the data.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Foundations of Modern AI",
+          "learning_goals": "Learn to distinguish symbolic vs. statistical AI and narrow vs. general AI, apply these distinctions to real-world examples, and critically evaluate common misconceptions about current AI capabilities.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Symbolic vs Statistical AI",
+              "learning_outcomes": "Clearly distinguish symbolic AI from statistical AI; Compare how each approach handles complexity; Identify which approach powers most modern AI systems",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Narrow AI vs General AI",
+              "learning_outcomes": "Define Narrow AI using real-world examples; Define General AI conceptually and explain why it does not exist today; Correct common misconceptions about AI capabilities",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Theory Practice Lesson: Symbolic vs Statistical Sorting",
+              "learning_outcomes": "Correctly classify example AI systems as symbolic or statistical and explain how each handles complexity in that context. Output: A comparison table where each example system is labeled symbolic/statistical with one-sentence reasoning.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Theory Practice Lesson: Narrow vs General AI Scenarios",
+              "learning_outcomes": "Distinguish narrow AI from hypothetical general AI and debunk common myths using concrete scenarios. Output: A completed scenario sheet where each scenario is tagged as “narrow AI”, “imagined general AI”, or “not AI”, with brief justifications.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Foundations of Modern AI",
+          "learning_goals": "In this chapter, students will learn to distinguish ML, DL, and LLMs, connect them to statistical AI, and use accurate terminology to describe real-world AI systems. They will also identify everyday AI applications across industries, analyze the data they rely on, and explain how data quality and bias shape system behavior.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "ML, DL, and LLMs",
+              "learning_outcomes": "Distinguish Machine Learning, Deep Learning, and LLMs; Explain how these approaches relate to statistical AI; Use correct terminology when describing modern systems",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "AI in the Real World",
+              "learning_outcomes": "Identify real-world applications of AI across industries; Describe what type of data these systems rely on; Explain why AI behavior depends on data quality",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Theory Practice Lesson: ML, DL, LLM Match-Up",
+              "learning_outcomes": "Accurately match real-world systems to ML, DL, or LLM categories and describe the data they use. Output: A completed matching and short-answer sheet mapping example applications to ML/DL/LLM with one-sentence explanations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Theory Practice Lesson: AI in Everyday Life Map",
+              "learning_outcomes": "Identify AI use-cases across multiple industries and explain how data quality shapes their behavior. Output: A simple “AI in my world” map listing at least 6 applications, the data they rely on, and a note on what happens if that data is biased or low quality.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Understanding AI"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Understanding AI"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Understanding AI"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "week_num": 2,
+      "learning_goal": "Tabular Data Foundations: In this unit, students will learn to load real datasets into Pandas DataFrames, inspect and understand their structure, select and filter rows and columns, create grouped summaries and derived columns, and apply basic data quality checks while clearly explaining their data transformation logic.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Working with Real-World Tabular Data",
+          "learning_goals": "In this chapter, students will learn how to represent tabular data with Pandas Series and DataFrames, load real CSV files, and inspect their structure and contents. They will practice identifying basic data issues immediately after loading and gain confidence by building small, hands-on examples and discussing questions in live sessions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "DataFrames and Series",
+              "learning_outcomes": "Define DataFrame and Series using tabular data examples; Explain how rows and columns map to DataFrame structure; Navigate and inspect basic DataFrame components",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Loading Real Data",
+              "learning_outcomes": "Load CSV data into a Pandas DataFrame; Verify that data loaded correctly using inspection methods; Identify basic issues immediately after loading data",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Practice Lesson: Cafe orders table",
+              "learning_outcomes": "Practice creating Series and DataFrames from small tabular cafe order data and inspecting rows, columns, and basic structure. Output: A script that builds a tiny cafe orders DataFrame and prints its head, shape, columns, and a few Series slices.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Practice Lesson: Movie ratings CSV loader",
+              "learning_outcomes": "Load a CSV of fictional movie ratings into a DataFrame, inspect it with Pandas methods, and spot immediate loading issues (missing values, wrong types, odd values). Output: A script that reads a movie_ratings.csv file, prints key inspection summaries, and highlights any obvious data problems after loading.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Reading and Filtering DataFrames",
+          "learning_goals": "Learn to carefully inspect tabular datasets, identify basic data issues, and intentionally select and filter columns and rows. Practice applying these skills to answer real questions about playlists and customer orders, while clearly explaining your filtering logic in plain language.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Reading Data Carefully",
+              "learning_outcomes": "Inspect datasets to understand structure and content; Identify potential data issues by scanning rows and columns; Formulate simple questions about what the data represents",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Selecting and Filtering",
+              "learning_outcomes": "Select specific columns from a DataFrame intentionally; Filter rows using logical conditions; Explain filtering logic clearly in plain language",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Practice Lesson: Music app playlist explorer",
+              "learning_outcomes": "Use column selection and row filtering on a playlist DataFrame to answer questions about songs, durations, and artists, and explain the filtering logic in plain language. Output: A script that loads a playlist DataFrame and prints several filtered views (e.g., long songs, songs by an artist, specific columns only).",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Practice Lesson: Customer orders filter",
+              "learning_outcomes": "Carefully inspect an e-commerce orders dataset, identify structural patterns and potential issues, then select and filter rows to answer simple business questions. Output: A script that reads an orders CSV and prints answers to questions like “orders over $100”, “orders from a given country”, and “selected key columns”.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Grouping and Enriching Data with Pandas",
+          "learning_goals": "Learn how to group data by key categories, compute and interpret basic aggregations, and create useful derived columns in Pandas. By the end of this chapter, you’ll be able to summarize real-world datasets (like cafe sales and fitness tracking logs) and enhance them with calculated metrics to support better analysis.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Grouping Data",
+              "learning_outcomes": "Group data by categorical features using Pandas; Apply basic aggregations such as mean and count; Interpret grouped results in terms of real-world meaning",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Derived Columns",
+              "learning_outcomes": "Create new columns derived from existing data; Explain why derived columns can make data more useful; Verify correctness of newly created columns",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Practice Lesson: Cafe sales summary",
+              "learning_outcomes": "Group cafe transaction data by product and by day, compute basic aggregations (count, mean price, total revenue), and interpret what the grouped results say about sales patterns. Output: A script that prints grouped tables summarizing number of items sold and revenue per product and per day.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Practice Lesson: Fitness tracker metrics",
+              "learning_outcomes": "Create derived columns (e.g., pace, calories_estimate, distance_km) from raw fitness tracking data and verify their correctness with spot checks and reasoning. Output: A script that reads a workout DataFrame, adds several calculated columns, and prints before/after views to confirm the new metrics.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Thinking in Tables and Ensuring Data Quality",
+          "learning_goals": "In this chapter, students will learn to reason confidently about how common tabular operations transform rows and columns, and to apply essential data quality checks before analysis. They will practice predicting table changes, implementing a basic data quality checklist, and articulating why these steps are critical for reliable data work.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Thinking in Tables",
+              "learning_outcomes": "Reason about data transformations in terms of rows and columns; Predict how operations will change a dataset’s structure; Develop confidence manipulating tabular data logically",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Data Quality Checks",
+              "learning_outcomes": "Understand different data quality checks and why they are important; Perform basic checks to assess data quality; Explain why quality checks should happen before analysis",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Thinking in tables scenarios",
+              "learning_outcomes": "Strengthen the ability to mentally model how tabular operations (select, filter, group, derive columns) change rows and columns using written scenarios and table-based questions. Output: A completed written exercise where the learner predicts resulting tables, matches operations to outcomes, and explains table transformations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Practice Lesson: Data quality checklist",
+              "learning_outcomes": "Apply basic data quality checks (missing values, duplicates, out-of-range values, type issues) to a sample dataset and explain why each check matters before analysis. Output: A script that runs a small suite of quality checks on a DataFrame and prints a concise “data quality report” summary.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Working with Data in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Working with Data in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Cleaning and Exploring Data"
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "week_num": 3,
+      "learning_goal": "Foundations of EDA: In this unit, students will clean and type-correct real datasets, detect and interpret outliers, apply purposeful filtering and grouping, and use basic plots to conduct exploratory data analysis that reveals patterns, anomalies, and meaningful questions without over-interpreting results.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Preparing Data Types and Outliers for Analysis",
+          "learning_goals": "Learn to correctly set and fix data types, detect and interpret outliers using basic numerical and visual methods, and decide when to investigate, keep, or treat anomalies as data issues in real-world datasets.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Fixing Data Types",
+              "learning_outcomes": "Detect columns with incorrect data types; Convert data types to enable proper analysis; Explain why correct data types are essential",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Detecting and Understanding Outliers",
+              "learning_outcomes": "Identify outliers using simple numerical and visual methods; Distinguish between meaningful outliers and problematic outliers; Explain why outliers should be investigated, not automatically removed",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Practice Lesson: Cafe sales data types",
+              "learning_outcomes": "Practice detecting and correcting incorrect data types in a small cafe sales dataset and explain why each change is needed. Output: A cleaned DataFrame where dates, numeric prices, and quantities have correct data types ready for analysis.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Practice Lesson: Ride-sharing outlier hunt",
+              "learning_outcomes": "Identify, visualize, and interpret outliers in a ride-sharing trips dataset, distinguishing meaningful anomalies from data errors. Output: A short report (notebook cells or markdown) with plots and notes labeling which outliers to investigate, keep, or treat as data issues.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Purposeful Filtering and Grouping",
+          "learning_goals": "Learn to filter and group datasets with clear intent, explain and validate your choices, and interpret aggregated results to uncover meaningful patterns and business insights.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Filtering with Purpose",
+              "learning_outcomes": "Apply filters based on meaningful conditions; Explain why specific filters are applied; Validate that filtering produced expected results",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Grouping for Insight",
+              "learning_outcomes": "Use grouping to compare categories in data; Interpret aggregated values meaningfully; Identify patterns revealed through grouping",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Practice Lesson: Movie ratings filtering",
+              "learning_outcomes": "Apply purposeful filters to a movie ratings dataset, justify each filter, and verify that the filtered subset matches expectations. Output: A filtered DataFrame of movies that meet clear criteria (e.g., minimum rating count and average rating) plus simple checks confirming the filters worked.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Practice Lesson: Online store grouping insights",
+              "learning_outcomes": "Use grouping and aggregation on an online store orders dataset to compare categories and extract interpretable business insights. Output: Grouped summary tables (e.g., revenue by category, average order value by region) with brief written interpretations of the main patterns.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Exploring Data Through First Plots",
+          "learning_goals": "Learn what exploratory data analysis (EDA) is, why it matters before modeling or decisions, and how it differs from final conclusions. Practice creating and interpreting basic matplotlib plots to uncover trends and patterns in real data.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "What EDA Really Means",
+              "learning_outcomes": "Define exploratory data analysis in clear, practical terms; Explain the goals of EDA before modeling or decisions; Distinguish EDA from final conclusions",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "First Plots for Insight",
+              "learning_outcomes": "Create basic plots using matplotlib; Choose plot types appropriate to specific questions; Interpret plots to describe trends and patterns",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Theory Practice Lesson: EDA concepts check",
+              "learning_outcomes": "Reinforce understanding of what EDA is, its goals, and how it differs from final conclusions using matching, classification, and short-answer prompts. Output: A completed worksheet or notebook with answered questions categorizing statements as EDA vs. final conclusions and explaining EDA goals.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Practice Lesson: Music app first plots",
+              "learning_outcomes": "Create and interpret basic matplotlib plots for a music streaming dataset, choosing appropriate chart types for different exploratory questions. Output: A set of plots (histogram, bar chart, line plot, or scatter plot) with brief text describing the main trends and patterns observed.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Exploring Patterns in Data",
+          "learning_goals": "In this chapter, students will learn to distinguish data types, recognize patterns and anomalies, and classify questions as univariate or relationship-based. They will practice selecting appropriate summaries and visualizations, and communicating exploratory findings clearly without over-interpreting.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Patterns and Anomalies",
+              "learning_outcomes": "Identify patterns emerging from data exploration; Detect anomalies and unusual values; Explain findings clearly without over-interpreting",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Data Types & “What am I analyzing?”",
+              "learning_outcomes": "Distinguish numerical vs categorical variables; Identify whether a question is univariate or relationship-based; Understand that choosing appropriate summary statistics and visualizations is based on data type and know the main techniques according to data type",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Patterns and question types",
+              "learning_outcomes": "Practice recognizing patterns vs anomalies and classifying questions as univariate or relationship-based, matching each to suitable summaries and visuals. Output: A completed exercise where each example variable and question is labeled (numerical/categorical, univariate/relationship) with an appropriate summary and plot type selected.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Practice Lesson: Customer churn pattern scanner",
+              "learning_outcomes": "Analyze a customer churn-style dataset to detect key patterns and anomalies while clearly stating what can and cannot be concluded from the data. Output: A concise exploratory summary with tables and simple visuals highlighting main patterns and flagged anomalies, plus short explanations that avoid over-interpretation.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Cleaning and Exploring Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Cleaning and Exploring Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Statistical Intuition for Data"
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "week_num": 4,
+      "learning_goal": "Foundations of Data Relationships: In this unit, students will develop intuitive understanding of variability, randomness, and probability; identify and interpret relationships between two or more variables (including different types of correlation); and practice distinguishing noise from signal and correlation from causation using realistic data scenarios.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Understanding Variability and Randomness",
+          "learning_goals": "In this chapter, students will build an intuitive understanding of variability, standard deviation, randomness, and noise in real-world data. They will practice distinguishing signal from noise and explaining why repeated measurements can differ, using concrete stories and visual examples.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Variability & Standard Deviation (Intuition)",
+              "learning_outcomes": "Explain variability as how spread out values are; Interpret standard deviation at an intuitive level; Compare two datasets and infer which has more variability",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Randomness, Noise & Why patterns can be misleading",
+              "learning_outcomes": "Define randomness and noise in real datasets; Recognize when a pattern may be caused by noise rather than signal; Explain why repeated measurements or samples may lead to different results",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Weather variability story",
+              "learning_outcomes": "Practice intuitively judging which of several fictional towns has higher variability and standard deviation in daily temperatures. Output: A completed worksheet/story where each town is labeled as “more/less variable” with short written explanations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Noise vs signal in café sales",
+              "learning_outcomes": "Practice deciding whether apparent patterns in a café’s daily customer counts are likely noise or meaningful signal, and explain why repeated measurements differ. Output: A set of annotated mini-charts and short answers classifying each pattern as “likely noise” or “likely signal” with reasoning.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Bivariate Relationships and Correlation",
+          "learning_goals": "In this chapter, students will learn to recognize when questions require bivariate analysis, select suitable visualizations for different pairs of variable types, and interpret how two variables move together. They will also learn to distinguish between Pearson and Spearman correlation at a high level and decide which is more appropriate in different real-world scenarios.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Bivariate Thinking - Relationships between two variables",
+              "learning_outcomes": "Identify when a question requires bivariate analysis; Choose an appropriate visualization for different variable type combinations; Describe what it means for two variables to move together",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Correlation - Pearson vs Spearman (High level)",
+              "learning_outcomes": "Define correlation and interpret positive vs negative correlation; Differentiate Pearson (linear) vs Spearman (rank or monotonic) at a high level; Explain when Spearman may be more appropriate than Pearson",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Matching questions to visualizations",
+              "learning_outcomes": "Practice identifying when a question needs bivariate analysis and matching it to an appropriate visualization for different variable type combinations. Output: A completed matching table where each real-world question is paired with a visualization choice (scatterplot, bar chart, boxplot, etc.) and a brief justification.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Correlation stories – Pearson vs Spearman",
+              "learning_outcomes": "Practice interpreting positive and negative correlations from short scenarios and deciding whether Pearson or Spearman correlation is more appropriate. Output: A set of scenario answers indicating correlation direction/strength and whether Pearson or Spearman fits best, with one-sentence explanations.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Thinking Beyond Correlation",
+          "learning_goals": "Learn to distinguish correlation from causation, recognize confounders and reverse causality, and apply multivariate thinking to see how relationships change when additional variables are considered. Practice critiquing causal claims in real-world-style examples and revising interpretations when controlling for other factors, building intuition for better data and modeling decisions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Correlation ≠ Causation",
+              "learning_outcomes": "Explain why correlation does not imply causation; Identify common pitfalls such as confounders and reverse causality; Propose ways to reduce wrong conclusions by considering other variables and domain reasoning",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Multivariate Intuition - When relationships change",
+              "learning_outcomes": "Explain why adding a third variable can change an observed relationship; Describe controlling for another variable conceptually; Understand how multivariate thinking connects to feature selection and ML modeling decisions at a high level",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Correlation vs causation detective",
+              "learning_outcomes": "Practice spotting confounders, reverse causality, and weak causal claims in short news-style summaries and proposing safer interpretations. Output: A marked-up list of claims labeled as “correlation only,” “possible causation,” or “misleading,” each with a brief note about confounders or alternative explanations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Multivariate twists in relationships",
+              "learning_outcomes": "Practice reasoning through how adding a third variable can change observed relationships and what it means to “control for” another variable conceptually. Output: A set of small case analyses where initial two-variable conclusions are revised after introducing a third variable, with written before/after interpretations.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Understanding Uncertainty and Samples",
+          "learning_goals": "Students will learn to describe probability as a way of expressing uncertainty, interpret everyday probability statements, and distinguish between samples and populations. They will also practice recognizing why results vary across samples and why small or biased samples can lead to misleading conclusions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Probability as Uncertainty (High level)",
+              "learning_outcomes": "Explain probability as a way to describe uncertainty; Interpret probability statements in everyday terms; Connect probability to variability and why results are not exact",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Samples vs Population - Why results vary",
+              "learning_outcomes": "Distinguish population vs sample intuitively; Explain why different samples give different results; Describe why we should be cautious about trusting patterns from small samples",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Everyday probability scenarios",
+              "learning_outcomes": "Practice translating informal uncertainty phrases (like “unlikely,” “almost certain”) into rough probability ranges and connecting them to real-life variability. Output: A completed set of scenario responses where each everyday statement is assigned an approximate probability and a short explanation of the uncertainty involved.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Theory Practice Lesson: Samples vs population – survey puzzles",
+              "learning_outcomes": "Practice distinguishing samples from populations using mini-survey stories and explaining why small or biased samples can give misleading patterns. Output: A worksheet of survey vignettes labeled with “population,” “sample,” and “risk of error,” plus short notes on why different samples might yield different results.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Statistical Intuition for Data"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Statistical Intuition for Data"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Statistical Intuition for Data"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

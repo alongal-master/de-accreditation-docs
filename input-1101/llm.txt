@@ -1,0 +1,328 @@
+## Unit 1: **How LLMs Work**
+
+---
+
+### 1. AI vs Generative AI
+
+- Distinguish **AI**, **Generative AI**, **NLP**, and **LLMs** using concrete examples
+- Identify tasks suited for generative models vs traditional software
+- Use correct terminology when describing GenAI systems
+
+---
+
+### 2. From ML to LLMs
+
+- Describe the progression from **rule-based systems → machine learning → deep learning → LLMs**
+- Explain at a high level why neural networks enabled modern language models
+- Identify what changed with **transformers** compared to earlier approaches
+
+---
+
+### 3. What Makes an LLM
+
+- Define a **Large Language Model** in practical terms
+- Explain the difference between **training** and **inference** at a high level
+- Describe what information an LLM can and cannot use at runtime
+
+---
+
+### 4. Tokens, Context, and Prediction
+
+- Define **tokens**, **tokenization**, and **context window**
+- Explain **next-token prediction** as the core LLM mechanism
+- Connect context limits and tokenization to model behavior and limitations
+
+---
+
+### 5. Common Models in Practice
+
+- Identify widely used LLM products (e.g. ChatGPT, Gemini, Claude, Copilot)
+- Distinguish **model**, **product**, and **interface**
+- Match common models to typical tasks (chatting, coding help, summarization, analysis)
+
+---
+
+### 6. How We Use LLMs
+
+- Identify common interfaces to LLMs (chat websites vs APIs)
+- Compare interactive chat usage with programmatic API usage
+- Explain how product design shapes model interaction
+
+---
+
+### 7. Stateless by Default
+
+- Define **statelessness** in the context of LLMs
+- Explain why LLMs do not remember past interactions by default
+- Describe how conversation history is simulated using context
+
+---
+
+### 8. Determinism and Reproducibility
+
+- Explain why LLM outputs are not fully deterministic
+- Identify factors that affect reproducibility (prompt, parameters, context)
+- Describe scenarios where reproducibility is critical
+
+---
+
+### 9. What LLMs Are Bad At
+
+- Identify task types LLMs perform poorly on
+- Explain why LLMs struggle with correctness guarantees
+- Recognize failure patterns unrelated to prompt quality
+
+---
+
+### 10. When Not to Use an LLM
+
+- Identify scenarios where LLMs add unnecessary risk or cost
+- Compare LLM-based solutions to deterministic code
+- Justify decisions to avoid GenAI in system design
+
+## Unit 2: Prompt Engineering Fundamentals
+
+---
+
+### 1. Prompts as Interfaces
+
+- Define a **prompt** as an interface between humans and LLMs
+- Explain how ambiguity affects model behavior
+- Identify why prompts must be designed, not improvised
+
+---
+
+### 2. Prompt Anatomy
+
+- Break a prompt into **role, instructions, context, and output**
+- Identify missing or conflicting prompt components
+- Refactor poorly structured prompts into clearer ones
+
+---
+
+### 3. RTCO Framework
+
+- Define **Role, Task, Context, Output** precisely
+- Apply RTCO to structure prompts
+- Evaluate prompts using RTCO as a checklist
+
+---
+
+### 4. Writing Clear Tasks
+
+- Write task instructions that are specific and testable
+- Identify vague verbs and unclear goals
+- Rewrite tasks to reduce ambiguity
+
+---
+
+### 5. Defining Outputs
+
+- Specify output format and constraints explicitly
+- Define what counts as valid vs invalid output
+- Reduce model confusion through output definition
+
+---
+
+### 6. Zero-shot and Few-shot Prompting
+
+- Define **zero-shot prompting and few-shot prompting**
+- Select examples that guide model behavior
+- Compare zero-shot and few-shot outputs
+
+---
+
+### 8. Why Models Hallucinate
+
+- Define **hallucination** in practical terms
+- Identify prompt-related causes of hallucinations
+- Distinguish hallucinations from formatting or parsing errors
+- Learn how to reduce the change of hallucinations through prompting.
+
+---
+
+### 10. Prompt Iteration
+
+- Analyze model outputs for failure modes
+- Modify prompts based on observed issues
+- Track improvements across iterations
+
+---
+
+### 11. Prompt Templates
+
+- Define **prompt templates** and their purpose
+- Replace static text with variables
+- Reuse templates across different inputs
+
+---
+
+### 12. Simple Chain-of-Thought
+
+- Explain chain-of-thought conceptually
+- Identify tasks that benefit from step-by-step reasoning
+- Apply lightweight reasoning instructions safely
+
+## Unit 3: Using LLMs in Code
+
+---
+
+### 1. First API Call
+
+- Structure a basic LLM API request
+- Send input and receive a response
+- Inspect raw model outputs
+
+---
+
+### 2. Message Roles Explained
+
+- Define **system** and **user** messages
+- Explain how message roles affect behavior
+- Identify misuse of message roles
+
+---
+
+### 3. System Messages in Practice
+
+- Write system messages defining role and behavior
+- Create reusable system prompts
+- Separate behavior rules from task logic
+
+---
+
+### 4. User Messages in Practice
+
+- Write user messages containing task and context
+- Inject dynamic input safely
+- Combine system and user messages effectively
+
+---
+
+### 5. Temperature and Output Control
+
+- Define **temperature** as a behavior control parameter
+- Explain how temperature affects randomness
+- Choose temperature settings for different tasks
+
+---
+
+### 6. Structured Outputs
+
+- Define **structured outputs** and schemas
+- Instruct models to return valid JSON
+- Identify common structured-output failures
+
+---
+
+### 7. Parsing and Validation
+
+- Parse structured responses in Python
+- Detect invalid or malformed outputs
+- Decide when to retry or fail gracefully
+
+---
+
+### 8. Prompt Templates in Code
+
+- Store prompt templates as variables or functions
+- Inject runtime data into templates
+- Maintain readability and reuse
+
+---
+
+### 9. Token Usage and Cost
+
+- Explain token-based pricing models
+- Estimate cost from prompt and response size
+- Identify high-cost prompt patterns
+
+---
+
+### 10. Reducing Cost and Latency
+
+- Reduce prompt length without losing clarity
+- Avoid unnecessary model calls
+- Balance cost, latency, and accuracy
+
+## Unit 4: Designing GenAI Systems
+
+---
+
+### 1. From Prompts to Systems
+
+- Distinguish prompts from GenAI systems
+- Identify system components beyond a single call
+- Explain why systems fail differently than prompts
+
+---
+
+### 2. Single-Step vs Multi-Step Flows
+
+- Compare single-step and multi-step designs
+- Identify tasks that require decomposition
+- Explain complexity vs reliability tradeoffs
+
+---
+
+### 3. Designing Prompt Pipelines
+
+- Design simple multi-step prompt pipelines
+- Define inputs and outputs between steps
+- Identify failure points in pipelines
+
+---
+
+### 4. What Is an Agent
+
+- Define an **agent** using role and decision logic
+- Distinguish agents from prompt chains
+- Identify agent responsibilities
+
+---
+
+### 5. Agent Control Flow
+
+- Define decision rules for agents
+- Explain how agents choose next actions
+- Prevent unnecessary or repeated steps
+
+---
+
+### 6. Tools and Tool Calling
+
+- Define **tools** as external functions
+- Design simple tool interfaces
+- Decide when an agent should call a tool
+
+---
+
+### 7. Observability and Tracing
+
+- Define **tracing** and **observability**
+- Identify what should be logged
+- Explain how traces support debugging
+
+---
+
+### 8. Debugging with Traces
+
+- Inspect prompt–response flows
+- Identify causes of incorrect outputs
+- Use traces to guide improvements
+
+---
+
+### 9. Reliability Patterns
+
+- Identify scenarios prone to hallucination
+- Apply constraints and tool usage
+- Add human-in-the-loop checks conceptually
+
+---
+
+### 10. Ethics and Responsible AI
+
+- Identify ethical and safety risks in GenAI systems
+- Minimize sensitive data in prompts
+- Design systems that allow uncertainty or refusal

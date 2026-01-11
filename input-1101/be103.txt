@@ -1,0 +1,240 @@
+## Unit 1: Your first Flask server
+
+---
+
+### 1. Recap: Frontend vs. Backend
+
+- Distinguish between the "Interface" (Client) and the "Logic/Data" (Server).
+- Identify the role of the Backend in a modern web application.
+- Explain the request-response cycle using everyday analogies.
+
+### 2. Intro to Flask: The Running Script
+
+- Install Flask and create a minimal script with a single `/` route.
+- Run and stop the server using the terminal.
+- Define what a **Server** is in terms of a "persistent process" and a "Port."
+
+### 3. Routes: The Entry Points
+
+- Add a second route to an existing Flask application.
+- Distinguish between different URL paths (e.g., `/` vs `/about`).
+
+### 4. Response Formats: Text vs. JSON vs. HTML
+
+- Distinguish between a plain text response, JSONs and an HTML response, based on the target audience.
+- Return a basic HTML string containing tags (e.g., `<h1>`, `<a>` , `<img>`).
+- Identify why browsers render HTML differently than plain text.
+
+### 5. Static vs. Dynamic Responses
+
+- Create a route that returns hard-coded "Static" data.
+- Create a route that returns "Dynamic" data based on Python logic (e.g., current time).
+- Explain why APIs prefer dynamic data over hard-coded strings.
+
+### 6. Reading Inputs: GET Parameters
+
+- Access **Query Parameters** using `request.args`.
+- Create a route that greets a user by name via the URL (e.g., `?name=Alice`).
+- Identify the syntax of query strings in a URL.
+
+### 7. JSON: The Backend Language
+
+- Define **JSON** structure and its relationship to Python dictionaries.
+- Return structured data from a route using `jsonify`.
+- Send JSON data in a POST request.
+- Inspect a JSON response using browser developer tools.
+
+### 8. POST Requests
+
+- Define the purpose of the **POST** HTTP method.
+- Create a third endpoint that accepts **POST requests**.
+- Send JSON data to the server in the request body.
+
+### 9. Client vs. Server Separation
+
+- Define why the Backend should be "Client-Agnostic."
+- Demonstrate how one endpoint can serve data to both Postman and a Python script.
+- Identify the boundary where the Frontend ends and the Backend begins.
+
+### 10. The 200 OK: Successful Handshakes
+
+- Define the purpose of **Status Codes**.
+- Identify when a server automatically sends a `200 OK`.
+- Verify status codes using the Python `requests` library.
+
+### 11. Statelessness: Memory and Reality
+
+- Demonstrate that the server doesn't "remember" variables between different requests.
+- Explain the principle of **Statelessness**.
+- Identify why every request must provide all the info the server needs.
+
+### 12. Test your server
+
+- Configure **Postman** to send a GET and POST requests to the local server.
+- Inspect the raw response body and headers.
+- Distinguish between what a user sees and what a developer sees in a response.
+
+### 
+
+## Unit 2: Building the API Foundation
+
+---
+
+### 1. API Purpose: Defining the Service
+
+- Identify the "Service" goal (e.g., managing a list of items).
+- Distinguish between an internal script and an "API" exposed to others.
+
+### 2. Modeling: Defining the Data Shape
+
+- Define the structure of a resource (fields, types, required values).
+- Explain how this structure will later map to database columns.
+- Emphasize **schema thinking**, not storage.
+
+### 3. REST Schema: Planning the Nouns
+
+- Map **CRUD** operations to specific URL paths and HTTP methods.
+- Distinguish between "Collection" paths (`/items`) and "Item" paths (`/items/1`).
+- Practice naming endpoints using nouns instead of verbs.
+
+### 4. Database Setup for the API
+
+- Create an SQLite database file.
+- Define tables using raw SQL or DB Browser interface.
+- Initialize the database for use with Flask.
+
+### 5. Connecting to DB using SQLAlchemy
+
+- Configure SQLAlchemy Core with SQLite.
+- Create an engine and manage connections.
+- Understand that we use SQLAlchemy for traditional SQL execution, and mention ORM as another option (not covered).
+
+---
+
+### 6. CRUD pt 1 – Read (SELECT)
+
+- Execute `SELECT` queries from Flask.
+- Return database rows as JSON.
+- Verify results using Postman.
+
+---
+
+### 7. Variable Routes: Read by ID
+
+- Query a single row by ID.
+- Return `404 Not Found` when no row exists.
+- Reinforce resource-based URLs.
+
+---
+
+### 8. Error Handling: Consistent 404 Responses
+
+- Define a consistent JSON error format.
+- Return appropriate status codes for missing resources.
+- Emphasize client-friendly errors.
+
+---
+
+### 9. Search & Filtering (SELECT + WHERE)
+
+- Use query parameters to filter results.
+- Translate query parameters into SQL `WHERE` clauses.
+- Reinforce safe parameterized queries.
+
+## Unit 3: Mastering CRUD Operations
+
+---
+
+### 1. Why Data Modification Is Different
+
+- Explain how modifying database state differs from reading data.
+- Identify the SQL commands used for data modification (`INSERT`, `UPDATE`, `DELETE`).
+- Map each SQL command to its corresponding CRUD operation.
+
+---
+
+### 2. SQL CREATE
+
+- Explain what an `INSERT` statement does to a database table.
+- Identify the required components of a valid `INSERT` query.
+- Distinguish between hard-coded values and parameterized queries.
+
+---
+
+### 3. CRUD pt 2 – add endpoint
+
+- Extract JSON data from a POST request.
+- Create and execute a parameterized `INSERT` query from request data.
+- Return an appropriate success response after committing the transaction.
+
+---
+
+### 4. Create Validation & Errors
+
+- Identify required fields for creating a new resource.
+- Validate incoming request data before executing an `INSERT`.
+- Return a `400 Bad Request` response for invalid input.
+
+---
+
+### 5. SQL UPDATE
+
+- Explain how an `UPDATE` statement modifies existing rows.
+- Identify the role of the `WHERE` clause in safe updates.
+- Distinguish between updating all rows and updating a single resource.
+
+---
+
+### 6. CRUD pt 3 – Update endpoint
+
+- Create and execute an `UPDATE` query using a resource ID.
+- Commit database changes after a successful update.
+- Return the updated resource in the response.
+
+---
+
+### 7. Update Errors: Missing Resources
+
+- Detect when an `UPDATE` query affects zero rows.
+- Return a `404 Not Found` response for non-existent resources.
+- Explain why repeated `PUT` requests should be idempotent.
+
+---
+
+### 8. SQL DELETE
+
+- Explain what a `DELETE` statement does to database rows.
+- Identify why a `WHERE` clause is required for safe deletes.
+- Distinguish between deleting a single resource and clearing a table.
+
+---
+
+### 9. CRUD pt 4 – remove endpoint
+
+- Create and execute a `DELETE` query using a resource ID.
+- Commit the transaction after deletion.
+- Return an appropriate success response for a delete operation.
+
+---
+
+### 10. Full CRUD Lifecycle
+
+- Perform Create, Read, Update, and Delete operations using Postman.
+- Verify persistent database changes across multiple requests.
+- Trace how HTTP requests translate into SQL operations.
+
+## Unit 4: API Documentation
+
+---
+
+### 1. API Documentation Principles
+
+- Draft a technical specification for a multi-endpoint API including methods, URLs, and schemas.
+- Define clear success and error response structures for frontend integration.
+
+### 2. Self-Documenting APIs with Swagger
+
+- Explain the benefits of the OpenAPI standard for describing RESTful services.
+- Navigate and utilize an interactive Swagger UI to test API endpoints.
+
+###

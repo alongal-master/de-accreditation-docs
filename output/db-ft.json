@@ -1,0 +1,747 @@
+{
+  "num_weeks": 2,
+  "num_chapters_per_week": 5,
+  "num_practice_sessions": 0,
+  "weeks": {
+    "3": {
+      "week_num": 3,
+      "learning_goal": "Relational Data & SQL Basics: In this unit, students will model real-world information as well-structured relational tables with primary/foreign keys, read and sketch simple ER diagrams, and write basic SQL SELECT queries (with chosen columns, aliases, and WHERE filters) while clearly distinguishing between databases, DBMSs, and SQL’s role as a declarative query language.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Why Relational Databases Matter",
+          "learning_goals": "Learn what databases are, why we use relational databases instead of files or in-memory data, and how data is organized into tables, rows, and columns. Understand the role of a DBMS, recognize where apps should use a database, and practice modeling simple real-world data in relational tables.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Why Databases Exist",
+              "learning_outcomes": "Explain what a database is and what problems it solves; Distinguish databases from files and in-memory data; Identify data in real applications that belongs in a database.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "What Is a Relational Database",
+              "learning_outcomes": "Define relational databases as tables connected by relationships; Describe rows, columns, and tables using concrete examples; Explain why relationships matter for real-world data.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "DBMS: The Software Behind the Data",
+              "learning_outcomes": "Define DBMS and distinguish it from a database; Name common relational DBMSs (e.g., SQLite, PostgreSQL); Explain at a high level how a DBMS stores data and executes queries.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Tables, Rows, Columns",
+              "learning_outcomes": "Describe how relational databases organize data using tables; Explain the role of rows and columns in storing structured data; Identify when a table mixes multiple real-world concepts incorrectly.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Theory Practice Lesson: Spot the Database",
+              "learning_outcomes": "Identify where databases are needed in everyday apps versus where simple files or in-memory data are enough. Output: A completed worksheet or notes listing which parts of several app scenarios should use a database and why.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Cafe orders data",
+              "learning_outcomes": "Distinguish between data stored in files, in memory, and in a database by modeling a small cafe’s order-tracking needs. Output: A simple table-like structure (on paper or in a spreadsheet) that organizes cafe orders as if they were in a database.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Theory Practice Lesson: Tables, rows, columns",
+              "learning_outcomes": "Describe rows and columns accurately and detect when a table mixes multiple real-world concepts incorrectly. Output: Marked-up example tables where incorrect designs are circled and corrected with better table layouts.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Library catalog table",
+              "learning_outcomes": "Organize book information into a structured table that respects the idea of one real-world concept per table. Output: A designed “Books” table with clearly defined columns and a few example rows filled in.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Theory Practice Lesson: DBMS and relational databases",
+              "learning_outcomes": "Differentiate between “database” and “DBMS” and match real-world tools (e.g., PostgreSQL, SQLite) to their role in managing relational tables. Output: A filled-in matching/short-answer sheet connecting terms (DBMS, database, table, row, column, relationship) to definitions and examples.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Data Has Shape"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Keys, Tables, and Relationships",
+          "learning_goals": "Learn how to design simple relational schemas using primary and foreign keys, read and translate ER diagrams, and model real-world scenarios (like apps and stores) as connected database tables.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Primary Keys",
+              "learning_outcomes": "Define a primary key as a column that uniquely identifies a row; Explain why tables need stable values that other tables can reference; Select an appropriate primary key based on real-world data.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Designing a Schema",
+              "learning_outcomes": "Define schema as the set of tables and columns in a database; Design tables from a short real-world story (entities → tables); Assign attributes to tables to avoid duplication and confusion.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Foreign Keys",
+              "learning_outcomes": "Define foreign keys and how they reference primary keys; Model a one-to-many relationship using PK and FK; Explain how foreign keys enable JOIN queries.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Reading ER Diagrams",
+              "learning_outcomes": "Identify tables and key columns in a physical ER diagram; Interpret relationship lines as FK → PK connections; Translate an ER diagram into tables.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Theory Practice Lesson: Primary key choices",
+              "learning_outcomes": "Select appropriate primary keys for different tables based on stability and uniqueness. Output: A list of tables with chosen primary keys and brief justifications for each choice.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Music app schema",
+              "learning_outcomes": "Design a simple relational schema from a short story about a music streaming app, turning entities into tables and attributes into columns. Output: A set of named tables (e.g., Users, Playlists, Songs) with columns sketched out and primary keys identified.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Bookstore orders relationships",
+              "learning_outcomes": "Model one-to-many relationships between tables using primary and foreign keys in a small online bookstore scenario. Output: A schema outline showing tables (Customers, Orders, OrderItems, Books) with clearly marked PK and FK columns.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Theory Practice Lesson: Reading ER diagrams",
+              "learning_outcomes": "Interpret a basic ER diagram by identifying tables, primary keys, and foreign key relationships. Output: A written translation of an ER diagram into table definitions listing each table, its PK, and its FKs.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Movie night ER diagram",
+              "learning_outcomes": "Translate a movie-night planning story into an ER-style sketch and then into table definitions with primary and foreign keys. Output: A hand-drawn or text ER-style diagram plus table descriptions (Movies, Friends, Screenings, RSVPs) including PK/FK annotations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Data Has Shape"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "SQL Queries in Action",
+          "learning_goals": "Learn what SQL is, how it relates to a DBMS, and how to use basic SELECT queries to retrieve and read data from tables. Practice writing, debugging, and interpreting simple queries with column selection and aliases across different example datasets.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Hello, SQL!",
+              "learning_outcomes": "Define SQL and describe what kind of language it is (declarative); Explain what is the role of SQL vs DMBS; Recognize SQL as the interface for querying relational databases; Get to know the basic syntax and structure of SQL using a simple SELET query.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "More about SELECT",
+              "learning_outcomes": "Write basic queries that retrieve specific columns from a table; Get only specific columns from a table and apply column aliases to improve readability.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Reading Query Results",
+              "learning_outcomes": "Predict query results by reading SQL statements; Explain what each row in a result set represents; Debug simple queries.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Library SELECT basics",
+              "learning_outcomes": "Use simple SELECT statements to retrieve all columns or specific columns from a single table. Output: A set of SQL queries that list books from a Books table in different column combinations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Cafe menu SELECT",
+              "learning_outcomes": "Write SELECT queries that pull targeted menu information and apply basic column aliases for readability. Output: SQL queries that show menu items with renamed columns such as “ItemName” and “PriceEUR”.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Theory Practice Lesson: Reading query results",
+              "learning_outcomes": "Predict and explain the result sets of given SELECT queries without executing them. Output: Handwritten or typed tables showing expected rows and columns for each provided SQL query, with brief explanations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Student roster queries",
+              "learning_outcomes": "Debug simple SELECT queries by correcting syntax and adjusting selected columns to match the schema. Output: A corrected set of SQL statements that successfully query a Students table and return the intended data.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Practice Lesson: Music library column picking",
+              "learning_outcomes": "Retrieve and rename specific columns from a Songs table to create user-friendly result sets. Output: SQL queries that output curated song lists (e.g., “SongTitle”, “ArtistName”, “DurationMinutes”) using column aliases.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Theory Practice Lesson: SQL vs DBMS roles",
+              "learning_outcomes": "Distinguish clearly between SQL as a language and the DBMS as the engine that stores data and runs queries. Output: A short comparison chart or answered questions contrasting SQL statements with what the DBMS does behind the scenes.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Data Has Shape"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Data Has Shape"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Writing Your First SQL Queries",
+          "learning_goals": "Learn how SQL SELECT statements are structured, how to choose and rename columns intentionally, and how to filter rows with WHERE. Practice writing and debugging realistic queries for listings, reports, and data filters across different scenarios.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "SQL: How Queries Are Written",
+              "learning_outcomes": "Describe SQL as a declarative query language; Explain the structure of a SQL statement; Distinguish SQL from procedural languages like Python.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Picking Columns on Purpose",
+              "learning_outcomes": "Write SELECT queries with specific columns; Use column aliases to rename output; Explain how selected columns relate to the schema.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Filtering with WHERE",
+              "learning_outcomes": "Write WHERE clauses using comparison operators; Filter results based on realistic conditions; Debug incorrect filtering logic.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Theory Practice Lesson: SQL statement structure",
+              "learning_outcomes": "Identify and order the main parts of a basic SQL SELECT statement and distinguish them from steps in procedural code. Output: A completed “fill in the blanks” and ordering exercise that reconstructs valid SELECT statements from scrambled pieces.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Movie listings columns",
+              "learning_outcomes": "Write SELECT queries that intentionally pick only the columns needed for a movie listings page and apply clear aliases. Output: SQL queries that return concise movie listings with renamed columns like “Title”, “YearReleased”, and “AgeRating”.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: To-do list filtering",
+              "learning_outcomes": "Use WHERE clauses to filter tasks by status, due date, or priority in a to-do list table. Output: SQL queries that show only overdue tasks, only completed tasks, or only high-priority tasks.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Online shop product filters",
+              "learning_outcomes": "Apply comparison operators in WHERE to filter products by price and category. Output: SQL queries that return subsets of products such as “all items under 20”, “all electronics”, or “all items between 10 and 50”.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Student grades filtering",
+              "learning_outcomes": "Debug and refine WHERE conditions to correctly filter students based on grade thresholds and course names. Output: Corrected SQL queries that accurately list students above or below certain grade cutoffs in specific courses.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Cafe sales report - Part 1",
+              "learning_outcomes": "Combine deliberate column selection and aliases to prepare a readable cafe sales report query. Output: A SELECT statement that returns a compact sales report (date, item name, quantity, total_price) with user-friendly column names.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Asking Questions with SQL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 90,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Prep Lesson",
+              "learning_outcomes": "Prep lesson for the weekly review",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 240,
+              "type": "Assessment",
+              "original_unit": "Asking Questions with SQL"
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "week_num": 4,
+      "learning_goal": "Relational Data in Practice: In this unit, you’ll work hands-on with SQLite to design tables from real-world stories, insert and edit linked data through a UI, write SELECT and JOIN queries that handle NULLs, sorting, and limits, and compare relational databases with NoSQL and JSON so you can choose and use the right data tools confidently.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Querying Real Data",
+          "learning_goals": "Learn how to handle missing values, sort and limit results, and join related tables so you can answer realistic questions from multi-table databases using practical SQL queries.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "NULL Means Missing",
+              "learning_outcomes": "Define NULL and distinguish it from empty values; Write IS NULL and IS NOT NULL conditions; Predict how NULL affects query results.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Sorting Results",
+              "learning_outcomes": "Sort query results using ORDER BY; Choose meaningful sorting directions; Explain the difference between filtering and sorting.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Limiting Output",
+              "learning_outcomes": "Use LIMIT to control result size; Combine WHERE, ORDER BY, and LIMIT; Validate that results match the question asked.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "JOIN: Bringing Tables Together",
+              "learning_outcomes": "Explain why data is split across tables; Identify join keys using PK and FK; Write a basic JOIN query.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Cafe orders and NULL values",
+              "learning_outcomes": "Practice identifying and querying missing data using NULL, IS NULL, and IS NOT NULL in a cafe orders table. Output: A set of SELECT queries that list orders with missing customer info, missing tips, and fully complete records.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Music library sorting",
+              "learning_outcomes": "Apply ORDER BY with different columns and directions to organize a music tracks table and explain the difference between filtering and sorting. Output: Several sorted result sets showing tracks ordered by title, artist, duration, and release date.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Movie recommendations with LIMIT",
+              "learning_outcomes": "Use LIMIT together with WHERE and ORDER BY to answer “top N” style questions about movies in a catalog. Output: Queries that return only the top few highest-rated, most recent, or longest movies matching given criteria.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Bookstore customers and orders join",
+              "learning_outcomes": "Write basic JOIN queries using primary and foreign keys to combine customer and order tables in a bookstore scenario. Output: Joined result sets that show each order together with customer names and selected order details.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Travel bookings combined practice",
+              "learning_outcomes": "Combine WHERE, ORDER BY, LIMIT, and JOIN to answer realistic reporting questions in a travel bookings database. Output: A collection of queries that produce small, sorted reports of recent bookings, high-value customers, and incomplete reservations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Asking Questions with SQL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Querying and Building SQLite Databases",
+          "learning_goals": "Learn to read ER diagrams, write JOIN queries with filtering and sorting, and understand when and why to use SQLite. Practice exploring and creating tables in a graphical SQLite tool, connecting the user interface to core relational database concepts.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "From Diagram to Query",
+              "learning_outcomes": "Identify join paths from ER diagrams; Write JOIN queries across two tables; Modify queries with filtering and sorting.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "What Is SQLite?",
+              "learning_outcomes": "Explain what SQLite is and how it differs from server-based DBMSs; Identify common scenarios where SQLite is an appropriate choice; Recognize SQLite as a fully relational database.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "SQLite with user interface",
+              "learning_outcomes": "Open and explore a SQLite database using a graphical interface (DB Browser); Identify tables, columns, and relationships visually; Connect UI actions to the underlying database concepts.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Creating Tables",
+              "learning_outcomes": "Create tables using a graphical database tool; Define columns with appropriate data types; Set primary keys and foreign keys using the UI.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: ER diagram to concert ticket query",
+              "learning_outcomes": "Read an ER diagram for a concert ticketing system and translate it into JOIN queries with optional filtering and sorting. Output: Queries that list tickets with attendee and event info, filtered by date or venue and ordered meaningfully.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Theory Practice Lesson: SQLite concepts check",
+              "learning_outcomes": "Reinforce conceptual understanding of SQLite through a written quiz matching questions, scenarios, and terms (e.g., file-based vs server-based DBMS). Output: A completed quiz sheet with matched definitions, scenario choices, and short written explanations about SQLite.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Exploring a recipe database UI",
+              "learning_outcomes": "Use a graphical SQLite tool to inspect tables, columns, and relationships in a recipe database and relate UI elements to database concepts. Output: A short written report or screenshots identifying each table, its key columns, and how they relate.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Library tables creation",
+              "learning_outcomes": "Create basic tables for a small library system using a graphical SQLite UI, defining data types, primary keys, and foreign keys. Output: A SQLite database file containing properly linked tables for books, authors, and loans.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Practice Lesson: Filtering and sorting in a shop database",
+              "learning_outcomes": "Write JOIN queries across two tables in a shop database and modify them with WHERE and ORDER BY using the ER diagram as a guide. Output: A set of queries that show products with their categories or suppliers, filtered by price/stock and sorted for readability.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Asking Questions with SQL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Asking Questions with SQL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Building Your First Databases",
+          "learning_goals": "Learn how to turn real-world stories into relational database schemas, populate them with consistent data, and explore them using both a graphical interface and basic SQL queries.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Designing a Database from a Story",
+              "learning_outcomes": "Translate a real-world description into relational tables; Choose appropriate columns and primary keys; Implement the schema using a graphical tool.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Inserting and Editing Data",
+              "learning_outcomes": "Insert rows into tables using the UI; Respect foreign key relationships when adding data; Explain common data-entry errors caused by schema constraints.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Querying Data (UI + SQL)",
+              "learning_outcomes": "Run basic SELECT queries using the built-in query editor; Inspect query results in a tabular interface; Relate query output to the underlying tables and relationships.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: Fitness studio database design",
+              "learning_outcomes": "Convert a short story about a fitness studio (members, classes, instructors) into a relational schema and implement it using a graphical tool. Output: A SQLite database with multiple related tables representing the fitness studio’s core entities and keys.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: Fitness studio data entry",
+              "learning_outcomes": "Insert and edit sample data in the fitness studio database while respecting primary and foreign key constraints and noting common error messages. Output: Tables populated with consistent sample members, classes, and enrollments plus notes on any data-entry issues encountered.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: To-do list schema design",
+              "learning_outcomes": "Design a simple to-do list schema from a narrative, choose primary keys, and implement the tables in a database UI. Output: A SQLite database file containing user and task tables with appropriate keys and basic structure.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: To-do list data insertion",
+              "learning_outcomes": "Practice inserting, updating, and deleting rows in the to-do list tables while maintaining valid foreign key relationships. Output: A small but realistic set of tasks linked to users, reflecting different statuses and priority levels.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: Movie night queries (UI + SQL)",
+              "learning_outcomes": "Use the built-in query editor to run SELECT statements against a movie-night database and interpret the tabular results. Output: Several saved queries that retrieve movies by genre, rating, and watch status, with their corresponding result grids.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: Restaurant reservations exploration",
+              "learning_outcomes": "Combine UI-based table inspection with SQL queries to explore relationships in a restaurant reservations database. Output: Queries and result sets that show which customers have reservations, at what times, and for which tables.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Databases and JSON in Practice",
+          "learning_goals": "Learn how relational databases like SQLite compare to NoSQL systems, when to choose each, and how major NoSQL types fit into real-world scenarios. Build comfort reading and using JSON by mapping it to Python data structures and exploring simple data queries.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 60,
+              "type": "Group Class",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "SQLite in the Database Landscape",
+              "learning_outcomes": "Summarize SQLite’s role among relational DBMSs; Contrast UI-based database interaction with writing raw SQL; Explain why relational databases are often the default choice.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Beyond Relational: The NoSQL Landscape",
+              "learning_outcomes": "Define NoSQL as a family of non-relational databases; Distinguish relational databases from NoSQL at a high level; Identify major NoSQL types: document, key-value, wide-column, graph; Recognize which NoSQL types are covered in this course.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "NoSQL in Context"
+            },
+            {
+              "title": "JSON: The Shape of Modern Data",
+              "learning_outcomes": "Define JSON and its core structures, building on knowledge from Python’s dicts; Read JSON and explain the data it represents; Relate JSON to Python dictionaries and lists.",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "NoSQL in Context"
+            },
+            {
+              "title": "Theory Practice Lesson: Database landscape comparison",
+              "learning_outcomes": "Compare SQLite with other relational DBMSs through a classification and matching exercise focused on use cases and interaction styles. Output: A completed worksheet that categorizes scenarios as best suited to SQLite, server-based SQL, or other options.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Theory Practice Lesson: Relational vs NoSQL scenarios",
+              "learning_outcomes": "Distinguish relational databases from NoSQL by matching real-world application descriptions to the most appropriate database family. Output: A filled-in scenario table indicating whether each app should use relational, document, key-value, wide-column, or graph storage.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Theory Practice Lesson: NoSQL types identification",
+              "learning_outcomes": "Identify and classify examples of document, key-value, wide-column, and graph databases in a written matching and explanation exercise. Output: A set of matched pairs and short justifications for why each example fits a particular NoSQL type.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: JSON profiles reading",
+              "learning_outcomes": "Practice reading JSON documents describing user profiles and explaining the data structures they represent. Output: Annotated JSON snippets or notes that label objects, arrays, and key–value pairs and summarize the contained information in plain language.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: JSON to Python structures",
+              "learning_outcomes": "Translate JSON snippets into equivalent Python dictionaries and lists, reinforcing the structural parallels. Output: Short Python code fragments that load or represent the given JSON and then access specific fields.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Practice Lesson: Catalog data in JSON",
+              "learning_outcomes": "Work with a small JSON product catalog to answer questions about items, prices, and categories using mental querying and simple code. Output: A script or notebook cells that parse the JSON and print selected subsets such as items in a category or above a price threshold.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Unit 3 SQLite: Our First Real Database"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 90,
+              "type": "Lesson",
+              "original_unit": "NoSQL in Context"
+            },
+            {
+              "title": "Prep Lesson",
+              "learning_outcomes": "Prep lesson for the weekly review",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "NoSQL in Context"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 240,
+              "type": "Assessment",
+              "original_unit": "NoSQL in Context"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

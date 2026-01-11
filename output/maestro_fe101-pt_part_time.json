@@ -1,0 +1,688 @@
+{
+  "title": "fe101-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-11",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "fe101-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Web Pages in Motion",
+              "lessons": [
+                {
+                  "title": "Browser and Client",
+                  "masteryOutcomes": [
+                    "Define browser and client in a web page scenario",
+                    "Describe what the browser does with HTML/CSS/JS at a high level",
+                    "Identify what the user controls vs what the browser controls"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Server and Response",
+                  "masteryOutcomes": [
+                    "Define server and response",
+                    "List common response files (HTML, CSS, JS, images)",
+                    "Understand what it means to “serve a file”"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Web roles in a cafe website",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will be able to clearly distinguish between the browser (client) and the server, and explain what each one does when loading a simple cafe website.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Serving files for a photo gallery",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will be able to identify common response file types and explain what it means for a server to “serve” each file to a browser.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Request in Plain Words",
+                  "masteryOutcomes": [
+                    "Define request using everyday examples (page load, image load)",
+                    "Trace “type URL → request → response → render”",
+                    "Predict what happens when a request fails (missing page/file)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "URLs and Paths",
+                  "masteryOutcomes": [
+                    "Identify URL parts: domain + path + query (conceptually)",
+                    "Distinguish URL path vs local file path",
+                    "Understand why correct paths matter for loading resources"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Request journey for a news article",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will be able to trace the full “type URL → request → response → render” flow and predict what happens when a request fails.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: URL and path detective",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will be able to break down URLs into domain, path, and query and distinguish URL paths from local file paths in practical scenarios.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "HTML Elements",
+                  "masteryOutcomes": [
+                    "Define HTML as page structure",
+                    "Create a page using common elements (h1, p, a)",
+                    "Use headings to create a readable structure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "HTML Elements vs Tags",
+                  "masteryOutcomes": [
+                    "Understand difference between elements and tags",
+                    "Identify and understand the opening and closing tag",
+                    "Identify and understand self-closing tags"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Personal bio page",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to structure a simple HTML page using headings, paragraphs, and links to create a readable personal bio. Output: A basic HTML file that displays a personal bio with a clear heading hierarchy and at least one working link.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Story outline page",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to use HTML elements and tags correctly, including opening, closing, and self-closing tags, to build a short story outline page. Output: An HTML file that shows a story title, sections using headings and paragraphs, and at least one self-closing tag (like an image or line break) used correctly.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "HTML Attributes",
+                  "masteryOutcomes": [
+                    "Identify an attribute as name=\"value\" on a tag",
+                    "Use common attributes correctly (href, src, alt)",
+                    "Understand what “value” means in an attribute context"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Links Between Pages",
+                  "masteryOutcomes": [
+                    "Create links between index.html and about.html",
+                    "Use relative paths correctly",
+                    "Debug a broken link by fixing the path",
+                    "Understand the difference between internal and external links"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Two-page portfolio - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to use common HTML attributes (href, src, alt) correctly and understand how attribute values affect how content appears and behaves. Output: An HTML page that shows a profile image with alt text and several links using correctly formed attributes and values.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Two-page portfolio - Part 2",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to create working internal and external links between pages using relative paths and debug broken links by fixing incorrect paths. Output: A small two-page site (index.html and about.html) with links that successfully navigate between the pages and to at least one external site.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Semantic Pages & Forms",
+              "lessons": [
+                {
+                  "title": "Semantic Page Layout",
+                  "masteryOutcomes": [
+                    "Build a page with header, nav, main, section, footer",
+                    "Understand what semantic HTML means (simple definition)",
+                    "Organize content into clear sections (not random divs)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Three Pages, One Site",
+                  "masteryOutcomes": [
+                    "Create index.html, about.html, contact.html",
+                    "Keep navigation consistent across pages",
+                    "Understand how the browser loads different pages via links"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe homepage layout",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice building a single-page cafe homepage using semantic HTML elements (header, nav, main, section, footer) to organize content clearly. Output: A simple static cafe homepage that displays clearly separated areas for branding, navigation, content, and footer information.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Three-page portfolio site",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create index.html, about.html, and contact.html with consistent navigation to understand how a small multi-page site works. Output: A basic three-page portfolio website where clicking navigation links moves between the pages in the browser.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Headings That Make Sense",
+                  "masteryOutcomes": [
+                    "Use one h1 per page and structure sections with h2",
+                    "Fix a page with messy heading levels",
+                    "Understand why hierarchy matters for readability"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists for Real Content",
+                  "masteryOutcomes": [
+                    "Use ul/ol/li for actual content (menu items, steps, features)",
+                    "Choose the right list type for the purpose",
+                    "Combine lists with links for simple navigation patterns"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Blog article structure",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Structure a blog article page using one h1 and meaningful h2 subheadings to create a clear, readable hierarchy. Output: A static blog article page whose headings visually and logically separate the content into well-defined sections.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Restaurant menu with lists",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a restaurant menu using unordered and ordered lists, choosing appropriate list types and combining them with links for simple navigation. Output: A static restaurant menu page where dishes and sections are presented as lists, with a small in-page navigation list linking to different menu sections.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Clean Sections with Divs",
+                  "masteryOutcomes": [
+                    "Use div to group content when semantics don’t fit",
+                    "Add classes to divs to label page sections",
+                    "Keep a layout readable using consistent grouping"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Form Inputs and Values",
+                  "masteryOutcomes": [
+                    "Define input and value in plain terms (the HTML element vs what the user types)",
+                    "Use common input types (text, email, password) and understand what changes",
+                    "Add and explain the placeholder attribute (hint text, not the actual value)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Landing page sections with divs",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Group related content into clearly labeled divs with classes to keep a simple landing page’s layout readable when semantic tags don’t quite fit. Output: A static landing page where content blocks (hero, features, testimonials, footer area) are grouped in divs with meaningful class names for easy visual scanning.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Simple sign-up form",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create a basic sign-up form using text, email, and password inputs, and use placeholders to guide what users should type. Output: A static sign-up form that shows different input behaviors by type and displays hint text inside each field before the user types.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Labels and IDs",
+                  "masteryOutcomes": [
+                    "Add a label for each input and understand why labels exist",
+                    "Connect label to input using for + id",
+                    "Fix a broken page where clicking the label focuses the wrong input"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Forms and Input Names",
+                  "masteryOutcomes": [
+                    "Wrap inputs in a form and understand what “submit” means at a high level",
+                    "Add the name attribute and understand why it matters for submission",
+                    "Predict the “data keys” a form will send based on input names"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Contact form labels and IDs",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Add labels to each input in a contact form and correctly connect them with for and id so clicking labels focuses the right input. Output: A static contact form where every field has a clickable label that activates the correct input box.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Feedback form submission basics",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Wrap inputs in a form, add name attributes, and predict the key-value pairs that would be sent when the form is submitted. Output: A static feedback form that, when “submitted,” would conceptually send labeled data (using the input names) for each field the user filled in.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "HTML & CSS Foundations",
+              "lessons": [
+                {
+                  "title": "HTML Quality Habits",
+                  "masteryOutcomes": [
+                    "Keep HTML consistently indented and readable",
+                    "Spot and fix broken nesting and missing closing tags",
+                    "Use DevTools Elements tab to confirm structure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Basic Accessibility Habits",
+                  "masteryOutcomes": [
+                    "Use semantic landmarks (nav, main) intentionally",
+                    "Add alt text and proper labels reliably",
+                    "Identify 2-3 easy accessibility improvements on a page"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe homepage cleanup",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Improve an existing cafe HTML page by fixing indentation, broken nesting, missing closing tags, and verifying structure with DevTools. Output: A cleaned-up, well-indented cafe homepage where all elements are correctly nested and visible in the DevTools Elements tree.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Accessible music app landing page",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a simple music app landing page using semantic landmarks, descriptive alt text, and proper labels while spotting 2-3 accessibility improvements. Output: An HTML page for a music app that uses nav/main/footer, labeled form controls, and accessible images.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "CSS: Three Ways",
+                  "masteryOutcomes": [
+                    "Apply CSS inline (style=\"\") for quick tests",
+                    "Apply CSS in a <style> tag for page-level styling",
+                    "Link an external CSS file with <link> for reuse"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Selectors: Tag, Class, ID",
+                  "masteryOutcomes": [
+                    "Write selectors using tag, class, and id",
+                    "Predict which elements a selector targets",
+                    "Fix a selector that styles the wrong elements"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: To-do list styles - inline and style tag",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Style a simple to-do list page using inline styles for quick tests and a <style> tag for page-level styling while predicting which elements each rule affects. Output: A to-do list HTML page where items are visually differentiated using inline and internal CSS rules.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Recipe card with tag, class, and ID selectors",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create a recipe card layout and apply tag, class, and ID selectors to style different parts, then fix a selector that targets the wrong elements. Output: A recipe card page where headings, ingredients, and steps are styled correctly via external CSS using precise selectors.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Styling Text Tags",
+                  "masteryOutcomes": [
+                    "Style headings and paragraphs (size, spacing, alignment)",
+                    "Improve readability with consistent text styling",
+                    "Keep styles consistent across multiple pages"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Divs and Visual Blocks",
+                  "masteryOutcomes": [
+                    "Style div sections using background, padding, borders",
+                    "Create clear sections of a page using CSS",
+                    "Use classes to apply the same styling pattern repeatedly"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Blog teaser text styling",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Design a simple blog teaser page by styling headings and paragraphs for size, spacing, and alignment, keeping text styles consistent across multiple sections. Output: A blog-style page with multiple article previews whose titles and body text share a consistent, readable text styling pattern.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Portfolio sections with visual blocks",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a one-page portfolio using divs as visual sections, styled with background colors, padding, borders, and reusable classes for repeated section patterns. Output: A portfolio page where each section (about, projects, contact) appears as a clearly separated visual block using shared CSS classes.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Box Model Spacing",
+                  "masteryOutcomes": [
+                    "Apply margin vs padding intentionally",
+                    "Understand spacing using box model vocabulary",
+                    "Use DevTools to inspect margin and padding live"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Block vs Inline",
+                  "masteryOutcomes": [
+                    "Distinguish block vs inline behavior",
+                    "Use display: inline-block for simple layout needs",
+                    "Debug “why won’t these sit next to each other?” issues"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Product card spacing with box model",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create a product card layout and intentionally adjust margin and padding while using DevTools to inspect and understand the box model spacing. Output: A product card component where image, title, price, and button are spaced clearly using well-tuned margins and padding.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Navigation bar layout - block vs inline",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a simple navigation bar and experiment with block, inline, and inline-block display values to place items side by side and debug spacing issues. Output: A horizontal navigation bar where menu links sit next to each other using display properties to control their layout.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Interactive Pages in Action",
+              "lessons": [
+                {
+                  "title": "Buttons and Inputs",
+                  "masteryOutcomes": [
+                    "Style buttons with hover and focus states (basic usability)",
+                    "Style inputs for consistent form design",
+                    "Keep button and input styles reusable via classes"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "CSS Debugging in DevTools",
+                  "masteryOutcomes": [
+                    "Find where a style is coming from in the Styles panel",
+                    "Identify why a style isn’t applying (wrong selector or wrong file)",
+                    "Make a test change in DevTools, then apply it in code"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe order form",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Style buttons and inputs consistently using reusable classes, including hover and focus states, and use DevTools to trace and fix style issues. Output: A styled cafe order form where buttons and inputs look consistent and react visually on hover/focus.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Bug hunt in signup form",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use the browser DevTools Styles panel to locate where styles come from, identify why certain styles are not applying, and then fix them in the CSS file. Output: A corrected signup form whose buttons and inputs now match the intended design after debugging CSS issues.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "JavaScript Adds Behavior",
+                  "masteryOutcomes": [
+                    "Understand what JavaScript is used for on a web page",
+                    "Link a script.js file correctly",
+                    "Use console.log to confirm the script runs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "DOM: Find Elements",
+                  "masteryOutcomes": [
+                    "Define DOM in practical terms (page structure JS can access)",
+                    "Select elements with querySelector",
+                    "Store elements in variables for reuse"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Console-based welcome page",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Correctly link an external JavaScript file, verify it runs with console.log, and explain how JavaScript adds behavior to an otherwise static page. Output: A simple webpage that logs personalized welcome messages to the browser console when loaded.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Music playlist highlighter",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use the DOM and querySelector to find specific elements on the page, store them in variables, and prepare them for later interactive behavior. Output: A static music playlist page where specific song items are selected via JavaScript and visually highlighted using added classes or inline styles.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Events: Click and Submit",
+                  "masteryOutcomes": [
+                    "Define an event (click, submit, input)",
+                    "Attach event listeners and run a function",
+                    "Debug “event not firing” using console logs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Change Text on Click",
+                  "masteryOutcomes": [
+                    "Update text content of an element on click",
+                    "Understand what changed in the DOM (content changed)",
+                    "Keep logic small and readable (one clear function)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Click counter button",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Attach click event listeners to a button, debug event issues with console logs, and update text content in the DOM every time the button is clicked. Output: A page with a button that shows and updates a click count in text each time it is pressed.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Mini feedback form",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Listen for a form submit event, run a small readable function, prevent default submission, and change a thank-you message’s text content based on the input. Output: A feedback form that, on submit, shows a custom thank-you message on the page without reloading.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Show and Hide Content",
+                  "masteryOutcomes": [
+                    "Show and hide an element using style.display",
+                    "Track simple state using a boolean variable",
+                    "Update button text based on current state"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Toggle Page Colors",
+                  "masteryOutcomes": [
+                    "Change background and text colors from JS",
+                    "Understand the difference between CSS styling and JS-driven styling",
+                    "Keep dark/light behavior predictable and reversible"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: FAQ answer toggler",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Show and hide FAQ answers using style.display, track visibility with a boolean, and update the toggle button text to match the current state. Output: An FAQ section where clicking a button reveals or hides an answer while the button label switches between “Show answer” and “Hide answer.”",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Reading mode color toggle",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement a dark/light mode toggle using JavaScript-driven styling, keeping the color changes predictable, reversible, and clearly separated from base CSS. Output: A page with a “Toggle reading mode” button that switches the background and text colors between light and dark themes.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

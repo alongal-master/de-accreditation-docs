@@ -1,0 +1,687 @@
+{
+  "title": "ml1-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-11",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "ml1-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Understanding AI",
+              "lessons": [
+                {
+                  "title": "What Is Artificial Intelligence?",
+                  "masteryOutcomes": [
+                    "Define Artificial Intelligence in practical, non-sci-fi terms",
+                    "Identify what makes a system “intelligent” in practice",
+                    "Distinguish AI systems from traditional software"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "A Short History of AI",
+                  "masteryOutcomes": [
+                    "Describe how early AI systems were built",
+                    "Explain why early AI relied on rules and logic",
+                    "Identify what changed when data became central"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Spot the AI",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Identify whether real-world examples are AI, traditional software, or not software at all, and justify the classification.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: AI Timeline and Turning Points",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Reconstruct a simplified timeline of AI history and connect each era to its core idea (rules vs data).",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Rule-Based AI",
+                  "masteryOutcomes": [
+                    "Define rule-based (symbolic) AI",
+                    "Explain how rules are written and applied",
+                    "Identify strengths and limitations of rule-based systems"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Data-Driven AI",
+                  "masteryOutcomes": [
+                    "Define data-driven (statistical) AI",
+                    "Explain how data replaces explicit rules",
+                    "Describe why data-driven systems scale better"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Coffee Shop Rule Engine",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Design and test a small set of explicit IF-THEN rules to simulate how a barista decides drink prices and discounts. Output: A written or pseudo-coded rule set that, given an order description, determines the correct price and discount.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie Recommendation Cards",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a simple “data-driven” recommendation process using example user data instead of explicit rules. Output: A filled-out set of cards or a table that shows how different user viewing histories lead to different recommended movies based on patterns in the data.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Symbolic vs Statistical AI",
+                  "masteryOutcomes": [
+                    "Clearly distinguish symbolic AI from statistical AI",
+                    "Compare how each approach handles complexity",
+                    "Identify which approach powers most modern AI systems"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Narrow AI vs General AI",
+                  "masteryOutcomes": [
+                    "Define Narrow AI using real-world examples",
+                    "Define General AI conceptually and explain why it does not exist today",
+                    "Correct common misconceptions about AI capabilities"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Symbolic vs Statistical Sorting",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Correctly classify example AI systems as symbolic or statistical and explain how each handles complexity in that context.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Narrow vs General AI Scenarios",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Distinguish narrow AI from hypothetical general AI and debunk common myths using concrete scenarios.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "ML, DL, and LLMs",
+                  "masteryOutcomes": [
+                    "Distinguish Machine Learning, Deep Learning, and LLMs",
+                    "Explain how these approaches relate to statistical AI",
+                    "Use correct terminology when describing modern systems"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "AI in the Real World",
+                  "masteryOutcomes": [
+                    "Identify real-world applications of AI across industries",
+                    "Describe what type of data these systems rely on",
+                    "Explain why AI behavior depends on data quality"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: ML, DL, LLM Match-Up",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Accurately match real-world systems to ML, DL, or LLM categories and describe the data they use.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: AI in Everyday Life Map",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Identify AI use-cases across multiple industries and explain how data quality shapes their behavior.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Working with Data in Python",
+              "lessons": [
+                {
+                  "title": "DataFrames and Series",
+                  "masteryOutcomes": [
+                    "Define DataFrame and Series using tabular data examples",
+                    "Explain how rows and columns map to DataFrame structure",
+                    "Navigate and inspect basic DataFrame components"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Loading Real Data",
+                  "masteryOutcomes": [
+                    "Load CSV data into a Pandas DataFrame",
+                    "Verify that data loaded correctly using inspection methods",
+                    "Identify basic issues immediately after loading data"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe orders table",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice creating Series and DataFrames from small tabular cafe order data and inspecting rows, columns, and basic structure. Output: A script that builds a tiny cafe orders DataFrame and prints its head, shape, columns, and a few Series slices.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie ratings CSV loader",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Load a CSV of fictional movie ratings into a DataFrame, inspect it with Pandas methods, and spot immediate loading issues (missing values, wrong types, odd values). Output: A script that reads a movie_ratings.csv file, prints key inspection summaries, and highlights any obvious data problems after loading.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Reading Data Carefully",
+                  "masteryOutcomes": [
+                    "Inspect datasets to understand structure and content",
+                    "Identify potential data issues by scanning rows and columns",
+                    "Formulate simple questions about what the data represents"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Selecting and Filtering",
+                  "masteryOutcomes": [
+                    "Select specific columns from a DataFrame intentionally",
+                    "Filter rows using logical conditions",
+                    "Explain filtering logic clearly in plain language"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Music app playlist explorer",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use column selection and row filtering on a playlist DataFrame to answer questions about songs, durations, and artists, and explain the filtering logic in plain language. Output: A script that loads a playlist DataFrame and prints several filtered views (e.g., long songs, songs by an artist, specific columns only).",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Customer orders filter",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Carefully inspect an e-commerce orders dataset, identify structural patterns and potential issues, then select and filter rows to answer simple business questions. Output: A script that reads an orders CSV and prints answers to questions like “orders over $100”, “orders from a given country”, and “selected key columns”.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Grouping Data",
+                  "masteryOutcomes": [
+                    "Group data by categorical features using Pandas",
+                    "Apply basic aggregations such as mean and count",
+                    "Interpret grouped results in terms of real-world meaning"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Derived Columns",
+                  "masteryOutcomes": [
+                    "Create new columns derived from existing data",
+                    "Explain why derived columns can make data more useful",
+                    "Verify correctness of newly created columns"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe sales summary",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Group cafe transaction data by product and by day, compute basic aggregations (count, mean price, total revenue), and interpret what the grouped results say about sales patterns. Output: A script that prints grouped tables summarizing number of items sold and revenue per product and per day.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness tracker metrics",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create derived columns (e.g., pace, calories_estimate, distance_km) from raw fitness tracking data and verify their correctness with spot checks and reasoning. Output: A script that reads a workout DataFrame, adds several calculated columns, and prints before/after views to confirm the new metrics.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Thinking in Tables",
+                  "masteryOutcomes": [
+                    "Reason about data transformations in terms of rows and columns",
+                    "Predict how operations will change a dataset’s structure",
+                    "Develop confidence manipulating tabular data logically"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Thinking in tables scenarios",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Strengthen the ability to mentally model how tabular operations (select, filter, group, derive columns) change rows and columns using written scenarios and table-based questions.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Data quality checklist",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply basic data quality checks (missing values, duplicates, out-of-range values, type issues) to a sample dataset and explain why each check matters before analysis. Output: A script that runs a small suite of quality checks on a DataFrame and prints a concise “data quality report” summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Cleaning and Exploring Data",
+              "lessons": [
+                {
+                  "title": "Data Quality Checks",
+                  "masteryOutcomes": [
+                    "Understand different data quality checks and why they are important",
+                    "Perform basic checks to assess data quality",
+                    "Explain why quality checks should happen before analysis"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Fixing Data Types",
+                  "masteryOutcomes": [
+                    "Detect columns with incorrect data types",
+                    "Convert data types to enable proper analysis",
+                    "Explain why correct data types are essential"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Detecting and Understanding Outliers",
+                  "masteryOutcomes": [
+                    "Identify outliers using simple numerical and visual methods",
+                    "Distinguish between meaningful outliers and problematic outliers",
+                    "Explain why outliers should be investigated, not automatically removed"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe sales data types",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice detecting and correcting incorrect data types in a small cafe sales dataset and explain why each change is needed. Output: A cleaned DataFrame where dates, numeric prices, and quantities have correct data types ready for analysis.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Ride-sharing outlier hunt",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Identify, visualize, and interpret outliers in a ride-sharing trips dataset, distinguishing meaningful anomalies from data errors. Output: A short report (notebook cells or markdown) with plots and notes labeling which outliers to investigate, keep, or treat as data issues.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Filtering with Purpose",
+                  "masteryOutcomes": [
+                    "Apply filters based on meaningful conditions",
+                    "Explain why specific filters are applied",
+                    "Validate that filtering produced expected results"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Grouping for Insight",
+                  "masteryOutcomes": [
+                    "Use grouping to compare categories in data",
+                    "Interpret aggregated values meaningfully",
+                    "Identify patterns revealed through grouping"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie ratings filtering",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply purposeful filters to a movie ratings dataset, justify each filter, and verify that the filtered subset matches expectations. Output: A filtered DataFrame of movies that meet clear criteria (e.g., minimum rating count and average rating) plus simple checks confirming the filters worked.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Online store grouping insights",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use grouping and aggregation on an online store orders dataset to compare categories and extract interpretable business insights. Output: Grouped summary tables (e.g., revenue by category, average order value by region) with brief written interpretations of the main patterns.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "What EDA Really Means",
+                  "masteryOutcomes": [
+                    "Define exploratory data analysis in clear, practical terms",
+                    "Explain the goals of EDA before modeling or decisions",
+                    "Distinguish EDA from final conclusions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "First Plots for Insight",
+                  "masteryOutcomes": [
+                    "Create basic plots using matplotlib",
+                    "Choose plot types appropriate to specific questions",
+                    "Interpret plots to describe trends and patterns"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: EDA concepts check",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Reinforce understanding of what EDA is, its goals, and how it differs from final conclusions using matching, classification, and short-answer prompts.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Music app first plots",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create and interpret basic matplotlib plots for a music streaming dataset, choosing appropriate chart types for different exploratory questions. Output: A set of plots (histogram, bar chart, line plot, or scatter plot) with brief text describing the main trends and patterns observed.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Patterns and Anomalies",
+                  "masteryOutcomes": [
+                    "Identify patterns emerging from data exploration",
+                    "Detect anomalies and unusual values",
+                    "Explain findings clearly without over-interpreting"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Patterns and question types",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice recognizing patterns vs anomalies and classifying questions as univariate or relationship-based, matching each to suitable summaries and visuals.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Customer churn pattern scanner",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Analyze a customer churn-style dataset to detect key patterns and anomalies while clearly stating what can and cannot be concluded from the data. Output: A concise exploratory summary with tables and simple visuals highlighting main patterns and flagged anomalies, plus short explanations that avoid over-interpretation.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Statistical Intuition for Data",
+              "lessons": [
+                {
+                  "title": "Data Types & “What am I analyzing?”",
+                  "masteryOutcomes": [
+                    "Distinguish numerical vs categorical variables",
+                    "Identify whether a question is univariate or relationship-based",
+                    "Understand that choosing appropriate summary statistics and visualizations is based on data type and know the main techniques according to data type"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Variability & Standard Deviation (Intuition)",
+                  "masteryOutcomes": [
+                    "Explain variability as how spread out values are",
+                    "Interpret standard deviation at an intuitive level",
+                    "Compare two datasets and infer which has more variability"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Randomness, Noise & Why patterns can be misleading",
+                  "masteryOutcomes": [
+                    "Define randomness and noise in real datasets",
+                    "Recognize when a pattern may be caused by noise rather than signal",
+                    "Explain why repeated measurements or samples may lead to different results"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Weather variability story",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice intuitively judging which of several fictional towns has higher variability and standard deviation in daily temperatures.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Noise vs signal in café sales",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice deciding whether apparent patterns in a café’s daily customer counts are likely noise or meaningful signal, and explain why repeated measurements differ.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Bivariate Thinking - Relationships between two variables",
+                  "masteryOutcomes": [
+                    "Identify when a question requires bivariate analysis",
+                    "Choose an appropriate visualization for different variable type combinations",
+                    "Describe what it means for two variables to move together"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Correlation - Pearson vs Spearman (High level)",
+                  "masteryOutcomes": [
+                    "Define correlation and interpret positive vs negative correlation",
+                    "Differentiate Pearson (linear) vs Spearman (rank or monotonic) at a high level",
+                    "Explain when Spearman may be more appropriate than Pearson"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Matching questions to visualizations",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice identifying when a question needs bivariate analysis and matching it to an appropriate visualization for different variable type combinations.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Correlation stories - Pearson vs Spearman",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice interpreting positive and negative correlations from short scenarios and deciding whether Pearson or Spearman correlation is more appropriate.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Correlation ≠ Causation",
+                  "masteryOutcomes": [
+                    "Explain why correlation does not imply causation",
+                    "Identify common pitfalls such as confounders and reverse causality",
+                    "Propose ways to reduce wrong conclusions by considering other variables and domain reasoning"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Multivariate Intuition - When relationships change",
+                  "masteryOutcomes": [
+                    "Explain why adding a third variable can change an observed relationship",
+                    "Describe controlling for another variable conceptually",
+                    "Understand how multivariate thinking connects to feature selection and ML modeling decisions at a high level"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Correlation vs causation detective",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice spotting confounders, reverse causality, and weak causal claims in short news-style summaries and proposing safer interpretations.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Multivariate twists in relationships",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice reasoning through how adding a third variable can change observed relationships and what it means to “control for” another variable conceptually.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Probability as Uncertainty (High level)",
+                  "masteryOutcomes": [
+                    "Explain probability as a way to describe uncertainty",
+                    "Interpret probability statements in everyday terms",
+                    "Connect probability to variability and why results are not exact"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Samples vs Population - Why results vary",
+                  "masteryOutcomes": [
+                    "Distinguish population vs sample intuitively",
+                    "Explain why different samples give different results",
+                    "Describe why we should be cautious about trusting patterns from small samples"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Everyday probability scenarios",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice translating informal uncertainty phrases (like “unlikely,” “almost certain”) into rough probability ranges and connecting them to real-life variability.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Samples vs population - survey puzzles",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice distinguishing samples from populations using mini-survey stories and explaining why small or biased samples can give misleading patterns.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

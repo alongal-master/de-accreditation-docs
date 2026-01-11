@@ -1,0 +1,241 @@
+## Unit 1: Modern JavaScript Toolkit
+
+---
+
+### 1. Client-side vs Server-side JavaScript
+
+- Distinguish client-side JavaScript (runs in the **browser**) vs server-side JavaScript (runs in **Node.js**)
+- Explain what **Node.js** is and why it exists (run JavaScript outside the browser)
+- Identify one thing each environment can do (browser: interact with the page, Node: run scripts / tools)
+
+### 2. Node and npm
+
+- Know how to install **Node.js** and confirm it works (`node -v`, `npm -v`)
+- Explain what **npm** is used for in a JS project
+- Run a simple JS file locally with Node
+
+### 3. package.json and Scripts
+
+- Create a project with `package.json`
+- Run scripts from `package.json` (e.g., `dev`, `start`)
+- Explain what a “script” is and why teams use them
+
+### 4. npm vs yarn
+
+- Describe what **yarn** is and how it relates to npm
+- Install dependencies using npm (and recognize yarn commands in docs)
+- Explain lockfiles at a high level (`package-lock.json`, `yarn.lock`)
+
+### 5. Modules: import/export
+
+- Use **import/export** to split code into files
+- Explain what a **module** is in practical terms
+- Fix a broken import by reasoning about file paths and exports
+
+### 6. JavaScript Functions
+
+- Understand the difference between named and anonymous functions
+- Identify arrow functions and understand their syntax
+- Use named, anonymous and arrow functions and callbacks.
+
+### 7. Arrays
+
+- Create arrays and access/update values using indexes
+- Use common array methods to add/remove items (e.g., `push`, `pop`, `slice`) without getting lost
+- Transform and filter arrays using **`.map()`** and **`.filter()`** to produce new arrays
+
+### 8. Loops
+
+- Identify and understand the syntax of classic for loop (for (let i = 0; i < ...; i++))
+- Identify and understand the syntax of classic for… of loop
+- Explain when each loop is a better fit (index-based vs value-based iteration)
+
+### 9. Objects
+
+- Create objects and access/update values using dot and bracket notation
+- Add, remove, and rename object properties confidently
+- Use objects to group related data (e.g., a `user` with `name`, `email`, `role`)
+
+### 10. Destructuring and Spread Operator
+
+- Use **destructuring** to pull values from objects and arrays
+- Use the **spread operator** to copy arrays and objects
+- Update one field in an object immutably (copy + change)
+
+## Unit 2: React Components and Props
+
+---
+
+### 1. Welcome to React
+
+- Explain what React is used for (building UIs with **components**) and mention other popular frameworks
+- Identify what a React app renders (JSX → UI in the browser)
+- Describe **props** in plain terms (data passed into a component)
+
+### 2. Create a Vite React App
+
+- Create a React project with **Vite**
+- Install dependencies and start the dev server (`npm install`, `npm run dev`)
+- Confirm the app is running and changes show up in the browser
+
+### 3. Dev Server vs Build
+
+- Explain what the **dev server** is used for (local testing + fast feedback)
+- Create a production build (`npm run build`) and preview it (`npm run preview`)
+- Describe the difference between “development” and “production” output in simple terms
+
+### 4. JSX: UI as Code
+
+- Read and write basic JSX
+- Explain the difference between HTML and JSX (practical differences only)
+- Fix common JSX mistakes (closing tags, expressions in `{}`)
+
+### 5. Components: UI Building Blocks
+
+- Create a React **component** as a function
+- Compose multiple components into a page
+- Explain what “reusable UI” means in React
+
+### 6. Components in Files
+
+- Create components as separate files and import them correctly
+- Organize components into a simple folder structure (`components/`)
+- Add a basic CSS file for a component and apply styles cleanly (e.g., `User.css` imported in `User.jsx`)
+
+### 7. Props: passing data down
+
+- Pass **props** into a component and render them
+- Choose good prop names that match the UI intent
+- Debug missing/undefined props by tracing component usage
+
+### 8. Parent and Child Components
+
+- Build a simple component tree (e.g. `App` → `UserList` → `User`)
+- Pass data from parent to child using **props** multiple levels deep
+- Explain what “parent” and “child” means in a React component tree
+
+### 9. Arrays to UI Lists
+
+- Render a list from an array using `map`
+- Provide a stable `key` and explain what it’s for
+- Refactor repeated JSX into a reusable component
+
+### 10. Event Handlers as props
+
+- Add a click handler to a button
+- Explain what an **event handler** does in UI terms
+- Pass a handler as a prop and trigger it in a child
+
+## Unit 3: State in React
+
+---
+
+### 1. State: when UI changes
+
+- Define **state** as UI data that can change over time
+- Use `useState` to update visible UI
+- Explain “re-render” using observable behavior (not theory)
+
+### 2. State Updates: Direct vs Functional
+
+- Use `setState(newValue)` when the new value does **not** depend on the previous state
+- Use `setState(prev => newValue)` when the update **depends on the previous state** (e.g., counters, toggles, appending to arrays)
+- Explain why the functional form avoids “stale state” bugs when multiple updates happen quickly
+
+### 3. Conditional Rendering
+
+- Show/hide UI based on a state
+- Use a button click handler to change a conditionally rendered div
+- Explain the difference between “not rendered” vs “hidden by CSS”
+
+### 4. Objects and Arrays in State
+
+- Store an array in state and update it (add/remove)
+- Store an object in state and update one field
+- Use spread/destructuring to keep updates readable
+
+### 5. Updating State Correctly
+
+- Understand why we must use “setter” to update the state
+- Avoid direct mutation of objects/arrays in state
+- Explain why “copy then update” matters in React
+
+### 6. State vs Props
+
+- Distinguish **props** (inputs) vs **state** (local UI memory)
+- Decide where state should live (parent vs child)
+- Move state upward when multiple components need it
+
+### 7. Controlled Inputs
+
+- Create an input in React and connect it to **state**
+- Update the input value using `onChange`
+- Explain what “controlled input” means (React controls the value)
+
+### 8. Form Submit Basics
+
+- Build a simple form with an input + button
+- Handle `onSubmit` and use `preventDefault()` to stop page reload
+- Read the submitted value from state and use it in the UI
+
+### 9. Derived Values vs State
+
+- Explain the difference between **state** and **derived values**
+- Render a filtered list based on an input value (without storing a second list)
+- Explain why storing both “all items” and “filtered items” can cause bugs
+
+
+
+
+
+## Unit 4: UseEffect and Fetching Data
+
+---
+
+### 1. useEffect: when it runs
+
+- Use **useEffect** for a simple side effect
+- Explain dependency array behavior at a beginner level
+- Debug “effect runs too often” by adjusting dependencies
+
+### 2. Effects and Cleanup
+
+- Create an effect that sets up something (e.g., timer or event listener)
+- Add a cleanup function and explain why it exists
+- Verify cleanup behavior by observing the app
+
+### 3. Fetch API + Promises
+
+- Use the **fetch API** to request JSON from an endpoint
+- Handle async results with **`.then()`** and explain what a **Promise** represents
+- Parse a JSON response and handle a basic fetch failure
+
+### 4. Async/Await for Fetch
+
+- Rewrite a fetch request using **`async` / `await`**
+- Use `try/catch` for error handling in async code
+- Explain when async/await is easier to read than chaining `.then()`
+
+### 5. Fetch in useEffect
+
+- Fetch data inside **`useEffect`** and store results in React **state**
+- Show **loading** vs **loaded** UI based on state
+- Handle and display an **error** state in the component
+
+### 6. Effect Dependencies That Make Sense
+
+- Choose dependencies intentionally (what should trigger the effect)
+- Prevent infinite loops caused by state updates inside effects
+- Explain the “why” of a dependency list using examples
+
+### 7. Re-fetch on User Input
+
+- Re-fetch when a user changes something (e.g., a dropdown or search term)
+- Keep UI responsive while fetching (loading state stays correct)
+- Avoid unnecessary fetches by controlling when the effect runs
+
+### 8. What’s Next in Frontend
+
+- Recognize common “next step” topics in frontend work: **routing**, **context**, **TypeScript**, **form libraries**
+- Describe what each one is for at a high level (why teams use it)
+- Identify which topic helps with which problem (navigation, shared state, fewer bugs, easier forms)

@@ -1,0 +1,754 @@
+{
+  "title": "ml2-ft",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-11",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "ml2-ft",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "What Machine Learning Solves",
+              "lessons": [
+                {
+                  "title": "What ML Is (and Isn’t)",
+                  "masteryOutcomes": [
+                    "Understand machine learning in contrast to rule-based systems",
+                    "Identify problems that are appropriate for ML",
+                    "Distinguish ML from traditional programming logic"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "ML Task Types",
+                  "masteryOutcomes": [
+                    "Identify the main machine learning task types: classification, regression, and clustering",
+                    "Understand how these task types relate to supervised learning (classification, regression) and unsupervised learning (clustering)",
+                    "Match real-world problems to the correct ML task and learning type (supervised vs. unsupervised)",
+                    "Understand why choosing the correct task type is a critical step before selecting a model or evaluation metric"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Data and Labels",
+                  "masteryOutcomes": [
+                    "Distinguish labeled vs unlabeled data",
+                    "Identify input features and target variables",
+                    "Understand how labels guide supervised learning"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Features as Signals",
+                  "masteryOutcomes": [
+                    "Define features as model inputs",
+                    "Identify raw vs derived features",
+                    "Understand why feature quality impacts model performance"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: ML or Traditional Logic?",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will distinguish when a problem is better solved with traditional rule-based programming versus machine learning.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Matching Problems to ML Task Types",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will correctly match real-world problems to classification, regression, or clustering and to supervised vs unsupervised learning.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie Genre Classifier",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will identify features, labels, and ML task type from a small “movie recommendation” story. Output: A simple text-based description listing input features, the target label, and whether this is classification, regression, or clustering.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe Sales Forecast",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will practice mapping a business question (predicting cafe sales) into features, target, and ML task type. Output: A short written “problem specification” that defines the ML task, features, label, and whether it’s supervised or unsupervised.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Features as Signals in a Music App",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will distinguish raw vs derived features and explain how each could act as a signal for a music recommendation problem. Output: A table or bullet list categorizing features as raw/derived with a one-line explanation of why each might help a model.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Training vs Prediction",
+                  "masteryOutcomes": [
+                    "Describe what happens during model training",
+                    "Understand how trained models make predictions",
+                    "Identify when a model is “learning” vs “using knowledge”"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Models as Functions",
+                  "masteryOutcomes": [
+                    "Describe a model as a function mapping inputs to outputs",
+                    "Compare simple rule logic to learned decision boundaries",
+                    "Understand why models generalize instead of memorizing"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "ML Workflow Overview",
+                  "masteryOutcomes": [
+                    "Outline the full ML workflow from data to prediction",
+                    "Identify where data prep, training, and evaluation fit",
+                    "Use correct ML vocabulary to describe each step"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Training vs Prediction Timeline",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will sequence and label the steps where a model learns versus where it uses learned knowledge.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: House Price Function",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will represent a simple model as a function that maps house features to a price and contrast it with fixed rules. Output: A short pseudo-code or simple Python-like function that takes a few numeric inputs and returns a predicted price.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Email Spam Filter Function",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will describe an ML spam filter as a function and identify inputs, outputs, and decision boundary intuition. Output: A text description or pseudo-code function that takes email attributes as input and outputs “spam” or “not spam” with a brief explanation of the decision boundary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: ML Workflow for a Taxi Fare App",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will outline the end-to-end ML workflow for predicting taxi fares from raw trip data. Output: A step-by-step workflow document labeling data collection, cleaning, feature selection, training, evaluation, and prediction.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Weather Prediction Workflow Cards",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will correctly order shuffled workflow “cards” to build a coherent ML pipeline for predicting tomorrow’s temperature. Output: An ordered list of steps (with your chosen numbering) that shows the correct ML workflow sequence.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Rule-Based vs Learned Model Comparison",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will compare a simple rule-based decision system with a learned model for a loan approval scenario and explain how the model generalizes. Output: A short comparison table or paragraph explaining differences in behavior between the rule system and the learned model on several example applicants.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Common ML Pitfalls",
+                  "masteryOutcomes": [
+                    "Identify data leakage and why it breaks evaluation",
+                    "Understand overfitting in intuitive terms",
+                    "Recognize unrealistic performance expectations"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Spotting ML Pitfalls in a Story",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will identify overfitting, data leakage, and unrealistic evaluation practices in a narrative case study.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Loading Cafe Sales Data",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will load a small tabular dataset with pandas, inspect its structure, and identify features and target. Output: A short script that reads a CSV, prints head(), info(), and lists which columns are features vs the target.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Music Streams Dataset Exploration",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will practice loading a music streaming dataset and exploring rows, columns, and data types to prepare for modeling. Output: A script that loads the dataset, prints basic statistics, and outputs a summary of numeric vs categorical columns.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Train / Test Split for House Prices",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will perform a train/test split using scikit-learn and explain why the split improves trust in evaluation. Output: A script that loads a toy house-price dataset, splits it into train and test sets, and prints the shapes of each subset.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Train / Test Split for Customer Churn",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will apply train/test splitting to a customer churn dataset and verify that the target distribution is similar across splits. Output: A script that splits the data and prints value_counts() of the target in train and test sets for comparison.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Evaluating Overfitting Intuitively",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will simulate overfitting by comparing performance on training vs test data and interpret what the gap means. Output: A script that trains a simple model on tabular data, prints accuracy (or error) on both train and test sets, and outputs a short text interpretation of the results.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "End-to-End ML in Python",
+              "lessons": [
+                {
+                  "title": "Loading Tabular Data",
+                  "masteryOutcomes": [
+                    "Load datasets using pandas",
+                    "Inspect rows, columns, and data types",
+                    "Identify feature columns and targets"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Train / Test Split",
+                  "masteryOutcomes": [
+                    "Explain why test data must be held out",
+                    "Split data using scikit-learn",
+                    "Describe how splits affect evaluation trustworthiness"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Handling Missing Values",
+                  "masteryOutcomes": [
+                    "Identify missing data in datasets",
+                    "Apply simple imputation strategies",
+                    "Explain tradeoffs of different approaches"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Encoding Categories",
+                  "masteryOutcomes": [
+                    "Identify categorical vs numeric features",
+                    "Encode categorical variables for ML models",
+                    "Explain why models require numeric inputs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Scaling Numeric Features",
+                  "masteryOutcomes": [
+                    "Explain feature scale and why it matters",
+                    "Apply basic scaling techniques",
+                    "Identify models sensitive to feature scale"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Handling Missing Values in Housing Data",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will detect missing values in a housing dataset and apply simple imputation strategies such as mean and median. Output: A script that prints missing-value counts per column, applies imputation, and shows the cleaned dataset’s summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe Customer Records Imputation",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will choose appropriate imputation strategies for different types of cafe customer fields (numeric vs categorical) and implement them. Output: A script that fills missing ages with a numeric strategy and missing categories (like “membership_tier”) with a categorical strategy, then prints before/after comparisons.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Encoding Categories in a Movie Dataset",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will identify categorical features in a movie dataset and apply one-hot encoding to make them numeric. Output: A script that selects categorical columns, applies one-hot encoding, and prints the transformed feature matrix shape and sample rows.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Encoding Categories in a Shopping Cart",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will transform product categories and payment types into numeric encodings suitable for ML models. Output: A script that encodes these categorical fields and prints the mapping or resulting encoded columns for inspection.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Scaling Features for a Fitness App",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will apply feature scaling (e.g., standardization or min-max scaling) to numeric fitness metrics and compare before/after ranges. Output: A script that scales features like steps, heart rate, and workout duration, then prints descriptive statistics before and after scaling.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Scaling and Encoding Pipeline for Taxi Fares",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will build a preprocessing pipeline that handles missing values, encodes categories, and scales numeric features for a taxi fare prediction task. Output: A script that constructs and fits a scikit-learn ColumnTransformer or Pipeline and outputs the transformed feature array shape and a few sample transformed rows.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Prep Lesson",
+                  "masteryOutcomes": [
+                    "Prep lesson for the weekly review"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Supervised Models & Evaluation",
+              "lessons": [
+                {
+                  "title": "First Supervised Model - Logistic Regression",
+                  "masteryOutcomes": [
+                    "Explain binary classification problems",
+                    "Train a Logistic Regression model end-to-end",
+                    "Explain predicted probabilities vs predicted classes",
+                    "Explain why accuracy alone is not enough for model evaluation"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Classification Metrics",
+                  "masteryOutcomes": [
+                    "Calculate and interpret accuracy, precision, recall, and F1-score",
+                    "Read and interpret a confusion matrix",
+                    "Re-evaluate a Logistic Regression model using different metrics",
+                    "Explain how metric choice depends on the problem context"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Linear Regression",
+                  "masteryOutcomes": [
+                    "Explain numeric prediction tasks",
+                    "Train a Linear Regression model",
+                    "Interpret predictions vs actual values",
+                    "Explain regression error intuitively as distance from the true value"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Regression Metrics",
+                  "masteryOutcomes": [
+                    "Calculate MAE, MSE/RMSE, and R²",
+                    "Explain what each metric reveals about model errors",
+                    "Compare regression models using appropriate metrics"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Email spam filter",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Train and evaluate a Logistic Regression model for binary classification on an email spam vs. ham dataset, interpreting predicted probabilities and predicted classes. Output: A script that loads email features, trains a logistic regression spam filter, prints predicted probabilities and classes for new emails.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Medical test classifier metrics",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use a confusion matrix to calculate and interpret accuracy, precision, recall, and F1-score for a medical test classifier, and discuss which metric matters most in this context. Output: A script that takes model predictions and true labels, prints a confusion matrix and computed metrics, and highlights which metric to prioritize.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: House price regression",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Train a Linear Regression model to predict house prices from features and interpret prediction errors as distances from the true values. Output: A script that fits a linear regression model, prints sample predictions vs actual prices, and shows residuals for each example.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe revenue forecast metrics",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Compute MAE, MSE/RMSE, and R² for a cafe’s daily revenue prediction model and compare how each metric reflects model performance. Output: A script that takes true and predicted revenues, calculates MAE, MSE, RMSE, and R², and prints a short comparison summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Model selection for loan approval",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Compare a Logistic Regression classifier and a Linear Regression-based threshold model for loan approval, using both classification and regression metrics to decide which is more appropriate. Output: A script that trains both models, evaluates them with relevant metrics, and prints a simple recommendation of which model to use and why.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Tree-Based Models",
+                  "masteryOutcomes": [
+                    "Explain decision trees at a conceptual level",
+                    "Train a tree-based classifier",
+                    "Compare linear vs non-linear models",
+                    "Discuss strengths and limitations of tree-based approaches"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Ensembles",
+                  "masteryOutcomes": [
+                    "Explain ensemble methods such as Random Forest and Gradient Boosting at a high level",
+                    "Explain why ensembles are commonly used in practice",
+                    "Build intuition for why combining models often improves performance"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Overfitting, Generalization & Validation",
+                  "masteryOutcomes": [
+                    "Identify signs of overfitting and underfitting",
+                    "Compare train vs test performance",
+                    "Explain the bias-variance tradeoff",
+                    "Explain cross-validation conceptually",
+                    "Compare a single train/test split vs multiple folds"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Loan decision tree",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Train and interpret a decision tree classifier for loan approvals, comparing its behavior and decision boundaries conceptually to Logistic Regression. Output: A script that trains a decision tree, prints its depth and feature importances, and shows example decisions for new applicants.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Customer churn random forest",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a Random Forest classifier for customer churn and discuss why an ensemble of trees can outperform a single tree. Output: A script that trains a random forest, reports accuracy and feature importances, and predicts churn probabilities for sample customers.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Gradient boosting credit risk",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Train a gradient boosting classifier on a simplified credit risk dataset and compare its performance and behavior to a single decision tree. Output: A script that fits a gradient boosting model, evaluates it on a test set, and prints side-by-side metrics versus a baseline tree.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie rating overfitting check",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Diagnose overfitting and underfitting on a movie rating prediction task by comparing train vs test performance for models of different complexity. Output: A script that trains multiple models (e.g., shallow vs deep trees), prints train/test scores, and flags where overfitting occurs.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cross-validation comparison",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Conceptually and programmatically compare a single train/test split to k-fold cross-validation on a classification problem to understand variance in performance estimates. Output: A script that runs both a single split and k-fold cross-validation, printing all scores and their average and standard deviation.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Overfitting and validation quiz",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Reinforce understanding of overfitting, generalization, bias-variance tradeoff, and cross-validation through a written quiz and scenario-based questions (no coding).",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Cross-Validation Basics",
+                  "masteryOutcomes": [
+                    "Explain cross-validation conceptually",
+                    "Use cross-validation to estimate performance",
+                    "Compare a single split vs multiple folds"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Hyperparameters and Search",
+                  "masteryOutcomes": [
+                    "Define hyperparameters vs learned parameters",
+                    "Use GridSearchCV or RandomizedSearchCV",
+                    "Interpret tuning results responsibly"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cross-validation for house prices",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use k-fold cross-validation to estimate the performance of a house price regression model and compare the stability of scores across folds. Output: A script that runs k-fold cross-validation on a regression model and prints fold-wise scores and their mean and variance.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fold comparison for spam classifier",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Compare a single train/test split to multiple-fold cross-validation for a spam classifier and interpret why the cross-validated estimate may be more reliable. Output: A script that computes accuracy for a single split and for k-fold CV, printing and comparing the results.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Grid search for tree depth",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use GridSearchCV to tune a decision tree classifier’s key hyperparameters (e.g., max_depth, min_samples_split) and interpret the best parameters and score. Output: A script that runs grid search, prints the best hyperparameters, best score, and a brief table of results.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Randomized search for forest",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply RandomizedSearchCV to tune a Random Forest classifier and understand tradeoffs between search breadth, runtime, and performance. Output: A script that performs randomized search over a parameter distribution, prints the best configuration, and compares it to a default model.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Hyperparameter vs parameter identification",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Distinguish hyperparameters from learned parameters by inspecting model attributes and documenting which values are set before training vs learned from data. Output: A script that trains a model, prints selected hyperparameters and learned coefficients, and writes a short textual summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Unsupervised learning scenarios",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Identify real-world problems that are suitable for unsupervised learning and match them to appropriate unsupervised techniques conceptually.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Unsupervised Learning",
+              "lessons": [
+                {
+                  "title": "Unsupervised Learning",
+                  "masteryOutcomes": [
+                    "Explain how unsupervised learning differs from supervised learning",
+                    "Identify use cases without labels",
+                    "Describe exploratory ML goals"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "K-Means Clustering",
+                  "masteryOutcomes": [
+                    "Explain how K-Means groups data",
+                    "Train a clustering model",
+                    "Interpret clusters at a high level"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Choosing Number of Clusters",
+                  "masteryOutcomes": [
+                    "Explain the role of k in clustering",
+                    "Use simple heuristics to choose cluster count",
+                    "Interpret clustering tradeoffs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "PCA for Visualization",
+                  "masteryOutcomes": [
+                    "Explain dimensionality reduction intuitively",
+                    "Apply PCA to reduce features",
+                    "Visualize high-dimensional data in 2D"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Customer segmentation with K-Means",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Train a K-Means clustering model to segment customers based on purchase behavior and interpret the resulting clusters at a high level. Output: A script that runs K-Means, prints cluster centers, and assigns each customer to a segment.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Music listener clustering",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply K-Means to group music app users by listening patterns and summarize how each cluster’s behavior differs. Output: A script that clusters users, prints cluster sizes and average feature values per cluster, and labels clusters with simple descriptive names.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Choosing k for cafe visitors",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use heuristics such as the elbow method and simple silhouette inspection to choose the number of clusters (k) for cafe visitor data. Output: A script that trains K-Means for multiple k values, plots or prints inertia/silhouette scores, and suggests a reasonable k.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cluster tradeoff exploration",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Explore the tradeoff between too few and too many clusters by comparing cluster compactness and interpretability across different k values. Output: A script that fits K-Means with several k values and prints metrics and brief textual interpretations for each.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: PCA visualization of digits",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply PCA to reduce a high-dimensional dataset (e.g., handwritten digits) to 2D and visualize the data points colored by label. Output: A script that performs PCA, generates 2D coordinates, and produces a scatter plot showing how classes are separated.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: PCA and clustering combination",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Combine PCA for dimensionality reduction with K-Means clustering to visualize and interpret clusters in a 2D space. Output: A script that runs PCA, applies K-Means on the reduced data, and plots the clusters in 2D with different colors for each cluster.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Prep Lesson",
+                  "masteryOutcomes": [
+                    "Prep lesson for the weekly review"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

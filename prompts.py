@@ -10,27 +10,33 @@ from typing import List
 def get_lesson_parsing_prompt(content: str) -> str:
     """Prompt for parsing free text course content into structured lesson data."""
     return f"""
-Parse the following course content and extract lesson titles and learning outcomes.
+Parse the following course content and extract unit headers, lesson titles, and learning outcomes.
 Lesson names are followed by learning outcome for each lesson. All learning outcomes lines start with "--- ".
+Unit headers appear as section titles (e.g., "## Unit Name", "Unit 1: Name", or standalone headers before groups of lessons).
 
 Return the result in this exact format:
 
+UNIT: [Unit Name]
 TITLE: [Lesson Title]
 OUTCOMES: [Learning outcomes description]
 
 TITLE: [Next Lesson Title]
 OUTCOMES: [Next learning outcomes description]
 
+UNIT: [Next Unit Name]
 TITLE: [Practice Session Title]
 OUTCOMES: [learning outcomes description]
 
-Continue for all lessons. Use the exact titles as written in the content. 
-If a lesson has multiple learning outcomes (separated by newlines), combine ALL of them into a SINGLE line separated by semicolons (;).
-Keep all outcomes on one line after "OUTCOMES:".
-If you see learning outcomes that are teacher-directed (like "follow the lesson plan" or "Introduce the topic at a high level"), remove them.
-If a lesson is missing learning outcomes, write them on your own (1 or 2 of them).
-
-
+Rules:
+- Output UNIT: before the first lesson of each unit/section.
+- If no unit header is found, use "UNIT: Default Unit" before the first lesson.
+- Use the exact unit names as written in the content (without leading numbers like "Unit 1:").
+- Continue for all lessons. Use the exact titles as written in the content.
+- If a lesson has multiple learning outcomes (separated by newlines), combine ALL of them into a SINGLE line separated by semicolons (;).
+- Keep all outcomes on one line after "OUTCOMES:".
+- Remove any leading numbers or prefixes like "Lesson 8: " from the lesson title.
+- If you see learning outcomes that are teacher-directed (like "follow the lesson plan" or "Introduce the topic at a high level"), remove them.
+- If a lesson is missing learning outcomes, write them on your own (1 or 2 of them).
 
 Content:
 {content}
@@ -47,6 +53,20 @@ The week includes these lessons, with the following learning outcomes per each:
 Format: "Title: Description of what students will achieve and learn."
 The title should be 2-4 words, followed by a colon, then "In this unit, " and then a one sentence description of learning outcomes.
 Make it clear and specific to the lessons covered. Don't add asterisk (*) to the unit name or goal.
+
+Instructions for choose a good week title:
+Short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
 """
 
 def get_chapter_info_prompt(lessons_text: str) -> str:
@@ -57,6 +77,20 @@ The course chapter containing these lessons, with the following learning outcome
 Generate:
 1. A chapter title (1-5 words)
 2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
 
 Format your response as:
 TITLE: [chapter title]
@@ -91,15 +125,15 @@ Practice sessions needed per chapter:
 Each practice session should:
 1. Have a title that starts with "Practice Lesson: "
 2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
-3. Include hands-on exercises, projects, or practical applications
-4. Have clear learning outcomes, one sentence.
+3. Include hands-on exercises, projects, or practical applications.
+4. Have clear learning outcome of one sentence. After that, add a second sentence with "Output: [short description of the final result of the practice session, meaning what does the script/program will do]".
 5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
 6. The theme could be one of those:
     a. A practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
     b. A classic programming exercise or practic, for example - a calculator, passwrod generator, prime number calculation, filtering or parsing data, etc.
-7. Have clear learning outcomes, one sentence
 8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
 9. If the practice session is bigger than others, add two items with 'Part 1' and 'Part 2' to the title. For example, "Practice Lesson: To-Do list - Part 1" and "Practice Lesson: To-Do list - Part 2".
+10. If the practice comes after theoretic lessons (where no coding is involved), create a practice session that is basically a quiz / thinking / matching / identifying exercise, not coding. In those cases, the title should be "Theory Practice Lesson: ".
 
 Week {week_num} Chapters:
 {chapters_text}
@@ -108,14 +142,14 @@ Return in this exact format:
 
 CHAPTER: 1
 TITLE: Practice Session: [Session Title for Chapter 1]
-OUTCOMES: [Learning outcomes for this practice session]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
 
 TITLE: Practice Session: [Another Session Title for Chapter 1 if needed]
-OUTCOMES: [Learning outcomes for this practice session]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
 
 CHAPTER: 2
 TITLE: Practice Session: [Session Title for Chapter 2]
-OUTCOMES: [Learning outcomes for this practice session]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
 
 Continue for all {num_chapters} chapters. Generate exactly the number of practice sessions specified for each chapter above.
 """

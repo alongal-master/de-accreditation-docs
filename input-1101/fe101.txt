@@ -1,0 +1,233 @@
+## Unit 1: **Browser, Client, URL**
+
+---
+
+### **1. Browser and Client**
+
+- Define **browser** and **client** in a web page scenario
+- Describe what the browser does with HTML/CSS/JS at a high level
+- Identify what the user controls vs what the browser controls
+
+### **2. Server and Response**
+
+- Define **server** and **response**
+- List common response files (HTML, CSS, JS, images)
+- Understand what it means to “serve a file”
+
+### **3. Request in Plain Words**
+
+- Define **request** using everyday examples (page load, image load)
+- Trace “type URL → request → response → render”
+- Predict what happens when a request fails (missing page/file)
+
+### **4. URLs and Paths**
+
+- Identify **URL** parts: domain + path + query (conceptually)
+- Distinguish URL path vs local file path
+- Understand why correct paths matter for loading resources
+
+### **5. HTML Elements**
+
+- Define **HTML** as page structure
+- Create a page using common elements (h1, p, a)
+- Use headings to create a readable structure
+
+### **6. HTML Elements vs Tags**
+
+- Understand difference between elements and tags
+- Identify and understand the opening and closing tag
+- Identify and understand self-closing tags
+
+### **7. HTML Attributes**
+
+- Identify an **attribute** as name="value" on a tag
+- Use common attributes correctly (href, src, alt)
+- Understand what “value” means in an attribute context
+
+### **8. Links Between Pages**
+
+- Create links between index.html and about.html
+- Use **relative paths** correctly
+- Debug a broken link by fixing the path
+- Understand the difference between internal and external links
+
+### **9. Images and Alt Text**
+
+- Load images from an assets folder using correct paths
+- Add meaningful alt text (basic accessibility)
+- Fix broken images by reasoning about file location
+
+### **10. Semantic Page Layout**
+
+- Build a page with header, nav, main, section, footer
+- Understand what **semantic HTML** means (simple definition)
+- Organize content into clear sections (not random divs)
+
+## Unit 2: **Multi-Page HTML + Forms**
+
+---
+
+### **1. Three Pages, One Site**
+
+- Create index.html, about.html, contact.html
+- Keep navigation consistent across pages
+- Understand how the browser loads different pages via links
+
+### **2. Headings That Make Sense**
+
+- Use one h1 per page and structure sections with h2
+- Fix a page with messy heading levels
+- Understand why hierarchy matters for readability
+
+### **3. Lists for Real Content**
+
+- Use ul/ol/li for actual content (menu items, steps, features)
+- Choose the right list type for the purpose
+- Combine lists with links for simple navigation patterns
+
+### **4. Clean Sections with Divs**
+
+- Use div to group content when semantics don’t fit
+- Add classes to divs to label page sections
+- Keep a layout readable using consistent grouping
+
+### **5. Form Inputs and Values**
+
+- Define **input** and **value** in plain terms 
+ (**the HTML element** vs **what the user types**)
+- Use common input types (`text`, `email`, `password`) and Understand what changes
+- Add and explain the **placeholder** attribute (hint text, not the actual value)
+
+### **6. Labels and IDs**
+
+- Add a `label` for each input and understand why labels exist
+- Connect `label` to `input` using **for** + **id**
+- Fix a broken page where clicking the label focuses the wrong input
+
+### **7. Forms and Input Names**
+
+- Wrap inputs in a `form` and understand what “submit” means at a high level
+- Add the `name` attribute and understand why it matters for submission
+- Predict the “data keys” a form will send based on input `name`s
+
+### **8. GET, POST, Query Params**
+
+- Compare **GET vs POST** at a beginner level (URL vs not in URL)
+- Submit a form using **GET** and identify **query parameters**
+- Read a URL and match `name=value` pairs back to the form inputs
+
+### **9. HTML Quality Habits**
+
+- Keep HTML consistently indented and readable
+- Spot and fix broken nesting / missing closing tags
+- Use DevTools Elements tab to confirm structure
+
+### **10. Basic Accessibility Habits**
+
+- Use semantic landmarks (nav, main) intentionally
+- Add alt text and proper labels reliably
+- Identify 2–3 easy accessibility improvements on a page
+
+## Unit 3: **CSS Styling Basics**
+
+---
+
+### **1. CSS: Three Ways**
+
+- Apply CSS inline (style="") for quick tests
+- Apply CSS in a <style> tag for page-level styling
+- Link an external CSS file with <link> for reuse
+
+### **2. Selectors: Tag, Class, ID**
+
+- Write selectors using **tag**, **class**, and **id**
+- Predict which elements a selector targets
+- Fix a selector that styles the wrong elements
+
+### **3. Styling Text Tags**
+
+- Style headings and paragraphs (size, spacing, alignment)
+- Improve readability with consistent text styling
+- Keep styles consistent across multiple pages
+
+### **4. Divs and Visual Blocks**
+
+- Style div sections using background, padding, borders
+- Create clear “sections” of a page using CSS
+- Use classes to apply the same styling pattern repeatedly
+
+### **5. Box Model Spacing**
+
+- Apply margin vs padding intentionally
+- Understand spacing using **box model** vocabulary
+- Use DevTools to inspect margin/padding live
+
+### **6. Block vs Inline**
+
+- Distinguish block vs inline behavior
+- Use display: inline-block for simple layout needs
+- Debug “why won’t these sit next to each other?” issues
+
+### **7. Simple Layout with Float**
+
+- Create a basic two-column or image+text layout using float
+- Clear floats to prevent layout issues
+- Understand how float changes normal flow
+
+### **8. Buttons and Inputs**
+
+- Style buttons with hover and focus states (basic usability)
+- Style inputs for consistent form design
+- Keep button/input styles reusable via classes
+
+### **9. CSS Debugging in DevTools**
+
+- Find where a style is coming from in the Styles panel
+- Identify why a style isn’t applying (wrong selector / wrong file)
+- Make a test change in DevTools, then apply it in code
+
+## Unit 4: Interactivity and JavaScript
+
+---
+
+### **1. JavaScript Adds Behavior**
+
+- Understand what JavaScript is used for on a web page
+- Link a script.js file correctly
+- Use console.log to confirm the script runs
+
+### **2. DOM: Find Elements**
+
+- Define **DOM** in practical terms (page structure JS can access)
+- Select elements with querySelector
+- Store elements in variables for reuse
+
+### **3. Events: Click and Submit**
+
+- Define an **event** (click, submit, input)
+- Attach event listeners and run a function
+- Debug “event not firing” using console logs
+
+### **4. Change Text on Click**
+
+- Update text content of an element on click
+- Understand what changed in the DOM (content changed)
+- Keep logic small and readable (one clear function)
+
+### **5. Show and Hide Content**
+
+- Show/hide an element using style.display
+- Track simple state using a boolean variable
+- Update button text based on current state
+
+### **6. Toggle Page Colors**
+
+- Change background and text colors from JS
+- Understand the difference between CSS styling and JS-driven styling
+- Keep dark/light behavior predictable and reversible
+
+### **7. Debugging JS in DevTools**
+
+- Identify and fix a simple JS error using the Console
+- Confirm a script file is actually loading (correct path)
+- Use Elements + Console together to verify DOM changes

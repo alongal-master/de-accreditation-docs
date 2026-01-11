@@ -10,6 +10,8 @@ A Python script that generates professional Excel syllabi for courses with AI-po
 - **Custom review days**: Configure custom weekly review days with specific content
 - **Learning media types**: Automatically categorizes lessons (Lesson, Exercise, Assessment, Group Class)
 - **JSON export/import**: Export to JSON and regenerate XLSX without API calls
+- **Maestro JSON export**: Generate Maestro-format JSON for LMS integration
+- **Part-time/Full-time formats**: Preconfigured settings for different course intensities
 - **Streaming responses**: Real-time progress feedback during AI generation
 
 ## Setup
@@ -91,7 +93,7 @@ You can also provide lessons in JSON format similar to Maestro format:
 
 ## Output
 
-The script generates two files:
+The script generates up to three files (configurable via `EXPORT_TO_LESSONS_JSON` and `EXPORT_TO_MAESTRO_JSON` constants):
 
 1. **Excel file** (`output/filename.xlsx`): The complete syllabus with:
    - Week numbers and learning goals
@@ -129,11 +131,37 @@ The script generates two files:
 }
 ```
 
+3. **Maestro JSON file** (`output/maestro_filename.json`): LMS-compatible format with units and lessons:
+```json
+{
+  "title": "Course Title",
+  "terms": [{
+    "courses": [{
+      "units": [{
+        "title": "Week 1 Title",
+        "lessons": [{
+          "title": "Lesson Title",
+          "masteryOutcomes": ["Outcome 1", "Outcome 2"],
+          "teachingInstructions": "",
+          "requiredPlugins": ["code-editor"]
+        }]
+      }]
+    }]
+  }]
+}
+```
+
 ## Command Line Arguments
 
 - `--lessons_file`: Text file containing lesson content
 - `--json_input`: JSON file containing syllabus data (alternative to --lessons_file)
 - `-o, --output`: Output Excel file name (default: `course_syllabus.xlsx`)
+- `--format`: Course format - `part_time` or `full_time` (default: `part_time`)
+  - `part_time`: 4 weeks, 4.5 lessons/day, shorter sessions
+  - `full_time`: 2 weeks, 9 lessons/day, longer sessions
+- `--start-week`: Starting week number (default: `1`)
+  - Use `3` for full-time 2nd course in a module
+  - Use `5` for part-time 2nd course in a module
 - `--api-key`: OpenAI API key (optional if set in `.env` file)
 - `--log-file`: Log file for API calls (default: `openai_log.txt`)
 - `--model`: OpenAI model to use (default: `gpt-5.1`, options: `gpt-5.1`, `gpt-4o`, `gpt-4`, `gpt-4-turbo`, `gpt-3.5-turbo`)
@@ -143,9 +171,18 @@ The script generates two files:
 Edit these constants in `syllabus_generator.py` to customize your course structure:
 
 ### Course Structure
-- `NUM_OF_WEEKS`: Number of weeks in the course (default: `2`)
+These values are set automatically based on `--format`:
+
+| Setting | Part-Time | Full-Time |
+|---------|-----------|-----------|
+| `NUM_OF_WEEKS` | 4 | 2 |
+| `NUM_LESSONS_PER_CHAPTER` | 4.5 | 9 |
+| Opening session | 30 min | 60 min |
+| Closing session | 15 min | 30 min |
+| Weekly Review | 45 + 135 min | 90 + 30 + 240 min |
+
+Additional settings:
 - `NUM_OF_CHAPTERS_PER_WEEK`: Number of chapters/days per week (default: `5`)
-- `NUM_LESSONS_PER_CHAPTER`: Target number of lessons per day, excluding live sessions and reviews (default: `9`)
 
 ### Weekly Review Days
 - `USE_CUSTOM_WEEKLY_REVIEW_DAYS`: Set to `True` to use custom review days (default: `True`)
@@ -172,9 +209,23 @@ Each item in these lists should have: `title`, `learning_outcomes`, `time_minute
 
 ## Examples
 
-### Basic Usage
+### Basic Usage (Part-Time Format)
 ```bash
 python syllabus_generator.py --lessons_file python_course.txt -o python_syllabus.xlsx
+```
+
+### Full-Time Format
+```bash
+python syllabus_generator.py --lessons_file python_course.txt -o python_syllabus.xlsx --format full_time
+```
+
+### Second Course in a Module (Continuation)
+```bash
+# Part-time 2nd course (weeks 5-8)
+python syllabus_generator.py --lessons_file advanced_course.txt -o advanced_syllabus.xlsx --format part_time --start-week 5
+
+# Full-time 2nd course (weeks 3-4)
+python syllabus_generator.py --lessons_file advanced_course.txt -o advanced_syllabus.xlsx --format full_time --start-week 3
 ```
 
 ### Using Different Models

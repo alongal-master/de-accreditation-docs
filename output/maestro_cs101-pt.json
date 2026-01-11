@@ -1,0 +1,672 @@
+{
+  "title": "cs101-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-11",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "cs101-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Foundations of Readable Code",
+              "lessons": [
+                {
+                  "title": "Welcome to CS101!",
+                  "masteryOutcomes": [
+                    "Understand the course structure and main topics"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Naming that tells a story",
+                  "masteryOutcomes": [
+                    "Rename variables and functions to improve clarity"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Crafting docstrings that explain the why",
+                  "masteryOutcomes": [
+                    "Write docstrings that explain the purpose and usage of functions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe order helper",
+                  "masteryOutcomes": [
+                    "Practice renaming variables/functions and adding clear docstrings so a short “cafe order” script becomes self-explanatory to a new reader."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Writing comments with real purpose",
+                  "masteryOutcomes": [
+                    "Add comments that clarify reasoning instead of obvious behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Keeping it clean",
+                  "masteryOutcomes": [
+                    "Apply consistent formatting for whitespace, indentation, and line breaks"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Making code instantly readable",
+                  "masteryOutcomes": [
+                    "Rewrite code to pass a readability checklist"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Weather report formatter",
+                  "masteryOutcomes": [
+                    "Improve an existing “weather report” script by adding purposeful comments, cleaning formatting, and rewriting sections to be instantly readable."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Turning long scripts into sharp functions",
+                  "masteryOutcomes": [
+                    "Understand why long monolithic scripts reduce readability, reusability, and maintainability.",
+                    "Split a long script into focused functions with well-defined signatures."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Following program flow with print tracing",
+                  "masteryOutcomes": [
+                    "Insert print-based tracing statements to follow program execution"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: To-do list organizer - Part 1",
+                  "masteryOutcomes": [
+                    "Refactor a long “to-do list organizer” script into small, focused functions with clear names and signatures."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: To-do list organizer - Part 2",
+                  "masteryOutcomes": [
+                    "Add print-based tracing to the refactored to-do list program to follow program flow and debug logic step by step."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Using invariants as safety checkpoints",
+                  "masteryOutcomes": [
+                    "Understand how invariants help ensure program correctness and prevent bugs.",
+                    "Apply invariants to check assumptions at key points in the code."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Designing functions that can be reused anywhere",
+                  "masteryOutcomes": [
+                    "Use parameters and return values to ensure modular function design"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Budget tracker - Part 1",
+                  "masteryOutcomes": [
+                    "Add invariants to a simple “budget tracker” program to enforce assumptions about balances, transactions, and categories."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Budget tracker - Part 2",
+                  "masteryOutcomes": [
+                    "Redesign budget-related logic into reusable functions with parameters and return values so the code can be reused in new budgeting scenarios."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Professional Problem-Solving Foundations",
+              "lessons": [
+                {
+                  "title": "Pushing the limits",
+                  "masteryOutcomes": [
+                    "Understand how clear input and output boundaries ensure reliable, predictable program behavior.",
+                    "Design and implement tests that verify code correctness at boundary and edge conditions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Validating inputs before they break things",
+                  "masteryOutcomes": [
+                    "Implement input validation to prevent unexpected behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "The art of a well-placed error",
+                  "masteryOutcomes": [
+                    "Write clear error messages and handle invalid inputs gracefully"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Ticket booking validator",
+                  "masteryOutcomes": [
+                    "Practice defining clear input/output boundaries, validating user input, and returning helpful error messages for a simple ticket booking flow."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Refactoring with confidence",
+                  "masteryOutcomes": [
+                    "Perform safe refactoring moves such as renaming, extracting functions, and removing dead code"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Making sure nothing breaks",
+                  "masteryOutcomes": [
+                    "Re-run tests to confirm consistent behavior after refactoring"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: To-do list refactor",
+                  "masteryOutcomes": [
+                    "Practice safely refactoring a small to-do list program while relying on tests to ensure behavior stays the same and reflecting on professional coding habits used."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Balancing planning and coding",
+                  "masteryOutcomes": [
+                    "Explain trade-offs between planning and immediate coding"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Breaking the problem",
+                  "masteryOutcomes": [
+                    "Break down a problem into ordered pseudocode steps"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Recipe planner pseudocode - Part 1",
+                  "masteryOutcomes": [
+                    "Practice weighing planning versus immediate coding while breaking a recipe-planning problem into clear, ordered pseudocode steps."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Recipe planner pseudocode - Part 2",
+                  "masteryOutcomes": [
+                    "Practice refining and reorganizing your recipe-planning pseudocode to make the steps more precise, ordered, and ready to translate into code."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Hierarchy in pseudocode",
+                  "masteryOutcomes": [
+                    "Apply numbering and indentation to represent sequence and hierarchy in pseudocode"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Turning rules into code",
+                  "masteryOutcomes": [
+                    "Translate rules into consistent code actions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Library checkout rules - Part 1",
+                  "masteryOutcomes": [
+                    "Practice writing hierarchical, numbered, and indented pseudocode that captures the rules of a library book checkout process."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Library checkout rules - Part 2",
+                  "masteryOutcomes": [
+                    "Practice translating structured pseudocode rules for a library checkout system into consistent, rule-based code actions."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "From Plan to App",
+              "lessons": [
+                {
+                  "title": "Reviewing the plan",
+                  "masteryOutcomes": [
+                    "Identify logical gaps or overlaps in pseudocode"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "From plan to working machine",
+                  "masteryOutcomes": [
+                    "Translate pseudocode into working Python code step by step"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Keeping comments that connect to pseudocode",
+                  "masteryOutcomes": [
+                    "Maintain comments that connect code to pseudocode blocks"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe order helper",
+                  "masteryOutcomes": [
+                    "Translate a commented pseudocode plan into clear, working Python code while preserving comments that map directly to each pseudocode block."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Creating function stubs for structure",
+                  "masteryOutcomes": [
+                    "Write function stubs that define intended structure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Building code incrementally",
+                  "masteryOutcomes": [
+                    "Use hardcoded return values as placeholders",
+                    "Replace stubs with working implementations incrementally"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Creating test tables for pseudocode plans",
+                  "masteryOutcomes": [
+                    "Build input-output test tables for pseudocode plans"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie night planner",
+                  "masteryOutcomes": [
+                    "Design function stubs, use placeholder return values, and build a simple planner incrementally while using a test table to guide and verify implementation."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Dry running plans with test values",
+                  "masteryOutcomes": [
+                    "Perform dry runs using pseudocode test-table values"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Integrating logic into a full app",
+                  "masteryOutcomes": [
+                    "Integrate validated inputs, logic, and output formatting into one app"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Budget tracker - Part 1",
+                  "masteryOutcomes": [
+                    "Use a test table to dry run pseudocode for a budget tracker and confirm that the planned logic matches expected inputs and outputs before coding."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Budget tracker - Part 2",
+                  "masteryOutcomes": [
+                    "Integrate validated inputs, core budget logic, and formatted summaries into one cohesive Python app based on the dry-run plan."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Demonstrating the working app",
+                  "masteryOutcomes": [
+                    "Demonstrate working apps with multiple test cases"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness log app - Part 1",
+                  "masteryOutcomes": [
+                    "Demonstrate a working fitness log app using multiple test cases and document how each case flows through the code."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness log app - Part 2",
+                  "masteryOutcomes": [
+                    "Reflect on the full journey from idea to pseudocode to working code for the fitness log app and identify personal strengths and improvement areas in planning and implementation."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Problem Decomposition & Pipelines",
+              "lessons": [
+                {
+                  "title": "Writing a structured problem statement",
+                  "masteryOutcomes": [
+                    "Create structured Python problem statements with success criteria"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Defining example inputs and outputs",
+                  "masteryOutcomes": [
+                    "Provide example inputs and outputs for normal and edge cases"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Breaking down into subproblems",
+                  "masteryOutcomes": [
+                    "Decompose problems into subproblems"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie night planner",
+                  "masteryOutcomes": [
+                    "Practice writing a structured problem statement, defining example inputs/outputs (including edge cases), and breaking the problem into clear subproblems for a simple “movie night planner” app."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Defining subproblem inputs and outputs",
+                  "masteryOutcomes": [
+                    "Define clear inputs and outputs for subproblems"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Sequencing subproblems logically",
+                  "masteryOutcomes": [
+                    "Arrange and implement subproblems in logical sequence"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe cashier - Part 1",
+                  "masteryOutcomes": [
+                    "Define precise inputs and outputs for each subproblem in a cafe cashier checkout flow, including handling discounts, tax, and edge cases."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe cashier - Part 2",
+                  "masteryOutcomes": [
+                    "Sequence the previously defined subproblems into a logical, step-by-step process that can be implemented as a complete checkout workflow."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Matching subproblems to patterns",
+                  "masteryOutcomes": [
+                    "Apply common coding patterns to subproblems"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Prioritizing tasks",
+                  "masteryOutcomes": [
+                    "Understand how task prioritization creates an efficient workflow that advances goals by importance and impact.",
+                    "Demonstrate and explain the rationale for prioritization decisions using clear criteria like impact, dependencies, risk, and effort."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Task scheduler",
+                  "masteryOutcomes": [
+                    "Match subproblems in a simple task scheduler to common coding patterns (loops, conditionals, accumulators, lookups) and justify those choices."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Feature roadmap planner",
+                  "masteryOutcomes": [
+                    "Prioritize a list of potential app features using clear criteria (impact, dependencies, risk, effort) and explain the rationale for the chosen order."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Assembling functions into pipelines",
+                  "masteryOutcomes": [
+                    "Combine functions into pipelines where outputs feed subsequent inputs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Breaking down a case study",
+                  "masteryOutcomes": [
+                    "Decompose a real-world case study into subproblems"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness tracker pipeline - Part 1",
+                  "masteryOutcomes": [
+                    "Break down a fitness tracker case study into subproblems and design functions whose outputs can feed into each other as a data-processing pipeline."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness tracker pipeline - Part 2",
+                  "masteryOutcomes": [
+                    "Assemble the defined functions into a working pipeline that processes raw workout data through cleaning, analysis, and summary reporting steps."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

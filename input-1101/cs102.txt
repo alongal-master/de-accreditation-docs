@@ -1,0 +1,411 @@
+## ▶ Unit 1: Foundations of Data Structures
+
+---
+
+### 1. Welcome to CS102
+
+- Overview of the course structure
+- Understand what data structures and algorithms are about
+- Learn how the course progresses across units
+
+---
+
+### 2. What Is a Data Structure?
+
+- Explain the purpose of data structures for organizing and managing data
+- Describe why different data structures are necessary
+
+---
+
+### 3. Index-Based Data Structures
+
+- Explain indexing and sequential access
+- Understand how positions map to stored values
+
+---
+
+### 4. Understanding Arrays
+
+- Identify arrays as ordered collections with fixed positions
+
+---
+
+### 5. Accessing Elements in Arrays
+
+- Explain how indices map to element locations
+- Validate index boundaries and detect out-of-range access
+- Add new elements to an existing array
+
+---
+
+### 6. Updating and Replacing Array Values
+
+- Modify elements at specific indices
+- Replace first, middle, and last elements
+- Evaluate the effect of in-place updates
+
+---
+
+### 7. Removing Elements from Arrays
+
+- Remove elements using operations like `pop`
+- Predict how removal affects index positions
+
+---
+
+### 8. Challenge: Basic Array Operations
+
+- Demonstrate understanding of basic array manipulation
+
+---
+
+### 9. Combined Array Operations in Sequence
+
+- Execute access, update, and remove operations in order
+- Return multiple values from array manipulation
+
+---
+
+### 10. Using Arrays for Structured Problem Solving
+
+- Break problems into steps using array operations
+- Translate requirements into index-based actions
+- Design input and output structures
+
+---
+
+### 11. Introducing High-Dimensional Arrays
+
+- Describe what high-dimensional arrays are
+- Identify real-world use cases for nested data
+
+---
+
+### 12. Implementing High-Dimensional Arrays in Python
+
+- Create and access nested lists using multiple indices
+- Modify elements while preserving structure
+
+---
+
+### 13. Edge Cases and Reliability in Array Operations
+
+- Handle arrays with few or missing elements
+- Avoid index errors and invalid access
+
+---
+
+### 14. Challenge: Advanced Array Operations
+
+- Demonstrate understanding of advanced array skills
+
+---
+
+### 15. Weekly Review: Foundations of Data Structures
+
+- Review and reinforce key array and indexing concepts
+
+---
+
+## ▶ Unit 2: Stacks and Queues
+
+---
+
+### 1. What Is LIFO?
+
+- Define the LIFO principle
+- Identify real-world LIFO examples
+
+---
+
+### 2. Introduce the Stack
+
+- Define the stack data structure
+
+---
+
+### 3. Stack Operations: Push and Pop
+
+- Add items to the top of a stack
+- Remove the most recent item
+
+---
+
+### 4. Building a Stack Using Lists
+
+- Construct a stack with list operations
+- Simulate stack growth and reduction
+- Identify when a stack is empty
+
+---
+
+### 5. Applying Stacks to Undo Behavior
+
+- Translate actions into stack entries
+- Undo recent actions using `pop`
+- Predict stack state after undo operations
+
+---
+
+### 6. Challenge: Stacks
+
+- Demonstrate understanding of stack behavior
+
+---
+
+### 7. What Is FIFO?
+
+- Define the FIFO principle
+- Identify real-world FIFO systems
+- Explain why FIFO is needed alongside LIFO
+
+---
+
+### 8. Introduce the Queue
+
+- Define the queue data structure
+
+---
+
+### 9. Queue Operations: Enqueue and Dequeue
+
+- Add items to the end of a queue
+- Remove items from the front of a queue
+
+---
+
+### 10. Implementing Queues with Deque
+
+- Construct a queue using `deque`
+- Apply `popleft` for FIFO behavior
+
+---
+
+### 11. Challenge: Queues
+
+- Demonstrate understanding of queue behavior
+
+---
+
+### 12. Integrating Stacks and Queues
+
+- Compare LIFO and FIFO processing
+- Choose between stacks and queues in scenarios
+- Simulate combined stack and queue behavior
+
+---
+
+### 13. Weekly Review: Stacks & Queues
+
+- Review and reinforce stack and queue concepts
+
+---
+
+## ▶ Unit 3: Algorithm Analysis
+
+---
+
+### 1. Welcome to Algorithms
+
+- Understand what the algorithms unit covers
+- Connect algorithms to previous units
+
+---
+
+### 2. Why We Need Algorithms in Real Life
+
+- Explain algorithms using everyday examples
+- Identify real-world processes that follow algorithms
+
+---
+
+### 3. Turning Everyday Problems into Step-by-Step Solutions
+
+- Break problems into ordered steps
+- Represent solutions as pseudocode or instructions
+
+---
+
+### 4. Challenge: Algorithms
+
+- Demonstrate understanding of basic algorithmic thinking
+
+---
+
+### 5. Counting Work: How Many Steps Does an Algorithm Take?
+
+- Trace an algorithm and count steps
+- Understand how steps grow with input size
+
+---
+
+### 6. Complexity: What It Means and Why It Matters
+
+- Define complexity in beginner-friendly terms
+- Explain why different algorithms run at different speeds
+- Relate complexity to user experience
+
+---
+
+### 7. Introducing Big O Notation
+
+- Explain what `n` represents
+- Understand Big O at a conceptual level
+- Compare basic growth rates
+
+---
+
+### 8. Analyzing Algorithms with Big O
+
+- Ignore constants and lower-order terms
+- Identify the dominant growth behavior
+
+---
+
+### 9. Challenge: Algorithm Analysis
+
+- Demonstrate understanding of complexity concepts
+
+---
+
+### 10. Comparing Two Solutions to the Same Problem
+
+- Evaluate solutions by efficiency
+- Recognize trade-offs between readability and speed
+- Choose appropriate algorithms for scenarios
+
+---
+
+### 11. Safe Algorithms: Edge Cases and Bad Input
+
+- Identify common edge cases
+- Adjust logic to prevent crashes
+- Predict behavior with invalid input
+
+---
+
+### 12. Challenge: Advanced Algorithm Analysis
+
+- Demonstrate understanding of advanced analysis skills
+
+---
+
+### 13. Weekly Review: Algorithm Analysis
+
+- Review step counting, complexity, and Big O concepts
+
+---
+
+## ▶ Unit 4: Searching and Sorting
+
+### 1. Why Searching Matters
+
+- Identify real-world searching scenarios
+- Understand why search efficiency matters
+
+---
+
+### 2. How Searching Works with Simple Examples
+
+- Trace basic search processes
+- Identify what is being searched
+
+---
+
+### 3. Linear Search with Small and Unsorted Data
+
+- Describe linear search
+- Apply it to unsorted lists
+- Identify when it is appropriate
+
+---
+
+### 4. Binary Search with Large Sorted Collections
+
+- Understand the idea of halving the search space
+- Perform binary search step by step
+- Explain why sorting is required
+
+---
+
+### 5. Comparing Linear and Binary Search
+
+- Compare step counts for different list sizes
+- Choose the correct search method per scenario
+- Use informal complexity language
+
+---
+
+### 6. Challenge: Searching
+
+- Demonstrate understanding of search strategies
+
+---
+
+### 7. Why Sorting Is Useful
+
+- Explain how sorting improves searching and decision-making
+- Identify real-world sorting benefits
+
+---
+
+### 8. Sorting: Different Approaches
+
+- Describe high-level sorting strategies
+- Match explanations to sorting behaviors
+
+---
+
+### 9. Bubble Sort
+
+- Describe bubble sort as swapping neighboring elements
+
+---
+
+### 10. Insertion Sort
+
+- Describe insertion sort behavior
+- Understand its average time complexity
+
+---
+
+### 11. Bubble vs. Insertion Sort
+
+- Compare movement and scanning behavior
+- Recognize similar large-scale complexity
+
+---
+
+### 12. Challenge: Sorting
+
+- Demonstrate understanding of sorting concepts
+
+---
+
+### 13. Using Python Sorting Tools in Practice
+
+- Use `sorted` and `list.sort`
+- Apply sorting keys and order
+- Relate built-in tools to manual algorithms
+
+---
+
+### 14. Advanced Sorting with Python Tools
+
+- Combine `key` and `reverse`
+- Sort structured data
+- Decide when to rely on built-in tools
+
+---
+
+### 15. Challenge: Advanced Sorting
+
+- Demonstrate understanding of advanced sorting tasks
+
+---
+
+### 16. Weekly Review: Searching & Sorting
+
+- Review searching and sorting strategies and trade-offs
+
+---

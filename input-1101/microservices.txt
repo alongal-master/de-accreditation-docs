@@ -1,0 +1,231 @@
+## Unit 1: From Flask Script to Project
+
+---
+
+### 1. When Apps Get Messy
+
+- Identify signs a Flask app outgrew a single file
+- Understand “route handler vs business logic vs database code”
+- Spot duplication and move it into one place
+
+### 2. Folder Structure That Works
+
+- Organize code into `routes/`, `services/`, `db/`, `utils/`
+- Understand what belongs in each folder (with examples)
+- Refactor one feature into this structure
+
+### 3. Blueprints: Feature Routing
+
+- Create a Flask **Blueprint** for one feature area
+- Register blueprints on the app
+- Keep URL prefixes consistent and predictable
+
+### 4. App Factory: Why It Exists
+
+- Understand what an **app factory** solves (config, testing, extensions)
+- Create a `create_app()` function
+- Move setup code out of global scope
+
+### 5. App Factory: Make It Real
+
+- Register blueprints inside `create_app()`
+- Initialize DB/extension setup inside `create_app()`
+- Confirm the app still runs the same endpoints
+
+### 6. Config: One Source of Truth
+
+- Use environment variables for config values (DB URL, secrets)
+- Create a config module/object with defaults
+- Verify config changes without editing code
+
+### 7. Dev vs Prod Settings
+
+- Separate dev vs prod config at a beginner level
+- Understand what should differ (debug, logging, secrets)
+- Add a simple “fail fast” check for missing secrets
+
+### 8. Errors You Can Trust
+
+- Standardize an error JSON shape across the API
+- Return correct status codes (400/401/403/404)
+- Make errors easy to debug from Postman
+
+### 9. Refactor Sprint
+
+- Refactor one full feature end-to-end (routes → service → db)
+- Confirm nothing broke using Postman
+- Explain your project structure to someone else
+
+## Unit 2: ORM + Migrations
+
+---
+
+### 1. Core vs ORM
+
+- Understand the difference: SQL statements vs mapped objects
+- Identify where ORM helps most (CRUD-heavy APIs)
+- Choose one feature to convert to ORM
+
+### 2. Models: Tables in Python
+
+- Define a model that matches a table schema
+- Create the table from models (or migration flow preview)
+- Insert and query a row using ORM basics
+
+### 3. Sessions and Commits
+
+- Understand what a DB **session** does (unit of work)
+- Commit safely and handle common mistakes
+- Return consistent errors when DB actions fail
+
+### 4. CRUD with ORM Queries
+
+- Implement list + detail queries with ORM
+- Implement create/update/delete with ORM
+- Keep route handlers thin (call service layer)
+
+### 5. Relationships
+
+- Define a simple one-to-many relationship
+- Query related data in a practical way
+- Understand how this maps back to PK/FK thinking
+
+### 6. Filtering and Pagination
+
+- Add basic filtering (search / status / owner)
+- Add simple pagination (limit/offset)
+- Avoid returning “too much” data by default
+
+### 7. Migrations: Why They Matter
+
+- Understand migrations as “schema history”
+- Make a small schema change and generate a migration
+- Apply the migration and verify the DB updated
+
+### 8. Migration Workflow Habits
+
+- Handle a “forgot a column” situation cleanly
+- Keep migrations consistent across teammates
+- Understand “upgrade” vs “downgrade” at a high level
+
+### 9. ORM Refactor Sprint
+
+- Convert one endpoint group from Core → ORM
+- Confirm responses stayed consistent (Postman regression)
+- Summarize when you’d still choose Core
+
+## Unit 3: Background Tasks and Async Thinking
+
+---
+
+### 1. Slow Work Breaks APIs
+
+- Identify work that should not run inside a request (email, reports, 3rd-party calls)
+- Explain “blocking” in practical terms
+- Recognize symptoms: timeouts, slow UI, stuck requests
+
+### 2. Async Vocabulary That Helps
+
+- Understand sync vs async vs background job (plain language)
+- Distinguish I/O-bound vs CPU-bound (one example each)
+- Decide which tasks belong in background jobs
+
+### 3. async/await (Just Enough)
+
+- Read and write a simple `async def` + `await`
+- Understand what a Promise-like “awaitable” is in Python terms
+- Recognize that Flask routes are still typically sync
+
+### 4. The Job Pattern
+
+- Understand the pattern: start job → return job id → poll status
+- Use status values: `pending / running / done / failed`
+- Choose what the API returns immediately (202 Accepted)
+
+### 5. Implement Jobs Without Extra Infrastructure
+
+- Create a `jobs` table (id, status, result, error, timestamps)
+- Create an endpoint to start a job and store it
+- Create an endpoint to read job status/result
+
+### 6. Worker Script (Separate Process)
+
+- Run a separate Python worker script that processes pending jobs
+- Update status/results in the DB
+- Demonstrate end-to-end from Postman (start → poll → done)
+
+### 7. Background Tasks in a Real Feature
+
+- Turn one real feature into a background job (e.g., “generate report”)
+- Keep the API responsive while the worker runs
+- Return a useful result when complete
+
+### 8. Failure and Recovery (Basic)
+
+- Mark jobs as failed with clear errors
+- Retry manually (re-run job) with a simple endpoint or worker rule
+- Keep job error responses consistent and readable
+
+### 9. When to Use This Pattern
+
+- Decide: normal request vs background job
+- Understand tradeoffs (complexity vs responsiveness)
+- Apply the decision to two features in your API
+
+## Unit 4: Microservices
+
+---
+
+### 1. What a Microservice Is
+
+- Understand microservices vs monolith (plain terms)
+- Name 2 real reasons teams split services
+- Name 2 reasons not to split (too early)
+
+### 2. Boundaries by Domain
+
+- Choose a clean service boundary (users vs items/orders/etc.)
+- Understand why “split by file type” is a bad boundary
+- Draw a simple “service responsibility” map
+
+### 3. Data Ownership
+
+- Understand “each service owns its database”
+- Decide what data lives in which service
+- Identify what data would be duplicated (and why)
+
+### 4. Two Services Locally
+
+- Run two Flask apps on different ports
+- Give each its own config and DB connection
+- Test each service independently in Postman
+
+### 5. Service-to-Service Calls
+
+- Call Service B from Service A using HTTP
+- Handle timeout/failure with a clear error response
+- Keep the request/response contract explicit
+
+### 6. Microservices + Auth
+
+- Understand user auth vs service dependency calls
+- Decide where user verification happens (usually users-service)
+- Keep the demo simple: don’t build full service auth
+
+### 7. Building the “API Gateway” Shape
+
+- Understand the idea of a single frontend-facing API entry point
+- Route requests to the right service in code (minimal)
+- Keep endpoints stable for the frontend
+
+### 8. Debugging Distributed Systems
+
+- Add basic logging that includes request ids or correlation ids (simple)
+- Trace one request across two services
+- Diagnose: “which service is failing?”
+
+### 9. Microservices Reality Check
+
+- Summarize what got harder (more moving parts)
+- Summarize what got better (ownership, separation)
+- Decide when you’d keep a monolith vs split

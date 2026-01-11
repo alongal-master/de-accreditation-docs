@@ -1,0 +1,734 @@
+{
+  "title": "py101-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-11",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "py101-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Python Basics Foundations",
+              "lessons": [
+                {
+                  "title": "Welcome to PY101",
+                  "masteryOutcomes": [
+                    "Understand the course main topics and grading"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Writing your first program",
+                  "masteryOutcomes": [
+                    "Write and execute a simple Python script using the print() function"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Unlocking print() power-ups",
+                  "masteryOutcomes": [
+                    "Print multiple values using commas",
+                    "Understand that printing is always in a new line",
+                    "Print multiple text and numeric values using the + and * operators."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Café welcome board",
+                  "masteryOutcomes": [
+                    "Reinforce using print() to display text and simple patterns, including multiple values and operators, to create a friendly café welcome screen."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introduction to variables",
+                  "masteryOutcomes": [
+                    "Explain that a variable is a named placeholder for a value in memory.",
+                    "Write a valid variable name following Python conventions.",
+                    "Assign a value (e.g., a number or a piece of text) to a variable using the = operator.",
+                    "Use the print() function to display the value stored in a variable."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Working with text",
+                  "masteryOutcomes": [
+                    "Define a \"data type\" as a category of data that determines what you can do with it.",
+                    "Create a string variable by enclosing text in single (') or double (\") quotes.",
+                    "Combine two strings using the + operator (concatenation).",
+                    "Predict the output when printing string variables."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Player profile card",
+                  "masteryOutcomes": [
+                    "Practice creating and printing well-named variables and string data to display a simple player profile using concatenation."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Mini status updater",
+                  "masteryOutcomes": [
+                    "Strengthen understanding of string variables and concatenation by building short status messages from multiple text parts and predicting their printed output."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Working with numbers",
+                  "masteryOutcomes": [
+                    "Distinguish between an integer (int, a whole number) and a float (float, a number with a decimal).",
+                    "Create variables to store integer and float values.",
+                    "Perform basic arithmetic operations (+, -, *, /) on numeric variables.",
+                    "Explain why 5 is different from \"5\"."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Modeling real-world calculations",
+                  "masteryOutcomes": [
+                    "Translate a two-step word problem into an arithmetic expression and compute the result.",
+                    "Do arithmetic directly inside print() to produce clear, useful outputs.",
+                    "Compare two equivalent formulations and choose the clearer one."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Snack bar checkout - Part 1",
+                  "masteryOutcomes": [
+                    "Apply integer and float variables with basic arithmetic operations to calculate item costs and totals for a snack bar order."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Snack bar checkout - Part 2",
+                  "masteryOutcomes": [
+                    "Translate short word problems into arithmetic expressions inside print() to compute and clearly display multi-step snack bar totals."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Review: writing your first program",
+                  "masteryOutcomes": [
+                    "New mastery outcome"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Division modes: / vs // with quotient and remainder",
+                  "masteryOutcomes": [
+                    "Compute and contrast true division (/) and floor division (//) on integers",
+                    "explain the difference.",
+                    "Use // and % together to derive quotient and remainder for practical cases (e.g., packing/scheduling)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Bus seating planner - Part 1",
+                  "masteryOutcomes": [
+                    "Use / and // to compare true division and floor division when planning how many buses are needed for groups of passengers."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Bus seating planner - Part 2",
+                  "masteryOutcomes": [
+                    "Combine // and % to compute quotient and remainder in realistic packing and scheduling scenarios and print clear summaries."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Core Inputs & Functions",
+              "lessons": [
+                {
+                  "title": "Checking the facts",
+                  "masteryOutcomes": [
+                    "Use type() to check a variable's data type",
+                    "Use the str(), int(), and float() functions to convert values between data types."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Talking to your program: getting input from users",
+                  "masteryOutcomes": [
+                    "Explain why programs interact with users and when input() is appropriate",
+                    "collect input with clear prompts.",
+                    "Convert numeric inputs to the correct type before computing and print a friendly summary."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Café order helper",
+                  "masteryOutcomes": [
+                    "Practice checking and converting data types while collecting user input to calculate and summarize a café order."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Mini trip cost calculator",
+                  "masteryOutcomes": [
+                    "Collect user input with clear prompts, convert numeric values correctly, and compute and display a friendly trip cost summary."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Python errors: meet the traceback",
+                  "masteryOutcomes": [
+                    "Understand why Python provides a traceback and how it helps identify what went wrong",
+                    "Identify parts of a traceback and different types of tracebacks"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: core foundations",
+                  "masteryOutcomes": [
+                    "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Buggy temperature converter",
+                  "masteryOutcomes": [
+                    "Read Python tracebacks from a broken temperature converter and use them to locate and fix different types of errors."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Debugging a quiz app",
+                  "masteryOutcomes": [
+                    "Analyze tracebacks from a simple quiz program to identify error types, pinpoint failing lines, and verify correct fixes."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions i: why, define, and call",
+                  "masteryOutcomes": [
+                    "Understand how functions reduce repetition and improve reuse.",
+                    "Understand the structure of Python functions",
+                    "Define a function with one or two parameters and call it with literals and variables"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions ii: inside the function",
+                  "masteryOutcomes": [
+                    "Understand the structure of a function, including its name, parameters, indentation, and return value.",
+                    "Call functions with arguments correctly and trace how values are passed from the call site to parameters, verifying the flow using print statements."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Story sentence generator",
+                  "masteryOutcomes": [
+                    "Define and call simple functions with parameters to build reusable sentence generators for a short, customizable story."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Workout planner functions",
+                  "masteryOutcomes": [
+                    "Create and use functions with one or two parameters to generate personalized workout messages while tracing how data flows into each function."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions iii: return vs print and early return",
+                  "masteryOutcomes": [
+                    "Differentiate printing vs returning values",
+                    "Use return to pass results and apply early returns."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Scope and local variables",
+                  "masteryOutcomes": [
+                    "Understand that variables created inside a function exist only within that function’s scope (local).",
+                    "Explain how local and global scopes differ and identify when each is used.",
+                    "Demonstrate how data can be passed into functions through parameters instead of relying on global variables."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Tip calculator functions - Part 1",
+                  "masteryOutcomes": [
+                    "Refactor a tip calculator to use functions that return values instead of printing, then reuse those returned results in further calculations."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Tip calculator functions - Part 2",
+                  "masteryOutcomes": [
+                    "Enhance the tip calculator with multiple functions that use early returns and local variables, clearly separating local scope from global data."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Logical Decisions & Loops",
+              "lessons": [
+                {
+                  "title": "Logical operators: and/or/not and short-circuiting",
+                  "masteryOutcomes": [
+                    "Combine comparisons with and, or, not to form compound conditions.",
+                    "Show short-circuit behavior by adding prints to the right-hand side expression."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Booleans and comparisons: equality vs identity",
+                  "masteryOutcomes": [
+                    "Use True/False in expressions and store boolean results in variables.",
+                    "Differentiate between '==' (value equality) and 'is' (identity equality)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe order checker",
+                  "masteryOutcomes": [
+                    "Practice combining comparisons with and/or/not and observe short-circuit behavior while validating simple cafe orders."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Identity vs equality tester",
+                  "masteryOutcomes": [
+                    "Differentiate clearly between == and is by running comparison experiments and storing boolean results."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String membership with 'in' in conditions",
+                  "masteryOutcomes": [
+                    "Test substring membership with 'in' and negate with 'not in'.",
+                    "Use membership checks inside if/elif branches to drive simple decisions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Elif and refactoring nested decisions",
+                  "masteryOutcomes": [
+                    "Refactor a nested if/else into an equivalent if/elif/else chain.",
+                    "Order conditions to avoid overlaps and unreachable branches."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Music playlist filter",
+                  "masteryOutcomes": [
+                    "Use string membership with in/not in inside if/elif branches to filter and categorize song titles."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Access control rules",
+                  "masteryOutcomes": [
+                    "Refactor nested access decisions into a clean if/elif/else chain with well-ordered, non-overlapping conditions."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Decision tables to branching logic",
+                  "masteryOutcomes": [
+                    "Translate a 3–5 row decision table into clear if/elif/else code.",
+                    "Verify mutual exclusivity and completeness of the conditions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "For loops and range(): counting iterations",
+                  "masteryOutcomes": [
+                    "Write for loops with range(stop), range(start, stop), range(start, stop, step)",
+                    "Accumulate a total across iterations and print the result.",
+                    "Generate even/odd sequences and countdowns with range."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Shipping fee decision table",
+                  "masteryOutcomes": [
+                    "Translate a small decision table into mutually exclusive and complete if/elif/else code for shipping fee calculation."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Step counter sequences",
+                  "masteryOutcomes": [
+                    "Use for loops with range in different forms to generate totals, even/odd sequences, and countdowns."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Meet the while loop",
+                  "masteryOutcomes": [
+                    "Understand what a while loop is and when it is more suitable than for.",
+                    "Understand the risk of infinite loops and explain how to prevent them.",
+                    "Write a while loop to repeat actions until a condition changes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Loop control: break and continue",
+                  "masteryOutcomes": [
+                    "Understand when to exit a loop early with break versus letting it complete naturally.",
+                    "Insert break to exit early on a condition and continue to skip an iteration."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Number guessing game",
+                  "masteryOutcomes": [
+                    "Write a while loop that repeats user guesses until a condition changes while avoiding infinite loops."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Transaction scanner with breaks",
+                  "masteryOutcomes": [
+                    "Control loop flow using break and continue to stop early or skip iterations while scanning a list of transactions."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Strings & Lists Foundations",
+              "lessons": [
+                {
+                  "title": "Review: decisions and loops",
+                  "masteryOutcomes": [
+                    "Review how if/else, loops, and loop control statements work together in programs",
+                    "Diagnose and fix common logic and looping errors in small code examples"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String skills upgrade i: indexing and slicing",
+                  "masteryOutcomes": [
+                    "Access individual characters in a string using 0-based indexing.",
+                    "Use slice notation [start:stop] and [start:stop:step] to extract substrings.",
+                    "Use negative indices to access characters from the end of a string."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Secret Message Decoder",
+                  "masteryOutcomes": [
+                    "Practice using string indexing and slicing (including negative indices) plus if/else and loops to decode and transform hidden messages."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Username Generator",
+                  "masteryOutcomes": [
+                    "Apply string slicing, step slices, and decision logic with loops to build and validate simple usernames from user input."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String skills upgrade ii: common methods",
+                  "masteryOutcomes": [
+                    "Apply strip, lower, replace, and find",
+                    "Split text and rejoin with delimiters",
+                    "Handle whitespace and empty fields"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists i: creating lists",
+                  "masteryOutcomes": [
+                    "Create lists with literals and from range()",
+                    "print length with len().",
+                    "Explain that lists are mutable and show a visible effect of mutation.",
+                    "Understand when a list is a better choice than separate variables."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Cafe Order Cleaner",
+                  "masteryOutcomes": [
+                    "Use string methods (strip, lower, replace, find, split, join) and whitespace handling to clean and normalize messy text orders."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Guest List Organizer",
+                  "masteryOutcomes": [
+                    "Create and mutate lists while converting a comma-separated string of guests into a clean, structured list with appropriate transformations."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists ii: indexing and slicing",
+                  "masteryOutcomes": [
+                    "Access list elements by index and understand how indexing works.",
+                    "Modify list elements and create sublists using slicing.",
+                    "Handle out-of-range errors (IndexError) in list access."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists iii: mastering list iteration",
+                  "masteryOutcomes": [
+                    "Use a for loop with range() and len() to iterate over indices and access list elements by their position.",
+                    "Use a for loop to iterate directly over the values in a list and perform actions on each element."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Daily Tasks Tracker - Part 1",
+                  "masteryOutcomes": [
+                    "Use list indexing, slicing, and safe access patterns to inspect and modify items in a task list without causing IndexError."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Daily Tasks Tracker - Part 2",
+                  "masteryOutcomes": [
+                    "Iterate over lists by index and by value with for loops to update, filter, and display tasks based on simple conditions."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists iv: common methods",
+                  "masteryOutcomes": [
+                    "Modify a list in place with append, insert, remove, pop, and extend."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Ordering lists: sorted() vs .sort()",
+                  "masteryOutcomes": [
+                    "Sort a list in place with .sort() and create a sorted copy with sorted().",
+                    "Use sorted() parameters ('key' and 'reverse') to customize ordering and explain stability."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Book Wishlist Manager - Part 1",
+                  "masteryOutcomes": [
+                    "Practice modifying lists in place with append, insert, remove, pop, and extend to manage a changing wishlist."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Book Wishlist Manager - Part 2",
+                  "masteryOutcomes": [
+                    "Use sort() and sorted() with key and reverse to produce different ordered views of a list while understanding in-place vs copied sorting."
+                  ],
+                  "teachingInstructions": "Practice-oriented session with a real world story and theme; Create a step by step exercise where the student is writing code and you approve each step; Don't teach any new topics, rely only on the lessons covered",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

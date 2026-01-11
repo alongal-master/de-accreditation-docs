@@ -1,0 +1,899 @@
+{
+  "num_weeks": 4,
+  "num_chapters_per_week": 5,
+  "num_practice_sessions": 0,
+  "weeks": {
+    "1": {
+      "week_num": 1,
+      "learning_goal": "Foundations of the Web: In this unit, students will explain how browsers, clients, servers, requests, and responses work together on the web; identify URL parts and file paths; and build simple multi-page HTML sites using elements, tags, attributes, and links that correctly load and connect pages and assets.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "How the Web Talks: Browsers, Clients, and Servers",
+          "learning_goals": "In this chapter, students will learn the basic roles of the browser, client, and server in loading a web page, including who controls what. They will also learn how different files (HTML, CSS, JavaScript, images) are requested and served as responses to build a complete web experience.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Browser and Client",
+              "learning_outcomes": "Define browser and client in a web page scenario; Describe what the browser does with HTML/CSS/JS at a high level; Identify what the user controls vs what the browser controls",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Server and Response",
+              "learning_outcomes": "Define server and response; List common response files (HTML, CSS, JS, images); Understand what it means to “serve a file”",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Theory Practice Lesson: Browser, client, and server roles",
+              "learning_outcomes": "Learners will be able to correctly identify what the browser, client, and server each do in simple web scenarios and who controls what. Output: A completed written/typed worksheet or quiz where each action in a browsing scenario is matched to “browser,” “client,” or “server.”",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Theory Practice Lesson: Serving files and responses",
+              "learning_outcomes": "Learners will be able to trace how different file types (HTML, CSS, JS, images) are served from a server as responses to a browser. Output: A filled-in diagram or table that shows example requests and the matching response file types the server provides.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Understanding Web Requests and URLs",
+          "learning_goals": "Learn how web browsers send requests and receive responses, what happens when those requests fail, and how to correctly read and use URLs and paths to load pages and resources.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Request in Plain Words",
+              "learning_outcomes": "Define request using everyday examples (page load, image load); Trace “type URL → request → response → render”; Predict what happens when a request fails (missing page/file)",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "URLs and Paths",
+              "learning_outcomes": "Identify URL parts: domain + path + query (conceptually); Distinguish URL path vs local file path; Understand why correct paths matter for loading resources",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Theory Practice Lesson: Request and response stories",
+              "learning_outcomes": "Learners will be able to describe the request–response cycle in everyday language and predict what happens when a request fails. Output: A set of short scenario answers where each story is annotated with “request,” “response,” and “what happens if it fails.”",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Theory Practice Lesson: URL parts and paths",
+              "learning_outcomes": "Learners will be able to label the parts of a URL and distinguish URL paths from local file paths. Output: A completed matching and labeling exercise where several example URLs and file paths are correctly broken into domain, path, and query (where present) and categorized as URL vs local path.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Building Your First HTML Pages",
+          "learning_goals": "Learn how HTML structures a web page, correctly use common elements and tags (including self-closing tags), and apply them to create simple, well-organized pages like a cafe menu and story outline while practicing questions and collaboration.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "HTML Elements",
+              "learning_outcomes": "Define HTML as page structure; Create a page using common elements (h1, p, a); Use headings to create a readable structure",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "HTML Elements vs Tags",
+              "learning_outcomes": "Understand difference between elements and tags; Identify and understand the opening and closing tag; Identify and understand self-closing tags",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Practice Lesson: Cafe menu page",
+              "learning_outcomes": "Learners will be able to create a simple HTML page using headings, paragraphs, and links to structure information clearly. Output: A single HTML file that displays a small cafe menu with a main heading, section headings, descriptive text, and at least one link.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Practice Lesson: Story outline page",
+              "learning_outcomes": "Learners will be able to use HTML tags correctly to build a clear page outline and distinguish between elements, opening/closing tags, and self-closing tags. Output: A single HTML file that shows a short story outline with multiple heading levels, paragraphs, a link, and at least one self-closing tag (like an image or line break).",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Building Links and Attributes",
+          "learning_goals": "In this chapter, students will learn to use common HTML attributes (such as href, src, and alt), create working internal and external links between pages with correct relative paths, and debug simple broken links while building a small two-page personal site.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "HTML Attributes",
+              "learning_outcomes": "Identify an attribute as name=\"value\" on a tag; Use common attributes correctly (href, src, alt); Understand what “value” means in an attribute context",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Links Between Pages",
+              "learning_outcomes": "Create links between index.html and about.html; Use relative paths correctly; Debug a broken link by fixing the path; Understand the difference between internal and external links",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Practice Lesson: Personal profile and links - Part 1",
+              "learning_outcomes": "Learners will be able to add and configure common HTML attributes such as href, src, and alt with appropriate values. Output: A main HTML page that shows a simple personal profile with an image (using src and alt) and at least one correctly working link using href.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Practice Lesson: Personal profile and links - Part 2",
+              "learning_outcomes": "Learners will be able to create internal and external links between pages using relative paths and debug simple broken links. Output: A two-page mini site (index.html and about.html) where navigation links work correctly between pages and at least one external link opens an outside website.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Browser, Client, URL"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "week_num": 2,
+      "learning_goal": "Semantic Pages & Forms: In this unit, students will build multi-page, semantically structured websites using meaningful HTML tags, headings, and lists, and create basic forms with appropriate inputs, labels, IDs, and names so that content is clearly organized, navigable, and ready for data submission.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Building Semantic Multi‑Page Websites",
+          "learning_goals": "Learn to structure web pages with semantic HTML, organize content into clear sections, and connect multiple pages into a simple, consistent website using shared navigation and layout.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Semantic Page Layout",
+              "learning_outcomes": "Build a page with header, nav, main, section, footer; Understand what semantic HTML means (simple definition); Organize content into clear sections (not random divs)",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Three Pages, One Site",
+              "learning_outcomes": "Create index.html, about.html, contact.html; Keep navigation consistent across pages; Understand how the browser loads different pages via links",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Cafe homepage layout",
+              "learning_outcomes": "Practice creating a single-page semantic layout using header, nav, main, section, and footer for a small cafe website. Output: A static cafe homepage that displays clearly separated sections (hero, menu highlight, about, footer) using semantic HTML tags.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Practice Lesson: Three-page portfolio site",
+              "learning_outcomes": "Build index.html, about.html, and contact.html with consistent navigation and semantic structure to simulate a personal portfolio. Output: A simple three-page site where clicking nav links loads the correct HTML page with shared header/nav/footer structure.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Browser, Client, URL"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Browser, Client, URL"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Structuring Content with Headings and Lists",
+          "learning_goals": "Learn to organize page content using clear heading hierarchies and meaningful lists, and apply these skills in practical layouts like blog articles and restaurant menus to improve readability and navigation.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Headings That Make Sense",
+              "learning_outcomes": "Use one h1 per page and structure sections with h2; Fix a page with messy heading levels; Understand why hierarchy matters for readability",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Lists for Real Content",
+              "learning_outcomes": "Use ul/ol/li for actual content (menu items, steps, features); Choose the right list type for the purpose; Combine lists with links for simple navigation patterns",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Blog article headings",
+              "learning_outcomes": "Reorganize a blog-style article into a clear heading hierarchy using one h1 and well-structured h2 elements for sections. Output: A single HTML article page where headings visually and structurally outline the content in a logical order.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Restaurant menu lists",
+              "learning_outcomes": "Use ul, ol, and li elements to build a realistic restaurant menu and a list of ordering steps, choosing the right list type for each. Output: A static menu page showing categories of dishes as unordered lists and an ordered list describing the steps to place an order online.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Structuring Content and Forms",
+          "learning_goals": "In this chapter, students will learn to organize page sections using divs and classes for clear, readable layouts, and to build basic forms with common input types and meaningful placeholder text. They will apply these skills in practice by creating a simple news homepage layout and a static signup form, while using live sessions to clarify concepts and ask questions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Clean Sections with Divs",
+              "learning_outcomes": "Use div to group content when semantics don’t fit; Add classes to divs to label page sections; Keep a layout readable using consistent grouping",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Form Inputs and Values",
+              "learning_outcomes": "Define input and value in plain terms (the HTML element vs what the user types); Use common input types (text, email, password) and understand what changes; Add and explain the placeholder attribute (hint text, not the actual value)",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: News layout with div sections",
+              "learning_outcomes": "Group related content into divs with meaningful class names to create a readable layout for a simple news homepage. Output: A news-style page where top stories, sidebar, and footer are visually separated and labeled via div containers and classes.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Signup form basics",
+              "learning_outcomes": "Create a signup form using text, email, and password inputs and add helpful placeholder text that doesn’t replace actual values. Output: A static signup form that shows different input behaviors and hint text when fields are empty.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Building Accessible HTML Forms",
+          "learning_goals": "Learn how to create accessible, well-labeled HTML forms by correctly pairing labels and inputs, using form and name attributes to structure submission data, and practicing by building contact and feedback forms that send clear, predictable key-value pairs.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Labels and IDs",
+              "learning_outcomes": "Add a label for each input and understand why labels exist; Connect label to input using for + id; Fix a broken page where clicking the label focuses the wrong input",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Forms and Input Names",
+              "learning_outcomes": "Wrap inputs in a form and understand what “submit” means at a high level; Add the name attribute and understand why it matters for submission; Predict the “data keys” a form will send based on input names",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Contact form labels and IDs",
+              "learning_outcomes": "Attach labels to each input using matching for and id attributes and verify that clicking labels focuses the correct fields. Output: A contact form where each text, email, and message input is clearly labeled and fully clickable via its label.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Feedback form submission data",
+              "learning_outcomes": "Wrap inputs in a form, add meaningful name attributes, and predict the key-value pairs that would be sent when the form is submitted. Output: A feedback form that, when conceptually “submitted,” would send a clear set of data keys (based on input names) and their user-entered values.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Multi-Page HTML + Forms"
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "week_num": 3,
+      "learning_goal": "Week 3 – HTML & CSS Foundations: In this unit, students will write clean, well-structured and accessible HTML, apply basic CSS using inline, embedded, and external styles, use tag/class/id selectors to style text and div-based sections, and control layout with the box model and block vs inline display while debugging structure, accessibility, and spacing with DevTools.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Writing Clean, Accessible HTML",
+          "learning_goals": "In this chapter, you’ll build habits for writing clean, well-structured HTML and making pages more accessible. You’ll practice using semantic landmarks, alt text, and labels, and apply these skills through hands-on projects and live Q&A sessions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "HTML Quality Habits",
+              "learning_outcomes": "Keep HTML consistently indented and readable; Spot and fix broken nesting and missing closing tags; Use DevTools Elements tab to confirm structure",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Basic Accessibility Habits",
+              "learning_outcomes": "Use semantic landmarks (nav, main) intentionally; Add alt text and proper labels reliably; Identify 2-3 easy accessibility improvements on a page",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Café homepage structure",
+              "learning_outcomes": "Practice writing clean, well-indented HTML with correct nesting while using semantic landmarks for a small café homepage. Output: A simple, readable HTML page for a café with correct structure that displays in the browser without layout or nesting errors.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Practice Lesson: Accessibility checkup for music app",
+              "learning_outcomes": "Strengthen your ability to spot and fix basic accessibility issues like missing alt text, labels, and landmarks using DevTools. Output: An improved HTML page for a small music app with added alt text, labels, and landmarks that is easier to navigate with assistive tech.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Multi-Page HTML + Forms"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Multi-Page HTML + Forms"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Applying Basic CSS",
+          "learning_goals": "Learn three core ways to apply CSS to a page and how to target elements using tag, class, and ID selectors, then practice these skills by styling a to-do list and a recipe card layout while getting questions answered in live Q&A sessions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "CSS: Three Ways",
+              "learning_outcomes": "Apply CSS inline (style=\"\") for quick tests; Apply CSS in a <style> tag for page-level styling; Link an external CSS file with <link> for reuse",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Selectors: Tag, Class, ID",
+              "learning_outcomes": "Write selectors using tag, class, and id; Predict which elements a selector targets; Fix a selector that styles the wrong elements",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: To-do list styles – three CSS methods",
+              "learning_outcomes": "Apply inline styles, a <style> block, and an external stylesheet to style different parts of a simple to-do list page. Output: A to-do list HTML page where different sections are styled using each of the three CSS application methods.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: Recipe card selectors",
+              "learning_outcomes": "Use tag, class, and id selectors to target specific parts of a recipe card layout and fix selectors that style the wrong elements. Output: A recipe card page where headings, ingredients, and instructions are correctly styled via well-chosen selectors.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Structuring & Styling Content",
+          "learning_goals": "Learn to style text and visual sections with CSS to create clear, readable pages, and apply consistent, reusable patterns across multiple sections and pages.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Styling Text Tags",
+              "learning_outcomes": "Style headings and paragraphs (size, spacing, alignment); Improve readability with consistent text styling; Keep styles consistent across multiple pages",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Divs and Visual Blocks",
+              "learning_outcomes": "Style div sections using background, padding, borders; Create clear sections of a page using CSS; Use classes to apply the same styling pattern repeatedly",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: Blog text styling",
+              "learning_outcomes": "Style headings and paragraphs for a mini blog page to improve readability and keep text styling consistent across multiple sections. Output: A simple blog page with consistently styled titles and body text that looks clean and easy to read.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: Portfolio sections with div blocks",
+              "learning_outcomes": "Use divs and reusable classes to create clearly separated visual sections for a small portfolio page. Output: A portfolio-style page with distinct, visually separated sections (about, projects, contact) using styled div blocks.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Box Model & Layout Foundations",
+          "learning_goals": "Learn to control spacing and layout using the CSS box model, margins, padding, and display properties, and practice building clean product cards and horizontal navigation bars while debugging common alignment issues.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Box Model Spacing",
+              "learning_outcomes": "Apply margin vs padding intentionally; Understand spacing using box model vocabulary; Use DevTools to inspect margin and padding live",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Block vs Inline",
+              "learning_outcomes": "Distinguish block vs inline behavior; Use display: inline-block for simple layout needs; Debug “why won’t these sit next to each other?” issues",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: Product card spacing with box model",
+              "learning_outcomes": "Intentionally apply margin and padding to product cards, then inspect and adjust spacing using the browser’s box model tools. Output: A product listing page where each product card has well-balanced internal padding and external margins.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: Navigation layout with block and inline",
+              "learning_outcomes": "Differentiate block and inline elements and use display: inline-block to create a horizontal navigation bar while debugging alignment issues. Output: A simple web page header with a logo and a horizontal navigation menu whose items sit neatly next to each other.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "CSS Styling Basics"
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "week_num": 4,
+      "learning_goal": "Interactive Web Behavior: In this unit, students will style reusable buttons and inputs, debug CSS with DevTools, connect and verify external JavaScript files, select and store DOM elements, attach and debug click and submit event listeners, and build simple interactive behaviors like counters, form responses, show/hide sections, and a light/dark mode toggle.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Interactive Forms & CSS Debugging",
+          "learning_goals": "Learn to style reusable, accessible buttons and inputs, then use browser DevTools to trace, debug, and refine CSS so form interfaces behave and appear as intended.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Buttons and Inputs",
+              "learning_outcomes": "Style buttons with hover and focus states (basic usability); Style inputs for consistent form design; Keep button and input styles reusable via classes",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "CSS Debugging in DevTools",
+              "learning_outcomes": "Find where a style is coming from in the Styles panel; Identify why a style isn’t applying (wrong selector or wrong file); Make a test change in DevTools, then apply it in code",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: Cafe order form",
+              "learning_outcomes": "Practice creating reusable button and input classes with hover and focus states while styling a small cafe order form consistently. Output: A static HTML/CSS form where styled buttons and inputs react visually on hover/focus and share consistent reusable styles.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Practice Lesson: DevTools style detective",
+              "learning_outcomes": "Use browser DevTools to trace where styles come from, diagnose why certain styles don’t apply, and safely test changes before updating the CSS file. Output: A corrected and cleaned-up CSS file where previously “broken” button/input styles now apply as intended.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "CSS Styling Basics"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "CSS Styling Basics"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Introducing JavaScript & the DOM",
+          "learning_goals": "Students will learn how to connect JavaScript to a web page, confirm that their scripts run, and use the DOM to find and store elements for later interaction. They will practice these skills on simple pages and have dedicated time to ask questions and clarify concepts.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "JavaScript Adds Behavior",
+              "learning_outcomes": "Understand what JavaScript is used for on a web page; Link a script.js file correctly; Use console.log to confirm the script runs",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "DOM: Find Elements",
+              "learning_outcomes": "Define DOM in practical terms (page structure JS can access); Select elements with querySelector; Store elements in variables for reuse",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Practice Lesson: Script check console",
+              "learning_outcomes": "Connect an external script.js file to a simple web page and use console.log to verify that JavaScript is correctly loaded and running. Output: A minimal page where opening DevTools shows clear console messages confirming the script is linked and executing.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Practice Lesson: Playlist DOM explorer",
+              "learning_outcomes": "Select and store DOM elements from a mock music playlist page using querySelector so they can be reused later by JavaScript. Output: A script that logs selected title, song items, and control elements to the console, confirming accurate DOM selection.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Interactivity and JavaScript"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Interactive Events and DOM Updates",
+          "learning_goals": "Learn how to listen for and respond to user actions (clicks, inputs, form submits) with clear, focused JavaScript functions, and update on-page content dynamically. Practice debugging common event issues and building small interactive features like click counters and feedback confirmations.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Events: Click and Submit",
+              "learning_outcomes": "Define an event (click, submit, input); Attach event listeners and run a function; Debug “event not firing” using console logs",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Change Text on Click",
+              "learning_outcomes": "Update text content of an element on click; Understand what changed in the DOM (content changed); Keep logic small and readable (one clear function)",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Practice Lesson: Click counter button",
+              "learning_outcomes": "Attach click event listeners to a button and use a small, readable function to update a visible click count on the page. Output: A page where clicking a button increases a counter and logs helpful debug messages if the event isn’t firing.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Practice Lesson: Mini feedback form",
+              "learning_outcomes": "Handle a form submit event, prevent default behavior, and change on-page text to show a custom “thank you” message using clear, focused logic. Output: A page where submitting a short feedback form replaces a placeholder message with a personalized confirmation.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Interactivity and JavaScript"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Interactive Page Behavior",
+          "learning_goals": "Learn to control page appearance and visibility with JavaScript by toggling content display, switching between light and dark reading modes, and managing simple UI state using boolean variables and dynamic text updates.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Show and Hide Content",
+              "learning_outcomes": "Show and hide an element using style.display; Track simple state using a boolean variable; Update button text based on current state",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Toggle Page Colors",
+              "learning_outcomes": "Change background and text colors from JavaScript; Understand the difference between CSS styling and JS-driven styling; Keep dark/light behavior predictable and reversible",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Practice Lesson: FAQ show-hide",
+              "learning_outcomes": "Use a button and a boolean state variable to show and hide an FAQ answer by toggling style.display and updating the button text. Output: A simple FAQ block where clicking a button reveals or hides the answer while the button label switches between “Show answer” and “Hide answer.”",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Practice Lesson: Reading mode toggle",
+              "learning_outcomes": "Implement a predictable dark/light mode toggle that changes background and text colors via JavaScript while keeping the behavior reversible. Output: A page with a “Toggle reading mode” button that switches the site between light and dark themes with each click.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Interactivity and JavaScript"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Interactivity and JavaScript"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Interactivity and JavaScript"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

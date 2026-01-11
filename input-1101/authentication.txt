@@ -1,0 +1,241 @@
+## Unit 1: Security, Identity, and Tokens
+
+---
+
+### 1. Security and Trust
+
+- Describe what security protects in a web app (data, actions, identity)
+- Name common ways APIs get abused (guessing passwords, accessing other users’ data)
+- Use the terms **user** and **credentials** correctly
+
+### 2. Credentials and Identity
+
+- Define **credentials** and give examples (email/password)
+- Understand what it means to “prove identity” to an API
+- Distinguish identity data from public profile data
+
+### 3. Password Hashing Basics
+
+- Understand why passwords must be stored using **hashing**
+- Hash and verify passwords using a library (practical usage)
+- Describe what a **salt** is at a high level
+
+### 4. Users Table Schema
+
+- Design a `users` table schema (email, password_hash, role, verified)
+- Understand “unique email” and why it matters
+- Identify what should never be stored (raw passwords)
+
+### 5. Authentication vs Authorization
+
+- Define **authentication** vs **authorization** using endpoint examples
+- Identify where each happens in an API flow
+- Predict what goes wrong when either is missing
+
+### 6. Sessions and Cookies
+
+- Understand session-based login at a high level (server session + browser cookie)
+- Describe what a cookie does in this context
+- Compare sessions vs tokens in one sentence (stateful vs stateless)
+
+### 7. Tokens and Bearer Header
+
+- Define a **token** as proof of login for later requests
+- Understand how tokens are sent (`Authorization: Bearer ...`)
+- Recognize common token mistakes (missing header, wrong format)
+
+### 8. JWT: What It Contains
+
+- Understand what a **JWT** is (signed token with fields inside)
+- Define **claims** as fields inside the token (e.g., user_id, role)
+- Understand **expiration** and why tokens should expire
+
+### 9. Secrets and Config
+
+- Understand what a server **secret** is (JWT secret / signing key)
+- Store secrets safely using environment variables (basic practice)
+- Recognize what should not be committed to Git (secrets, tokens)
+
+## Unit 2: Register, Login, Tokens
+
+---
+
+### 1. Register Endpoint
+
+- Implement `/register` to accept a JSON object with email and password, and for now just return a success message
+- Validate required fields and return clear errors
+- Test in **Postman** if route is working
+
+### 2. Database Writes for Users
+
+- Use the email and password to insert a user safely (parameterized queries)
+- Handle duplicate email cleanly (unique constraint → clear error)
+- Verify the new row / user exists in DB Browser
+
+### 3. Login Endpoint
+
+- Create `/login` route to receive credentials, and for now return success message
+- Return a clear “missing credentials” response if email or password is missing
+- Test success/failure login scenarios in Postman
+
+### 4. Issue Access Tokens
+
+- If credentials are valid, issue an **access token** on login with create_access_token from flask_jwt_extended library
+- otherwise return an “invalid credentials” message
+- Include minimal claims (e.g., user_id, role)
+- Understand what the client does with the token next (store + send header)
+
+### 5. Create a Protected Route
+
+- Create a route `/protected` that returns a message “Hello user”
+- Mark the route as protected with jwt_required decorator
+- Understand when this decorator / middleware runs
+
+### 6. Authorization Header Practice
+
+- “Login” from Postman and copy the access token
+- Make sure the `/protected` route is only accessible when we include `Authorization: Bearer <token>` header
+- Observe behavior with missing/incorrect headers
+- Understand what “Bearer” means in practice
+
+### 7. Token Verification Basics
+
+- Read token claims using a get_jwt_identity in `/protected` route
+- Return customized “Hello user <id>” message, no need for DB check yet
+- Return consistent error responses for token failures
+
+### 8. Token Expiration
+
+- Add expiration time to access tokens
+- Observe what happens when a token expires
+- Return a clear expired-token error response
+
+### 9. Refresh Tokens (Concept + Minimal)
+
+- Understand why refresh tokens exist (short-lived access tokens)
+- Understand a minimal `/refresh` flow (server issues new access token) on the server side
+- Understand how the client makes use of the refresh token
+
+### 10. Auth Error Responses
+
+- Return consistent errors for missing/invalid/expired token
+- Distinguish **401 Unauthorized** vs **403 Forbidden**
+- Keep a consistent error JSON shape across endpoints
+
+## Unit 3: Middleware, Decorators, and Current User
+
+---
+
+### 1. Middleware: What and Why
+
+- Define **middleware** as shared logic applied to many requests
+- Understand why middleware prevents copy-paste security bugs
+- Name common middleware jobs (auth checks, logging)
+
+### 2. Public vs Protected Endpoints
+
+- Decide which endpoints should be public vs protected
+- Understand why “public by accident” is dangerous
+- Create a simple rule list for the API routes
+
+### 3. Decorators as Middleware
+
+- Understand how a Flask **decorator** can act like middleware
+- Wrap route handlers to run shared checks first
+- Compare “check inside every route” vs “check once with a decorator”
+
+### 4. Understand the Authentication Decorator
+
+- Understand what the jwt_required decorator does “under the hood” in simple terms
+- Understand the order of checks:  token present → correct Bearer format → valid signature → not expired
+- Apply the decorator to multiple routes where necessary
+
+### 5. Token Verification: What You Get
+
+- Distinguish `@jwt_required()` (verifies token + allows the route to run) from `get_jwt_identity()` (reads the user id from the verified token)
+- Understand that jwt_required does not check if the user is in our database
+- Understand that it only sets us up to do so by giving us the identity/claims (e.g., `user_id`) in the route
+
+### 6. Current User from Claims
+
+- Extract `user_id` from token claims
+- Query the user row from the database using that id
+- Understand why the DB is still needed (roles/verified state can change)
+
+### 7. Debugging Auth with Postman
+
+- Use Postman variables for tokens (basic usage)
+- Diagnose failures by comparing headers + responses
+- Fix broken requests using server error output
+
+### 8. Build your own Middleware
+
+- Build a json_required decorator
+- Make sure non-json requests are blocked
+- If `request.is_json` is false → return `400`, else route runs
+
+## Unit 4: Authorization and Email Verification
+
+---
+
+### 1. Authorization Rules
+
+- Explain what authorization decides (allowed actions on resources)
+- Identify where authorization should happen (before the action runs)
+- Distinguish “not logged in” vs “not allowed”
+
+### 2. Roles and Permissions
+
+- Define **role** and **permission**
+- Store a role on the user row (users table field)
+- Choose a simple strategy (role checks first, ownership checks second)
+
+### 3. Role Checks in Routes
+
+- Implement an admin-only endpoint, by creating an admin_required() decorator
+- Return **403 Forbidden** for non-admin users
+- Test with two users in Postman
+
+### 4. Ownership Checks
+
+- Implement “only edit your own resource” using get_jwt_identity
+- Understand ownership checks vs role checks
+- Test success and failure cases in Postman
+
+### 5. Reusable Authorization Decorators
+
+- Refactor role + ownership checks into reusable decorators (`@require_role`, `@require_owner`)
+- Apply multiple decorators in the right order (`@jwt_required()` first, then authorization)
+- Keep error responses consistent (**403** with a clear message)
+
+### 6. Why Verification Exists
+
+- Explain what “email verification” proves (control of an email address, not “trustworthiness”)
+- Identify what verification prevents in simple terms (fake accounts, spam registrations, bots)
+- Distinguish **verified** vs **authenticated** (you can log in, but not yet verified)
+
+### 7. Verification Data Design
+
+- Choose where verification info lives:
+    - `users.verified` boolean
+    - plus either `users.verify_token` **or** a `verification_tokens` table
+- Understand tradeoffs (simple vs scalable)
+- Add expiration concept (token shouldn’t live forever)
+
+### 8. Generate Verification Token
+
+- Generate a verification token/code on registration
+- Store token + expiration (in user row or a tokens table)
+- Return token in API response for learning (simulated email)
+
+### 9. Verify Endpoint
+
+- Implement `/verify` to validate token and mark user verified
+- Handle invalid/expired tokens cleanly
+- Test the full verification flow in Postman
+
+### 10. Verified Access Rules
+
+- Decide a rule: block unverified users from from certain **protected endpoints**
+- Return a clear “verification required” response
+- Confirm verified vs unverified behavior in Postman

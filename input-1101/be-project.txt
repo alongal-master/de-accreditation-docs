@@ -1,0 +1,291 @@
+## ▶ Unit 1: Data & API Foundations
+
+> Focus: turning a project idea into a working data-backed API.
+> 
+
+### 1. From Idea to Shape
+
+- Define the project scope in backend terms (data + API)
+- Identify core entities and relationships
+- Translate requirements into backend responsibilities
+
+---
+
+### 2. Tables, Rows, Relations
+
+- Finalize relational schema with at least three entities
+- Define primary keys, foreign keys, and constraints
+- Validate schema decisions against expected API usage
+
+---
+
+### 3. SQL as the Source
+
+- Write schema creation SQL scripts
+- Ensure schema is reproducible from scratch
+- Confirm relationships using real sample data
+
+---
+
+### 4. Flask App Structure
+
+- Move from single-file scripts to a structured Flask app
+- Separate routes, logic, and database access
+- Establish a clean entry point for the application
+
+---
+
+### 5. First Endpoints Live
+
+- Create initial CRUD endpoints for one entity
+- Connect Flask routes to SQL queries
+- Return proper HTTP responses and status codes
+
+---
+
+### 6. CRUD Across Entities
+
+- Expand CRUD operations to all core entities
+- Implement SQL JOINs where relationships exist
+- Keep endpoints consistent and predictable
+
+---
+
+### 7. Data Access Boundaries
+
+- Isolate SQL queries from route handlers
+- Avoid duplicated query logic
+- Make database access readable and testable
+
+---
+
+### 8. Errors That Matter
+
+- Handle missing data and invalid IDs
+- Return clear error messages and status codes
+- Distinguish client errors from server errors
+
+---
+
+## ▶ Unit 2: Auth, Business Logic & Security
+
+> Focus: turning an open API into a controlled, real system.
+> 
+
+### 1. Auth as Infrastructure
+
+- Integrate authentication into the existing API
+- Add registration and login flows
+- Store hashed passwords securely
+
+---
+
+### 2. JWT in Practice
+
+- Issue JWTs on login
+- Read and validate tokens on requests
+- Attach user identity to request context
+
+---
+
+### 3. Protecting Routes
+
+- Restrict access to authenticated users
+- Apply decorators or middleware consistently
+- Decide which endpoints require authentication
+
+---
+
+### 4. Authorization Rules
+
+- Implement at least one authorization rule
+- Enforce ownership or role-based access
+- Prevent unauthorized data modification
+
+---
+
+### 5. User State Matters
+
+- Add a verified/unverified user state
+- Implement a verification endpoint
+- Enforce verification where appropriate
+
+---
+
+### 6. Input Validation
+
+- Validate request payloads explicitly
+- Reject malformed or incomplete input
+- Keep validation logic close to boundaries
+
+---
+
+### 7. SQL Safety in Practice
+
+- Prevent SQL injection through safe query patterns
+- Validate assumptions before executing queries
+- Handle database errors gracefully
+
+---
+
+### 8. Business Logic Layers
+
+- Move non-trivial logic out of routes
+- Keep routes thin and readable
+- Treat business rules as first-class code
+
+---
+
+## ▶ Unit 3: Quality, Testing & Confidence
+
+> Focus: making the project reliable, testable, and explainable.
+> 
+
+### 1. What to Test First
+
+- Identify critical paths in the API
+- Decide what deserves unit tests
+- Separate testable logic from framework glue
+
+---
+
+### 2. Pytest for APIs
+
+- Write unit tests using pytest
+- Test core logic and edge cases
+- Run tests repeatedly during development
+
+---
+
+### 3. Testing Auth Flows
+
+- Test login and token validation logic
+- Test protected route behavior
+- Verify authorization rules with tests
+
+---
+
+### 4. Database in Tests
+
+- Prepare test data deliberately
+- Isolate test cases from each other
+- Keep tests deterministic and repeatable
+
+---
+
+### 5. Error Paths Are Features
+
+- Test failure cases explicitly
+- Ensure consistent error responses
+- Avoid silent failures
+
+---
+
+### 6. API Documentation That Helps
+
+- Document endpoints, inputs, and outputs
+- Describe authentication requirements clearly
+- Make the API understandable without code access
+
+---
+
+### 7. Project Readability Review
+
+- Review folder structure and naming
+- Remove unused code and dead paths
+- Ensure the project can be navigated easily
+
+---
+
+### 8. End-to-End Confidence Check
+
+- Manually test full flows using Postman
+- Validate that all requirements are met
+- Prepare the project for external review
+
+---
+
+---
+
+## ▶ Unit 4 (Optional): Extensions
+
+> Focus: extending a working backend with real-world engineering practices.
+> 
+
+### 1. Intro to Docker: Why Containers Exist
+
+- Identify problems Docker solves in backend projects
+- Decide what should be containerized in this project
+- Understand images vs containers at a practical level
+
+---
+
+### 2. First Dockerfile
+
+- Write a basic Dockerfile for the Flask app
+- Build and run the container locally
+- Verify the app behaves the same inside and outside Docker
+
+---
+
+### 3. Configuration in Containers
+
+- Pass environment variables into containers
+- Separate config from code
+- Avoid hardcoding secrets and ports
+
+---
+
+### 4. App + Database Together
+
+- Run the backend container with a database
+- Connect the app to the database from Docker
+- Understand service boundaries at a basic level
+
+---
+
+### 5. Schema Changes Over Time
+
+- Make a change to an existing database schema
+- Apply schema updates safely
+- Compare manual SQL updates with migration tools
+
+---
+
+### 6. External Authentication
+
+- Integrate an external auth provider (Auth0 / Firebase / Cognito)
+- Replace or augment local JWT authentication
+- Validate external tokens inside the API
+
+---
+
+### 7. GenAI as a Backend Feature
+
+- Integrate a GenAI API into the backend
+- Design an endpoint that uses AI-generated output
+- Handle API keys and request limits safely
+
+---
+
+### 8. GenAI in Real Flows
+
+- Connect GenAI output to existing data or users
+- Store or process AI responses meaningfully
+- Handle failures and slow responses gracefully
+
+---
+
+### 9. Background Work
+
+- Identify work that should not block API responses
+- Add a simple background or scheduled task
+- Keep background logic isolated from request handling
+
+---
+
+### 10. End-to-End Confidence
+
+- Define a full user flow across the system
+- Test behavior across auth, data, and business logic
+- Validate system reliability beyond single endpoints

@@ -1,0 +1,226 @@
+## ▶️ **Unit 1: What Machine Learning Solves**
+
+*(Foundational mental models, vocabulary, and task types)*
+
+### **Lesson 1: What ML Is (and Isn’t)**
+
+- Understand machine learning in contrast to rule-based systems
+- Identify problems that are appropriate for ML
+- Distinguish ML from traditional programming logic
+
+### **Lesson 2: ML Task Types**
+
+- Identify the main machine learning task types: **classification, regression, and clustering**.
+- Understand how these task types relate to **supervised learning** (classification, regression) and **unsupervised learning** (clustering).
+- Match real-world problems to the correct ML task and learning type (supervised vs. unsupervised).
+- Understand why choosing the correct task type is a **critical step before selecting a model or evaluation metric**.
+
+### **Lesson 3: Data and Labels**
+
+- Distinguish labeled vs unlabeled data
+- Identify input features and target variables
+- Understand how labels guide supervised learning
+
+### **Lesson 4: Features as Signals**
+
+- Define features as model inputs
+- Identify raw vs derived features
+- Understand why feature quality impacts model performance
+
+### **Lesson 5: Training vs Prediction**
+
+- Describe what happens during model training
+- Understand how trained models make predictions
+- Identify when a model is “learning” vs “using knowledge”
+
+### **Lesson 6: Models as Functions**
+
+- Describe a model as a function mapping inputs to outputs
+- Compare simple rule logic to learned decision boundaries
+- Understand why models generalize instead of memorizing
+
+### **Lesson 7: ML Workflow Overview**
+
+- Outline the full ML workflow from data to prediction
+- Identify where data prep, training, and evaluation fit
+- Use correct ML vocabulary to describe each step
+
+### **Lesson 8: Common ML Pitfalls**
+
+- Identify data leakage and why it breaks evaluation
+- Understand overfitting in intuitive terms
+- Recognize unrealistic performance expectations
+
+---
+
+## ▶️ **Unit 2: End-to-End ML in Python**
+
+*(Hands-on workflow using pandas and scikit-learn)*
+
+### **Lesson 1: Loading Tabular Data**
+
+- Load datasets using pandas
+- Inspect rows, columns, and data types
+- Identify feature columns and targets
+
+### **Lesson 2: Train / Test Split**
+
+- Explain why test data must be held out
+- Split data using scikit-learn
+- Describe how splits affect evaluation trustworthiness
+
+### **Lesson 3: Handling Missing Values**
+
+- Identify missing data in datasets
+- Apply simple imputation strategies
+- Explain tradeoffs of different approaches
+
+### **Lesson 4: Encoding Categories**
+
+- Identify categorical vs numeric features
+- Encode categorical variables for ML models
+- Explain why models require numeric inputs
+
+### **Lesson 5: Scaling Numeric Features**
+
+- Explain feature scale and why it matters
+- Apply basic scaling techniques
+- Identify models sensitive to feature scale
+
+### **Lesson 6: Pipelines: One Clean Flow**
+
+- Build a preprocessing + model pipeline
+- Explain how pipelines prevent data leakage
+- Use pipelines to simplify ML code
+
+### **Lesson 7: First Complete Model**
+
+- Train a simple supervised ML model end-to-end
+- Generate predictions on test data
+- Inspect and interpret model outputs
+
+### **Lesson 8: Reading ML Code Confidently**
+
+- Navigate scikit-learn documentation
+- Identify common ML code patterns
+- Modify existing ML code safely
+
+---
+
+## ▶️ **Unit 3: Supervised Models & Evaluation**
+
+*(Core models, metrics, and tuning intuition)*
+
+### **Lesson 1:** First Supervised Model – Logistic Regression
+
+- Explain **binary classification problems**
+- Train a **Logistic Regression** model end-to-end
+- Introduce the idea of **predicted probabilities vs. predicted classes**
+- Motivate the need for **model evaluation** (why accuracy alone is not enough)
+
+### Lesson 2: Classification Metrics
+
+- Calculate and interpret **accuracy, precision, recall, and F1-score**
+- Read and interpret a **confusion matrix**
+- Re-evaluate the Logistic Regression model using different metrics
+- Discuss how metric choice depends on the **problem context**
+
+### Lesson 3: Linear Regression
+
+- Explain **numeric prediction tasks**
+- Train a **Linear Regression** model
+- Interpret predictions vs. actual values
+- Introduce regression error intuitively (distance from the true value)
+
+### Lesson 4: Regression Metrics
+
+- Calculate **MAE, MSE/RMSE, and R²**
+- Explain what each metric reveals about **model errors**
+- Compare regression models using appropriate metrics
+
+### Lesson 5: Tree-Based Models
+
+- Explain **decision trees** at a conceptual level
+- Train a tree-based classifier
+- Compare **linear vs. non-linear models**
+- Discuss strengths and limitations of tree-based approaches
+
+### Lesson 6: Ensembles
+
+- Introduce **ensemble methods** (Random Forest, Gradient Boosting) at a high level
+- Explain why ensembles are **commonly used in practice**
+- Build intuition: why combining models often improves performance
+
+### Lesson 7: Overfitting, Generalization & Validation
+
+- Identify signs of **overfitting and underfitting**
+- Compare **train vs. test performance**
+- Explain the **bias–variance tradeoff**
+- Introduce **cross-validation** conceptually
+- Compare **single train/test split vs. multiple folds**
+
+### **Lesson 8: Cross-Validation Basics**
+
+- Explain cross-validation conceptually
+- Use cross-validation to estimate performance
+- Compare single split vs multiple folds
+
+### **Lesson 9: Hyperparameters and Search**
+
+- Define hyperparameters vs learned parameters
+- Use GridSearchCV or RandomizedSearchCV
+- Interpret tuning results responsibly
+
+---
+
+## ▶️ **Unit 4: Unsupervised Learning**
+
+*(Clustering, visualization, and full project)*
+
+### **Lesson 1: Unsupervised Learning**
+
+- Explain how unsupervised learning differs from supervised
+- Identify use cases without labels
+- Describe exploratory ML goals
+
+### **Lesson 2: K-Means Clustering**
+
+- Explain how K-Means groups data
+- Train a clustering model
+- Interpret clusters at a high level
+
+### **Lesson 3: Choosing Number of Clusters**
+
+- Explain the role of *k*
+- Use simple heuristics to choose cluster count
+- Interpret clustering tradeoffs
+
+### **Lesson 4: PCA for Visualization**
+
+- Explain dimensionality reduction intuitively
+- Apply PCA to reduce features
+- Visualize high-dimensional data in 2D
+
+### **Lesson 5: ML Results in Context**
+
+- Avoid over-interpreting unsupervised outputs
+- Explain limitations of clustering and PCA
+- Communicate results responsibly
+
+### **Lesson 6: End-to-End ML Project**
+
+- Define a clear ML problem
+- Prepare data, train a model, and evaluate it
+- Use a pipeline and proper metrics
+
+### **Lesson 7: Saving and Loading Models**
+
+- Save trained models to disk
+- Load models for later use
+- Run predictions on new data
+
+### **Lesson 8: Thinking Like an ML Practitioner**
+
+- Describe ML systems using correct vocabulary
+- Explain tradeoffs and limitations clearly
+- Identify next learning steps in ML

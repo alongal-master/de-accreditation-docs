@@ -1,1283 +1,306 @@
 {
-  "description": "A structured Python course designed to strengthen professional programming practices, planning discipline, and structured problem solving through practical, project-based learning.",
-  "credits": 4,
   "units": [
     {
-      "_id": "6910f3efb2b83dd039edade7",
-      "title": "Professional coding practices",
-      "description": "",
+      "unitTitle": "Professional coding practices",
       "lessons": [
         {
-          "_id": "69568447a6e6a307114f078a",
-          "title": "Welcome to CS101!",
-          "topic": "",
+          "lessonTitle": "Welcome to CS101!",
           "masteryOutcomes": [
             "Understand the course structure and main topics"
-          ],
-          "score": 10,
-          "requiredPlugins": [],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": "## Lesson Guidelines\n\nCreate a **light, fast-paced, short orientation lesson** for the course **Software Engineering Principles (CS101)**.\n\nAt the beginning of the lesson, briefly ask students how they are, welcome them into the course, and **wait for their responses before continuing**.\n\n### Course Structure\n- Review the `course_syllabus` to understand the full course structure, unit breakdown, and lessons.\n- The syllabus is the **single source of truth** for this lesson.\n- Explain that **each unit equals one week**.\n\n### Course Overview\n- Present a **high-level overview** of the course.\n- Explain how the course is organized by units.\n- Refer only to **unit main topics** (do not mention unit names).\n- Avoid detailed explanations or deep reviews.\n\n### Reviews & Assessments\n- Explain that **each unit ends with a review** covering the material from that unit.\n- There is **no final or cumulative course review**.\n\n### Grading Overview\nBriefly explain how grades are calculated:\n- **Unit 1 review:** 30%\n- **Unit 2 review:** 30%\n- **Unit 3 review:** 40%\n\n**Bonus opportunities:**\n- Up to **10 points** for submitting and passing all unit reviews on time\n- Up to **10 points** for participating in weekly discussions on time\n\n### Important Constraints\n- Do **not** go deep into content or explain specific concepts.\n- Do **not** explain *how* to achieve bonuses.\n- Do **not** do any code exercises; this is a plain orientation lesson with explanations only.\n- The goal is **general orientation and preview only**, preparing students for the learning journey ahead.\n- **Do not include tests or multiple-choice questions**, anywhere in the lesson, regardless of prior instructions."
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edade8",
-          "title": "Naming that tells a story",
-          "topic": "",
+          "lessonTitle": "Naming that tells a story",
           "masteryOutcomes": [
             "Rename variables and functions to improve clarity"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edade9",
-          "title": "Crafting docstrings that explain the why",
-          "topic": "",
+          "lessonTitle": "Crafting docstrings that explain the why",
           "masteryOutcomes": [
             "Write docstrings that explain the purpose and usage of functions"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadea",
-          "title": "Writing comments with real purpose",
-          "topic": "",
+          "lessonTitle": "Writing comments with real purpose",
           "masteryOutcomes": [
             "Add comments that clarify reasoning instead of obvious behavior"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadeb",
-          "title": "Keeping it clean",
-          "topic": "",
+          "lessonTitle": "Keeping it clean",
           "masteryOutcomes": [
             "Apply consistent formatting for whitespace, indentation, and line breaks"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadec",
-          "title": "Making code instantly readable",
-          "topic": "",
+          "lessonTitle": "Making code instantly readable",
           "masteryOutcomes": [
             "Rewrite code to pass a readability checklist"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edaded",
-          "title": "Turning long scripts into sharp functions",
-          "topic": "",
+          "lessonTitle": "Turning long scripts into sharp functions",
           "masteryOutcomes": [
             "Understand why long monolithic scripts reduce readability, reusability, and maintainability.",
             "Split a long script into focused functions with well-defined signatures."
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadee",
-          "title": "Following program flow with print tracing",
-          "topic": "",
+          "lessonTitle": "Following program flow with print tracing",
           "masteryOutcomes": [
             "Insert print-based tracing statements to follow program execution"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadef",
-          "title": "Using invariants as safety checkpoints",
-          "topic": "",
+          "lessonTitle": "Using invariants as safety checkpoints",
           "masteryOutcomes": [
             "Understand how invariants help ensure program correctness and prevent bugs.",
             "Apply invariants to check assumptions at key points in the code."
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf0",
-          "title": "Designing functions that can be reused anywhere",
-          "topic": "",
+          "lessonTitle": "Designing functions that can be reused anywhere",
           "masteryOutcomes": [
             "Use parameters and return values to ensure modular function design"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf1",
-          "title": "Debugging step by step",
-          "topic": "",
+          "lessonTitle": "Debugging step by step",
           "masteryOutcomes": [
             "Apply a debugging checklist to isolate and resolve defects"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf2",
-          "title": "Stress it to the edge",
-          "topic": "",
+          "lessonTitle": "Stress it to the edge",
           "masteryOutcomes": [
             "Include edge cases and invalid inputs in test coverage"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf3",
-          "title": "Pushing the limits",
-          "topic": "",
+          "lessonTitle": "Pushing the limits",
           "masteryOutcomes": [
             "Understand how clear input and output boundaries ensure reliable, predictable program behavior.",
             "Design and implement tests that verify code correctness at boundary and edge conditions."
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf4",
-          "title": "Validating inputs before they break things",
-          "topic": "",
+          "lessonTitle": "Validating inputs before they break things",
           "masteryOutcomes": [
             "Implement input validation to prevent unexpected behavior"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf5",
-          "title": "The art of a well-placed error",
-          "topic": "",
+          "lessonTitle": "The art of a well-placed error",
           "masteryOutcomes": [
             "Write clear error messages and handle invalid inputs gracefully"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf6",
-          "title": "Refactoring with confidence",
-          "topic": "",
+          "lessonTitle": "Refactoring with confidence",
           "masteryOutcomes": [
             "Perform safe refactoring moves such as renaming, extracting functions, and removing dead code"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf7",
-          "title": "Making sure nothing breaks",
-          "topic": "",
+          "lessonTitle": "Making sure nothing breaks",
           "masteryOutcomes": [
             "Re-run tests to confirm consistent behavior after refactoring"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadf8",
-          "title": "Weekly review: professional coding practices",
-          "topic": "",
+          "lessonTitle": "Weekly review: professional coding practices",
           "masteryOutcomes": [
             ""
-          ],
-          "score": 10,
-          "requiredPlugins": [],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": "weekly-review",
-          "teachingInstructions": "",
-          "reviewQuestions": [
-            {
-              "type": "multiple-choice",
-              "question": "What is the main job of a docstring in a function?",
-              "options": [
-                "Replace all comments in the file",
-                "Explain the function’s purpose and how to use it",
-                "Speed up the program",
-                "Hide implementation details from Python"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "“Keeping it clean” most directly refers to:",
-              "options": [
-                "Using only short variable names",
-                "Consistent whitespace, indentation, and line breaks",
-                "Avoiding functions",
-                "Only writing one return statement per file"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which change most improves readability without changing behavior?",
-              "options": [
-                "Rename servings to s everywhere",
-                "Replace f-strings with string concatenation",
-                "Extract scaling logic into a function like `scale_ingredients(ingredients, servings)`",
-                "Remove blank lines to make the file shorter"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "A reusable function usually has:",
-              "options": [
-                "No parameters and prints everything",
-                "Parameters and return values instead of relying on global variables",
-                "Only comments, no code",
-                "Hardcoded input values"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Input validation should happen:",
-              "options": [
-                "Only after the program crashes",
-                "Before using the input in calculations",
-                "Only in tests, not in production code",
-                "Only for string inputs, not numbers"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which pair best separates concerns (readability + maintainability)?",
-              "options": [
-                "One function that validates, scales, prints, and exits",
-                "A function that prints plus a function that prints more",
-                "One function for validation, one for scaling, one for formatting output",
-                "No functions, only comments"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "After refactoring, you worry you changed behavior. What’s the best practice?",
-              "options": [
-                "Re-run tests to confirm consistent behavior",
-                "Add more comments",
-                "Rename everything back",
-                "Remove functions, since functions cause bugs"
-              ],
-              "correctAnswerIndex": 0,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Your tests pass, but output formatting is inconsistent (sometimes 1.0, sometimes 1.00). What should you change?",
-              "options": [
-                "Replace floats with strings early in the program",
-                "Centralize formatting in one place (for example, a `format_quantity(q)` helper) and test it",
-                "Remove decimals from output requirements",
-                "Add print tracing to show raw floats"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which set best verifies both correctness and robustness for scaling?",
-              "options": [
-                "Only check that the program prints something",
-                "Check one normal case and skip invalid inputs",
-                "Check proportional correctness for normal inputs, plus invalid inputs and boundary values (`0`, negative, very large, decimal)",
-                "Only test invalid inputs"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "You want error messages that are helpful but not noisy. Which is best?",
-              "options": [
-                "`Invalid input`",
-                "`Error 12`",
-                "Servings must be a positive number, for example `4` or `2.5`.",
-                "Print the full stack trace"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 10
-            }
-          ],
-          "reviewSetup": {
-            "gradingPoints": 30,
-            "reviewStructureVersion": "v2"
-          }
+          ]
         }
-      ],
-      "teachingInstructions": "In this unit, students will strengthen their Python skills by applying industry-standard coding practices, focusing on clarity, reliability, and maintainability through hands-on exercises. By applying coding best practices, testing, and documentation, they will refine their ability to write clean functions, use conditions and loops responsibly, and structure data with lists and dictionaries. This unit lays the foundation for systematic thinking and professional programming habits."
+      ]
     },
     {
-      "_id": "6910f3efb2b83dd039edadf9",
-      "title": "From ideas to instructions",
-      "description": "",
+      "unitTitle": "From ideas to instructions",
       "lessons": [
         {
-          "_id": "6910f3efb2b83dd039edadfa",
-          "title": "Balancing planning and coding",
-          "topic": "",
+          "lessonTitle": "Balancing planning and coding",
           "masteryOutcomes": [
             "Explain trade-offs between planning and immediate coding"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": "In this unit, students will expand their Python skills by learning how to transform ideas into structured, executable programs. Through hands-on practice with pseudocode, flow structures, and incremental implementation, they will strengthen their ability to plan before coding, ensuring smoother translation from logic to Python. This unit emphasizes the value of planning as a foundation for clarity and long-term maintainability. This exercise will strengthen the understanding of functions, conditions, and loops, fostering the discipline needed to create reliable, working code from initial plans."
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadfb",
-          "title": "Breaking the problem",
-          "topic": "",
+          "lessonTitle": "Breaking the problem",
           "masteryOutcomes": [
             "Break down a problem into ordered pseudocode steps"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadfc",
-          "title": "Hierarchy in pseudocode",
-          "topic": "",
+          "lessonTitle": "Hierarchy in pseudocode",
           "masteryOutcomes": [
             "Apply numbering and indentation to represent sequence and hierarchy in pseudocode"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadfd",
-          "title": "Turning rules into code",
-          "topic": "",
+          "lessonTitle": "Turning rules into code",
           "masteryOutcomes": [
             "Translate rules into consistent code actions"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadfe",
-          "title": "Sketching flow",
-          "topic": "",
+          "lessonTitle": "Sketching flow",
           "masteryOutcomes": [
             "Map conditions to outcomes with flow descriptions"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edadff",
-          "title": "Understanding common solution patterns",
-          "topic": "",
+          "lessonTitle": "Understanding common solution patterns",
           "masteryOutcomes": [
             "Recognize and implement common patterns like dictionary lookups"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae00",
-          "title": "Reviewing the plan",
-          "topic": "",
+          "lessonTitle": "Reviewing the plan",
           "masteryOutcomes": [
             "Identify logical gaps or overlaps in pseudocode"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae01",
-          "title": "From plan to working machine",
-          "topic": "",
+          "lessonTitle": "From plan to working machine",
           "masteryOutcomes": [
             "Translate pseudocode into working Python code step by step"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae02",
-          "title": "Keeping comments that connect to pseudocode",
-          "topic": "",
+          "lessonTitle": "Keeping comments that connect to pseudocode",
           "masteryOutcomes": [
             "Maintain comments that connect code to pseudocode blocks"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae03",
-          "title": "Creating function stubs for structure",
-          "topic": "",
+          "lessonTitle": "Creating function stubs for structure",
           "masteryOutcomes": [
             "Write function stubs that define intended structure"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae04",
-          "title": "Building code incrementally",
-          "topic": "",
+          "lessonTitle": "Building code incrementally",
           "masteryOutcomes": [
             "Use hardcoded return values as placeholders",
             "Replace stubs with working implementations incrementally"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae05",
-          "title": "Creating test tables for pseudocode plans",
-          "topic": "",
+          "lessonTitle": "Creating test tables for pseudocode plans",
           "masteryOutcomes": [
             "Build input-output test tables for pseudocode plans"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae06",
-          "title": "Dry running plans with test values",
-          "topic": "",
+          "lessonTitle": "Dry running plans with test values",
           "masteryOutcomes": [
             "Perform dry runs using pseudocode test-table values"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae07",
-          "title": "Integrating logic into a full app",
-          "topic": "",
+          "lessonTitle": "Integrating logic into a full app",
           "masteryOutcomes": [
             "Integrate validated inputs, logic, and output formatting into one app"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae08",
-          "title": "Demonstrating the working app",
-          "topic": "",
+          "lessonTitle": "Demonstrating the working app",
           "masteryOutcomes": [
             "Demonstrate working apps with multiple test cases"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae09",
-          "title": "Weekly review: from ideas to instructions",
-          "topic": "",
+          "lessonTitle": "Weekly review: from ideas to instructions",
           "masteryOutcomes": [
             ""
-          ],
-          "score": 10,
-          "requiredPlugins": [],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": "weekly-review",
-          "teachingInstructions": "",
-          "reviewQuestions": [
-            {
-              "type": "multiple-choice",
-              "question": "What is a key trade-off between planning and immediate coding?",
-              "options": [
-                "Planning always makes code slower",
-                "Coding immediately guarantees fewer bugs",
-                "Planning is only useful for advanced programmers",
-                "Planning can reduce rework, but too much planning can delay learning-by-trying"
-              ],
-              "correctAnswerIndex": 3,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "What is the main goal of pseudocode?",
-              "options": [
-                "To run directly in `Python`",
-                "To describe logic clearly before writing real code",
-                "To replace tests",
-                "To optimize performance"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "In pseudocode, indentation mainly helps you show:",
-              "options": [
-                "Faster runtime",
-                "Variable types",
-                "Sequence and hierarchy (what happens inside what)",
-                "Which lines are comments"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which is an example of a condition-to-outcome statement?",
-              "options": [
-                "Print the result",
-                "`If age < 18`, show minor; `else` show adult",
-                "Create a list",
-                "Define a function"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Reviewing the plan means you look for:",
-              "options": [
-                "Logical gaps and overlaps",
-                "Styling issues only",
-                "Faster algorithms only",
-                "More lines of pseudocode"
-              ],
-              "correctAnswerIndex": 0,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Why dry run with test values?",
-              "options": [
-                "To avoid writing code forever",
-                "To make the app look nicer",
-                "To spot logic mistakes before implementing",
-                "To change Python’s behavior"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which action best supports maintainability?",
-              "options": [
-                "Keep code aligned with the plan using clear function boundaries, good names, and brief comments/docstrings",
-                "Skip planning and just code",
-                "Avoid functions",
-                "Remove all whitespace"
-              ],
-              "correctAnswerIndex": 0,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Your pseudocode step says: 'Ask user again until valid'. Which structure best matches in Python?",
-              "options": [
-                "`if` only",
-                "dictionary lookup only",
-                "function stub only",
-                "while loop with validation inside"
-              ],
-              "correctAnswerIndex": 3,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "You review a pseudocode plan that works in a dry run but is difficult to translate into functions. What is the strongest signal that the plan needs restructuring?",
-              "options": [
-                "It uses too many words",
-                "Steps mix high-level intent with low-level actions in the same layer",
-                "It has more than 10 steps",
-                "It mentions Python keywords"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 10
-            },
-            {
-              "type": "multiple-choice",
-              "question": "You are deciding between two plans. One has fewer steps but more complex conditions, the other has more steps with simpler rules. Based on unit principles, which is preferable and why?",
-              "options": [
-                "Fewer steps, always shorter is better",
-                "Either is equal, planning does not affect code",
-                "More steps with clearer logic, because clarity supports correctness and translation",
-                "The one that looks more like Python"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 10
-            }
-          ],
-          "reviewSetup": {
-            "gradingPoints": 30,
-            "reviewStructureVersion": "v2"
-          }
+          ]
         }
-      ],
-      "teachingInstructions": "In this unit, students will expand their Python skills by learning how to transform ideas into structured, executable programs. Through hands-on practice with pseudocode, flow structures, and incremental implementation, they will strengthen their ability to plan before coding, ensuring smoother translation from logic to Python. This unit emphasizes the value of planning as a foundation for clarity and long-term maintainability.\nThis exercise will strengthen the understanding of functions, conditions, and loops, fostering the discipline needed to create reliable, working code from initial plans."
+      ]
     },
     {
-      "_id": "6910f3efb2b83dd039edae0a",
-      "title": "Breaking problems down",
-      "description": "",
+      "unitTitle": "Breaking problems down",
       "lessons": [
         {
-          "_id": "6910f3efb2b83dd039edae0b",
-          "title": "Writing a clear feature brief",
-          "topic": "",
+          "lessonTitle": "Writing a clear feature brief",
           "masteryOutcomes": [
             "Write a concise paragraph defining feature goals, target users, and context"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": "In this unit, students will learn to turn real-world feature requests into structured, testable solutions. They will write clear problem statements, define inputs and outputs, and break tasks into subproblems to make complexity manageable. Through logical sequencing, pattern recognition, and pipeline assembly, they will practice building systematic solutions. Students will also prioritize by risk, justify design choices, and create software that is both practical and extensible. The unit emphasizes structured thinking and abstraction as the bridge from small coding tasks to scalable, professional-grade design."
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae0c",
-          "title": "Separating purpose from technical details",
-          "topic": "",
+          "lessonTitle": "Separating purpose from technical details",
           "masteryOutcomes": [
             "Differentiate purpose from technical implementation details"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae0d",
-          "title": "Writing a structured problem statement",
-          "topic": "",
+          "lessonTitle": "Writing a structured problem statement",
           "masteryOutcomes": [
             "Create structured Python problem statements with success criteria"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae0e",
-          "title": "Defining example inputs and outputs",
-          "topic": "",
+          "lessonTitle": "Defining example inputs and outputs",
           "masteryOutcomes": [
             "Provide example inputs and outputs for normal and edge cases"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae0f",
-          "title": "Breaking down into subproblems",
-          "topic": "",
+          "lessonTitle": "Breaking down into subproblems",
           "masteryOutcomes": [
             "Decompose problems into subproblems"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae10",
-          "title": "Defining subproblem inputs and outputs",
-          "topic": "",
+          "lessonTitle": "Defining subproblem inputs and outputs",
           "masteryOutcomes": [
             "Define clear inputs and outputs for subproblems"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae11",
-          "title": "Sequencing subproblems logically",
-          "topic": "",
+          "lessonTitle": "Sequencing subproblems logically",
           "masteryOutcomes": [
             "Arrange and implement subproblems in logical sequence"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae12",
-          "title": "Matching subproblems to patterns",
-          "topic": "",
+          "lessonTitle": "Matching subproblems to patterns",
           "masteryOutcomes": [
             "Apply common coding patterns to subproblems"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae13",
-          "title": "Prioritizing tasks",
-          "topic": "",
+          "lessonTitle": "Prioritizing tasks",
           "masteryOutcomes": [
             "Understand how task prioritization creates an efficient workflow that advances goals by importance and impact.",
             "Demonstrate and explain the rationale for prioritization decisions using clear criteria like impact, dependencies, risk, and effort."
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae14",
-          "title": "Assembling functions into pipelines",
-          "topic": "",
+          "lessonTitle": "Assembling functions into pipelines",
           "masteryOutcomes": [
             "Combine functions into pipelines where outputs feed subsequent inputs"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae15",
-          "title": "Breaking down a case study",
-          "topic": "",
+          "lessonTitle": "Breaking down a case study",
           "masteryOutcomes": [
             "Decompose a real-world case study into subproblems"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae16",
-          "title": "Writing a full problem statement",
-          "topic": "",
+          "lessonTitle": "Writing a full problem statement",
           "masteryOutcomes": [
             "Develop comprehensive problem statements and implement solutions"
-          ],
-          "score": 10,
-          "requiredPlugins": [
-            "code-editor"
-          ],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": null,
-          "teachingInstructions": ""
+          ]
         },
         {
-          "_id": "6910f3efb2b83dd039edae17",
-          "title": "Course review: CS101 summary",
-          "topic": "",
+          "lessonTitle": "Course review: CS101 summary",
           "masteryOutcomes": [
             ""
-          ],
-          "score": 10,
-          "requiredPlugins": [],
-          "internalDescription": null,
-          "additionalMaterials": null,
-          "tag": "exam",
-          "teachingInstructions": "",
-          "reviewQuestions": [
-            {
-              "type": "multiple-choice",
-              "question": "Why are `invariants` useful during development?",
-              "options": [
-                "They format output consistently",
-                "They ensure assumptions hold at key checkpoints",
-                "They replace input validation",
-                "They reduce the need for tests"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which option best reflects a workflow that allows someone else to understand the problem, verify correctness, and confidently extend the solution later?",
-              "options": [
-                "A complete implementation that passes current tests",
-                "A visual flowchart of decisions",
-                "A list of helper functions",
-                "A clear feature description, defined success criteria, concrete input-output examples, and a logical breakdown"
-              ],
-              "correctAnswerIndex": 3,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which naming choice best supports professional readability?",
-              "options": [
-                "`x1`, `x2`, `x3`",
-                "`temp`, `temp2`",
-                "`total_price_after_tax`",
-                "`doStuff()`"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Sequencing subproblems logically usually means:",
-              "options": [
-                "Implement the hardest part first, always",
-                "Randomly pick tasks to stay motivated",
-                "Write tests last",
-                "Arrange steps so outputs of earlier steps enable later steps"
-              ],
-              "correctAnswerIndex": 3,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "What is the main benefit of writing `pseudocode` before implementation?",
-              "options": [
-                "It executes faster than Python",
-                "It clarifies logic before committing to syntax",
-                "It replaces testing",
-                "It guarantees correctness"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "A case study breakdown is mainly practice in:",
-              "options": [
-                "Speed typing",
-                "Decomposing a real request into subproblems",
-                "Using external libraries",
-                "Writing database queries"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which change improves code quality without changing behavior?",
-              "options": [
-                "Removing blank lines",
-                "Renaming `s` to `servings`",
-                "Replacing functions with inline logic",
-                "Hardcoding values"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which is an edge case for summing a list of numbers?",
-              "options": [
-                "`[1, 2, 3]`",
-                "`[]`",
-                "`[32, 348, \"a\"]`",
-                "Answers `B` and `C`"
-              ],
-              "correctAnswerIndex": 3,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "After refactoring working code, what is the safest next step?",
-              "options": [
-                "Add more comments",
-                "Manually test one example",
-                "Re-run existing tests to confirm behavior",
-                "Undo the refactor"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "A feature brief should primarily include:",
-              "options": [
-                "Database schema and API endpoints",
-                "Feature goals, target users, and context in one concise paragraph",
-                "Full implementation plan with pseudocode",
-                "Unit tests for every function"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Plan review: Your examples include only valid inputs. What is the most important missing piece?",
-              "options": [
-                "Variable names",
-                "At least one edge case and one invalid input example with expected output",
-                "More technical details",
-                "A longer feature brief"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Indentation in pseudocode primarily communicates:",
-              "options": [
-                "Performance optimization",
-                "Variable scope",
-                "Hierarchy and containment of decisions",
-                "Which steps are optional"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "For checking eligibility rules, what is the best input-output definition?",
-              "options": [
-                "Input: `user`, Output: prints `eligible`",
-                "Input: raw text, Output: raw text",
-                "Input: user info and coupon rules, Output: `True` or `False` plus reason if `False`",
-                "Input: coupon code, Output: list of prices"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Your pseudocode mixes high-level goals and low-level steps in the same section. What does this signal?",
-              "options": [
-                "The plan is complete",
-                "The plan needs clearer layering or restructuring",
-                "The plan is too short",
-                "The plan should be coded immediately"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Assembling functions into pipelines means:",
-              "options": [
-                "Output of one function becomes input to the next",
-                "Functions share global variables",
-                "All functions print directly to the screen",
-                "Only one function is allowed"
-              ],
-              "correctAnswerIndex": 0,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which statement best describes the purpose of a `docstring`?",
-              "options": [
-                "It replaces all comments in a file",
-                "It explains why the function exists and how to use it",
-                "It improves runtime performance",
-                "It hides implementation details"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Which is the best example input-output pair format?",
-              "options": [
-                "Input: `stuff`, Output: `something`",
-                "Input: `[2, 3]`, Output: `6`",
-                "Input: `maybe`, Output: `yes`",
-                "Input: `python`, Output: `great`"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "Dry-running a plan with example values helps you:",
-              "options": [
-                "Improve formatting",
-                "Reduce code length",
-                "Detect logical errors early",
-                "Optimize algorithms"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "When choosing between two plans, which aligns best with course principles?",
-              "options": [
-                "Fewer steps with complex conditions",
-                "More steps with simpler, clearer rules",
-                "The one closest to Python syntax",
-                "The shortest plan"
-              ],
-              "correctAnswerIndex": 1,
-              "points": 5
-            },
-            {
-              "type": "multiple-choice",
-              "question": "You are given: \"Users want a button to export results.\" What is the best structured problem statement addition?",
-              "options": [
-                "Use `pandas` to export CSV",
-                "Make it pretty",
-                "Given a results list, produce a downloadable text format with one line per result",
-                "Write `200` lines max"
-              ],
-              "correctAnswerIndex": 2,
-              "points": 5
-            }
-          ],
-          "reviewSetup": {
-            "proctoringRequired": false,
-            "timeToSubmitInMinutes": 120,
-            "gradingPoints": 40,
-            "reviewStructureVersion": "v2",
-            "isRetake": false
-          },
-          "aiGradingInstructions": "### Software engineering principles (CS101) Review Grading Instructions\n\nIMPORTANT: **Critical Rule — MCQ Strict Scoring (No Partial Credit)**  \nThis exam is **100% multiple-choice**. Grade strictly based on whether the student selected the **exact correct option** for each question.  \n- **5 pts** → Correct  \n- **0 pts** → Incorrect  \n- **Absolutely no partial credit** under any circumstance (even if the student's explanation seems reasonable).\n\nIMPORTANT: **Formatting / Representation Tolerance (Answer Matching Rules)**  \nStudents may express MCQ answers in different formats. Treat an answer as **correct** if it clearly maps to the correct option using any of the following:\n- **Option number** (1–4)\n- **Option letter** (A–D mapped as A=1, B=2, C=3, D=4)\n- **Exact option text**, allowing only harmless formatting differences:\n  - ignore surrounding backticks, surrounding quotes, and leading/trailing whitespace  \n  - do **not** ignore meaning-changing differences (different words, different claim, different option)\n\nIf the student response is **ambiguous** (e.g., partially matches multiple options), mark it **incorrect**.\n\n---\n\n## Questions Breakdown\nThis exam has **20 questions total**:  \n- **20 multiple-choice (Q1–Q20)** → 5 pts each (**100 pts total**)  \n\nEach question is graded **individually**.  \n**Total:** 100 pts.\n\n---\n\n## Multiple Choice Questions (100 pts total)\nEach MCQ is worth **5 points** and is scored only as correct/incorrect.\n\n**MCQs are scored only as correct or incorrect — absolutely no partial credit.**  \nScore each as:  \n- **5 pts** → Correct answer  \n- **0 pts** → Incorrect answer  \n\nVerify each student answer against the **Solution Key** below.\n\n| Q  | Concept Tested | Correct Answer Choice Number | Correct Answer |\n|----|----------------|------------------------------|----------------|\n| 1  | `invariants` purpose | **2** | They ensure assumptions hold at key checkpoints |\n| 2  | Professional workflow for solvable/extendable work | **4** | A clear feature description, defined success criteria, concrete input-output examples, and a logical breakdown |\n| 3  | Readable naming | **3** | `total_price_after_tax` |\n| 4  | Logical sequencing of subproblems | **4** | Arrange steps so outputs of earlier steps enable later steps |\n| 5  | Value of `pseudocode` | **2** | It clarifies logic before committing to syntax |\n| 6  | Case study breakdown skill | **2** | Decomposing a real request into subproblems |\n| 7  | Behavior-preserving improvement (refactor) | **2** | Renaming `s` to `servings` |\n| 8  | Edge cases for summing | **4** | Answers `B` and `C` |\n| 9  | Safest step after refactor | **3** | Re-run existing tests to confirm behavior |\n| 10 | Feature brief essentials | **2** | Feature goals, target users, and context in one concise paragraph |\n| 11 | Missing plan component: coverage beyond valid inputs | **2** | At least one edge case and one invalid input example with expected output |\n| 12 | Meaning of indentation in pseudocode | **3** | Hierarchy and containment of decisions |\n| 13 | Best input-output definition for eligibility rules | **3** | Input: user info and coupon rules, Output: `True` or `False` plus reason if `False` |\n| 14 | Mixed abstraction levels signal | **2** | The plan needs clearer layering or restructuring |\n| 15 | Function pipelines definition | **1** | Output of one function becomes input to the next |\n| 16 | Purpose of a `docstring` | **2** | It explains why the function exists and how to use it |\n| 17 | Best example input-output pair | **2** | Input: `[2, 3]`, Output: `6` |\n| 18 | Value of dry-running | **3** | Detect logical errors early |\n| 19 | Better plan per course principles | **2** | More steps with simpler, clearer rules |\n| 20 | Best structured problem statement addition | **3** | Given a results list, produce a downloadable text format with one line per result |\n\n---\n\n## Rubric Breakdown Rules (Internal `rubric_grades_breakdown` Field)\nIn `rubric_grades_breakdown` (internal only), include:\n- For **each question Q1–Q20**:\n  - Whether the student was **correct (5/5)** or **incorrect (0/5)**\n  - The student's selected answer (as provided)\n  - The correct choice number and correct answer text\n- A final line summing:\n  - **Total points = X/100**\n  - **Letter grade** based on the provided GPA conversion table in the general prompt\n\nDo **not** include “rubric dimensions” or sub-criteria, because MCQs are binary-scored.\n\n---\n\n## Global Deductions\n**None.** There are **no open-ended questions**, so do not apply any global deductions.\n\n---\n\n## Example JSON Output\n{\n  \"grade\": \"B\",\n  \"points\": \"80\",\n  \"feedback\": \"**Software engineering principles (CS101) Review**\\n🧾 **Performance Summary**\\n**Grade:** B (80%)\\n**Passed:** ✅️\\n\\nThank you for completing the review and putting in the effort across all questions. You demonstrated strong understanding of key professional engineering practices like planning with clear input-output examples, using pseudocode effectively, and prioritizing readability and maintainability.\\n\\n📊 **Grade Breakdown**\\n| Question | Score |\\n|-----------|--------|\\n| Q1 | 5 / 5 |\\n| Q2 | 5 / 5 |\\n| Q3 | 5 / 5 |\\n| Q4 | 0 / 5 |\\n| Q5 | 5 / 5 |\\n| Q6 | 5 / 5 |\\n| Q7 | 5 / 5 |\\n| Q8 | 0 / 5 |\\n| Q9 | 5 / 5 |\\n| Q10 | 5 / 5 |\\n| Q11 | 0 / 5 |\\n| Q12 | 5 / 5 |\\n| Q13 | 5 / 5 |\\n| Q14 | 0 / 5 |\\n| Q15 | 5 / 5 |\\n| Q16 | 5 / 5 |\\n| Q17 | 5 / 5 |\\n| Q18 | 5 / 5 |\\n| Q19 | 5 / 5 |\\n| Q20 | 5 / 5 |\\n|-----------|--------|\\n| **Total** | 80 / 100 (B) |\\n\\n🔍 **Detailed Assessment Feedback**\\nQ1: Correct — `invariants` help ensure assumptions hold at key checkpoints.\\nQ2: Correct — the best workflow includes a clear feature description, success criteria, concrete I/O examples, and a logical breakdown.\\nQ3: Correct — descriptive names like `total_price_after_tax` improve readability.\\nQ4: Incorrect — sequencing should arrange steps so earlier outputs enable later steps.\\nQ5: Correct — pseudocode clarifies logic before committing to syntax.\\nQ6: Correct — case studies mainly train decomposition into subproblems.\\nQ7: Correct — renaming `s` to `servings` improves quality without changing behavior.\\nQ8: Incorrect — both `[]` and `[32, 348, \\\"a\\\"]` are edge cases here, so the combined choice is correct.\\nQ9: Correct — rerun existing tests after refactoring to confirm behavior.\\nQ10: Correct — feature briefs focus on goals, target users, and context.\\nQ11: Incorrect — plans should include at least one edge case and one invalid input with expected output.\\nQ12: Correct — indentation communicates hierarchy/containment of decisions.\\nQ13: Correct — best is returning `True/False` plus reason when `False`.\\nQ14: Incorrect — mixing high-level and low-level steps signals unclear layering.\\nQ15: Correct — pipelines pass output of one function into the next.\\nQ16: Correct — docstrings explain purpose and usage.\\nQ17: Correct — `[2, 3] -> 6` is a clear I/O example.\\nQ18: Correct — dry-running helps catch logical errors early.\\nQ19: Correct — clearer, simpler rules (even with more steps) align with course principles.\\nQ20: Correct — adding a precise I/O-oriented statement makes the requirement testable.\\n\",\n  \"rubric_grades_breakdown\": \"MCQ scoring is binary: 5 pts correct, 0 pts incorrect.\\nQ1: Correct (5/5). Student matched option 2. Correct is option 2 → 'They ensure assumptions hold at key checkpoints'.\\nQ2: Correct (5/5). Student matched option 4. Correct is option 4 → 'A clear feature description, defined success criteria, concrete input-output examples, and a logical breakdown'.\\nQ3: Correct (5/5). Student matched option 3. Correct is option 3 → '`total_price_after_tax`'.\\nQ4: Incorrect (0/5). Student chose option 1. Correct is option 4 → 'Arrange steps so outputs of earlier steps enable later steps'.\\nQ5: Correct (5/5). Student matched option 2. Correct is option 2 → 'It clarifies logic before committing to syntax'.\\nQ6: Correct (5/5). Student matched option 2. Correct is option 2 → 'Decomposing a real request into subproblems'.\\nQ7: Correct (5/5). Student matched option 2. Correct is option 2 → 'Renaming `s` to `servings`'.\\nQ8: Incorrect (0/5). Student chose option 2. Correct is option 4 → 'Answers `B` and `C`'.\\nQ9: Correct (5/5). Student matched option 3. Correct is option 3 → 'Re-run existing tests to confirm behavior'.\\nQ10: Correct (5/5). Student matched option 2. Correct is option 2 → 'Feature goals, target users, and context in one concise paragraph'.\\nQ11: Incorrect (0/5). Student chose option 3. Correct is option 2 → 'At least one edge case and one invalid input example with expected output'.\\nQ12: Correct (5/5). Student matched option 3. Correct is option 3 → 'Hierarchy and containment of decisions'.\\nQ13: Correct (5/5). Student matched option 3. Correct is option 3 → 'Input: user info and coupon rules, Output: `True` or `False` plus reason if `False`'.\\nQ14: Incorrect (0/5). Student chose option 1. Correct is option 2 → 'The plan needs clearer layering or restructuring'.\\nQ15: Correct (5/5). Student matched option 1. Correct is option 1 → 'Output of one function becomes input to the next'.\\nQ16: Correct (5/5). Student matched option 2. Correct is option 2 → 'It explains why the function exists and how to use it'.\\nQ17: Correct (5/5). Student matched option 2. Correct is option 2 → 'Input: `[2, 3]`, Output: `6`'.\\nQ18: Correct (5/5). Student matched option 3. Correct is option 3 → 'Detect logical errors early'.\\nQ19: Correct (5/5). Student matched option 2. Correct is option 2 → 'More steps with simpler, clearer rules'.\\nQ20: Correct (5/5). Student matched option 3. Correct is option 3 → 'Given a results list, produce a downloadable text format with one line per result'.\\nTotal: 80/100 → B\"\n}"
+          ]
         }
-      ],
-      "teachingInstructions": "In this unit, students will learn to turn real-world feature requests into structured, testable solutions. They will write clear problem statements, define inputs and outputs, and break tasks into subproblems to make complexity manageable. Through logical sequencing, pattern recognition, and pipeline assembly, they will practice building systematic solutions. Students will also prioritize by risk, justify design choices, and create software that is both practical and extensible. The unit emphasizes structured thinking and abstraction as the bridge from small coding tasks to scalable, professional-grade design."
+      ]
     }
-  ],
-  "teachingInstructions": "This course continues from Introduction to Programming with Python, aiming to give students a solid grasp of core principles and best practices in software engineering.\n\nLearning follows a clear progression: students first strengthen their skills through hands-on practice and coding best practices, then face and reflect on challenges such as moving from pseudocode to executable programs, and finally learn structured solutions and abstract principles through task decomposition. Each stage builds on the last, creating a natural journey: hands-on level up → realize the challenges → seek structured solutions & learn abstract principles.\n\nDuring the course, students will engage in practical exercises that reinforce comprehension, expand implementation skills, and deepen prior knowledge. They will refine their ability to write functions, use conditions and loops, and work with lists and dictionaries. By the end, students will have stronger technical proficiency and a more systematic programming mindset.",
-  "durationInWeeks": 3
+  ]
 }

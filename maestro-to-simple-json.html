@@ -20,49 +20,64 @@
 <button id="copyBtn">Copy to Clipboard</button>
 
 <script>
-  function extractLessons(data) {
-    const lessons = [];
+  function extractUnits(data) {
+    const units = [];
 
-    if (!Array.isArray(data.units)) return { lessons };
+    if (!Array.isArray(data.units)) return { units };
 
     for (const unit of data.units) {
-      if (!Array.isArray(unit.lessons)) continue;
+      const unitObj = {
+        unitTitle: unit.title || "",
+        lessons: []
+      };
 
-      for (const lesson of unit.lessons) {
-        lessons.push({
-          lessonTitle: lesson.title || "",
-          masteryOutcomes: Array.isArray(lesson.masteryOutcomes)
-            ? lesson.masteryOutcomes
-            : []
-        });
+      if (Array.isArray(unit.lessons)) {
+        for (const lesson of unit.lessons) {
+          unitObj.lessons.push({
+            lessonTitle: lesson.title || "",
+            masteryOutcomes: Array.isArray(lesson.masteryOutcomes)
+              ? lesson.masteryOutcomes
+              : []
+          });
+        }
       }
+
+      units.push(unitObj);
     }
 
-    return { lessons };
+    return { units };
   }
 
   document.getElementById("generateBtn").addEventListener("click", () => {
     try {
-      const input = JSON.parse(document.getElementById("input").value);
-      const output = extractLessons(input);
-      document.getElementById("output").value = JSON.stringify(output, null, 2);
-    } catch (e) {
-      alert("Invalid JSON");
+      const inputText = document.getElementById("input").value;
+      const inputJson = JSON.parse(inputText);
+
+      const outputJson = extractUnits(inputJson);
+
+      document.getElementById("output").value =
+        JSON.stringify(outputJson, null, 2);
+    } catch (error) {
+      alert("Invalid JSON input");
     }
   });
 
   document.getElementById("copyBtn").addEventListener("click", async () => {
     const output = document.getElementById("output").value;
-    if (!output) return alert("Nothing to copy");
+    if (!output) {
+      alert("Nothing to copy");
+      return;
+    }
 
     try {
       await navigator.clipboard.writeText(output);
       alert("Copied to clipboard!");
-    } catch {
+    } catch (error) {
       alert("Copy failed. Please copy manually.");
     }
   });
 </script>
+
 
 </body>
 </html>

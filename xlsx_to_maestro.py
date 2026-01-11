@@ -11,6 +11,7 @@ import argparse
 import os
 import sys
 import json
+import re
 from typing import Dict
 from datetime import datetime
 from openpyxl import load_workbook
@@ -29,11 +30,29 @@ DEFAULT_LABEL = ""
 DEFAULT_IS_PUBLISHED = False
 
 # Lesson filtering
-SKIP_LESSON_KEYWORDS = ["Sync Session", "Weekly Review"]
+SKIP_LESSON_KEYWORDS = ["Closing session","Opening session","Sync Session", "Weekly Review"]
 
 # Practice session configuration
-PRACTICE_SESSION_KEYWORD = "practice session"
-PRACTICE_TEACHING_INSTRUCTIONS = "Practice-oriented session with a real world story and theme; Create a step by step exercise; Don't teach any new topics, rely only on the lessons covered"
+PRACTICE_SESSION_KEYWORD = "Practice Lesson"
+PRACTICE_TEACHING_INSTRUCTIONS = """This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.
+Guide the student step by step toward the solution without writing the full answer or final code for them.
+Break the problem into small, manageable steps and ask the student to implement each step before moving on.
+When the student is stuck, give progressive hints instead of solutions.
+You may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.
+Review the student's work by pointing out what's correct and what needs improvement, then suggest the next step.
+Exercise theme is to be chosen based on the lesson title.
+Exercise goals and desired output: """
+
+# Theory Practice session configuration
+THEORY_PRACTICE_KEYWORD = "Theory Practice Lesson"
+THEORY_PRACTICE_TEACHING_INSTRUCTIONS = """Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.
+The lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. 
+The challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.
+You are free to choose any structure or format that best supports an engaging challenge experience.
+During the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.
+After all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.
+Ensure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.
+Lesson goals: """
 
 # Lesson defaults
 DEFAULT_REQUIRED_PLUGINS = ["code-editor"]
@@ -41,7 +60,10 @@ DEFAULT_TEACHING_INSTRUCTIONS = ""
 
 # Lesson title prefixes - maps starting characters/strings to prefix text
 # Example: {"X": "Prefix text "} will add "Prefix text " to all lessons starting with "X"
-LESSON_TITLE_PREFIXES = {"Practice Session" : "⚙ "}
+LESSON_TITLE_PREFIXES = {
+    "Theory Practice Lesson": "📚 ",
+    "Practice Lesson": "⚙ "
+}
 
 
 class XLSXToMaestroConverter:
@@ -136,10 +158,20 @@ class XLSXToMaestroConverter:
         return any(keyword.lower() in lesson_lower for keyword in SKIP_LESSON_KEYWORDS)
     
     def _is_practice_session(self, lesson_title: str) -> bool:
-        """Check if a lesson is a practice session."""
+        """Check if a lesson is a practice session (but not theory practice)."""
         if not lesson_title:
             return False
-        return PRACTICE_SESSION_KEYWORD in lesson_title.lower()
+        title_lower = lesson_title.lower()
+        # Make sure it's not a theory practice lesson
+        if THEORY_PRACTICE_KEYWORD.lower() in title_lower:
+            return False
+        return PRACTICE_SESSION_KEYWORD.lower() in title_lower
+    
+    def _is_theory_practice_session(self, lesson_title: str) -> bool:
+        """Check if a lesson is a theory practice session."""
+        if not lesson_title:
+            return False
+        return THEORY_PRACTICE_KEYWORD.lower() in lesson_title.lower()
     
     def _split_mastery_outcomes(self, outcomes: str) -> list:
         """Split mastery outcomes by semicolons and clean up."""
@@ -168,6 +200,21 @@ class XLSXToMaestroConverter:
                 return f"{prefix_text}{lesson_title}"
         
         return lesson_title
+    
+    def _strip_leading_number(self, title: str) -> str:
+        """Strip leading numbers like '4. ' or '12. ' from title."""
+        if not title:
+            return title
+        # Match patterns like "4. ", "12. ", "4) ", "4 - ", "4: " at the start
+        cleaned = re.sub(r'^\d+[\.\)\-:\s]+\s*', '', title)
+        return cleaned if cleaned else title
+    
+    def _normalize_dashes(self, text: str) -> str:
+        """Replace em dashes (—), en dashes (–), and other dash variants with regular hyphens (-)."""
+        if not text:
+            return text
+        # Replace em dash (—), en dash (–), and other unicode dashes with regular hyphen
+        return re.sub(r'[—–−‐‑‒―]', '-', text)
     
     def generate_maestro_json(self, weeks_data: Dict, output_file: str, xlsx_filename: str = ""):
         """Generate Maestro JSON from structured weeks data."""
@@ -203,15 +250,33 @@ class XLSXToMaestroConverter:
                     if self._should_skip_lesson(lesson_title):
                         continue
                     
+                    # Strip leading numbers (e.g., "4. Data-Driven AI" -> "Data-Driven AI")
+                    lesson_title = self._strip_leading_number(lesson_title)
+                    
+                    # Normalize dashes (em dash → hyphen)
+                    lesson_title = self._normalize_dashes(lesson_title)
+                    
                     # Apply prefix if lesson title starts with configured prefix key
                     lesson_title = self._apply_lesson_prefix(lesson_title)
                     
-                    # Split mastery outcomes by semicolons
-                    mastery_outcomes = self._split_mastery_outcomes(lesson['learning_outcomes'])
+                    # Split mastery outcomes by semicolons and normalize dashes
+                    mastery_outcomes = [self._normalize_dashes(o) for o in self._split_mastery_outcomes(lesson['learning_outcomes'])]
                     
-                    # Determine teaching instructions
-                    if self._is_practice_session(lesson_title):
-                        teaching_instructions = PRACTICE_TEACHING_INSTRUCTIONS
+                    # Determine teaching instructions and mastery outcomes
+                    if self._is_theory_practice_session(lesson_title):
+                        # Theory practice lessons: put everything in teaching instructions, no mastery outcomes
+                        # Strip "Output:" part from learning outcomes
+                        outcomes_text = lesson['learning_outcomes']
+                        if 'Output:' in outcomes_text:
+                            outcomes_text = outcomes_text.split('Output:')[0].strip()
+                        elif 'output:' in outcomes_text:
+                            outcomes_text = outcomes_text.split('output:')[0].strip()
+                        teaching_instructions = THEORY_PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(outcomes_text)
+                        mastery_outcomes = []
+                    elif self._is_practice_session(lesson_title):
+                        # Practice lessons: put everything in teaching instructions, no mastery outcomes
+                        teaching_instructions = PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(lesson['learning_outcomes'])
+                        mastery_outcomes = []
                     else:
                         teaching_instructions = DEFAULT_TEACHING_INSTRUCTIONS
                     
@@ -268,6 +333,117 @@ class XLSXToMaestroConverter:
         
         print(f"Maestro JSON saved to {output_file}")
         print("Conversion completed successfully!")
+    
+    def generate_maestro_json_from_units(self, units_data: Dict, output_file: str, xlsx_filename: str = ""):
+        """Generate Maestro JSON from unit-grouped data (lessons grouped by original_unit).
+        
+        Args:
+            units_data: OrderedDict mapping unit_name to {'unit_name': str, 'lessons': [...]}
+            output_file: Output file path
+            xlsx_filename: Original filename (used to derive course title)
+        """
+        print("Generating Maestro JSON export from units...")
+        
+        # Extract course title from XLSX filename (base name without extension)
+        if xlsx_filename:
+            course_title = os.path.basename(xlsx_filename)
+            course_title = course_title.replace('.xlsx', '').replace('.xls', '')
+        else:
+            course_title = DEFAULT_COURSE_TITLE
+        
+        # Build units from the units_data
+        units = []
+        for unit_name, unit_info in units_data.items():
+            # Process lessons for this unit
+            lessons = []
+            for lesson in unit_info['lessons']:
+                lesson_title = lesson['title']
+                
+                # Skip lessons that match skip keywords
+                if self._should_skip_lesson(lesson_title):
+                    continue
+                
+                # Strip leading numbers
+                lesson_title = self._strip_leading_number(lesson_title)
+                
+                # Normalize dashes
+                lesson_title = self._normalize_dashes(lesson_title)
+                
+                # Apply prefix if lesson title starts with configured prefix key
+                lesson_title = self._apply_lesson_prefix(lesson_title)
+                
+                # Split mastery outcomes and normalize dashes
+                mastery_outcomes = [self._normalize_dashes(o) for o in self._split_mastery_outcomes(lesson['learning_outcomes'])]
+                
+                # Determine teaching instructions and mastery outcomes
+                if self._is_theory_practice_session(lesson_title):
+                    # Theory practice lessons: strip Output: part
+                    outcomes_text = lesson['learning_outcomes']
+                    if 'Output:' in outcomes_text:
+                        outcomes_text = outcomes_text.split('Output:')[0].strip()
+                    elif 'output:' in outcomes_text:
+                        outcomes_text = outcomes_text.split('output:')[0].strip()
+                    teaching_instructions = THEORY_PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(outcomes_text)
+                    mastery_outcomes = []
+                elif self._is_practice_session(lesson_title):
+                    teaching_instructions = PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(lesson['learning_outcomes'])
+                    mastery_outcomes = []
+                else:
+                    teaching_instructions = DEFAULT_TEACHING_INSTRUCTIONS
+                
+                # Build lesson object
+                lesson_obj = {
+                    "title": lesson_title,
+                    "masteryOutcomes": mastery_outcomes,
+                    "teachingInstructions": teaching_instructions,
+                    "requiredPlugins": DEFAULT_REQUIRED_PLUGINS.copy()
+                }
+                
+                lessons.append(lesson_obj)
+            
+            # Create unit object
+            unit_obj = {
+                "title": unit_name,
+                "lessons": lessons
+            }
+            
+            units.append(unit_obj)
+        
+        # Build the complete Maestro JSON structure
+        maestro_data = {
+            "title": course_title,
+            "description": DEFAULT_COURSE_DESCRIPTION,
+            "modifiedAt": "",
+            "createdAt": datetime.now().strftime("%Y-%m-%d"),
+            "isPublished": DEFAULT_IS_PUBLISHED,
+            "trackType": DEFAULT_TRACK_TYPE,
+            "version": DEFAULT_VERSION,
+            "terms": [
+                {
+                    "courses": [
+                        {
+                            "title": course_title,
+                            "description": DEFAULT_COURSE_DESCRIPTION,
+                            "displayId": DEFAULT_DISPLAY_ID,
+                            "credits": DEFAULT_CREDITS,
+                            "units": units,
+                            "label": DEFAULT_LABEL,
+                            "teachingInstructions": DEFAULT_TEACHING_INSTRUCTIONS,
+                            "durationInWeeks": len(units_data),
+                            "isPublished": DEFAULT_IS_PUBLISHED
+                        }
+                    ]
+                }
+            ]
+        }
+        
+        # Save to file
+        os.makedirs(os.path.dirname(output_file) if os.path.dirname(output_file) else '.', exist_ok=True)
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(maestro_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"Maestro JSON saved to {output_file}")
+        print(f"Generated {len(units)} units from original unit structure")
 
 
 def main():

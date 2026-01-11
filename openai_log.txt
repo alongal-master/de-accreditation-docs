@@ -1,0 +1,1668 @@
+================================================================================
+OpenAI API Log - Syllabus Generator
+================================================================================
+Started at: 2026-01-11 17:57:26
+Model: gpt-5.1
+================================================================================
+
+[2026-01-11 17:57:44] LESSON PARSING (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Parse the following course content and extract unit headers, lesson titles, and learning outcomes.
+Lesson names are followed by learning outcome for each lesson. All learning outcomes lines start with "--- ".
+Unit headers appear as section titles (e.g., "## Unit Name", "Unit 1: Name", or standalone headers before groups of lessons).
+
+Return the result in this exact format:
+
+UNIT: [Unit Name]
+TITLE: [Lesson Title]
+OUTCOMES: [Learning outcomes description]
+
+TITLE: [Next Lesson Title]
+OUTCOMES: [Next learning outcomes description]
+
+UNIT: [Next Unit Name]
+TITLE: [Practice Session Title]
+OUTCOMES: [learning outcomes description]
+
+Rules:
+- Output UNIT: before the first lesson of each unit/section.
+- If no unit header is found, use "UNIT: Default Unit" before the first lesson.
+- Use the exact unit names as written in the content (without leading numbers like "Unit 1:").
+- Continue for all lessons. Use the exact titles as written in the content.
+- If a lesson has multiple learning outcomes (separated by newlines), combine ALL of them into a SINGLE line separated by semicolons (;).
+- Keep all outcomes on one line after "OUTCOMES:".
+- Remove any leading numbers or prefixes like "Lesson 8: " from the lesson title.
+- If you see learning outcomes that are teacher-directed (like "follow the lesson plan" or "Introduce the topic at a high level"), remove them.
+- If a lesson is missing learning outcomes, write them on your own (1 or 2 of them).
+
+Content:
+## ▶️ Unit 1: Understanding AI
+
+### 1. What Is Artificial Intelligence?
+
+- Define Artificial Intelligence in practical, non-sci-fi terms
+- Identify what makes a system “intelligent” in practice
+- Distinguish AI systems from traditional software
+
+---
+
+### 2. A Short History of AI
+
+- Describe how early AI systems were built
+- Explain why early AI relied on rules and logic
+- Identify what changed when data became central
+
+---
+
+### 3. Rule-Based AI
+
+- Define rule-based (symbolic) AI
+- Explain how rules are written and applied
+- Identify strengths and limitations of rule-based systems
+
+---
+
+### 4. Data-Driven AI
+
+- Define data-driven (statistical) AI
+- Explain how data replaces explicit rules
+- Describe why data-driven systems scale better
+
+---
+
+### 5. Symbolic vs Statistical AI
+
+- Clearly distinguish symbolic AI from statistical AI
+- Compare how each approach handles complexity
+- Identify which approach powers most modern AI systems
+
+---
+
+### 6. Narrow AI vs General AI
+
+- Define Narrow AI using real-world examples
+- Define General AI conceptually and explain why it does not exist today
+- Correct common misconceptions about AI capabilities
+
+---
+
+### 7. ML, DL, and LLMs
+
+- Distinguish Machine Learning, Deep Learning, and LLMs
+- Explain how these approaches relate to statistical AI
+- Use correct terminology when describing modern systems
+
+---
+
+### 8. AI in the Real World
+
+- Identify real-world applications of AI across industries
+- Describe what type of data these systems rely on
+- Explain why AI behavior depends on data quality
+
+---
+
+### 9. AI Limits and Responsibility
+
+- Identify common limitations of AI systems
+- Explain why AI systems can fail or behave unexpectedly
+- Describe, at a high level, why AI impacts society
+
+---
+
+## ▶️ Unit 2: Working with Data in Python
+
+### 1. Python’s Data Toolbox
+
+- Explain Python’s role in data analysis workflows
+- Distinguish Python libraries from core Python language features
+- Identify when to use Pandas versus NumPy
+
+### 2. DataFrames and Series
+
+- Define DataFrame and Series using tabular data examples
+- Explain how rows and columns map to DataFrame structure
+- Navigate and inspect basic DataFrame components
+
+### 3. Loading Real Data
+
+- Load CSV data into a Pandas DataFrame
+- Verify that data loaded correctly using inspection methods
+- Identify basic issues immediately after loading data
+
+### 4. Reading Data Carefully
+
+- Inspect datasets to understand structure and content
+- Identify potential data issues by scanning rows and columns
+- Formulate simple questions about what the data represents
+
+### 5. Selecting and Filtering
+
+- Select specific columns from a DataFrame intentionally
+- Filter rows using logical conditions
+- Explain filtering logic clearly in plain language
+
+### 6. Grouping Data
+
+- Group data by categorical features using Pandas
+- Apply basic aggregations such as mean and count
+- Interpret grouped results in terms of real-world meaning
+
+### 7. Derived Columns
+
+- Create new columns derived from existing data
+- Explain why derived columns can make data more useful
+- Verify correctness of newly created columns
+
+### 8. Thinking in Tables
+
+- Reason about data transformations in terms of rows and columns
+- Predict how operations will change a dataset’s structure
+- Develop confidence manipulating tabular data logically
+
+---
+
+## ▶️ Unit 3: Cleaning and Exploring Data
+
+### 1. Data Quality Checks
+
+- Understand different data quality checks and why they are important
+- Perform basic checks to assess data quality
+- Explain why quality checks should happen before analysis
+
+### 2. Handling Missing Values
+
+- Apply simple strategies to handle missing data
+- Explain the reasoning behind chosen handling methods
+- Describe trade-offs of different missing-data approaches
+
+### 3. Detecting and Handling Duplicates
+
+- Identify **duplicate rows or records** in a dataset
+- Distinguish between:
+    - true duplicates (data entry or system errors)
+    - legitimate repeated observations
+- Decide when duplicates should be **removed, kept, or aggregated**, and explain why
+
+### 4. Fixing Data Types
+
+- Detect columns with incorrect data types
+- Convert data types to enable proper analysis
+- Explain why correct data types are essential
+
+### 5. Detecting and Understanding Outliers
+
+- Identify **outliers** using simple numerical and visual methods
+- Distinguish between:
+    - meaningful outliers (signals)
+    - problematic outliers (errors, noise)
+- Explain why outliers should be **investigated, not automatically removed**
+
+### 6. Filtering with Purpose
+
+- Apply filters based on meaningful conditions
+- Explain why specific filters are applied
+- Validate that filtering produced expected results
+
+### 7. Grouping for Insight
+
+- Use grouping to compare categories in data
+- Interpret aggregated values meaningfully
+- Identify patterns revealed through grouping
+
+### 8. What EDA Really Means
+
+- Define exploratory data analysis in clear, practical terms
+- Explain the goals of EDA before modeling or decisions
+- Distinguish EDA from final conclusions
+
+### 9. First Plots for Insight
+
+- Create basic plots using matplotlib
+- Choose plot types appropriate to specific questions
+- Interpret plots to describe trends and patterns
+
+### 10. Patterns and Anomalies
+
+- Identify patterns emerging from data exploration
+- Detect anomalies and unusual values
+- Explain findings clearly without over-interpreting
+
+---
+
+## ▶️ Unit 4: Statistical Intuition for Data
+
+This unit builds the statistical foundations needed to **analyze data correctly before modeling**, focusing on **what you are analyzing (data type), how many variables are involved, and how to reason about uncertainty**.
+
+### Lesson 1: Data Types & “What am I analyzing?”
+
+**Outcomes (students can…)**
+
+- Distinguish **numerical vs categorical** variables.
+- Identify whether a question is **univariate** (one variable) or **relationship-based** (two+ variables).
+- Understand choosing appropriate **summary stats + visualizations** is based on data type. Get an overview of main techniques according to data type.
+
+---
+
+### Lesson 2: Distributions — Looking beyond single numbers
+
+**Outcomes**
+
+- Explain what a **distribution** represents (intuition).
+- Interpret basic distribution shape using a **histogram/bar chart**.
+- Describe why summary stats alone can be misleading without distribution context.
+
+---
+
+### Lesson 3: Mean vs Median — Choosing the right “average”
+
+**Outcomes**
+
+- Define **mean** and **median** with practical examples.
+- Select mean vs median depending on **skew/outliers**.
+- Explain how outliers can distort the mean and affect interpretation.
+
+---
+
+### Lesson 4: Variability & Standard Deviation (Intuition)
+
+**Outcomes**
+
+- Explain **variability** as “how spread out values are.”
+- Interpret **standard deviation** at an intuitive level (high vs low spread).
+- Compare two datasets and infer which has more variability.
+
+---
+
+### Lesson 5: Randomness, Noise & Why patterns can be misleading
+
+**Outcomes**
+
+- Define **randomness** and **noise** in real datasets.
+- Recognize when a pattern may be caused by noise rather than signal.
+- Explain why repeated measurements/samples may lead to different results.
+
+---
+
+### Lesson 6: Bivariate Thinking — Relationships between two variables
+
+**Outcomes**
+
+- Identify when a question requires **bivariate analysis**.
+- Choose an appropriate visualization (example **scatter plot** for numeric–numeric, **box plot** for categorical–numeric).
+- Describe what it means for two variables to “move together” (intuition).
+
+---
+
+### Lesson 7: Correlation — Pearson vs Spearman (High level)
+
+**Outcomes**
+
+- Define **correlation** and interpret positive vs negative correlation.
+- Differentiate **Pearson** (linear) vs **Spearman** (rank/monotonic) at a high level.
+- Explain when Spearman may be more appropriate than Pearson.
+
+---
+
+### Lesson 8: Correlation ≠ Causation
+
+**Outcomes**
+
+- Explain why **correlation does not imply causation**.
+- Identify common pitfalls (e.g., confounders, reverse causality) conceptually.
+- Propose one way to reduce wrong conclusions (e.g., check other variables, domain reasoning).
+
+---
+
+### Lesson 9: Multivariate Intuition — When relationships change
+
+**Outcomes**
+
+- Explain why adding a third variable can change an observed relationship.
+- Describe “controlling for another variable” conceptually.
+- Understand why we can connect multivariate thinking to **feature selection** and ML modeling decisions *(high level as it hasnt been studied yet)*
+
+---
+
+### Lesson 10: Probability as Uncertainty (High level)
+
+**Outcomes**
+
+- Explain probability as a way to describe **uncertainty**.
+- Interpret probability statements in everyday terms (likelihood).
+- Connect probability to variability and why results aren’t “exact.”
+
+---
+
+### Lesson 11: Samples vs Population — Why results vary
+
+**Outcomes**
+
+- Distinguish **population vs sample** intuitively.
+- Explain why different samples give different results.
+- Describe why we should be cautious about trusting patterns from small samples.
+
+---
+
+### Lesson 12: Inferential Thinking — From patterns to confidence (Very high level)
+
+**Outcomes**
+
+- Explain why we can’t fully trust patterns without considering uncertainty.
+- Connect inferential thinking to interpreting correlations and metrics.
+- Describe what it means to “generalize” from sample to population in simple terms.
+
+---
+
+### Lesson 13: Statistics Before ML — Bridging to modeling
+
+**Outcomes**
+
+- Explain why statistical intuition is critical before ML.
+- Connect **variability → model error**, **probability → uncertainty**, **correlation → features**.
+- Articulate readiness to move into ML task types and evaluation.
+
+---
+
+
+RESPONSE:
+UNIT: Understanding AI
+TITLE: What Is Artificial Intelligence?
+OUTCOMES: Define Artificial Intelligence in practical, non-sci-fi terms; Identify what makes a system “intelligent” in practice; Distinguish AI systems from traditional software
+
+TITLE: A Short History of AI
+OUTCOMES: Describe how early AI systems were built; Explain why early AI relied on rules and logic; Identify what changed when data became central
+
+TITLE: Rule-Based AI
+OUTCOMES: Define rule-based (symbolic) AI; Explain how rules are written and applied; Identify strengths and limitations of rule-based systems
+
+TITLE: Data-Driven AI
+OUTCOMES: Define data-driven (statistical) AI; Explain how data replaces explicit rules; Describe why data-driven systems scale better
+
+TITLE: Symbolic vs Statistical AI
+OUTCOMES: Clearly distinguish symbolic AI from statistical AI; Compare how each approach handles complexity; Identify which approach powers most modern AI systems
+
+TITLE: Narrow AI vs General AI
+OUTCOMES: Define Narrow AI using real-world examples; Define General AI conceptually and explain why it does not exist today; Correct common misconceptions about AI capabilities
+
+TITLE: ML, DL, and LLMs
+OUTCOMES: Distinguish Machine Learning, Deep Learning, and LLMs; Explain how these approaches relate to statistical AI; Use correct terminology when describing modern systems
+
+TITLE: AI in the Real World
+OUTCOMES: Identify real-world applications of AI across industries; Describe what type of data these systems rely on; Explain why AI behavior depends on data quality
+
+TITLE: AI Limits and Responsibility
+OUTCOMES: Identify common limitations of AI systems; Explain why AI systems can fail or behave unexpectedly; Describe, at a high level, why AI impacts society
+
+UNIT: Working with Data in Python
+TITLE: Python’s Data Toolbox
+OUTCOMES: Explain Python’s role in data analysis workflows; Distinguish Python libraries from core Python language features; Identify when to use Pandas versus NumPy
+
+TITLE: DataFrames and Series
+OUTCOMES: Define DataFrame and Series using tabular data examples; Explain how rows and columns map to DataFrame structure; Navigate and inspect basic DataFrame components
+
+TITLE: Loading Real Data
+OUTCOMES: Load CSV data into a Pandas DataFrame; Verify that data loaded correctly using inspection methods; Identify basic issues immediately after loading data
+
+TITLE: Reading Data Carefully
+OUTCOMES: Inspect datasets to understand structure and content; Identify potential data issues by scanning rows and columns; Formulate simple questions about what the data represents
+
+TITLE: Selecting and Filtering
+OUTCOMES: Select specific columns from a DataFrame intentionally; Filter rows using logical conditions; Explain filtering logic clearly in plain language
+
+TITLE: Grouping Data
+OUTCOMES: Group data by categorical features using Pandas; Apply basic aggregations such as mean and count; Interpret grouped results in terms of real-world meaning
+
+TITLE: Derived Columns
+OUTCOMES: Create new columns derived from existing data; Explain why derived columns can make data more useful; Verify correctness of newly created columns
+
+TITLE: Thinking in Tables
+OUTCOMES: Reason about data transformations in terms of rows and columns; Predict how operations will change a dataset’s structure; Develop confidence manipulating tabular data logically
+
+UNIT: Cleaning and Exploring Data
+TITLE: Data Quality Checks
+OUTCOMES: Understand different data quality checks and why they are important; Perform basic checks to assess data quality; Explain why quality checks should happen before analysis
+
+TITLE: Handling Missing Values
+OUTCOMES: Apply simple strategies to handle missing data; Explain the reasoning behind chosen handling methods; Describe trade-offs of different missing-data approaches
+
+TITLE: Detecting and Handling Duplicates
+OUTCOMES: Identify duplicate rows or records in a dataset; Distinguish between true duplicates and legitimate repeated observations; Decide when duplicates should be removed, kept, or aggregated, and explain why
+
+TITLE: Fixing Data Types
+OUTCOMES: Detect columns with incorrect data types; Convert data types to enable proper analysis; Explain why correct data types are essential
+
+TITLE: Detecting and Understanding Outliers
+OUTCOMES: Identify outliers using simple numerical and visual methods; Distinguish between meaningful outliers and problematic outliers; Explain why outliers should be investigated, not automatically removed
+
+TITLE: Filtering with Purpose
+OUTCOMES: Apply filters based on meaningful conditions; Explain why specific filters are applied; Validate that filtering produced expected results
+
+TITLE: Grouping for Insight
+OUTCOMES: Use grouping to compare categories in data; Interpret aggregated values meaningfully; Identify patterns revealed through grouping
+
+TITLE: What EDA Really Means
+OUTCOMES: Define exploratory data analysis in clear, practical terms; Explain the goals of EDA before modeling or decisions; Distinguish EDA from final conclusions
+
+TITLE: First Plots for Insight
+OUTCOMES: Create basic plots using matplotlib; Choose plot types appropriate to specific questions; Interpret plots to describe trends and patterns
+
+TITLE: Patterns and Anomalies
+OUTCOMES: Identify patterns emerging from data exploration; Detect anomalies and unusual values; Explain findings clearly without over-interpreting
+
+UNIT: Statistical Intuition for Data
+TITLE: Data Types & “What am I analyzing?”
+OUTCOMES: Distinguish numerical vs categorical variables; Identify whether a question is univariate or relationship-based; Understand that choosing appropriate summary statistics and visualizations is based on data type and know the main techniques according to data type
+
+TITLE: Distributions — Looking beyond single numbers
+OUTCOMES: Explain what a distribution represents; Interpret basic distribution shape using a histogram or bar chart; Describe why summary statistics alone can be misleading without distribution context
+
+TITLE: Mean vs Median — Choosing the right “average”
+OUTCOMES: Define mean and median with practical examples; Select mean vs median depending on skew and outliers; Explain how outliers can distort the mean and affect interpretation
+
+TITLE: Variability & Standard Deviation (Intuition)
+OUTCOMES: Explain variability as how spread out values are; Interpret standard deviation at an intuitive level; Compare two datasets and infer which has more variability
+
+TITLE: Randomness, Noise & Why patterns can be misleading
+OUTCOMES: Define randomness and noise in real datasets; Recognize when a pattern may be caused by noise rather than signal; Explain why repeated measurements or samples may lead to different results
+
+TITLE: Bivariate Thinking — Relationships between two variables
+OUTCOMES: Identify when a question requires bivariate analysis; Choose an appropriate visualization for different variable type combinations; Describe what it means for two variables to move together at an intuitive level
+
+TITLE: Correlation — Pearson vs Spearman (High level)
+OUTCOMES: Define correlation and interpret positive vs negative correlation; Differentiate Pearson (linear) vs Spearman (rank or monotonic) at a high level; Explain when Spearman may be more appropriate than Pearson
+
+TITLE: Correlation ≠ Causation
+OUTCOMES: Explain why correlation does not imply causation; Identify common pitfalls such as confounders and reverse causality; Propose ways to reduce wrong conclusions using additional variables or domain reasoning
+
+TITLE: Multivariate Intuition — When relationships change
+OUTCOMES: Explain why adding a third variable can change an observed relationship; Describe controlling for another variable conceptually; Understand how multivariate thinking connects to feature selection and ML modeling decisions at a high level
+
+TITLE: Probability as Uncertainty (High level)
+OUTCOMES: Explain probability as a way to describe uncertainty; Interpret probability statements in everyday terms; Connect probability to variability and why results are not exact
+
+TITLE: Samples vs Population — Why results vary
+OUTCOMES: Distinguish population vs sample intuitively; Explain why different samples give different results; Describe why we should be cautious about trusting patterns from small samples
+
+TITLE: Inferential Thinking — From patterns to confidence (Very high level)
+OUTCOMES: Explain why we cannot fully trust patterns without considering uncertainty; Connect inferential thinking to interpreting correlations and metrics; Describe what it means to generalize from sample to population in simple terms
+
+TITLE: Statistics Before ML — Bridging to modeling
+OUTCOMES: Explain why statistical intuition is critical before ML; Connect variability to model error, probability to uncertainty, and correlation to features; Articulate readiness to move into ML task types and evaluation
+
+================================================================================
+
+[2026-01-11 17:58:05] WEEK 1 ALL CHAPTERS PRACTICE SESSIONS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create practice sessions for the 4 chapters below (total 20 practice sessions).
+
+Practice sessions needed per chapter:
+Chapter 1: 5 practice session(s)
+Chapter 2: 5 practice session(s)
+Chapter 3: 5 practice session(s)
+Chapter 4: 5 practice session(s)
+
+Each practice session should:
+1. Have a title that starts with "Practice Lesson: "
+2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
+3. Include hands-on exercises, projects, or practical applications.
+4. Have clear learning outcome of one sentence. After that, add a second sentence with "Output: [short description of the final result of the practice session, meaning what does the script/program will do]".
+5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
+6. The theme could be one of those:
+    a. A practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+    b. A classic programming exercise or practic, for example - a calculator, passwrod generator, prime number calculation, filtering or parsing data, etc.
+8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+9. If the practice session is bigger than others, add two items with 'Part 1' and 'Part 2' to the title. For example, "Practice Lesson: To-Do list - Part 1" and "Practice Lesson: To-Do list - Part 2".
+10. If the practice comes after theoretic lessons (where no coding is involved), create a practice session that is basically a quiz / thinking / matching / identifying exercise, not coding. In those cases, the title should be "Theory Practice Lesson: ".
+
+Week 1 Chapters:
+
+CHAPTER 1:
+  - What Is Artificial Intelligence?: Define Artificial Intelligence in practical, non-sci-fi terms; Identify what makes a system “intelligent” in practice; Distinguish AI systems from traditional software
+  - A Short History of AI: Describe how early AI systems were built; Explain why early AI relied on rules and logic; Identify what changed when data became central
+  - Rule-Based AI: Define rule-based (symbolic) AI; Explain how rules are written and applied; Identify strengths and limitations of rule-based systems
+  - Data-Driven AI: Define data-driven (statistical) AI; Explain how data replaces explicit rules; Describe why data-driven systems scale better
+
+CHAPTER 2:
+  - Symbolic vs Statistical AI: Clearly distinguish symbolic AI from statistical AI; Compare how each approach handles complexity; Identify which approach powers most modern AI systems
+  - Narrow AI vs General AI: Define Narrow AI using real-world examples; Define General AI conceptually and explain why it does not exist today; Correct common misconceptions about AI capabilities
+  - ML, DL, and LLMs: Distinguish Machine Learning, Deep Learning, and LLMs; Explain how these approaches relate to statistical AI; Use correct terminology when describing modern systems
+  - AI in the Real World: Identify real-world applications of AI across industries; Describe what type of data these systems rely on; Explain why AI behavior depends on data quality
+
+CHAPTER 3:
+  - AI Limits and Responsibility: Identify common limitations of AI systems; Explain why AI systems can fail or behave unexpectedly; Describe, at a high level, why AI impacts society
+  - Python’s Data Toolbox: Explain Python’s role in data analysis workflows; Distinguish Python libraries from core Python language features; Identify when to use Pandas versus NumPy
+  - DataFrames and Series: Define DataFrame and Series using tabular data examples; Explain how rows and columns map to DataFrame structure; Navigate and inspect basic DataFrame components
+  - Loading Real Data: Load CSV data into a Pandas DataFrame; Verify that data loaded correctly using inspection methods; Identify basic issues immediately after loading data
+
+CHAPTER 4:
+  - Reading Data Carefully: Inspect datasets to understand structure and content; Identify potential data issues by scanning rows and columns; Formulate simple questions about what the data represents
+  - Selecting and Filtering: Select specific columns from a DataFrame intentionally; Filter rows using logical conditions; Explain filtering logic clearly in plain language
+  - Grouping Data: Group data by categorical features using Pandas; Apply basic aggregations such as mean and count; Interpret grouped results in terms of real-world meaning
+  - Derived Columns: Create new columns derived from existing data; Explain why derived columns can make data more useful; Verify correctness of newly created columns
+
+
+Return in this exact format:
+
+CHAPTER: 1
+TITLE: Practice Session: [Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+TITLE: Practice Session: [Another Session Title for Chapter 1 if needed]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+CHAPTER: 2
+TITLE: Practice Session: [Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+Continue for all 4 chapters. Generate exactly the number of practice sessions specified for each chapter above.
+
+
+RESPONSE:
+CHAPTER: 1
+TITLE: Theory Practice Lesson: Spot the AI in Everyday Apps  
+OUTCOMES: Identify which parts of everyday tools are actually using AI versus traditional software. Output: A completed worksheet where features of common apps are labeled as “AI” or “non-AI” with brief justifications.
+
+TITLE: Theory Practice Lesson: Timeline of AI Milestones  
+OUTCOMES: Arrange key AI history events in the correct order and connect each to a simple explanation of what changed. Output: A filled-in timeline that places rule-based AI, expert systems, and data-driven breakthroughs in the right chronological order.
+
+TITLE: Theory Practice Lesson: Rule-Based or Data-Driven?  
+OUTCOMES: Distinguish rule-based AI from data-driven AI by classifying short system descriptions and explaining your reasoning. Output: A categorized list of example systems marked as “rule-based” or “data-driven” with one-sentence explanations.
+
+TITLE: Theory Practice Lesson: Designing Rules for a Smart Thermostat  
+OUTCOMES: Practice writing clear IF–THEN rules and recognize the strengths and limits of rule-based control. Output: A small rule set for a “smart” thermostat written in plain language, plus notes on cases where the rules might fail.
+
+TITLE: Theory Practice Lesson: When Data Beats Rules  
+OUTCOMES: Explain, using concrete scenarios, why data-driven approaches scale better than manually written rules. Output: A short comparison chart that maps several tasks (e.g., spam detection, handwriting recognition) to whether rules or data would be more practical and why.
+
+---
+
+CHAPTER: 2
+TITLE: Theory Practice Lesson: Symbolic vs Statistical Sorting Game  
+OUTCOMES: Clearly distinguish symbolic AI from statistical AI by matching descriptions, diagrams, and examples to each category. Output: A completed matching table that assigns each mini-scenario to “symbolic,” “statistical,” or “mixed” with a one-line justification.
+
+TITLE: Theory Practice Lesson: Narrow vs General AI Scenarios  
+OUTCOMES: Correctly classify example systems as Narrow AI and articulate how they differ from hypothetical General AI. Output: A scenario list annotated as “Narrow AI” or “Not AI / General AI idea” with short clarifications.
+
+TITLE: Theory Practice Lesson: ML, DL, and LLMs Concept Map  
+OUTCOMES: Differentiate Machine Learning, Deep Learning, and LLMs and show how they relate in a simple visual map. Output: A hand-drawn or digital concept map linking ML, DL, and LLMs with arrows and brief definitions at each node.
+
+TITLE: Theory Practice Lesson: Name the AI Behind the Product  
+OUTCOMES: Identify the type of AI approach and data used in real-world applications across different industries. Output: A table of 8–10 products (e.g., Netflix, spam filter, self-driving car) with columns for “AI type,” “data used,” and “why data quality matters.”
+
+TITLE: Theory Practice Lesson: Busting AI Myths  
+OUTCOMES: Recognize and correct common misconceptions about AI capabilities using precise terminology. Output: A two-column sheet where common AI myths are paired with accurate, concise corrections.
+
+---
+
+CHAPTER: 3
+TITLE: Practice Lesson: AI Limits at a Music App  
+OUTCOMES: Analyze limitations and potential failures of an AI music recommendation system and outline responsible design choices. Output: A short written analysis listing at least three concrete limitations, two failure examples, and two responsibility-focused mitigations.
+
+TITLE: Practice Lesson: Python Data Toolbox Overview  
+OUTCOMES: Identify where Python, NumPy, and Pandas fit in a data workflow and choose the right tool for given mini-tasks. Output: A small “tool selection” checklist mapping common data tasks (e.g., matrix math, table cleaning) to Python core, NumPy, or Pandas.
+
+TITLE: Practice Lesson: Cafe Sales DataFrame and Series  
+OUTCOMES: Practice creating simple Pandas Series and DataFrames to represent a cafe’s daily orders and inspect their structure. Output: A Python script that builds a small DataFrame of cafe orders and prints its shape, columns, and a few Series slices.
+
+TITLE: Practice Lesson: Loading Movie Ratings Data  
+OUTCOMES: Load a CSV file into a Pandas DataFrame and verify its structure using basic inspection methods. Output: A Python script that reads a `movie_ratings.csv` file, prints `head()`, `info()`, and `describe()` to the console.
+
+TITLE: Practice Lesson: First Look at Real Survey Data  
+OUTCOMES: Load a real or sample survey CSV, inspect it for obvious issues, and note questions about its contents. Output: A Python script that loads `survey_responses.csv`, displays sample rows and summary info, and prints a short text report of initial observations.
+
+---
+
+CHAPTER: 4
+TITLE: Practice Lesson: Reading Bike Rental Data Carefully  
+OUTCOMES: Inspect a bike rental dataset to understand its columns, units, and potential data issues. Output: A Python script that loads `bike_rentals.csv`, prints structural info and sample rows, and writes a short summary of what each key column represents.
+
+TITLE: Practice Lesson: Selecting and Filtering Movie Data  
+OUTCOMES: Select relevant columns and filter rows from a movies DataFrame using clear logical conditions. Output: A Python script that loads `movies.csv`, selects a subset of columns, and prints only movies that meet chosen rating and year criteria.
+
+TITLE: Practice Lesson: Grouping Cafe Orders  
+OUTCOMES: Group cafe order data by product and compute basic aggregations like total quantity and average price. Output: A Python script that groups a cafe orders DataFrame by item name and prints a summary table with count and mean price per item.
+
+TITLE: Practice Lesson: Derived Columns for Sales Insights  
+OUTCOMES: Create meaningful derived columns from raw sales data and verify that their values are correct. Output: A Python script that adds columns such as `total_price` and `discounted_price` to a sales DataFrame and prints before/after samples to validate them.
+
+TITLE: Practice Lesson: Daily Revenue Report – Part 1  
+OUTCOMES: Combine careful reading, selecting, and filtering to prepare a clean subset of transaction data for analysis. Output: A Python script that loads `store_transactions.csv`, inspects it, selects needed columns, filters out invalid rows, and prints a cleaned preview.
+
+TITLE: Practice Lesson: Daily Revenue Report – Part 2  
+OUTCOMES: Use grouping and derived columns to calculate daily revenue and basic KPIs from the cleaned transaction data. Output: A Python script that groups cleaned transactions by date, computes total revenue and average order value per day, and prints a concise daily report.
+
+================================================================================
+
+[2026-01-11 17:58:07] WEEK 1 LEARNING GOALS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create a learning goal for week 1 of a programming course.
+The week includes these lessons, with the following learning outcomes per each:
+
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What Is Artificial Intelligence?: Define Artificial Intelligence in practical, non-sci-fi terms; Identify what makes a system “intelligent” in practice; Distinguish AI systems from traditional software
+- A Short History of AI: Describe how early AI systems were built; Explain why early AI relied on rules and logic; Identify what changed when data became central
+- Rule-Based AI: Define rule-based (symbolic) AI; Explain how rules are written and applied; Identify strengths and limitations of rule-based systems
+- Data-Driven AI: Define data-driven (statistical) AI; Explain how data replaces explicit rules; Describe why data-driven systems scale better
+- Theory Practice Lesson: Spot the AI in Everyday Apps: Identify which parts of everyday tools are actually using AI versus traditional software. Output: A completed worksheet where features of common apps are labeled as “AI” or “non-AI” with brief justifications.
+- Theory Practice Lesson: Timeline of AI Milestones: Arrange key AI history events in the correct order and connect each to a simple explanation of what changed. Output: A filled-in timeline that places rule-based AI, expert systems, and data-driven breakthroughs in the right chronological order.
+- Theory Practice Lesson: Rule-Based or Data-Driven?: Distinguish rule-based AI from data-driven AI by classifying short system descriptions and explaining your reasoning. Output: A categorized list of example systems marked as “rule-based” or “data-driven” with one-sentence explanations.
+- Theory Practice Lesson: Designing Rules for a Smart Thermostat: Practice writing clear IF–THEN rules and recognize the strengths and limits of rule-based control. Output: A small rule set for a “smart” thermostat written in plain language, plus notes on cases where the rules might fail.
+- Theory Practice Lesson: When Data Beats Rules: Explain, using concrete scenarios, why data-driven approaches scale better than manually written rules. Output: A short comparison chart that maps several tasks (e.g., spam detection, handwriting recognition) to whether rules or data would be more practical and why.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Symbolic vs Statistical AI: Clearly distinguish symbolic AI from statistical AI; Compare how each approach handles complexity; Identify which approach powers most modern AI systems
+- Narrow AI vs General AI: Define Narrow AI using real-world examples; Define General AI conceptually and explain why it does not exist today; Correct common misconceptions about AI capabilities
+- ML, DL, and LLMs: Distinguish Machine Learning, Deep Learning, and LLMs; Explain how these approaches relate to statistical AI; Use correct terminology when describing modern systems
+- AI in the Real World: Identify real-world applications of AI across industries; Describe what type of data these systems rely on; Explain why AI behavior depends on data quality
+- Theory Practice Lesson: Symbolic vs Statistical Sorting Game: Clearly distinguish symbolic AI from statistical AI by matching descriptions, diagrams, and examples to each category. Output: A completed matching table that assigns each mini-scenario to “symbolic,” “statistical,” or “mixed” with a one-line justification.
+- Theory Practice Lesson: Narrow vs General AI Scenarios: Correctly classify example systems as Narrow AI and articulate how they differ from hypothetical General AI. Output: A scenario list annotated as “Narrow AI” or “Not AI / General AI idea” with short clarifications.
+- Theory Practice Lesson: ML, DL, and LLMs Concept Map: Differentiate Machine Learning, Deep Learning, and LLMs and show how they relate in a simple visual map. Output: A hand-drawn or digital concept map linking ML, DL, and LLMs with arrows and brief definitions at each node.
+- Theory Practice Lesson: Name the AI Behind the Product: Identify the type of AI approach and data used in real-world applications across different industries. Output: A table of 8–10 products (e.g., Netflix, spam filter, self-driving car) with columns for “AI type,” “data used,” and “why data quality matters.”
+- Theory Practice Lesson: Busting AI Myths: Recognize and correct common misconceptions about AI capabilities using precise terminology. Output: A two-column sheet where common AI myths are paired with accurate, concise corrections.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- AI Limits and Responsibility: Identify common limitations of AI systems; Explain why AI systems can fail or behave unexpectedly; Describe, at a high level, why AI impacts society
+- Python’s Data Toolbox: Explain Python’s role in data analysis workflows; Distinguish Python libraries from core Python language features; Identify when to use Pandas versus NumPy
+- DataFrames and Series: Define DataFrame and Series using tabular data examples; Explain how rows and columns map to DataFrame structure; Navigate and inspect basic DataFrame components
+- Loading Real Data: Load CSV data into a Pandas DataFrame; Verify that data loaded correctly using inspection methods; Identify basic issues immediately after loading data
+- Practice Lesson: AI Limits at a Music App: Analyze limitations and potential failures of an AI music recommendation system and outline responsible design choices. Output: A short written analysis listing at least three concrete limitations, two failure examples, and two responsibility-focused mitigations.
+- Practice Lesson: Python Data Toolbox Overview: Identify where Python, NumPy, and Pandas fit in a data workflow and choose the right tool for given mini-tasks. Output: A small “tool selection” checklist mapping common data tasks (e.g., matrix math, table cleaning) to Python core, NumPy, or Pandas.
+- Practice Lesson: Cafe Sales DataFrame and Series: Practice creating simple Pandas Series and DataFrames to represent a cafe’s daily orders and inspect their structure. Output: A Python script that builds a small DataFrame of cafe orders and prints its shape, columns, and a few Series slices.
+- Practice Lesson: Loading Movie Ratings Data: Load a CSV file into a Pandas DataFrame and verify its structure using basic inspection methods. Output: A Python script that reads a `movie_ratings.csv` file, prints `head()`, `info()`, and `describe()` to the console.
+- Practice Lesson: First Look at Real Survey Data: Load a real or sample survey CSV, inspect it for obvious issues, and note questions about its contents. Output: A Python script that loads `survey_responses.csv`, displays sample rows and summary info, and prints a short text report of initial observations.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Reading Data Carefully: Inspect datasets to understand structure and content; Identify potential data issues by scanning rows and columns; Formulate simple questions about what the data represents
+- Selecting and Filtering: Select specific columns from a DataFrame intentionally; Filter rows using logical conditions; Explain filtering logic clearly in plain language
+- Grouping Data: Group data by categorical features using Pandas; Apply basic aggregations such as mean and count; Interpret grouped results in terms of real-world meaning
+- Derived Columns: Create new columns derived from existing data; Explain why derived columns can make data more useful; Verify correctness of newly created columns
+- Practice Lesson: Reading Bike Rental Data Carefully: Inspect a bike rental dataset to understand its columns, units, and potential data issues. Output: A Python script that loads `bike_rentals.csv`, prints structural info and sample rows, and writes a short summary of what each key column represents.
+- Practice Lesson: Selecting and Filtering Movie Data: Select relevant columns and filter rows from a movies DataFrame using clear logical conditions. Output: A Python script that loads `movies.csv`, selects a subset of columns, and prints only movies that meet chosen rating and year criteria.
+- Practice Lesson: Grouping Cafe Orders: Group cafe order data by product and compute basic aggregations like total quantity and average price. Output: A Python script that groups a cafe orders DataFrame by item name and prints a summary table with count and mean price per item.
+- Practice Lesson: Derived Columns for Sales Insights: Create meaningful derived columns from raw sales data and verify that their values are correct. Output: A Python script that adds columns such as `total_price` and `discounted_price` to a sales DataFrame and prints before/after samples to validate them.
+- Practice Lesson: Daily Revenue Report – Part 1: Combine careful reading, selecting, and filtering to prepare a clean subset of transaction data for analysis. Output: A Python script that loads `store_transactions.csv`, inspects it, selects needed columns, filters out invalid rows, and prints a cleaned preview.
+- Practice Lesson: Daily Revenue Report – Part 2: Use grouping and derived columns to calculate daily revenue and basic KPIs from the cleaned transaction data. Output: A Python script that groups cleaned transactions by date, computes total revenue and average order value per day, and prints a concise daily report.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Weekly Review Prep Session: We'll review key concepts and prepare for the assessment
+- Prep Lesson: Prep lesson for the weekly review
+- Weekly Review Assessment: Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges
+
+Format: "Title: Description of what students will achieve and learn."
+The title should be 2-4 words, followed by a colon, then "In this unit, " and then a one sentence description of learning outcomes.
+Make it clear and specific to the lessons covered. Don't add asterisk (*) to the unit name or goal.
+
+Instructions for choose a good week title:
+Short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+
+RESPONSE:
+AI Basics & Data Skills: In this unit, students will demystify modern AI (symbolic vs statistical, narrow vs general, ML/DL/LLMs and real-world applications), examine AI’s limits and responsibilities, and build practical Python skills to load, inspect, filter, group, and enrich tabular data using Pandas for simple real-world analyses.
+
+================================================================================
+
+[2026-01-11 17:58:09] WEEK 1 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What Is Artificial Intelligence?: Define Artificial Intelligence in practical, non-sci-fi terms; Identify what makes a system “intelligent” in practice; Distinguish AI systems from traditional software
+- A Short History of AI: Describe how early AI systems were built; Explain why early AI relied on rules and logic; Identify what changed when data became central
+- Rule-Based AI: Define rule-based (symbolic) AI; Explain how rules are written and applied; Identify strengths and limitations of rule-based systems
+- Data-Driven AI: Define data-driven (statistical) AI; Explain how data replaces explicit rules; Describe why data-driven systems scale better
+- Theory Practice Lesson: Spot the AI in Everyday Apps: Identify which parts of everyday tools are actually using AI versus traditional software. Output: A completed worksheet where features of common apps are labeled as “AI” or “non-AI” with brief justifications.
+- Theory Practice Lesson: Timeline of AI Milestones: Arrange key AI history events in the correct order and connect each to a simple explanation of what changed. Output: A filled-in timeline that places rule-based AI, expert systems, and data-driven breakthroughs in the right chronological order.
+- Theory Practice Lesson: Rule-Based or Data-Driven?: Distinguish rule-based AI from data-driven AI by classifying short system descriptions and explaining your reasoning. Output: A categorized list of example systems marked as “rule-based” or “data-driven” with one-sentence explanations.
+- Theory Practice Lesson: Designing Rules for a Smart Thermostat: Practice writing clear IF–THEN rules and recognize the strengths and limits of rule-based control. Output: A small rule set for a “smart” thermostat written in plain language, plus notes on cases where the rules might fail.
+- Theory Practice Lesson: When Data Beats Rules: Explain, using concrete scenarios, why data-driven approaches scale better than manually written rules. Output: A short comparison chart that maps several tasks (e.g., spam detection, handwriting recognition) to whether rules or data would be more practical and why.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: How AI Systems Really Work  
+GOALS: Understand what makes a system “intelligent” in practice, how AI evolved from rule-based logic to data-driven methods, and how to tell AI apart from traditional software in real products. Learn to classify systems as rule-based or data-driven, practice writing simple rules, and see when and why data-driven approaches scale better than hand-crafted rules.
+
+================================================================================
+
+[2026-01-11 17:58:10] WEEK 1 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Symbolic vs Statistical AI: Clearly distinguish symbolic AI from statistical AI; Compare how each approach handles complexity; Identify which approach powers most modern AI systems
+- Narrow AI vs General AI: Define Narrow AI using real-world examples; Define General AI conceptually and explain why it does not exist today; Correct common misconceptions about AI capabilities
+- ML, DL, and LLMs: Distinguish Machine Learning, Deep Learning, and LLMs; Explain how these approaches relate to statistical AI; Use correct terminology when describing modern systems
+- AI in the Real World: Identify real-world applications of AI across industries; Describe what type of data these systems rely on; Explain why AI behavior depends on data quality
+- Theory Practice Lesson: Symbolic vs Statistical Sorting Game: Clearly distinguish symbolic AI from statistical AI by matching descriptions, diagrams, and examples to each category. Output: A completed matching table that assigns each mini-scenario to “symbolic,” “statistical,” or “mixed” with a one-line justification.
+- Theory Practice Lesson: Narrow vs General AI Scenarios: Correctly classify example systems as Narrow AI and articulate how they differ from hypothetical General AI. Output: A scenario list annotated as “Narrow AI” or “Not AI / General AI idea” with short clarifications.
+- Theory Practice Lesson: ML, DL, and LLMs Concept Map: Differentiate Machine Learning, Deep Learning, and LLMs and show how they relate in a simple visual map. Output: A hand-drawn or digital concept map linking ML, DL, and LLMs with arrows and brief definitions at each node.
+- Theory Practice Lesson: Name the AI Behind the Product: Identify the type of AI approach and data used in real-world applications across different industries. Output: A table of 8–10 products (e.g., Netflix, spam filter, self-driving car) with columns for “AI type,” “data used,” and “why data quality matters.”
+- Theory Practice Lesson: Busting AI Myths: Recognize and correct common misconceptions about AI capabilities using precise terminology. Output: A two-column sheet where common AI myths are paired with accurate, concise corrections.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Modern AI, Clearly Explained  
+GOALS: Build a clear mental map of today’s AI landscape—symbolic vs statistical methods, narrow vs general AI, ML vs DL vs LLMs—and apply this understanding to real products, data types, and common AI myths.
+
+================================================================================
+
+[2026-01-11 17:58:12] WEEK 1 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- AI Limits and Responsibility: Identify common limitations of AI systems; Explain why AI systems can fail or behave unexpectedly; Describe, at a high level, why AI impacts society
+- Python’s Data Toolbox: Explain Python’s role in data analysis workflows; Distinguish Python libraries from core Python language features; Identify when to use Pandas versus NumPy
+- DataFrames and Series: Define DataFrame and Series using tabular data examples; Explain how rows and columns map to DataFrame structure; Navigate and inspect basic DataFrame components
+- Loading Real Data: Load CSV data into a Pandas DataFrame; Verify that data loaded correctly using inspection methods; Identify basic issues immediately after loading data
+- Practice Lesson: AI Limits at a Music App: Analyze limitations and potential failures of an AI music recommendation system and outline responsible design choices. Output: A short written analysis listing at least three concrete limitations, two failure examples, and two responsibility-focused mitigations.
+- Practice Lesson: Python Data Toolbox Overview: Identify where Python, NumPy, and Pandas fit in a data workflow and choose the right tool for given mini-tasks. Output: A small “tool selection” checklist mapping common data tasks (e.g., matrix math, table cleaning) to Python core, NumPy, or Pandas.
+- Practice Lesson: Cafe Sales DataFrame and Series: Practice creating simple Pandas Series and DataFrames to represent a cafe’s daily orders and inspect their structure. Output: A Python script that builds a small DataFrame of cafe orders and prints its shape, columns, and a few Series slices.
+- Practice Lesson: Loading Movie Ratings Data: Load a CSV file into a Pandas DataFrame and verify its structure using basic inspection methods. Output: A Python script that reads a `movie_ratings.csv` file, prints `head()`, `info()`, and `describe()` to the console.
+- Practice Lesson: First Look at Real Survey Data: Load a real or sample survey CSV, inspect it for obvious issues, and note questions about its contents. Output: A Python script that loads `survey_responses.csv`, displays sample rows and summary info, and prints a short text report of initial observations.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Responsible AI and First Data Tools  
+GOALS: Build an intuition for AI’s limits and societal impact, and get hands-on practice using Python, NumPy, and Pandas to load, inspect, and reason about real tabular data.
+
+================================================================================
+
+[2026-01-11 17:58:14] WEEK 1 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Reading Data Carefully: Inspect datasets to understand structure and content; Identify potential data issues by scanning rows and columns; Formulate simple questions about what the data represents
+- Selecting and Filtering: Select specific columns from a DataFrame intentionally; Filter rows using logical conditions; Explain filtering logic clearly in plain language
+- Grouping Data: Group data by categorical features using Pandas; Apply basic aggregations such as mean and count; Interpret grouped results in terms of real-world meaning
+- Derived Columns: Create new columns derived from existing data; Explain why derived columns can make data more useful; Verify correctness of newly created columns
+- Practice Lesson: Reading Bike Rental Data Carefully: Inspect a bike rental dataset to understand its columns, units, and potential data issues. Output: A Python script that loads `bike_rentals.csv`, prints structural info and sample rows, and writes a short summary of what each key column represents.
+- Practice Lesson: Selecting and Filtering Movie Data: Select relevant columns and filter rows from a movies DataFrame using clear logical conditions. Output: A Python script that loads `movies.csv`, selects a subset of columns, and prints only movies that meet chosen rating and year criteria.
+- Practice Lesson: Grouping Cafe Orders: Group cafe order data by product and compute basic aggregations like total quantity and average price. Output: A Python script that groups a cafe orders DataFrame by item name and prints a summary table with count and mean price per item.
+- Practice Lesson: Derived Columns for Sales Insights: Create meaningful derived columns from raw sales data and verify that their values are correct. Output: A Python script that adds columns such as `total_price` and `discounted_price` to a sales DataFrame and prints before/after samples to validate them.
+- Practice Lesson: Daily Revenue Report – Part 1: Combine careful reading, selecting, and filtering to prepare a clean subset of transaction data for analysis. Output: A Python script that loads `store_transactions.csv`, inspects it, selects needed columns, filters out invalid rows, and prints a cleaned preview.
+- Practice Lesson: Daily Revenue Report – Part 2: Use grouping and derived columns to calculate daily revenue and basic KPIs from the cleaned transaction data. Output: A Python script that groups cleaned transactions by date, computes total revenue and average order value per day, and prints a concise daily report.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Working Confidently with Tabular Data  
+GOALS: Learn to inspect, select, filter, group, and enrich tabular datasets using pandas to answer clear questions and surface basic insights. Practice building small, reliable analysis scripts that clean raw data and produce simple, meaningful reports.
+
+================================================================================
+
+[2026-01-11 17:58:38] WEEK 2 ALL CHAPTERS PRACTICE SESSIONS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create practice sessions for the 4 chapters below (total 20 practice sessions).
+
+Practice sessions needed per chapter:
+Chapter 1: 5 practice session(s)
+Chapter 2: 5 practice session(s)
+Chapter 3: 5 practice session(s)
+Chapter 4: 5 practice session(s)
+
+Each practice session should:
+1. Have a title that starts with "Practice Lesson: "
+2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
+3. Include hands-on exercises, projects, or practical applications.
+4. Have clear learning outcome of one sentence. After that, add a second sentence with "Output: [short description of the final result of the practice session, meaning what does the script/program will do]".
+5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
+6. The theme could be one of those:
+    a. A practical exercise with a short story (theme) that adds context and real feeling to the exercise, for example  - a cafe cashier; a music app; a to-do list; a calculator; a generator of some kind.
+    b. A classic programming exercise or practic, for example - a calculator, passwrod generator, prime number calculation, filtering or parsing data, etc.
+8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+9. If the practice session is bigger than others, add two items with 'Part 1' and 'Part 2' to the title. For example, "Practice Lesson: To-Do list - Part 1" and "Practice Lesson: To-Do list - Part 2".
+10. If the practice comes after theoretic lessons (where no coding is involved), create a practice session that is basically a quiz / thinking / matching / identifying exercise, not coding. In those cases, the title should be "Theory Practice Lesson: ".
+
+Week 2 Chapters:
+
+CHAPTER 1:
+  - Fixing Data Types: Detect columns with incorrect data types; Convert data types to enable proper analysis; Explain why correct data types are essential
+  - Detecting and Understanding Outliers: Identify outliers using simple numerical and visual methods; Distinguish between meaningful outliers and problematic outliers; Explain why outliers should be investigated, not automatically removed
+  - Filtering with Purpose: Apply filters based on meaningful conditions; Explain why specific filters are applied; Validate that filtering produced expected results
+  - Grouping for Insight: Use grouping to compare categories in data; Interpret aggregated values meaningfully; Identify patterns revealed through grouping
+
+CHAPTER 2:
+  - What EDA Really Means: Define exploratory data analysis in clear, practical terms; Explain the goals of EDA before modeling or decisions; Distinguish EDA from final conclusions
+  - First Plots for Insight: Create basic plots using matplotlib; Choose plot types appropriate to specific questions; Interpret plots to describe trends and patterns
+  - Patterns and Anomalies: Identify patterns emerging from data exploration; Detect anomalies and unusual values; Explain findings clearly without over-interpreting
+  - Data Types & “What am I analyzing?”: Distinguish numerical vs categorical variables; Identify whether a question is univariate or relationship-based; Understand that choosing appropriate summary statistics and visualizations is based on data type and know the main techniques according to data type
+
+CHAPTER 3:
+  - Distributions - Looking beyond single numbers: Explain what a distribution represents; Interpret basic distribution shape using a histogram or bar chart; Describe why summary statistics alone can be misleading without distribution context
+  - Mean vs Median - Choosing the right “average”: Define mean and median with practical examples; Select mean vs median depending on skew and outliers; Explain how outliers can distort the mean and affect interpretation
+  - Variability & Standard Deviation (Intuition): Explain variability as how spread out values are; Interpret standard deviation at an intuitive level; Compare two datasets and infer which has more variability
+  - Randomness, Noise & Why patterns can be misleading: Define randomness and noise in real datasets; Recognize when a pattern may be caused by noise rather than signal; Explain why repeated measurements or samples may lead to different results
+
+CHAPTER 4:
+  - Bivariate Thinking - Relationships between two variables: Identify when a question requires bivariate analysis; Choose an appropriate visualization for different variable type combinations; Describe what it means for two variables to move together at an intuitive level
+  - Correlation - Pearson vs Spearman (High level): Define correlation and interpret positive vs negative correlation; Differentiate Pearson (linear) vs Spearman (rank or monotonic) at a high level; Explain when Spearman may be more appropriate than Pearson
+  - Correlation ≠ Causation: Explain why correlation does not imply causation; Identify common pitfalls such as confounders and reverse causality; Propose ways to reduce wrong conclusions using additional variables or domain reasoning
+  - Multivariate Intuition - When relationships change: Explain why adding a third variable can change an observed relationship; Describe controlling for another variable conceptually; Understand how multivariate thinking connects to feature selection and ML modeling decisions at a high level
+
+
+Return in this exact format:
+
+CHAPTER: 1
+TITLE: Practice Session: [Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+TITLE: Practice Session: [Another Session Title for Chapter 1 if needed]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+CHAPTER: 2
+TITLE: Practice Session: [Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+Continue for all 4 chapters. Generate exactly the number of practice sessions specified for each chapter above.
+
+
+RESPONSE:
+CHAPTER: 1  
+TITLE: Practice Lesson: Cafe sales cleanup  
+OUTCOMES: Detect and fix incorrect data types in a small cafe sales dataset, explaining why each conversion is needed. Output: A cleaned DataFrame where dates, prices, and quantities have correct types ready for analysis.
+
+TITLE: Practice Lesson: Movie ratings outliers  
+OUTCOMES: Identify and visualize outliers in a movie ratings dataset and decide which are meaningful versus problematic. Output: A summary report (printed or markdown-style) highlighting detected outliers with plots and short justifications.
+
+TITLE: Practice Lesson: Fitness tracker filters  
+OUTCOMES: Apply purposeful filters on a fitness tracker dataset to isolate meaningful subsets and verify the results. Output: Filtered DataFrames and printed checks that confirm the filters match the intended conditions (e.g., steps over a threshold, specific days).
+
+TITLE: Practice Lesson: Online store grouping  
+OUTCOMES: Use grouping and aggregation on an online store orders dataset to compare categories and interpret the patterns. Output: Grouped tables (e.g., revenue by category or weekday) and brief printed interpretations of key insights.
+
+TITLE: Practice Lesson: Data cleaning mini pipeline  
+OUTCOMES: Combine type fixing, outlier inspection, filtering, and grouping into a mini cleaning-and-insight pipeline on a mixed dataset. Output: A processed dataset plus a short printed summary of main findings after each step (types fixed, outliers flagged, filtered subset, grouped insights).
+
+
+CHAPTER: 2  
+TITLE: Theory Practice Lesson: EDA concepts check  
+OUTCOMES: Differentiate between EDA, modeling, and final conclusions through matching, short-answer, and scenario questions. Output: Written answers identifying which activities are EDA, which are conclusions, and explanations of EDA goals.
+
+TITLE: Practice Lesson: Music app first plots  
+OUTCOMES: Create basic matplotlib plots (histogram, bar chart, line plot) on a music app listening dataset and explain which questions each plot answers. Output: A set of plots with short text descriptions interpreting key trends and patterns.
+
+TITLE: Practice Lesson: Patterns and anomalies in deliveries  
+OUTCOMES: Explore a delivery times dataset to spot patterns and anomalies, documenting observations without over-claiming. Output: Simple visualizations and a concise narrative describing typical behavior and unusual cases.
+
+TITLE: Practice Lesson: Data types and questions quiz  
+OUTCOMES: Classify variables as numerical or categorical and label questions as univariate or relationship-based, choosing appropriate summaries and plots. Output: A completed worksheet-style answer set mapping each question to variable types, summary statistics, and visualization choices.
+
+TITLE: Practice Lesson: Mini EDA on bookstore data  
+OUTCOMES: Perform a focused EDA on a small bookstore sales dataset, from first plots to pattern/anomaly notes, staying within the boundaries of exploration. Output: A short EDA notebook or script with plots and bullet-point observations that clearly separate description from conclusions.
+
+
+CHAPTER: 3  
+TITLE: Theory Practice Lesson: Distributions intuition  
+OUTCOMES: Interpret histograms and bar charts of different datasets to describe distribution shape and why single-number summaries can mislead. Output: Written explanations comparing pairs of distributions and highlighting what the shape reveals beyond the mean.
+
+TITLE: Practice Lesson: Ride-sharing fares distribution  
+OUTCOMES: Analyze the distribution of ride-sharing fares with histograms and describe skew, typical ranges, and potential issues with relying only on averages. Output: Plots plus a short textual summary explaining the fare distribution and implications for using the mean.
+
+TITLE: Practice Lesson: Mean vs median in housing prices  
+OUTCOMES: Compute and compare mean and median for simulated housing price data with and without extreme values, deciding which measure is more appropriate. Output: Printed statistics and a short interpretation showing how outliers change the mean and affect conclusions.
+
+TITLE: Practice Lesson: Variability in game scores  
+OUTCOMES: Compare variability and intuitive standard deviation in score distributions for two mobile games, identifying which is more consistent. Output: Side-by-side plots and a brief explanation of which game has more spread and what that means for players.
+
+TITLE: Practice Lesson: Randomness and noisy patterns  
+OUTCOMES: Simulate random data with noise, visualize apparent patterns, and explain which patterns are likely due to chance. Output: Plots of noisy data and a short commentary distinguishing real structure from randomness and why repeated samples differ.
+
+
+CHAPTER: 4  
+TITLE: Theory Practice Lesson: Bivariate thinking scenarios  
+OUTCOMES: Decide which questions require bivariate analysis and select appropriate visualization types for different variable combinations. Output: A written set of answers matching each scenario to “univariate vs bivariate” and a recommended plot type.
+
+TITLE: Practice Lesson: Study hours and exam scores  
+OUTCOMES: Explore the relationship between study hours and exam scores using scatter plots and describe how the two variables move together. Output: A scatter plot with a brief interpretation of the apparent relationship and its strength/direction.
+
+TITLE: Practice Lesson: Correlation types quiz  
+OUTCOMES: Interpret correlation examples and distinguish when Pearson vs Spearman correlation is more appropriate at a high level. Output: Answered questions that label each scenario with correlation direction/strength and the preferred correlation type with justification.
+
+TITLE: Practice Lesson: Correlation not causation stories  
+OUTCOMES: Analyze short story-based examples of correlated variables to identify possible confounders, reverse causality, and safer interpretations. Output: Written explanations for each story that separate correlation from causation and propose better reasoning or additional data needed.
+
+TITLE: Practice Lesson: Multivariate restaurant ratings  
+OUTCOMES: Examine how adding a third variable (e.g., price range) changes the observed relationship between restaurant rating and delivery time, building multivariate intuition. Output: Plots or grouped summaries by the third variable and a concise explanation of how the relationship shifts when controlling for it.
+
+================================================================================
+
+[2026-01-11 17:58:39] WEEK 2 LEARNING GOALS (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+Create a learning goal for week 2 of a programming course.
+The week includes these lessons, with the following learning outcomes per each:
+
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Fixing Data Types: Detect columns with incorrect data types; Convert data types to enable proper analysis; Explain why correct data types are essential
+- Detecting and Understanding Outliers: Identify outliers using simple numerical and visual methods; Distinguish between meaningful outliers and problematic outliers; Explain why outliers should be investigated, not automatically removed
+- Filtering with Purpose: Apply filters based on meaningful conditions; Explain why specific filters are applied; Validate that filtering produced expected results
+- Grouping for Insight: Use grouping to compare categories in data; Interpret aggregated values meaningfully; Identify patterns revealed through grouping
+- Practice Lesson: Cafe sales cleanup: Detect and fix incorrect data types in a small cafe sales dataset, explaining why each conversion is needed. Output: A cleaned DataFrame where dates, prices, and quantities have correct types ready for analysis.
+- Practice Lesson: Movie ratings outliers: Identify and visualize outliers in a movie ratings dataset and decide which are meaningful versus problematic. Output: A summary report (printed or markdown-style) highlighting detected outliers with plots and short justifications.
+- Practice Lesson: Fitness tracker filters: Apply purposeful filters on a fitness tracker dataset to isolate meaningful subsets and verify the results. Output: Filtered DataFrames and printed checks that confirm the filters match the intended conditions (e.g., steps over a threshold, specific days).
+- Practice Lesson: Online store grouping: Use grouping and aggregation on an online store orders dataset to compare categories and interpret the patterns. Output: Grouped tables (e.g., revenue by category or weekday) and brief printed interpretations of key insights.
+- Practice Lesson: Data cleaning mini pipeline: Combine type fixing, outlier inspection, filtering, and grouping into a mini cleaning-and-insight pipeline on a mixed dataset. Output: A processed dataset plus a short printed summary of main findings after each step (types fixed, outliers flagged, filtered subset, grouped insights).
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What EDA Really Means: Define exploratory data analysis in clear, practical terms; Explain the goals of EDA before modeling or decisions; Distinguish EDA from final conclusions
+- First Plots for Insight: Create basic plots using matplotlib; Choose plot types appropriate to specific questions; Interpret plots to describe trends and patterns
+- Patterns and Anomalies: Identify patterns emerging from data exploration; Detect anomalies and unusual values; Explain findings clearly without over-interpreting
+- Data Types & “What am I analyzing?”: Distinguish numerical vs categorical variables; Identify whether a question is univariate or relationship-based; Understand that choosing appropriate summary statistics and visualizations is based on data type and know the main techniques according to data type
+- Theory Practice Lesson: EDA concepts check: Differentiate between EDA, modeling, and final conclusions through matching, short-answer, and scenario questions. Output: Written answers identifying which activities are EDA, which are conclusions, and explanations of EDA goals.
+- Practice Lesson: Music app first plots: Create basic matplotlib plots (histogram, bar chart, line plot) on a music app listening dataset and explain which questions each plot answers. Output: A set of plots with short text descriptions interpreting key trends and patterns.
+- Practice Lesson: Patterns and anomalies in deliveries: Explore a delivery times dataset to spot patterns and anomalies, documenting observations without over-claiming. Output: Simple visualizations and a concise narrative describing typical behavior and unusual cases.
+- Practice Lesson: Data types and questions quiz: Classify variables as numerical or categorical and label questions as univariate or relationship-based, choosing appropriate summaries and plots. Output: A completed worksheet-style answer set mapping each question to variable types, summary statistics, and visualization choices.
+- Practice Lesson: Mini EDA on bookstore data: Perform a focused EDA on a small bookstore sales dataset, from first plots to pattern/anomaly notes, staying within the boundaries of exploration. Output: A short EDA notebook or script with plots and bullet-point observations that clearly separate description from conclusions.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Distributions - Looking beyond single numbers: Explain what a distribution represents; Interpret basic distribution shape using a histogram or bar chart; Describe why summary statistics alone can be misleading without distribution context
+- Mean vs Median - Choosing the right “average”: Define mean and median with practical examples; Select mean vs median depending on skew and outliers; Explain how outliers can distort the mean and affect interpretation
+- Variability & Standard Deviation (Intuition): Explain variability as how spread out values are; Interpret standard deviation at an intuitive level; Compare two datasets and infer which has more variability
+- Randomness, Noise & Why patterns can be misleading: Define randomness and noise in real datasets; Recognize when a pattern may be caused by noise rather than signal; Explain why repeated measurements or samples may lead to different results
+- Theory Practice Lesson: Distributions intuition: Interpret histograms and bar charts of different datasets to describe distribution shape and why single-number summaries can mislead. Output: Written explanations comparing pairs of distributions and highlighting what the shape reveals beyond the mean.
+- Practice Lesson: Ride-sharing fares distribution: Analyze the distribution of ride-sharing fares with histograms and describe skew, typical ranges, and potential issues with relying only on averages. Output: Plots plus a short textual summary explaining the fare distribution and implications for using the mean.
+- Practice Lesson: Mean vs median in housing prices: Compute and compare mean and median for simulated housing price data with and without extreme values, deciding which measure is more appropriate. Output: Printed statistics and a short interpretation showing how outliers change the mean and affect conclusions.
+- Practice Lesson: Variability in game scores: Compare variability and intuitive standard deviation in score distributions for two mobile games, identifying which is more consistent. Output: Side-by-side plots and a brief explanation of which game has more spread and what that means for players.
+- Practice Lesson: Randomness and noisy patterns: Simulate random data with noise, visualize apparent patterns, and explain which patterns are likely due to chance. Output: Plots of noisy data and a short commentary distinguishing real structure from randomness and why repeated samples differ.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Bivariate Thinking - Relationships between two variables: Identify when a question requires bivariate analysis; Choose an appropriate visualization for different variable type combinations; Describe what it means for two variables to move together at an intuitive level
+- Correlation - Pearson vs Spearman (High level): Define correlation and interpret positive vs negative correlation; Differentiate Pearson (linear) vs Spearman (rank or monotonic) at a high level; Explain when Spearman may be more appropriate than Pearson
+- Correlation ≠ Causation: Explain why correlation does not imply causation; Identify common pitfalls such as confounders and reverse causality; Propose ways to reduce wrong conclusions using additional variables or domain reasoning
+- Multivariate Intuition - When relationships change: Explain why adding a third variable can change an observed relationship; Describe controlling for another variable conceptually; Understand how multivariate thinking connects to feature selection and ML modeling decisions at a high level
+- Theory Practice Lesson: Bivariate thinking scenarios: Decide which questions require bivariate analysis and select appropriate visualization types for different variable combinations. Output: A written set of answers matching each scenario to “univariate vs bivariate” and a recommended plot type.
+- Practice Lesson: Study hours and exam scores: Explore the relationship between study hours and exam scores using scatter plots and describe how the two variables move together. Output: A scatter plot with a brief interpretation of the apparent relationship and its strength/direction.
+- Practice Lesson: Correlation types quiz: Interpret correlation examples and distinguish when Pearson vs Spearman correlation is more appropriate at a high level. Output: Answered questions that label each scenario with correlation direction/strength and the preferred correlation type with justification.
+- Practice Lesson: Correlation not causation stories: Analyze short story-based examples of correlated variables to identify possible confounders, reverse causality, and safer interpretations. Output: Written explanations for each story that separate correlation from causation and propose better reasoning or additional data needed.
+- Practice Lesson: Multivariate restaurant ratings: Examine how adding a third variable (e.g., price range) changes the observed relationship between restaurant rating and delivery time, building multivariate intuition. Output: Plots or grouped summaries by the third variable and a concise explanation of how the relationship shifts when controlling for it.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+- Weekly Review Prep Session: We'll review key concepts and prepare for the assessment
+- Prep Lesson: Prep lesson for the weekly review
+- Weekly Review Assessment: Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges
+
+Format: "Title: Description of what students will achieve and learn."
+The title should be 2-4 words, followed by a colon, then "In this unit, " and then a one sentence description of learning outcomes.
+Make it clear and specific to the lessons covered. Don't add asterisk (*) to the unit name or goal.
+
+Instructions for choose a good week title:
+Short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+
+RESPONSE:
+Foundations of EDA: In this unit, students will clean and prepare tabular data (fixing types, inspecting outliers, filtering, and grouping), then use exploratory data analysis tools—plots, distributions, variability, and correlation thinking—to ask and answer focused questions about patterns and relationships without over-claiming conclusions.
+
+================================================================================
+
+[2026-01-11 17:58:41] WEEK 2 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Fixing Data Types: Detect columns with incorrect data types; Convert data types to enable proper analysis; Explain why correct data types are essential
+- Detecting and Understanding Outliers: Identify outliers using simple numerical and visual methods; Distinguish between meaningful outliers and problematic outliers; Explain why outliers should be investigated, not automatically removed
+- Filtering with Purpose: Apply filters based on meaningful conditions; Explain why specific filters are applied; Validate that filtering produced expected results
+- Grouping for Insight: Use grouping to compare categories in data; Interpret aggregated values meaningfully; Identify patterns revealed through grouping
+- Practice Lesson: Cafe sales cleanup: Detect and fix incorrect data types in a small cafe sales dataset, explaining why each conversion is needed. Output: A cleaned DataFrame where dates, prices, and quantities have correct types ready for analysis.
+- Practice Lesson: Movie ratings outliers: Identify and visualize outliers in a movie ratings dataset and decide which are meaningful versus problematic. Output: A summary report (printed or markdown-style) highlighting detected outliers with plots and short justifications.
+- Practice Lesson: Fitness tracker filters: Apply purposeful filters on a fitness tracker dataset to isolate meaningful subsets and verify the results. Output: Filtered DataFrames and printed checks that confirm the filters match the intended conditions (e.g., steps over a threshold, specific days).
+- Practice Lesson: Online store grouping: Use grouping and aggregation on an online store orders dataset to compare categories and interpret the patterns. Output: Grouped tables (e.g., revenue by category or weekday) and brief printed interpretations of key insights.
+- Practice Lesson: Data cleaning mini pipeline: Combine type fixing, outlier inspection, filtering, and grouping into a mini cleaning-and-insight pipeline on a mixed dataset. Output: A processed dataset plus a short printed summary of main findings after each step (types fixed, outliers flagged, filtered subset, grouped insights).
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Cleaning Data for Real Insights  
+GOALS: Learn to fix data types, investigate outliers, apply purposeful filters, and use grouping so your datasets become clean, trustworthy, and ready for meaningful analysis from end to end.
+
+================================================================================
+
+[2026-01-11 17:58:42] WEEK 2 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What EDA Really Means: Define exploratory data analysis in clear, practical terms; Explain the goals of EDA before modeling or decisions; Distinguish EDA from final conclusions
+- First Plots for Insight: Create basic plots using matplotlib; Choose plot types appropriate to specific questions; Interpret plots to describe trends and patterns
+- Patterns and Anomalies: Identify patterns emerging from data exploration; Detect anomalies and unusual values; Explain findings clearly without over-interpreting
+- Data Types & “What am I analyzing?”: Distinguish numerical vs categorical variables; Identify whether a question is univariate or relationship-based; Understand that choosing appropriate summary statistics and visualizations is based on data type and know the main techniques according to data type
+- Theory Practice Lesson: EDA concepts check: Differentiate between EDA, modeling, and final conclusions through matching, short-answer, and scenario questions. Output: Written answers identifying which activities are EDA, which are conclusions, and explanations of EDA goals.
+- Practice Lesson: Music app first plots: Create basic matplotlib plots (histogram, bar chart, line plot) on a music app listening dataset and explain which questions each plot answers. Output: A set of plots with short text descriptions interpreting key trends and patterns.
+- Practice Lesson: Patterns and anomalies in deliveries: Explore a delivery times dataset to spot patterns and anomalies, documenting observations without over-claiming. Output: Simple visualizations and a concise narrative describing typical behavior and unusual cases.
+- Practice Lesson: Data types and questions quiz: Classify variables as numerical or categorical and label questions as univariate or relationship-based, choosing appropriate summaries and plots. Output: A completed worksheet-style answer set mapping each question to variable types, summary statistics, and visualization choices.
+- Practice Lesson: Mini EDA on bookstore data: Perform a focused EDA on a small bookstore sales dataset, from first plots to pattern/anomaly notes, staying within the boundaries of exploration. Output: A short EDA notebook or script with plots and bullet-point observations that clearly separate description from conclusions.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Exploratory Data Analysis in Action  
+GOALS: Learn how to explore raw data with the right plots, summaries, and questions so you can spot patterns, anomalies, and data types before modeling. Practice doing EDA end-to-end on realistic datasets while clearly separating exploration from final conclusions.
+
+================================================================================
+
+[2026-01-11 17:58:44] WEEK 2 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Distributions - Looking beyond single numbers: Explain what a distribution represents; Interpret basic distribution shape using a histogram or bar chart; Describe why summary statistics alone can be misleading without distribution context
+- Mean vs Median - Choosing the right “average”: Define mean and median with practical examples; Select mean vs median depending on skew and outliers; Explain how outliers can distort the mean and affect interpretation
+- Variability & Standard Deviation (Intuition): Explain variability as how spread out values are; Interpret standard deviation at an intuitive level; Compare two datasets and infer which has more variability
+- Randomness, Noise & Why patterns can be misleading: Define randomness and noise in real datasets; Recognize when a pattern may be caused by noise rather than signal; Explain why repeated measurements or samples may lead to different results
+- Theory Practice Lesson: Distributions intuition: Interpret histograms and bar charts of different datasets to describe distribution shape and why single-number summaries can mislead. Output: Written explanations comparing pairs of distributions and highlighting what the shape reveals beyond the mean.
+- Practice Lesson: Ride-sharing fares distribution: Analyze the distribution of ride-sharing fares with histograms and describe skew, typical ranges, and potential issues with relying only on averages. Output: Plots plus a short textual summary explaining the fare distribution and implications for using the mean.
+- Practice Lesson: Mean vs median in housing prices: Compute and compare mean and median for simulated housing price data with and without extreme values, deciding which measure is more appropriate. Output: Printed statistics and a short interpretation showing how outliers change the mean and affect conclusions.
+- Practice Lesson: Variability in game scores: Compare variability and intuitive standard deviation in score distributions for two mobile games, identifying which is more consistent. Output: Side-by-side plots and a brief explanation of which game has more spread and what that means for players.
+- Practice Lesson: Randomness and noisy patterns: Simulate random data with noise, visualize apparent patterns, and explain which patterns are likely due to chance. Output: Plots of noisy data and a short commentary distinguishing real structure from randomness and why repeated samples differ.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Seeing Data Distributions Clearly  
+GOALS: Build an intuitive feel for how data is spread out by reading histograms, comparing mean and median, and understanding variability and standard deviation. Learn to spot when randomness and noise can create misleading patterns, and why looking beyond single-number summaries leads to better decisions.
+
+================================================================================
+
+[2026-01-11 17:58:46] WEEK 2 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Bivariate Thinking - Relationships between two variables: Identify when a question requires bivariate analysis; Choose an appropriate visualization for different variable type combinations; Describe what it means for two variables to move together at an intuitive level
+- Correlation - Pearson vs Spearman (High level): Define correlation and interpret positive vs negative correlation; Differentiate Pearson (linear) vs Spearman (rank or monotonic) at a high level; Explain when Spearman may be more appropriate than Pearson
+- Correlation ≠ Causation: Explain why correlation does not imply causation; Identify common pitfalls such as confounders and reverse causality; Propose ways to reduce wrong conclusions using additional variables or domain reasoning
+- Multivariate Intuition - When relationships change: Explain why adding a third variable can change an observed relationship; Describe controlling for another variable conceptually; Understand how multivariate thinking connects to feature selection and ML modeling decisions at a high level
+- Theory Practice Lesson: Bivariate thinking scenarios: Decide which questions require bivariate analysis and select appropriate visualization types for different variable combinations. Output: A written set of answers matching each scenario to “univariate vs bivariate” and a recommended plot type.
+- Practice Lesson: Study hours and exam scores: Explore the relationship between study hours and exam scores using scatter plots and describe how the two variables move together. Output: A scatter plot with a brief interpretation of the apparent relationship and its strength/direction.
+- Practice Lesson: Correlation types quiz: Interpret correlation examples and distinguish when Pearson vs Spearman correlation is more appropriate at a high level. Output: Answered questions that label each scenario with correlation direction/strength and the preferred correlation type with justification.
+- Practice Lesson: Correlation not causation stories: Analyze short story-based examples of correlated variables to identify possible confounders, reverse causality, and safer interpretations. Output: Written explanations for each story that separate correlation from causation and propose better reasoning or additional data needed.
+- Practice Lesson: Multivariate restaurant ratings: Examine how adding a third variable (e.g., price range) changes the observed relationship between restaurant rating and delivery time, building multivariate intuition. Output: Plots or grouped summaries by the third variable and a concise explanation of how the relationship shifts when controlling for it.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Thinking in Relationships
+
+GOALS: Learn to reason about how two or more variables move together, choose appropriate visualizations, and interpret correlation (Pearson vs Spearman) without confusing it with causation. Build intuition for how adding variables can change relationships and inform better analysis and modeling decisions.
+
+================================================================================
+
+[2026-01-11 17:58:47] WEEK 1 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What Is Artificial Intelligence?: Define Artificial Intelligence in practical, non-sci-fi terms; Identify what makes a system “intelligent” in practice; Distinguish AI systems from traditional software
+- A Short History of AI: Describe how early AI systems were built; Explain why early AI relied on rules and logic; Identify what changed when data became central
+- Rule-Based AI: Define rule-based (symbolic) AI; Explain how rules are written and applied; Identify strengths and limitations of rule-based systems
+- Data-Driven AI: Define data-driven (statistical) AI; Explain how data replaces explicit rules; Describe why data-driven systems scale better
+- Theory Practice Lesson: Spot the AI in Everyday Apps: Identify which parts of everyday tools are actually using AI versus traditional software. Output: A completed worksheet where features of common apps are labeled as “AI” or “non-AI” with brief justifications.
+- Theory Practice Lesson: Timeline of AI Milestones: Arrange key AI history events in the correct order and connect each to a simple explanation of what changed. Output: A filled-in timeline that places rule-based AI, expert systems, and data-driven breakthroughs in the right chronological order.
+- Theory Practice Lesson: Rule-Based or Data-Driven?: Distinguish rule-based AI from data-driven AI by classifying short system descriptions and explaining your reasoning. Output: A categorized list of example systems marked as “rule-based” or “data-driven” with one-sentence explanations.
+- Theory Practice Lesson: Designing Rules for a Smart Thermostat: Practice writing clear IF–THEN rules and recognize the strengths and limits of rule-based control. Output: A small rule set for a “smart” thermostat written in plain language, plus notes on cases where the rules might fail.
+- Theory Practice Lesson: When Data Beats Rules: Explain, using concrete scenarios, why data-driven approaches scale better than manually written rules. Output: A short comparison chart that maps several tasks (e.g., spam detection, handwriting recognition) to whether rules or data would be more practical and why.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: How AI Systems Really Work  
+GOALS: Learn what makes a system “intelligent” in practice, how AI evolved from rule-based logic to data-driven methods, and how to tell AI apart from traditional software in real apps.
+
+================================================================================
+
+[2026-01-11 17:58:49] WEEK 1 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Symbolic vs Statistical AI: Clearly distinguish symbolic AI from statistical AI; Compare how each approach handles complexity; Identify which approach powers most modern AI systems
+- Narrow AI vs General AI: Define Narrow AI using real-world examples; Define General AI conceptually and explain why it does not exist today; Correct common misconceptions about AI capabilities
+- ML, DL, and LLMs: Distinguish Machine Learning, Deep Learning, and LLMs; Explain how these approaches relate to statistical AI; Use correct terminology when describing modern systems
+- AI in the Real World: Identify real-world applications of AI across industries; Describe what type of data these systems rely on; Explain why AI behavior depends on data quality
+- Theory Practice Lesson: Symbolic vs Statistical Sorting Game: Clearly distinguish symbolic AI from statistical AI by matching descriptions, diagrams, and examples to each category. Output: A completed matching table that assigns each mini-scenario to “symbolic,” “statistical,” or “mixed” with a one-line justification.
+- Theory Practice Lesson: Narrow vs General AI Scenarios: Correctly classify example systems as Narrow AI and articulate how they differ from hypothetical General AI. Output: A scenario list annotated as “Narrow AI” or “Not AI / General AI idea” with short clarifications.
+- Theory Practice Lesson: ML, DL, and LLMs Concept Map: Differentiate Machine Learning, Deep Learning, and LLMs and show how they relate in a simple visual map. Output: A hand-drawn or digital concept map linking ML, DL, and LLMs with arrows and brief definitions at each node.
+- Theory Practice Lesson: Name the AI Behind the Product: Identify the type of AI approach and data used in real-world applications across different industries. Output: A table of 8–10 products (e.g., Netflix, spam filter, self-driving car) with columns for “AI type,” “data used,” and “why data quality matters.”
+- Theory Practice Lesson: Busting AI Myths: Recognize and correct common misconceptions about AI capabilities using precise terminology. Output: A two-column sheet where common AI myths are paired with accurate, concise corrections.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Modern AI, Clearly Explained  
+GOALS: Build a clear mental model of how today’s AI works by contrasting symbolic vs statistical approaches, narrow vs general AI, and ML, DL, and LLMs, then apply that understanding to real-world products, data, and common AI myths.
+
+================================================================================
+
+[2026-01-11 17:58:50] WEEK 1 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- AI Limits and Responsibility: Identify common limitations of AI systems; Explain why AI systems can fail or behave unexpectedly; Describe, at a high level, why AI impacts society
+- Python’s Data Toolbox: Explain Python’s role in data analysis workflows; Distinguish Python libraries from core Python language features; Identify when to use Pandas versus NumPy
+- DataFrames and Series: Define DataFrame and Series using tabular data examples; Explain how rows and columns map to DataFrame structure; Navigate and inspect basic DataFrame components
+- Loading Real Data: Load CSV data into a Pandas DataFrame; Verify that data loaded correctly using inspection methods; Identify basic issues immediately after loading data
+- Practice Lesson: AI Limits at a Music App: Analyze limitations and potential failures of an AI music recommendation system and outline responsible design choices. Output: A short written analysis listing at least three concrete limitations, two failure examples, and two responsibility-focused mitigations.
+- Practice Lesson: Python Data Toolbox Overview: Identify where Python, NumPy, and Pandas fit in a data workflow and choose the right tool for given mini-tasks. Output: A small “tool selection” checklist mapping common data tasks (e.g., matrix math, table cleaning) to Python core, NumPy, or Pandas.
+- Practice Lesson: Cafe Sales DataFrame and Series: Practice creating simple Pandas Series and DataFrames to represent a cafe’s daily orders and inspect their structure. Output: A Python script that builds a small DataFrame of cafe orders and prints its shape, columns, and a few Series slices.
+- Practice Lesson: Loading Movie Ratings Data: Load a CSV file into a Pandas DataFrame and verify its structure using basic inspection methods. Output: A Python script that reads a `movie_ratings.csv` file, prints `head()`, `info()`, and `describe()` to the console.
+- Practice Lesson: First Look at Real Survey Data: Load a real or sample survey CSV, inspect it for obvious issues, and note questions about its contents. Output: A Python script that loads `survey_responses.csv`, displays sample rows and summary info, and prints a short text report of initial observations.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Responsible AI and First Data Tools  
+GOALS: Build a grounded understanding of AI’s limits and societal impact while getting hands-on with Python, NumPy, and Pandas to load, inspect, and reason about real-world tabular data.
+
+================================================================================
+
+[2026-01-11 17:58:52] WEEK 1 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Reading Data Carefully: Inspect datasets to understand structure and content; Identify potential data issues by scanning rows and columns; Formulate simple questions about what the data represents
+- Selecting and Filtering: Select specific columns from a DataFrame intentionally; Filter rows using logical conditions; Explain filtering logic clearly in plain language
+- Grouping Data: Group data by categorical features using Pandas; Apply basic aggregations such as mean and count; Interpret grouped results in terms of real-world meaning
+- Derived Columns: Create new columns derived from existing data; Explain why derived columns can make data more useful; Verify correctness of newly created columns
+- Practice Lesson: Reading Bike Rental Data Carefully: Inspect a bike rental dataset to understand its columns, units, and potential data issues. Output: A Python script that loads `bike_rentals.csv`, prints structural info and sample rows, and writes a short summary of what each key column represents.
+- Practice Lesson: Selecting and Filtering Movie Data: Select relevant columns and filter rows from a movies DataFrame using clear logical conditions. Output: A Python script that loads `movies.csv`, selects a subset of columns, and prints only movies that meet chosen rating and year criteria.
+- Practice Lesson: Grouping Cafe Orders: Group cafe order data by product and compute basic aggregations like total quantity and average price. Output: A Python script that groups a cafe orders DataFrame by item name and prints a summary table with count and mean price per item.
+- Practice Lesson: Derived Columns for Sales Insights: Create meaningful derived columns from raw sales data and verify that their values are correct. Output: A Python script that adds columns such as `total_price` and `discounted_price` to a sales DataFrame and prints before/after samples to validate them.
+- Practice Lesson: Daily Revenue Report – Part 1: Combine careful reading, selecting, and filtering to prepare a clean subset of transaction data for analysis. Output: A Python script that loads `store_transactions.csv`, inspects it, selects needed columns, filters out invalid rows, and prints a cleaned preview.
+- Practice Lesson: Daily Revenue Report – Part 2: Use grouping and derived columns to calculate daily revenue and basic KPIs from the cleaned transaction data. Output: A Python script that groups cleaned transactions by date, computes total revenue and average order value per day, and prints a concise daily report.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Working with DataFrames
+
+GOALS: Learn to read, select, filter, group, and enrich tabular data using pandas, then apply these skills to build simple, real-world reports from raw CSV files.
+
+================================================================================
+
+[2026-01-11 17:58:53] WEEK 2 CHAPTER 1 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Fixing Data Types: Detect columns with incorrect data types; Convert data types to enable proper analysis; Explain why correct data types are essential
+- Detecting and Understanding Outliers: Identify outliers using simple numerical and visual methods; Distinguish between meaningful outliers and problematic outliers; Explain why outliers should be investigated, not automatically removed
+- Filtering with Purpose: Apply filters based on meaningful conditions; Explain why specific filters are applied; Validate that filtering produced expected results
+- Grouping for Insight: Use grouping to compare categories in data; Interpret aggregated values meaningfully; Identify patterns revealed through grouping
+- Practice Lesson: Cafe sales cleanup: Detect and fix incorrect data types in a small cafe sales dataset, explaining why each conversion is needed. Output: A cleaned DataFrame where dates, prices, and quantities have correct types ready for analysis.
+- Practice Lesson: Movie ratings outliers: Identify and visualize outliers in a movie ratings dataset and decide which are meaningful versus problematic. Output: A summary report (printed or markdown-style) highlighting detected outliers with plots and short justifications.
+- Practice Lesson: Fitness tracker filters: Apply purposeful filters on a fitness tracker dataset to isolate meaningful subsets and verify the results. Output: Filtered DataFrames and printed checks that confirm the filters match the intended conditions (e.g., steps over a threshold, specific days).
+- Practice Lesson: Online store grouping: Use grouping and aggregation on an online store orders dataset to compare categories and interpret the patterns. Output: Grouped tables (e.g., revenue by category or weekday) and brief printed interpretations of key insights.
+- Practice Lesson: Data cleaning mini pipeline: Combine type fixing, outlier inspection, filtering, and grouping into a mini cleaning-and-insight pipeline on a mixed dataset. Output: A processed dataset plus a short printed summary of main findings after each step (types fixed, outliers flagged, filtered subset, grouped insights).
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Cleaning Data for Real Insights  
+GOALS: Learn to fix data types, investigate outliers, apply purposeful filters, and use grouping so you can build a simple, end‑to‑end data cleaning pipeline that produces trustworthy, interpretable analysis.
+
+================================================================================
+
+[2026-01-11 17:58:54] WEEK 2 CHAPTER 2 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- What EDA Really Means: Define exploratory data analysis in clear, practical terms; Explain the goals of EDA before modeling or decisions; Distinguish EDA from final conclusions
+- First Plots for Insight: Create basic plots using matplotlib; Choose plot types appropriate to specific questions; Interpret plots to describe trends and patterns
+- Patterns and Anomalies: Identify patterns emerging from data exploration; Detect anomalies and unusual values; Explain findings clearly without over-interpreting
+- Data Types & “What am I analyzing?”: Distinguish numerical vs categorical variables; Identify whether a question is univariate or relationship-based; Understand that choosing appropriate summary statistics and visualizations is based on data type and know the main techniques according to data type
+- Theory Practice Lesson: EDA concepts check: Differentiate between EDA, modeling, and final conclusions through matching, short-answer, and scenario questions. Output: Written answers identifying which activities are EDA, which are conclusions, and explanations of EDA goals.
+- Practice Lesson: Music app first plots: Create basic matplotlib plots (histogram, bar chart, line plot) on a music app listening dataset and explain which questions each plot answers. Output: A set of plots with short text descriptions interpreting key trends and patterns.
+- Practice Lesson: Patterns and anomalies in deliveries: Explore a delivery times dataset to spot patterns and anomalies, documenting observations without over-claiming. Output: Simple visualizations and a concise narrative describing typical behavior and unusual cases.
+- Practice Lesson: Data types and questions quiz: Classify variables as numerical or categorical and label questions as univariate or relationship-based, choosing appropriate summaries and plots. Output: A completed worksheet-style answer set mapping each question to variable types, summary statistics, and visualization choices.
+- Practice Lesson: Mini EDA on bookstore data: Perform a focused EDA on a small bookstore sales dataset, from first plots to pattern/anomaly notes, staying within the boundaries of exploration. Output: A short EDA notebook or script with plots and bullet-point observations that clearly separate description from conclusions.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Exploratory Data Analysis in Action  
+GOALS: Learn how to explore raw data with the right plots, summaries, and questions so you can spot patterns, anomalies, and data types without jumping to conclusions or full modeling.
+
+================================================================================
+
+[2026-01-11 17:58:57] WEEK 2 CHAPTER 3 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Distributions - Looking beyond single numbers: Explain what a distribution represents; Interpret basic distribution shape using a histogram or bar chart; Describe why summary statistics alone can be misleading without distribution context
+- Mean vs Median - Choosing the right “average”: Define mean and median with practical examples; Select mean vs median depending on skew and outliers; Explain how outliers can distort the mean and affect interpretation
+- Variability & Standard Deviation (Intuition): Explain variability as how spread out values are; Interpret standard deviation at an intuitive level; Compare two datasets and infer which has more variability
+- Randomness, Noise & Why patterns can be misleading: Define randomness and noise in real datasets; Recognize when a pattern may be caused by noise rather than signal; Explain why repeated measurements or samples may lead to different results
+- Theory Practice Lesson: Distributions intuition: Interpret histograms and bar charts of different datasets to describe distribution shape and why single-number summaries can mislead. Output: Written explanations comparing pairs of distributions and highlighting what the shape reveals beyond the mean.
+- Practice Lesson: Ride-sharing fares distribution: Analyze the distribution of ride-sharing fares with histograms and describe skew, typical ranges, and potential issues with relying only on averages. Output: Plots plus a short textual summary explaining the fare distribution and implications for using the mean.
+- Practice Lesson: Mean vs median in housing prices: Compute and compare mean and median for simulated housing price data with and without extreme values, deciding which measure is more appropriate. Output: Printed statistics and a short interpretation showing how outliers change the mean and affect conclusions.
+- Practice Lesson: Variability in game scores: Compare variability and intuitive standard deviation in score distributions for two mobile games, identifying which is more consistent. Output: Side-by-side plots and a brief explanation of which game has more spread and what that means for players.
+- Practice Lesson: Randomness and noisy patterns: Simulate random data with noise, visualize apparent patterns, and explain which patterns are likely due to chance. Output: Plots of noisy data and a short commentary distinguishing real structure from randomness and why repeated samples differ.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Seeing Data Distributions Clearly  
+GOALS: Build intuitive skills for reading distributions, choosing between mean and median, and understanding variability and randomness so you don’t get misled by single-number summaries or noisy patterns.
+
+================================================================================
+
+[2026-01-11 17:58:59] WEEK 2 CHAPTER 4 INFO (STREAMED)
+------------------------------------------------------------
+PROMPT:
+
+The course chapter containing these lessons, with the following learning outcomes per each: - Opening session and Q&A: Ask questions, clarify concepts, and engage with instructors and peers in real-time.
+- Bivariate Thinking - Relationships between two variables: Identify when a question requires bivariate analysis; Choose an appropriate visualization for different variable type combinations; Describe what it means for two variables to move together at an intuitive level
+- Correlation - Pearson vs Spearman (High level): Define correlation and interpret positive vs negative correlation; Differentiate Pearson (linear) vs Spearman (rank or monotonic) at a high level; Explain when Spearman may be more appropriate than Pearson
+- Correlation ≠ Causation: Explain why correlation does not imply causation; Identify common pitfalls such as confounders and reverse causality; Propose ways to reduce wrong conclusions using additional variables or domain reasoning
+- Multivariate Intuition - When relationships change: Explain why adding a third variable can change an observed relationship; Describe controlling for another variable conceptually; Understand how multivariate thinking connects to feature selection and ML modeling decisions at a high level
+- Theory Practice Lesson: Bivariate thinking scenarios: Decide which questions require bivariate analysis and select appropriate visualization types for different variable combinations. Output: A written set of answers matching each scenario to “univariate vs bivariate” and a recommended plot type.
+- Practice Lesson: Study hours and exam scores: Explore the relationship between study hours and exam scores using scatter plots and describe how the two variables move together. Output: A scatter plot with a brief interpretation of the apparent relationship and its strength/direction.
+- Practice Lesson: Correlation types quiz: Interpret correlation examples and distinguish when Pearson vs Spearman correlation is more appropriate at a high level. Output: Answered questions that label each scenario with correlation direction/strength and the preferred correlation type with justification.
+- Practice Lesson: Correlation not causation stories: Analyze short story-based examples of correlated variables to identify possible confounders, reverse causality, and safer interpretations. Output: Written explanations for each story that separate correlation from causation and propose better reasoning or additional data needed.
+- Practice Lesson: Multivariate restaurant ratings: Examine how adding a third variable (e.g., price range) changes the observed relationship between restaurant rating and delivery time, building multivariate intuition. Output: Plots or grouped summaries by the third variable and a concise explanation of how the relationship shifts when controlling for it.
+- Closing session: Wrap up the day togeher with your peers and ask final questions
+
+Generate:
+1. A chapter title (1-5 words)
+2. Chapter learning goals (1-2 sentences describing what students will learn)
+
+Instructions for choose a good name for the chapter:
+Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
+Use one of those styles:
+- neutral statements ("Tables, Rows, Columns")
+- purpose-driven titles ("Why Databases Exist" or "How the web works")
+- term + clear meaning ("Constructor: where objects begin")
+- practical titles (like "HTTP in Action")
+- summary of the work being done in the chapter ("Using APIs with Python")
+- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+**Avoid:**
+- academic phrasing ("Introduction to…", "Overview of..")
+- hype, metaphors, or marketing tone
+
+
+Format your response as:
+TITLE: [chapter title]
+GOALS: [learning goals]
+
+
+RESPONSE:
+TITLE: Thinking in Relationships
+
+GOALS: Build intuition for how two or more variables relate, including when and how to use bivariate and simple multivariate analysis. Learn to interpret correlation (Pearson vs Spearman) carefully, avoid “correlation = causation” traps, and choose appropriate visualizations to explore these relationships.
+
+================================================================================
+
+[2026-01-11 17:58:59] PROCESS COMPLETED
+------------------------------------------------------------
+Syllabus saved to: ml1-pt.xlsx
+Total lessons processed: 40
+================================================================================
+

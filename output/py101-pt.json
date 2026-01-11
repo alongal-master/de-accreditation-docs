@@ -1,0 +1,795 @@
+{
+  "num_weeks": 4,
+  "num_chapters_per_week": 5,
+  "num_practice_sessions": 0,
+  "weeks": {
+    "1": {
+      "week_num": 1,
+      "learning_goal": "Python Basics Foundations: In this unit, students will learn to write and run simple Python programs using print(), create and use well-named variables with text and numbers, perform basic arithmetic (including /, //, and %), and apply these skills to small real-world-style problems like café boards, player profiles, snack bar totals, and bus seating plans in preparation for a practical review assessment.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Getting Started with Python",
+          "learning_goals": "In this chapter, you will get oriented to the course, write and run your first Python program, and learn how to use the print() function to display text and simple patterns. You will practice combining text and numbers in output, ask questions in live sessions, and build confidence using Python from day one.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Welcome to PY101",
+              "learning_outcomes": "Understand the course main topics and grading",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Writing your first program",
+              "learning_outcomes": "Write and execute a simple Python script using the print() function",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Unlocking print() power-ups",
+              "learning_outcomes": "Print multiple values using commas; Understand that printing is always in a new line; Print multiple text and numeric values using the + and * operators.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Café welcome board",
+              "learning_outcomes": "Reinforce using print() to display text and simple patterns, including multiple values and operators, to create a friendly café welcome screen.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Getting Started With Variables and Text",
+          "learning_goals": "In this chapter, students will learn what variables are, how to name and assign them in Python, and how to work with text using string data types and concatenation. Through hands-on practice, they will create simple profile cards and status updates, and build confidence predicting and printing string output.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Introduction to variables",
+              "learning_outcomes": "Explain that a variable is a named placeholder for a value in memory.; Write a valid variable name following Python conventions.; Assign a value (e.g., a number or a piece of text) to a variable using the = operator.; Use the print() function to display the value stored in a variable.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Working with text",
+              "learning_outcomes": "Define a \"data type\" as a category of data that determines what you can do with it.; Create a string variable by enclosing text in single (') or double (\") quotes.; Combine two strings using the + operator (concatenation).; Predict the output when printing string variables.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Player profile card",
+              "learning_outcomes": "Practice creating and printing well-named variables and string data to display a simple player profile using concatenation.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Mini status updater",
+              "learning_outcomes": "Strengthen understanding of string variables and concatenation by building short status messages from multiple text parts and predicting their printed output.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Working with Numbers in Code",
+          "learning_goals": "Students will learn to use integers and floats, perform basic arithmetic, and translate real-world word problems into clear arithmetic expressions and print statements. They will practice modeling snack bar checkout calculations to build confidence in writing, reading, and explaining simple numeric code.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Working with numbers",
+              "learning_outcomes": "Distinguish between an integer (int, a whole number) and a float (float, a number with a decimal).; Create variables to store integer and float values.; Perform basic arithmetic operations (+, -, *, /) on numeric variables.; Explain why 5 is different from \"5\".",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Modeling real-world calculations",
+              "learning_outcomes": "Translate a two-step word problem into an arithmetic expression and compute the result.; Do arithmetic directly inside print() to produce clear, useful outputs.; Compare two equivalent formulations and choose the clearer one.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Snack bar checkout - Part 1",
+              "learning_outcomes": "Apply integer and float variables with basic arithmetic operations to calculate item costs and totals for a snack bar order.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Snack bar checkout - Part 2",
+              "learning_outcomes": "Translate short word problems into arithmetic expressions inside print() to compute and clearly display multi-step snack bar totals.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Division and Bus Planning",
+          "learning_goals": "Learn to distinguish between true division (/) and floor division (//), and to use // and % together to compute quotients and remainders. Apply these operations to realistic planning scenarios (like bus seating) and practice explaining your results clearly in code.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Review: writing your first program",
+              "learning_outcomes": "New mastery outcome",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Division modes: / vs // with quotient and remainder",
+              "learning_outcomes": "Compute and contrast true division (/) and floor division (//) on integers; explain the difference.; Use // and % together to derive quotient and remainder for practical cases (e.g., packing/scheduling).",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Bus seating planner - Part 1",
+              "learning_outcomes": "Use / and // to compare true division and floor division when planning how many buses are needed for groups of passengers.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Bus seating planner - Part 2",
+              "learning_outcomes": "Combine // and % to compute quotient and remainder in realistic packing and scheduling scenarios and print clear summaries.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "week_num": 2,
+      "learning_goal": "Core Inputs & Functions: In this unit, students will collect and convert user input, interpret and fix Python errors using tracebacks, and build, call, and debug functions (including using return values and local scope) to solve small, practical programming problems.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Talking to Your Program",
+          "learning_goals": "Learn how to inspect and convert data types, collect and validate user input with clear prompts, and use that input to perform calculations and generate friendly, useful summaries in simple Python programs.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Checking the facts",
+              "learning_outcomes": "Use type() to check a variable's data type; Use the str(), int(), and float() functions to convert values between data types.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Talking to your program: getting input from users",
+              "learning_outcomes": "Explain why programs interact with users and when input() is appropriate; collect input with clear prompts.; Convert numeric inputs to the correct type before computing and print a friendly summary.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Café order helper",
+              "learning_outcomes": "Practice checking and converting data types while collecting user input to calculate and summarize a café order.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Mini trip cost calculator",
+              "learning_outcomes": "Collect user input with clear prompts, convert numeric values correctly, and compute and display a friendly trip cost summary.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Debugging with Python Tracebacks",
+          "learning_goals": "Learn to read and interpret Python tracebacks to diagnose errors, practice fixing bugs in real programs, and demonstrate core debugging skills while collaborating with peers and instructors.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Python errors: meet the traceback",
+              "learning_outcomes": "Understand why Python provides a traceback and how it helps identify what went wrong; Identify parts of a traceback and different types of tracebacks",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Challenge: core foundations",
+              "learning_outcomes": "Student demonstrates understanding and can successfully complete the required skills for this challenge.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Buggy temperature converter",
+              "learning_outcomes": "Read Python tracebacks from a broken temperature converter and use them to locate and fix different types of errors.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Debugging a quiz app",
+              "learning_outcomes": "Analyze tracebacks from a simple quiz program to identify error types, pinpoint failing lines, and verify correct fixes.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Writing and Using Python Functions",
+          "learning_goals": "Learn how to define, call, and trace simple Python functions with parameters to reduce repetition and build reusable code, then apply these skills in small projects like story generators and workout planners while reinforcing understanding through Q&A and practice.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Functions i: why, define, and call",
+              "learning_outcomes": "Understand how functions reduce repetition and improve reuse.; Understand the structure of Python functions; Define a function with one or two parameters and call it with literals and variables",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Functions ii: inside the function",
+              "learning_outcomes": "Understand the structure of a function, including its name, parameters, indentation, and return value.; Call functions with arguments correctly and trace how values are passed from the call site to parameters, verifying the flow using print statements.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Story sentence generator",
+              "learning_outcomes": "Define and call simple functions with parameters to build reusable sentence generators for a short, customizable story.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Workout planner functions",
+              "learning_outcomes": "Create and use functions with one or two parameters to generate personalized workout messages while tracing how data flows into each function.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Functions, Scope, and Returning Values",
+          "learning_goals": "Strengthen your understanding of how functions work by distinguishing return from print, using early returns, and managing local vs global scope. Apply these ideas to refactor and extend a tip calculator using clear, reusable, and well-scoped functions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Functions iii: return vs print and early return",
+              "learning_outcomes": "Differentiate printing vs returning values; Use return to pass results and apply early returns.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Scope and local variables",
+              "learning_outcomes": "Understand that variables created inside a function exist only within that function’s scope (local).; Explain how local and global scopes differ and identify when each is used.; Demonstrate how data can be passed into functions through parameters instead of relying on global variables.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Tip calculator functions - Part 1",
+              "learning_outcomes": "Refactor a tip calculator to use functions that return values instead of printing, then reuse those returned results in further calculations.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Tip calculator functions - Part 2",
+              "learning_outcomes": "Enhance the tip calculator with multiple functions that use early returns and local variables, clearly separating local scope from global data.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment"
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "week_num": 3,
+      "learning_goal": "Logical Decisions & Loops: In this unit, students will use booleans, logical operators, identity vs equality, and string membership to build clear if/elif/else decision logic (including from decision tables), and will write for and while loops with break/continue to control repetition and flow in practical mini-projects.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Logical Thinking with Booleans",
+          "learning_goals": "Learn to use booleans, comparisons, and logical operators (and/or/not) to build compound conditions, understand short-circuit evaluation, and clearly distinguish between equality (==) and identity (is) through guided practice and experiments.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Logical operators: and/or/not and short-circuiting",
+              "learning_outcomes": "Combine comparisons with and, or, not to form compound conditions.; Show short-circuit behavior by adding prints to the right-hand side expression.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Booleans and comparisons: equality vs identity",
+              "learning_outcomes": "Use True/False in expressions and store boolean results in variables.; Differentiate between '==' (value equality) and 'is' (identity equality).",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Cafe order checker",
+              "learning_outcomes": "Practice combining comparisons with and/or/not and observe short-circuit behavior while validating simple cafe orders.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Identity vs equality tester",
+              "learning_outcomes": "Differentiate clearly between == and is by running comparison experiments and storing boolean results.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Controlling Flow with Conditions",
+          "learning_goals": "Learn to use string membership checks with `in`/`not in` inside conditional branches and to refactor nested `if/else` logic into clear, well-ordered `if/elif/else` chains. Apply these skills to practical scenarios like filtering music playlists and implementing access control rules while reinforcing understanding through live Q&A and wrap-up discussions.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "String membership with 'in' in conditions",
+              "learning_outcomes": "Test substring membership with 'in' and negate with 'not in'.; Use membership checks inside if/elif branches to drive simple decisions.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Elif and refactoring nested decisions",
+              "learning_outcomes": "Refactor a nested if/else into an equivalent if/elif/else chain.; Order conditions to avoid overlaps and unreachable branches.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Music playlist filter",
+              "learning_outcomes": "Use string membership with in/not in inside if/elif branches to filter and categorize song titles.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Access control rules",
+              "learning_outcomes": "Refactor nested access decisions into a clean if/elif/else chain with well-ordered, non-overlapping conditions.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Branching Logic and Counting Loops",
+          "learning_goals": "In this chapter, students will learn to translate decision tables into clear, mutually exclusive if/elif/else code and to verify completeness of conditions. They will also practice using for loops with range() to generate sequences, perform counting tasks, and accumulate totals.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Decision tables to branching logic",
+              "learning_outcomes": "Translate a 3–5 row decision table into clear if/elif/else code.; Verify mutual exclusivity and completeness of the conditions.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "For loops and range(): counting iterations",
+              "learning_outcomes": "Write for loops with range(stop), range(start, stop), range(start, stop, step); Accumulate a total across iterations and print the result.; Generate even/odd sequences and countdowns with range.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Shipping fee decision table",
+              "learning_outcomes": "Translate a small decision table into mutually exclusive and complete if/elif/else code for shipping fee calculation.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Step counter sequences",
+              "learning_outcomes": "Use for loops with range in different forms to generate totals, even/odd sequences, and countdowns.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Mastering While Loops and Control Flow",
+          "learning_goals": "Learn how to use while loops effectively, avoid infinite loops, and control loop execution with break and continue. Apply these skills in practical scenarios like building a number guessing game and scanning transactions with conditional stopping and skipping.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Meet the while loop",
+              "learning_outcomes": "Understand what a while loop is and when it is more suitable than for.; Understand the risk of infinite loops and explain how to prevent them.; Write a while loop to repeat actions until a condition changes.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Loop control: break and continue",
+              "learning_outcomes": "Understand when to exit a loop early with break versus letting it complete naturally.; Insert break to exit early on a condition and continue to skip an iteration.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Number guessing game",
+              "learning_outcomes": "Write a while loop that repeats user guesses until a condition changes while avoiding infinite loops.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Transaction scanner with breaks",
+              "learning_outcomes": "Control loop flow using break and continue to stop early or skip iterations while scanning a list of transactions.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment"
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "week_num": 4,
+      "learning_goal": "Strings & Lists Foundations: In this unit, students will solidify their use of decisions and loops while learning to index, slice, and transform strings, then create, mutate, iterate over, and sort lists using common methods and safe access patterns to build small, practical text-processing and data-organizing programs.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Strings, Loops, and Logic",
+          "learning_goals": "Strengthen your understanding of decisions and loops while upgrading your string skills with indexing and slicing (including negative indices). Apply these tools in hands-on projects to decode secret messages, generate usernames, and debug common logic and looping errors.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Review: decisions and loops",
+              "learning_outcomes": "Review how if/else, loops, and loop control statements work together in programs; Diagnose and fix common logic and looping errors in small code examples",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "String skills upgrade i: indexing and slicing",
+              "learning_outcomes": "Access individual characters in a string using 0-based indexing.; Use slice notation [start:stop] and [start:stop:step] to extract substrings.; Use negative indices to access characters from the end of a string.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Secret Message Decoder",
+              "learning_outcomes": "Practice using string indexing and slicing (including negative indices) plus if/else and loops to decode and transform hidden messages.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Username Generator",
+              "learning_outcomes": "Apply string slicing, step slices, and decision logic with loops to build and validate simple usernames from user input.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Strings and Lists in Action",
+          "learning_goals": "Build confidence using common string methods and lists to clean, organize, and transform text data, while practicing real-world tasks like standardizing orders and managing guest lists through interactive sessions and hands-on exercises.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "String skills upgrade ii: common methods",
+              "learning_outcomes": "Apply strip, lower, replace, and find; Split text and rejoin with delimiters; Handle whitespace and empty fields",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Lists i: creating lists",
+              "learning_outcomes": "Create lists with literals and from range(); print length with len().; Explain that lists are mutable and show a visible effect of mutation.; Understand when a list is a better choice than separate variables.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Cafe Order Cleaner",
+              "learning_outcomes": "Use string methods (strip, lower, replace, find, split, join) and whitespace handling to clean and normalize messy text orders.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Guest List Organizer",
+              "learning_outcomes": "Create and mutate lists while converting a comma-separated string of guests into a clean, structured list with appropriate transformations.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Working with Lists in Python",
+          "learning_goals": "Learn to safely access, modify, slice, and iterate over Python lists using indexing and for loops, while avoiding common errors like IndexError. Apply these skills in a practical “Daily Tasks Tracker” project and reinforce understanding through live Q&A and discussion.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Lists ii: indexing and slicing",
+              "learning_outcomes": "Access list elements by index and understand how indexing works.; Modify list elements and create sublists using slicing.; Handle out-of-range errors (IndexError) in list access.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Lists iii: mastering list iteration",
+              "learning_outcomes": "Use a for loop with range() and len() to iterate over indices and access list elements by their position.; Use a for loop to iterate directly over the values in a list and perform actions on each element.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Daily Tasks Tracker - Part 1",
+              "learning_outcomes": "Use list indexing, slicing, and safe access patterns to inspect and modify items in a task list without causing IndexError.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Daily Tasks Tracker - Part 2",
+              "learning_outcomes": "Iterate over lists by index and by value with for loops to update, filter, and display tasks based on simple conditions.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Mastering Python Lists and Sorting",
+          "learning_goals": "Learn to modify lists in place using common list methods and to create different ordered views of data using sort() and sorted(), including key and reverse parameters and the concept of sort stability.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class"
+            },
+            {
+              "title": "Lists iv: common methods",
+              "learning_outcomes": "Modify a list in place with append, insert, remove, pop, and extend.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Ordering lists: sorted() vs .sort()",
+              "learning_outcomes": "Sort a list in place with .sort() and create a sorted copy with sorted().; Use sorted() parameters ('key' and 'reverse') to customize ordering and explain stability.",
+              "time_minutes": 30,
+              "type": "Lesson"
+            },
+            {
+              "title": "Practice Lesson: Book Wishlist Manager - Part 1",
+              "learning_outcomes": "Practice modifying lists in place with append, insert, remove, pop, and extend to manage a changing wishlist.",
+              "time_minutes": 30,
+              "type": "Exercise"
+            },
+            {
+              "title": "Practice Lesson: Book Wishlist Manager - Part 2",
+              "learning_outcomes": "Use sort() and sorted() with key and reverse to produce different ordered views of a list while understanding in-place vs copied sorting.",
+              "time_minutes": 45,
+              "type": "Exercise"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

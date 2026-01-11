@@ -1,0 +1,899 @@
+{
+  "num_weeks": 4,
+  "num_chapters_per_week": 5,
+  "num_practice_sessions": 0,
+  "weeks": {
+    "5": {
+      "week_num": 5,
+      "learning_goal": "ML Thinking Basics: In this unit, students will learn to recognize when a problem calls for machine learning (vs. rule-based logic), correctly identify ML task types and their data/label structure, explain how models train and make predictions as functions from inputs to outputs, and map a complete ML workflow from raw data to deployed predictions using accurate terminology.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Choosing the Right ML Approach",
+          "learning_goals": "Learn what machine learning is (and isn’t), when to use it instead of rule-based logic, and how to match real-world problems to the correct ML task type (classification, regression, or clustering) and learning type (supervised vs. unsupervised).",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "What ML Is (and Isn’t)",
+              "learning_outcomes": "Understand machine learning in contrast to rule-based systems; Identify problems that are appropriate for ML; Distinguish ML from traditional programming logic",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "ML Task Types",
+              "learning_outcomes": "Identify the main machine learning task types: classification, regression, and clustering; Understand how these task types relate to supervised learning (classification, regression) and unsupervised learning (clustering); Match real-world problems to the correct ML task and learning type (supervised vs. unsupervised); Understand why choosing the correct task type is a critical step before selecting a model or evaluation metric",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: ML or Not ML?",
+              "learning_outcomes": "Distinguish clearly between problems suitable for rule-based solutions and those better suited for machine learning. Output: A completed worksheet where each scenario is labeled as “Rule-based” or “ML” with a short justification.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: Task Type Detective",
+              "learning_outcomes": "Correctly identify whether real-world scenarios are classification, regression, or clustering, and whether they are supervised or unsupervised learning. Output: A categorized list of scenarios mapped to ML task type and learning type with brief explanations.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Features, Labels, and Signals",
+          "learning_goals": "Learn to distinguish features from labels, recognize labeled vs. unlabeled data, and see how feature quality shapes model performance. Practice identifying features and labels in real problems and build a simple feature inventory for a recommendation scenario.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Data and Labels",
+              "learning_outcomes": "Distinguish labeled vs unlabeled data; Identify input features and target variables; Understand how labels guide supervised learning",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Features as Signals",
+              "learning_outcomes": "Define features as model inputs; Identify raw vs derived features; Understand why feature quality impacts model performance",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: Finding Features and Labels",
+              "learning_outcomes": "Accurately identify input features and labels in different datasets and problem statements. Output: A table where each problem has its features, label, and whether the data is labeled or unlabeled clearly specified.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: Feature Signals in a Recommendation App",
+              "learning_outcomes": "Differentiate between raw and derived features and explain how they might affect a simple movie recommendation scenario. Output: A feature inventory document listing raw features, derived features, and a short note on why each might be useful.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "How Models Learn and Predict",
+          "learning_goals": "Students will learn to distinguish between training and prediction, understand models as functions that map inputs to outputs, and compare rule-based systems to learned decision boundaries. They will practice labeling ML workflows and creating side-by-side comparisons of rules versus models to see when a system is “learning” versus “using knowledge.”",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Training vs Prediction",
+              "learning_outcomes": "Describe what happens during model training; Understand how trained models make predictions; Identify when a model is “learning” vs “using knowledge”",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Models as Functions",
+              "learning_outcomes": "Describe a model as a function mapping inputs to outputs; Compare simple rule logic to learned decision boundaries; Understand why models generalize instead of memorizing",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: Training vs Prediction Timeline",
+              "learning_outcomes": "Explain which steps in an ML story correspond to training and which correspond to prediction/use. Output: A labeled timeline or flow diagram separating “learning” steps from “using knowledge” steps for multiple scenarios.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: Models as Functions vs Rules",
+              "learning_outcomes": "Compare a rule-based decision process to a learned model by mapping both to the idea of “inputs → outputs.” Output: A side-by-side comparison table showing inputs, outputs, and logic for a rule-based system and an ML-style function on the same problem.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "The Machine Learning Workflow",
+          "learning_goals": "Learn how raw data moves through each stage of the machine learning workflow—from preparation and training to evaluation, deployment, and prediction—and practice using correct terminology by mapping real-world examples to each step.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "ML Workflow Overview",
+              "learning_outcomes": "Outline the full ML workflow from data to prediction; Identify where data prep, training, and evaluation fit; Use correct ML vocabulary to describe each step",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: Workflow Jigsaw - Cafe Loyalty Predictor",
+              "learning_outcomes": "Arrange and describe the main ML workflow steps for a cafe loyalty prediction story using correct vocabulary. Output: A completed ordered list or diagram of workflow steps from data collection to prediction with short explanations.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: Name the Workflow Step",
+              "learning_outcomes": "Correctly match short descriptions of ML activities to their place in the overall ML workflow (data prep, training, evaluation, deployment, prediction). Output: A matched list where each activity description is assigned to the appropriate workflow step with one-sentence reasoning.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Theory Practice Lesson: From Raw Data to Predictions Map",
+              "learning_outcomes": "Construct a high-level map of an ML project, labeling where data, features, training, evaluation, and prediction occur. Output: A one-page conceptual map (bullet list or sketch description) that traces an example project through each workflow stage in order.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "What Machine Learning Solves"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "What Machine Learning Solves"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "What Machine Learning Solves"
+            }
+          ]
+        }
+      ]
+    },
+    "6": {
+      "week_num": 6,
+      "learning_goal": "From Data to Models: In this unit, students will load and inspect tabular datasets, split data into train and test sets, handle missing values and categorical features, scale numeric data, build preprocessing pipelines, and train and interpret complete supervised models for classification and regression.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Working with Tabular Data",
+          "learning_goals": "Learn how to load, inspect, and prepare tabular datasets with pandas, and perform reliable train/test splits with scikit-learn so that model evaluations are trustworthy and well-understood.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Loading Tabular Data",
+              "learning_outcomes": "Load datasets using pandas; Inspect rows, columns, and data types; Identify feature columns and targets",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Train / Test Split",
+              "learning_outcomes": "Explain why test data must be held out; Split data using scikit-learn; Describe how splits affect evaluation trustworthiness",
+              "time_minutes": 30,
+              "type": "Assessment",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Cafe orders dataset",
+              "learning_outcomes": "Load a tabular dataset with pandas, inspect its structure (rows, columns, dtypes), and distinguish feature columns from the target. Output: A small script that loads a cafe orders CSV, prints basic info/summary, and clearly displays which columns are features and which is the target.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Movie ratings train test split",
+              "learning_outcomes": "Perform a train/test split on a movie ratings dataset and explain how different split ratios affect the trustworthiness of model evaluation. Output: A script that loads a movie ratings CSV, performs one or more train/test splits, and prints the resulting shapes and a short text explanation of the chosen split.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Preparing Data for Machine Learning",
+          "learning_goals": "Learn how to handle missing values and encode categorical features so real-world datasets can be used effectively in machine learning models, and practice these skills with health and music app data.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Handling Missing Values",
+              "learning_outcomes": "Identify missing data in datasets; Apply simple imputation strategies; Explain tradeoffs of different approaches",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Encoding Categories",
+              "learning_outcomes": "Identify categorical vs numeric features; Encode categorical variables for ML models; Explain why models require numeric inputs",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Health records missing values",
+              "learning_outcomes": "Detect and summarize missing values in a health records dataset and apply simple imputation strategies while discussing their tradeoffs. Output: A script that loads a health dataset, reports missingness per column, applies at least two imputation strategies, and prints before/after comparisons.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Music app category encoding",
+              "learning_outcomes": "Identify categorical features in a music app user dataset and encode them into numeric form suitable for ML models, explaining why this step is necessary. Output: A script that loads a music user behavior CSV, detects categorical columns, applies one or more encoders, and prints the transformed feature matrix with encoded categories.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Scaling and Pipelines in Practice",
+          "learning_goals": "Learn how and why to scale numeric features, and how to build end‑to‑end preprocessing + model pipelines that prevent data leakage. By the end, you’ll implement scaling and pipelines on real datasets to simplify your code and improve model reliability.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Scaling Numeric Features",
+              "learning_outcomes": "Explain feature scale and why it matters; Apply basic scaling techniques; Identify models sensitive to feature scale",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Pipelines: One Clean Flow",
+              "learning_outcomes": "Build a preprocessing + model pipeline; Explain how pipelines prevent data leakage; Use pipelines to simplify ML code",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: House prices scaling",
+              "learning_outcomes": "Apply feature scaling to numeric columns in a housing prices dataset and compare how different scaling methods change feature distributions. Output: A script that loads a housing CSV, scales selected numeric features using at least two scalers, and prints/plots basic statistics before and after scaling.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Loan approval pipeline",
+              "learning_outcomes": "Build a preprocessing and model pipeline for a loan approval dataset and show how it simplifies code while reducing the risk of data leakage. Output: A script that defines a scikit-learn Pipeline combining preprocessing steps and a model, fits it on training data, and evaluates it on test data with a single fit/predict flow.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "First End‑to‑End ML Models",
+          "learning_goals": "Build and evaluate complete supervised learning workflows for both classification and regression, from raw data through training to basic interpretation of predictions and metrics.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "First Complete Model",
+              "learning_outcomes": "Train a simple supervised ML model end-to-end; Generate predictions on test data; Inspect and interpret model outputs",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Email spam classifier - Part 1",
+              "learning_outcomes": "Prepare text-based email data and train a first complete supervised model, generating predictions on a held-out test set. Output: A script that loads an email spam dataset, splits it, vectorizes the text, trains a classifier, and outputs spam/not-spam predictions for the test set.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Email spam classifier - Part 2",
+              "learning_outcomes": "Inspect and interpret the outputs of the spam classifier, including basic metrics and example predictions, to understand model behavior. Output: A script that computes evaluation metrics (e.g., accuracy, precision, recall), prints a confusion matrix, and displays a few example emails with their predicted and true labels.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Practice Lesson: Taxi fare prediction",
+              "learning_outcomes": "Train an end-to-end regression model to predict taxi fares, then generate and briefly interpret numeric predictions for new rides. Output: A script that loads a taxi rides dataset, trains a regression model, and prints predicted fares for a sample of test or new ride inputs alongside their actual values where available.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "End-to-End ML in Python"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "End-to-End ML in Python"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "End-to-End ML in Python"
+            }
+          ]
+        }
+      ]
+    },
+    "7": {
+      "week_num": 7,
+      "learning_goal": "Core ML Models & Evaluation: In this unit, students will train and compare core supervised learning models (logistic regression, linear regression, decision trees, and tree-based ensembles), and evaluate them using appropriate classification and regression metrics while reasoning about overfitting, generalization, and cross-validation.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Logistic Regression in Action",
+          "learning_goals": "Learn how to build and evaluate a binary classification model using Logistic Regression, moving from predicted probabilities to class labels. Understand and apply key classification metrics—accuracy, precision, recall, F1-score, and confusion matrices—and see how metric choice changes with real-world contexts like spam detection and medical tests.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "First Supervised Model - Logistic Regression",
+              "learning_outcomes": "Explain binary classification problems; Train a Logistic Regression model end-to-end; Introduce the idea of predicted probabilities vs. predicted classes; Motivate the need for model evaluation (why accuracy alone is not enough)",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Classification Metrics",
+              "learning_outcomes": "Calculate and interpret accuracy, precision, recall, and F1-score; Read and interpret a confusion matrix; Re-evaluate the Logistic Regression model using different metrics; Discuss how metric choice depends on the problem context",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Email spam detector",
+              "learning_outcomes": "Train and evaluate a Logistic Regression model for binary classification using predicted probabilities and class labels on an email spam dataset. Output: A script that loads sample email features, trains a spam vs. not-spam model, and prints predicted probabilities and classes for new emails.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Medical test confusion matrix",
+              "learning_outcomes": "Compute and interpret accuracy, precision, recall, F1-score, and a confusion matrix for a Logistic Regression model in a medical test scenario, and explain why accuracy alone can be misleading. Output: A script that trains a disease classifier, prints its confusion matrix and classification metrics, and compares model performance under different decision thresholds.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "Predicting Prices with Regression",
+          "learning_goals": "Learn how to build and evaluate linear regression models for numeric prediction tasks, using apartment and house price data. Practice training models, interpreting errors, and comparing models with metrics like MAE, MSE, RMSE, and R².",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Linear Regression",
+              "learning_outcomes": "Explain numeric prediction tasks; Train a Linear Regression model; Interpret predictions vs. actual values; Introduce regression error intuitively (distance from the true value)",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Regression Metrics",
+              "learning_outcomes": "Calculate MAE, MSE/RMSE, and R²; Explain what each metric reveals about model errors; Compare regression models using appropriate metrics",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Apartment price predictor",
+              "learning_outcomes": "Build a Linear Regression model to predict apartment prices from features, and compare predicted vs. actual prices to understand regression error as distance from the true value. Output: A script that trains a price prediction model and prints a side-by-side table of actual vs. predicted prices with their errors.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: House price metrics dashboard",
+              "learning_outcomes": "Calculate MAE, MSE, RMSE, and R² for a Linear Regression model on house prices and use these metrics to compare two different models or feature sets. Output: A script that trains two regression models, computes all regression metrics for each, and prints a concise comparison report.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Tree Models and Ensembles",
+          "learning_goals": "Learn how decision trees and tree-based ensembles (Random Forests, Gradient Boosting) work conceptually, how they differ from linear models, and when to use them. Practice training, visualizing, and evaluating these models on realistic tasks like loan approval and customer churn prediction.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Tree-Based Models",
+              "learning_outcomes": "Explain decision trees at a conceptual level; Train a tree-based classifier; Compare linear vs. non-linear models; Discuss strengths and limitations of tree-based approaches",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Ensembles",
+              "learning_outcomes": "Introduce ensemble methods (Random Forest, Gradient Boosting) at a high level; Explain why ensembles are commonly used in practice; Build intuition for why combining models often improves performance",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Loan approval decision tree",
+              "learning_outcomes": "Train and visualize a decision tree classifier for loan approval, and compare its behavior and decision boundaries conceptually to a linear model. Output: A script that fits a decision tree to loan application data, exports a simple tree visualization or text representation, and prints example decisions for sample applicants.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Customer churn ensembles",
+              "learning_outcomes": "Train tree-based ensemble models (Random Forest and Gradient Boosting) for customer churn prediction and compare their performance and intuition to a single decision tree. Output: A script that trains a baseline decision tree, a Random Forest, and a Gradient Boosting model, then prints their evaluation metrics side by side.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "Overfitting, Generalization, and Validation",
+          "learning_goals": "Learn to recognize overfitting and underfitting by comparing train and test performance, build intuition for the bias–variance tradeoff through hands-on experiments, and use cross-validation to obtain more reliable model evaluation than a single train/test split.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Overfitting, Generalization & Validation",
+              "learning_outcomes": "Identify signs of overfitting and underfitting; Compare train vs. test performance; Explain the bias-variance tradeoff; Introduce cross-validation conceptually; Compare single train/test split vs. multiple folds",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Model overfitting quiz",
+              "learning_outcomes": "Identify overfitting, underfitting, and good generalization by analyzing given learning curves, train/test scores, and scenario descriptions in a written quiz-style exercise. Output: A completed answer sheet where each scenario is labeled as overfitting, underfitting, or well-generalized, with brief justifications.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Train vs. test performance explorer",
+              "learning_outcomes": "Experiment with model complexity (e.g., tree depth or polynomial degree) and observe how train and test performance change to build intuition for the bias-variance tradeoff. Output: A script that trains models of varying complexity, records train/test scores, and prints a small table or simple text-based summary of how performance evolves.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Practice Lesson: Cross-validation comparison",
+              "learning_outcomes": "Apply k-fold cross-validation conceptually and in code to compare a single train/test split with multiple folds, and interpret the stability of performance across folds. Output: A script that evaluates a model using one train/test split and k-fold cross-validation, then prints the fold scores, their mean, and a comparison to the single-split score.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Supervised Models & Evaluation"
+            }
+          ]
+        }
+      ]
+    },
+    "8": {
+      "week_num": 8,
+      "learning_goal": "Hyperparameters & Unsupervised ML: In this unit, students will tune and interpret model hyperparameters, distinguish supervised from unsupervised learning, apply K-Means clustering and PCA for exploration and visualization, and build small end-to-end ML projects while communicating results responsibly.",
+      "chapters": [
+        {
+          "chapter_num": 1,
+          "title": "Tuning Models and Exploring Data",
+          "learning_goals": "Learn to tune model hyperparameters responsibly, compare search strategies, and interpret results without overfitting your conclusions. Understand when to use supervised vs unsupervised learning, recognize unlabeled exploratory use cases, and clearly justify which approach fits different real-world scenarios.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Hyperparameters and Search",
+              "learning_outcomes": "Define hyperparameters vs learned parameters; Use GridSearchCV or RandomizedSearchCV; Interpret tuning results responsibly",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Unsupervised Learning",
+              "learning_outcomes": "Explain how unsupervised learning differs from supervised; Identify use cases without labels; Describe exploratory ML goals",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Practice Lesson: Hyperparameter tuning for a spam filter",
+              "learning_outcomes": "Apply GridSearchCV and RandomizedSearchCV to tune hyperparameters, compare results, and interpret them without overfitting your conclusions. Output: A script that trains a simple spam vs not-spam classifier, runs hyperparameter search, and prints the best parameters and validation scores in a readable summary.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Theory Practice Lesson: Supervised vs unsupervised scenarios",
+              "learning_outcomes": "Distinguish between supervised and unsupervised learning by matching real-world problems to the correct approach and articulating exploratory goals when labels are missing. Output: A completed written/quiz-style exercise where each scenario is classified as supervised or unsupervised with a short justification.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Supervised Models & Evaluation"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Supervised Models & Evaluation"
+            }
+          ]
+        },
+        {
+          "chapter_num": 2,
+          "title": "K-Means Clustering in Practice",
+          "learning_goals": "Learn how K-Means clustering groups data, how to choose a reasonable number of clusters, and how to interpret clusters as simple real-world segments using hands-on scripts and metrics.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "K-Means Clustering",
+              "learning_outcomes": "Explain how K-Means groups data; Train a clustering model; Interpret clusters at a high level",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Choosing Number of Clusters",
+              "learning_outcomes": "Explain the role of k; Use simple heuristics to choose cluster count; Interpret clustering tradeoffs",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Practice Lesson: Customer segments with K-Means",
+              "learning_outcomes": "Train a K-Means clustering model on synthetic customer data and interpret clusters in terms of simple customer “personas.” Output: A script that fits K-Means, assigns each customer to a cluster, and prints basic cluster summaries (e.g., average spending and visits per cluster).",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Practice Lesson: Choosing k for a music listener dataset",
+              "learning_outcomes": "Use elbow and silhouette-style heuristics to choose the number of clusters and explain tradeoffs between too few and too many clusters. Output: A script that trains K-Means for several k values, computes simple metrics, and prints/plots results to help pick a reasonable k.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Unsupervised Learning"
+            }
+          ]
+        },
+        {
+          "chapter_num": 3,
+          "title": "Making Sense of Unsupervised Results",
+          "learning_goals": "Learn how to use PCA to visualize high-dimensional data, and how to interpret unsupervised learning outputs—like PCA plots and clusters—carefully and responsibly, avoiding common over-interpretation pitfalls.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "PCA for Visualization",
+              "learning_outcomes": "Explain dimensionality reduction intuitively; Apply PCA to reduce features; Visualize high-dimensional data in 2D",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "ML Results in Context",
+              "learning_outcomes": "Avoid over-interpreting unsupervised outputs; Explain limitations of clustering and PCA; Communicate results responsibly",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Practice Lesson: PCA visualization of handwritten digits",
+              "learning_outcomes": "Apply PCA to reduce high-dimensional data to 2D and visualize how data points group in the reduced space. Output: A script that loads a digits dataset, performs PCA to 2 components, and produces a 2D scatter plot colored by digit label.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Theory Practice Lesson: Interpreting unsupervised results responsibly",
+              "learning_outcomes": "Critically evaluate clustering and PCA outputs by identifying over-interpretation risks and rewriting misleading statements into responsible conclusions. Output: A completed written/quiz-style exercise where given interpretations are marked as problematic or acceptable and revised where needed.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Unsupervised Learning"
+            }
+          ]
+        },
+        {
+          "chapter_num": 4,
+          "title": "End-to-End ML in Practice",
+          "learning_goals": "Build and evaluate complete machine learning projects from raw data to results, using pipelines, appropriate metrics, and basic tuning. Apply these skills in hands-on regression and classification exercises, and learn to explain model performance in clear, plain language.",
+          "lessons": [
+            {
+              "title": "Opening session and Q&A",
+              "learning_outcomes": "Ask questions, clarify concepts, and engage with instructors and peers in real-time.",
+              "time_minutes": 30,
+              "type": "Group Class",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "End-to-End ML Project",
+              "learning_outcomes": "Define a clear ML problem; Prepare data, train a model, and evaluate it; Use a pipeline and proper metrics",
+              "time_minutes": 30,
+              "type": "Lesson",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Practice Lesson: House price predictor - Part 1",
+              "learning_outcomes": "Frame a clear supervised ML problem, prepare a tabular dataset, and build a basic preprocessing and modeling pipeline. Output: A script that loads housing data, splits it, applies preprocessing (e.g., imputation and encoding), and fits a baseline regression model using a pipeline.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Practice Lesson: House price predictor - Part 2",
+              "learning_outcomes": "Evaluate the end-to-end model with appropriate metrics, perform simple tuning, and summarize results in plain language. Output: A script that extends Part 1 to compute evaluation metrics (e.g., RMSE), optionally tune hyperparameters, and print a concise performance report.",
+              "time_minutes": 30,
+              "type": "Exercise",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Practice Lesson: Movie recommendation classifier",
+              "learning_outcomes": "Design and implement a small end-to-end ML project that predicts whether a user will like a movie, including problem definition, data prep, modeling, and evaluation. Output: A script that takes user-movie feature data, trains a classifier, evaluates it with classification metrics, and prints predictions for a few example users.",
+              "time_minutes": 45,
+              "type": "Exercise",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Closing session",
+              "learning_outcomes": "Wrap up the day togeher with your peers and ask final questions",
+              "time_minutes": 15,
+              "type": "Group Class",
+              "original_unit": "Unsupervised Learning"
+            }
+          ]
+        },
+        {
+          "chapter_num": 5,
+          "title": "Weekly Review",
+          "learning_goals": "Review key concepts learned during the week and complete the weekly assessment.",
+          "lessons": [
+            {
+              "title": "Weekly Review Prep Session",
+              "learning_outcomes": "We'll review key concepts and prepare for the assessment",
+              "time_minutes": 45,
+              "type": "Lesson",
+              "original_unit": "Unsupervised Learning"
+            },
+            {
+              "title": "Weekly Review Assessment",
+              "learning_outcomes": "Our weekly assessment, where you will test your knowledge from the last week using practical questions and challenges",
+              "time_minutes": 135,
+              "type": "Assessment",
+              "original_unit": "Unsupervised Learning"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

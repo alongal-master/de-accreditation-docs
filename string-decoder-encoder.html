@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Text ↔ Single-String Encoder</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 24px; }
+    .grid { display: grid; gap: 16px; max-width: 1100px; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    textarea {
+      width: 1200px;
+      min-height: 460px;
+      font-family: ui-monospace, monospace;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button { padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+    .row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+    .hint { font-size: 12px; color: #555; margin-top: 6px; }
+    .status { font-size: 12px; color: #0a6; min-height: 14px; }
+  </style>
+</head>
+<body>
+
+<h2>Encode / Decode text (\\n, quotes, smart quotes)</h2>
+
+<div class="grid">
+  <div>
+    <label>Full text (multi-line)</label>
+    <textarea id="fullText"></textarea>
+    <div class="row">
+      <button onclick="encode()">Encode →</button>
+      <button onclick="copy(fullText.value)">Copy</button>
+      <button onclick="fullText.value=''">Clear</button>
+    </div>
+    <div class="hint">
+      Smart quotes ’ ‘ “ ” are normalized to ' and " before encoding.
+    </div>
+    <div id="statusLeft" class="status"></div>
+  </div>
+
+  <div>
+    <label>Encoded single string</label>
+    <textarea id="oneString"></textarea>
+    <div class="row">
+      <button onclick="decode()">← Decode</button>
+      <button onclick="copy(oneString.value)">Copy</button>
+      <button onclick="oneString.value=''">Clear</button>
+    </div>
+    <div id="statusRight" class="status"></div>
+  </div>
+</div>
+
+<script>
+  const fullText = document.getElementById("fullText");
+  const oneString = document.getElementById("oneString");
+  const statusLeft = document.getElementById("statusLeft");
+  const statusRight = document.getElementById("statusRight");
+
+  function setStatus(el, msg) {
+    el.textContent = msg;
+    setTimeout(() => el.textContent = "", 2000);
+  }
+
+  function normalizeQuotes(s) {
+    return s
+      .replace(/[‘’]/g, "'")
+      .replace(/[“”]/g, '"');
+  }
+
+  function encode() {
+    const normalized = normalizeQuotes(fullText.value)
+      .replace(/\r\n/g, "\n")
+      .replace(/\r/g, "\n");
+
+    oneString.value = normalized
+      .replace(/\\/g, "\\\\")
+      .replace(/"/g, '\\"')
+      .replace(/\n/g, "\\n");
+
+    setStatus(statusRight, "Encoded");
+  }
+
+  function decode() {
+    const s = oneString.value;
+    let out = "";
+
+    for (let i = 0; i < s.length; i++) {
+      if (s[i] !== "\\") {
+        out += s[i];
+        continue;
+      }
+      const next = s[++i];
+      if (next === "n") out += "\n";
+      else if (next === '"') out += '"';
+      else if (next === "\\") out += "\\";
+      else out += "\\" + next;
+    }
+
+    fullText.value = out;
+    setStatus(statusLeft, "Decoded");
+  }
+
+  async function copy(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      setStatus(statusLeft, "Copied");
+      setStatus(statusRight, "Copied");
+    } catch {
+      alert("Clipboard failed (use HTTPS or localhost)");
+    }
+  }
+</script>
+
+</body>
+</html>

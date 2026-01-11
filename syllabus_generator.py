@@ -24,6 +24,7 @@ from prompts import (
     get_practice_sessions_for_week_prompt,
     get_maestro_json_prompt
 )
+from xlsx_to_maestro import XLSXToMaestroConverter
 
 # Course structure constants
 NUM_OF_WEEKS = 2
@@ -1192,6 +1193,76 @@ class SyllabusGenerator:
             print(f"Error exporting Maestro JSON: {e}")
             print("Continuing with syllabus generation...")
     
+    def export_maestro_json_non_ai(self, weeks_data: Dict[int, Tuple[str, List[List[Dict[str, str]]]]], output_file: str):
+        """Export syllabus data to Maestro JSON format using non-AI converter.
+        
+        This method converts the weeks_data from syllabus_generator format to the format
+        expected by XLSXToMaestroConverter and generates the maestro JSON without AI calls.
+        
+        Args:
+            weeks_data: Dictionary mapping week_num to (learning_goal, week_lessons_with_practice)
+            output_file: Output Excel file name (used to derive maestro JSON filename)
+        """
+        # Convert weeks_data to the format expected by XLSXToMaestroConverter
+        # Format: {week_num: {'week_num': int, 'learning_goal': str, 'chapters': [...]}}
+        converter_weeks_data = {}
+        
+        # Check if this uses custom review days
+        is_custom_review_week = USE_CUSTOM_WEEKLY_REVIEW_DAYS and USE_SAME_REVIEW_FOR_ALL_WEEKS
+        
+        for week_num, (week_learning_goal, week_lessons_with_practice) in weeks_data.items():
+            # Estimate times for all lessons in this week
+            estimated_times = []
+            for chapter_lessons in week_lessons_with_practice:
+                chapter_times = [self.estimate_lesson_time(lesson, week_lessons_with_practice) for lesson in chapter_lessons]
+                estimated_times.append(chapter_times)
+            
+            week_data = {
+                'week_num': week_num,
+                'learning_goal': week_learning_goal,
+                'chapters': []
+            }
+            
+            for chapter_num, chapter_lessons in enumerate(week_lessons_with_practice, 1):
+                # Check if this is the custom review day (last chapter)
+                is_custom_review_day = is_custom_review_week and chapter_num == len(week_lessons_with_practice)
+                
+                if is_custom_review_day:
+                    chapter_title = DEFAULT_WEEKLY_REVIEW_CHAPTER_TITLE
+                    chapter_goals = DEFAULT_WEEKLY_REVIEW_CHAPTER_GOALS
+                else:
+                    # Generate chapter info using AI (same as in add_week_data)
+                    chapter_title, chapter_goals = self.generate_chapter_info(chapter_lessons, week_num, chapter_num)
+                
+                chapter_data = {
+                    'chapter_num': chapter_num,
+                    'title': chapter_title,
+                    'learning_goals': chapter_goals,
+                    'lessons': []
+                }
+                
+                # Add lessons with times
+                chapter_times = estimated_times[chapter_num - 1]
+                for lesson, time in zip(chapter_lessons, chapter_times):
+                    lesson_data = {
+                        'title': lesson['title'],
+                        'learning_outcomes': lesson['learning_outcomes'],
+                        'time_minutes': time
+                    }
+                    chapter_data['lessons'].append(lesson_data)
+                
+                week_data['chapters'].append(chapter_data)
+            
+            converter_weeks_data[week_num] = week_data
+        
+        # Determine output filename
+        base_name = output_file.replace('.xlsx', '').replace('.xls', '')
+        maestro_file = f"output/maestro_{base_name}.json"
+        
+        # Use the non-AI converter
+        converter = XLSXToMaestroConverter()
+        converter.generate_maestro_json(converter_weeks_data, maestro_file, output_file)
+    
     def generate_syllabus(self, lessons_file: str, output_file: str):
         """Generate the complete syllabus Excel file."""
         print("Reading lessons from file...")
@@ -1220,9 +1291,9 @@ class SyllabusGenerator:
         json_file = f"output/{base_name}.json"
         self.save_syllabus_json(lessons, weeks_data, 0, json_file)  # No practice sessions added
         
-        # Export to Maestro JSON format
+        # Export to Maestro JSON format (non-AI)
         if EXPORT_TO_MAESTRO_JSON:
-            self.export_maestro_json(lessons, weeks_data, output_file)
+            self.export_maestro_json_non_ai(weeks_data, output_file)
 
         # Ensure output directory exists
         os.makedirs('output', exist_ok=True)

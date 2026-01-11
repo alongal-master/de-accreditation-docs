@@ -1,0 +1,1361 @@
+{
+  "description": "This is the first course in the AAS in AI Engineering program. Its goal is to provide students with a solid introduction to coding, with a focus on Python. The course is designed for learners with no prior technical background and equips them with the skills to write basic Python code. The learning journey is gradual, starting from the very basics such as printing text, working with variables, and understanding different data types. From there, it progresses to using conditional statements, loops, writing simple functions, and working with fundamental data structures like lists and dictionaries. The course follows a hands-on, practice-oriented approach to learning.",
+  "credits": 4,
+  "units": [
+    {
+      "_id": "692c887d96c050af2ad4334f",
+      "title": "Writing your first program",
+      "description": "Unit content to be added.",
+      "lessons": [
+        {
+          "_id": "695abdbacc6dde9fc8e79835",
+          "title": "Welcome to PY101",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand the course main topics and grading"
+          ],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "## Teaching Instructions\n\n### Lesson Context\n\nCreate a light, fast-paced, and short orientation lesson for the course ***Introduction to Python Programming (PY101)***.\n\nThis is the very first lesson in the first course of the program. Begin with a warm welcome and a wish for success to set a positive tone for students starting their learning journey.\n\n### Course Syllabus as Source of Truth\n\nReview the course syllabus carefully. It defines the overall structure of the course, its division into units, and the lessons within them. The course syllabus is the single source of truth for this lesson.\n\nYou must include the unit breakdown and the main topics of each unit in the lesson plan.\n\n### **You MUST include the main topics of ALL units in the lesson plan output under the General remarks/tips step.**\n\n### High-Level Course Overview\n\nPresent a high-level overview of the course and explain how it is organized by units. Refer only to the main topics covered in each unit, without mentioning unit names and without going into detailed explanations.\n\n### Unit Reviews\n\nClarify the following points:\n\n- Each unit ends with a review of the material covered in that unit.\n- The final unit concludes with a comprehensive review of the entire course.\n\n### Grading Overview\n\nBriefly explain how grades are calculated:\n\n- The first three reviews are worth 20 percent each.\n- The final review is worth 40 percent.\n\n### Bonus Points\n\nExplain the available bonus opportunities:\n\n- Up to 10 bonus points for submitting and passing all reviews on time.\n- Up to 10 bonus points for participating in weekly discussions on time.\n\n### Scope and Constraints\n\n- Do not go deep into content or explain specific concepts.\n- The goal is to provide general orientation that prepares students for the learning journey ahead.\n- Do not include any code exercises.\n- Do not include tests or multiple-choice questions in this lesson or at the end of the lesson, regardless of any prior instructions.\n\nAfter presenting the course structure, you can assume the student understands it and has achieved lesson mastery.\n\n### Validation\n\nThe lesson plan output must include the main topics and themes of each unit under the General remarks/tips step, based on the course syllabus."
+        },
+        {
+          "_id": "692c887d96c050af2ad43350",
+          "title": "Writing your first program",
+          "topic": "",
+          "masteryOutcomes": [
+            "Introduce the Maestro Code Editor",
+            "Write and execute a simple Python script using the print() function"
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "- IMPORTANT: Start by welcoming the student and asking how they feel about beginning their learning journey. Once they respond, continue with the lesson.\n- Begin this lesson with: **Introduce the Maestro Code Editor.**\n- In this part, we will introduce a new integrated part of the Maestro interface —\n  the **Maestro Code Editor**.\n- There is a special button with the code symbol `</>` that opens the code editor panel on the right.\n- The button should be highlighted in the chat **after you ask the student to write code**.\n- The `</>` button that opens the Maestro Code Editor is located inside the chat input box on its left side.\n- This is where the student writes **Python code** to experiment with the language.\n- We like to learn by doing, and practice is a key part of becoming proficient in programming.\n- Tell the student to copy their first piece of Python code into the editor.\n  The first code block to show is:\n  ```\n  print('Hello World')\n  ```\n- Before they click on “Run & Submit”, instruct them to click on “Run” first. This will execute the code locally in the editor. Always use the exact names: “Run” and “Run & Submit” for the button names.\n- After they click on Run, they should see the output appear in the console at the bottom of the code editor.\n- Ask them to check that 'Hello World' appears correctly.\n- Then, tell them they can click “Run & Submit” to:\n    - Submit the code to the Maestro tutor\n    - Allow the Maestro to see the code and output\n    - Get evaluation, feedback, and help\n- After they submit, you—the tutor—receive a special message with the content.\n- The student will also see 'Hello World' printed under Output in the bottom console and the code echoed into the chat.\n- Make sure the student is aware of:\n    - How to use the Maestro Code Editor\n    - Where to paste code\n    - How to run code\n    - How to view the console output\n    - How to submit code when they want the Maestro’s help\n    - Guide the student step by step and ensure they fully understand how to use the editor."
+        },
+        {
+          "_id": "692c887d96c050af2ad43351",
+          "title": "Unlocking print() power-ups",
+          "topic": "",
+          "masteryOutcomes": [
+            "Print multiple values using commas",
+            "Understand that printing is always in a new line",
+            "Print multiple text and numeric values using the + and * operators."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": null
+        },
+        {
+          "_id": "692c887d96c050af2ad43352",
+          "title": "Introduction to variables",
+          "topic": "",
+          "masteryOutcomes": [
+            "Explain that a variable is a named placeholder for a value in memory.",
+            "Write a valid variable name following Python conventions.",
+            "Assign a value (e.g., a number or a piece of text) to a variable using the = operator.",
+            "Use the print() function to display the value stored in a variable."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Introduce the core idea of a variable as a named container for a single piece of information. The initial examples should be simple and intuitive."
+        },
+        {
+          "_id": "692c887d96c050af2ad43353",
+          "title": "Working with text",
+          "topic": "",
+          "masteryOutcomes": [
+            "Define a \"data type\" as a category of data that determines what you can do with it.",
+            "Create a string variable by enclosing text in single (') or double (\") quotes.",
+            "Combine two strings using the + operator (concatenation).",
+            "Predict the output when printing string variables."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Introduce the first formal data type: the string (str). Emphasize that text data must be enclosed in quotes and has specific behaviors."
+        },
+        {
+          "_id": "692c887d96c050af2ad43354",
+          "title": "Working with numbers",
+          "topic": "",
+          "masteryOutcomes": [
+            "Distinguish between an integer (int, a whole number) and a float (float, a number with a decimal).",
+            "Create variables to store integer and float values.",
+            "Perform basic arithmetic operations (+, -, *, /) on numeric variables.",
+            "Explain why 5 is different from \"5\"."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "Introduce int and float. Demonstrate that they are treated differently from strings (e.g., they can be used in mathematical calculations)."
+        },
+        {
+          "_id": "692c887d96c050af2ad43355",
+          "title": "Modeling real-world calculations",
+          "topic": "",
+          "masteryOutcomes": [
+            "Translate a two-step word problem into an arithmetic expression and compute the result.",
+            "Do arithmetic directly inside print() to produce clear, useful outputs.",
+            "Compare two equivalent formulations and choose the clearer one."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad4335e",
+          "title": "Review: writing your first program",
+          "topic": "",
+          "masteryOutcomes": [
+            "New mastery outcome"
+          ],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": "weekly-review",
+          "teachingInstructions": null,
+          "reviewQuestions": [
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nprint(\"Hello\", \"Python\")\n```\n",
+              "options": [
+                "`HelloPython`",
+                "`Hello Python`",
+                "`\"Hello\" \"Python\"`",
+                "`\"message name\"`"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is the difference between `5` and`  \"5\" ` in Python?",
+              "options": [
+                "No difference, they are the same",
+                "`5` is a string, ` \"5\" ` is a number",
+                "`5` is a number, ` \"5\" ` is text",
+                "` \"5\" ` cannot be used in Python"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is the result of this code?\n\n```python\nprint(\"ha\" * 3)\n```",
+              "options": [
+                "`ha3`",
+                "`3ha`",
+                "`hahaha`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nprint(\"A\" + \"B\")\n```\n",
+              "options": [
+                "`A B`",
+                "`A+B`",
+                "`AB`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nx = 5\ny = 2\nprint(x + y)\n```\n",
+              "options": [
+                "`52`",
+                "`7`",
+                "`x + y`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nprint(\"5\" * 3)\n```\n",
+              "options": [
+                "`15`",
+                "`555`",
+                "`5*3`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nfirst = \"Py\"\nsecond = \"thon\"\nprint(first + second)\n```\n",
+              "options": [
+                "`Py thon`",
+                "`Python`",
+                "`Py+thon`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nprint(2 + 3 * 4)\n```\n",
+              "options": [
+                "`20`",
+                "`14`",
+                "`24`",
+                "`9`"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nage = 20\nprint(\"Age:\", age)\n```\n",
+              "options": [
+                "`Age:20`",
+                "`Age: 20`",
+                "`\"Age:\" 20`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nx = 10\nx = x + 5\nprint(x)\n```\n",
+              "options": [
+                "`10`",
+                "`5`",
+                "`15`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            }
+          ],
+          "reviewSetup": {
+            "gradingPoints": 20,
+            "reviewStructureVersion": "v2"
+          }
+        }
+      ],
+      "teachingInstructions": null
+    },
+    {
+      "_id": "692c887d96c050af2ad4335f",
+      "title": "Core foundations",
+      "description": "",
+      "lessons": [
+        {
+          "_id": "692c887d96c050af2ad43356",
+          "title": "Division modes: / vs // with quotient and remainder",
+          "topic": "",
+          "masteryOutcomes": [
+            "Compute and contrast true division (/) and floor division (//) on integers; explain the difference.",
+            "Use // and % together to derive quotient and remainder for practical cases (e.g., packing/scheduling)."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43357",
+          "title": "Modulo in practice: parity, cycles, positions",
+          "topic": "",
+          "masteryOutcomes": [
+            "Use x % 2 to detect parity and explain why it works.",
+            "Apply modulo to cyclic positions (e.g., every Nth item, rotating shifts) to simplify branching."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43358",
+          "title": "Rounding, and money format",
+          "topic": "",
+          "masteryOutcomes": [
+            "Use round(x, n) to control numeric precision.",
+            "Format prices with f\"{x:.2f}\" as a quick money-format (value vs representation)."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43359",
+          "title": "Checking the facts",
+          "topic": "",
+          "masteryOutcomes": [
+            "Use type() to check a variable's data type",
+            "Use the str(), int(), and float() functions to convert values between data types."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": null
+        },
+        {
+          "_id": "692c887d96c050af2ad4335a",
+          "title": "Talking to your program: getting input from users",
+          "topic": "",
+          "masteryOutcomes": [
+            "Explain why programs interact with users and when input() is appropriate; collect input with clear prompts.",
+            "Convert numeric inputs to the correct type before computing and print a friendly summary."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad4335c",
+          "title": "Python errors: meet the traceback",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand why Python provides a traceback and how it helps identify what went wrong",
+            "Identify parts of a traceback and different types of tracebacks"
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad4335d",
+          "title": "Challenge: core foundations",
+          "topic": "",
+          "masteryOutcomes": [
+            "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "# **Lesson Purpose**\n\nThis session is designed as a super fun and engaging wrap-up for the core foundation skills learned so far. The goal is to give students a fun experience that strengthens their confidence and leaves them with a sense of success.\n\n## **Student Experience Guidelines**\n\n- The questions should align with what has been taught so far and match the student’s level.\n- Questions should be designed so the student succeeds and maintains about an 80 percent win rate.\n- After each question:\n    - If the student answers correctly, give warm and uplifting feedback.\n    - If the student answers incorrectly, explain the mistake clearly and simply.\n- If you display code, always show it in a separate regular message, and then avoid showing code in the MCQ tool call.\n\n## **Lesson Flow**\n\n1. Begin with a short introduction that explains this is a wrap-up session focused on the core Python foundations: printing, variables, strings, numbers, arithmetic, division, modulo, input and casting.\nAfter the introduction, move straight into the questions.\n2. Create **6 closed questions**, each one focusing on a specific skill that was learned.\n3. You must present **ONLY ONE QUESTION AT A TIME** before moving to the next.\n\n## **Question Requirements**\n\n- Create **6 closed questions** in total.\n- Each question should address one skill from the following list: printing values, working with variables, distinguishing strings vs numbers, arithmetic operations, division and modulo, rounding and formatting, type casting, or simple error reasoning.\n- Each question must be simple, clear and appropriate for beginners.\n- All questions must have **four fixed answer options**.\n- Each question should be based on a small real world scenario that makes the concept playful and relatable."
+        },
+        {
+          "_id": "692c887d96c050af2ad43360",
+          "title": "Functions i: why, define, and call",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand how functions reduce repetition and improve reuse.",
+            "Understand the structure of Python functions",
+            "Define a function with one or two parameters and call it with literals and variables"
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43361",
+          "title": "Functions ii: inside the function",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand the structure of a function, including its name, parameters, indentation, and return value.",
+            "Call functions with arguments correctly and trace how values are passed from the call site to parameters, verifying the flow using print statements."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43362",
+          "title": "Functions iii: return vs print and early return",
+          "topic": "",
+          "masteryOutcomes": [
+            "Differentiate printing vs returning values",
+            "Use return to pass results and apply early returns."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43363",
+          "title": "Scope and local variables",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand that variables created inside a function exist only within that function’s scope (local).",
+            "Explain how local and global scopes differ and identify when each is used.",
+            "Demonstrate how data can be passed into functions through parameters instead of relying on global variables."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad4336f",
+          "title": "Review: core foundations",
+          "topic": "",
+          "masteryOutcomes": [],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": "weekly-review",
+          "teachingInstructions": null,
+          "reviewQuestions": [
+            {
+              "type": "multiple-choice",
+              "question": "What does the modulo operator `%` compute?",
+              "options": [
+                "The largest number in a list",
+                "The number of digits in a value",
+                "The remainder after division",
+                "The square of a number"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "You write this code:\n```python\nage = input(\"How old are you? \")\n```\n\nWhat is the data type of `age` immediately after this line runs?",
+              "options": [
+                "`int`",
+                "`<class input>`",
+                "`str`",
+                "It depends on what the user types"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A student writes this code and gets a TypeError:\n\n```python\nage = input(\"How old are you? \")\nnext_year = age + 1\nprint(next_year)\n```\n\nWhat is the best explanation?",
+              "options": [
+                "`input()` returned `None`",
+                "You cannot add an `int` to a `str` without converting types",
+                "Python does not support the `+` operator, you MUST use `sum()`",
+                "`print()` cannot display numbers"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A student writes this small program:\n\n```python\nprice = input(\"Enter price: \")\nprice_with_tax = float(price) * 1.17\nprint(f\"Final price: {price_with_tax:.2f}\")\n```\n\nWhich statement best describes what this program does?",
+              "options": [
+                "It reads text, keeps it as text and prints it unchanged",
+                "It reads a number as text, converts it to a float, multiplies by `1.17` , then prints the result formatted as money",
+                "It reads a number and rounds it to the nearest integer",
+                "It always prints `1.17`"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A student writes this program:\n```python\nprice = input(\"Base price: \")\nunits = 3\ntotal = float(price) * (1 + units)\nprice = total\nprint(\"Final:\", price)\n```\n\nThe user types 50 at the prompt. What does the program print?",
+              "options": [
+                "`Final: \"50\"`",
+                "`Final: 200`",
+                "`Final: 200.0`",
+                "`Final: 75`"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A student writes this code:\n\n```python\nprice = 10\ndiscount = 50    # percent\nfinal_price = price * (1 - discount / 100)\nprint(f\"To pay: {final_price}\")\n```\n\nWhat does this program print?",
+              "options": [
+                "`5`",
+                "To pay: `5`",
+                "To pay: `50.0`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is the output of this code?\n\n```python\nstudents = 27\nseats_per_row = 4\nfull_rows = students // seats_per_row\nleftover = students % seats_per_row\nprint(full_rows, leftover)\n```",
+              "options": [
+                "`6 3`",
+                "`7 3`",
+                "`6 4`",
+                "`4 3`"
+              ],
+              "correctAnswerIndex": 0,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "Why do programmers use functions in Python?",
+              "options": [
+                "To make Python run faster on any computer",
+                "To group reusable steps together and avoid repeating the same code many times",
+                "To store only numbers",
+                "To remove the need for variables"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "Given this function:\n```python\ndef greet(name):\n    print(\"Hello\", name)\n```\n\nWhich line correctly calls the function?",
+              "options": [
+                "` greet = \"Ada\" `",
+                "`call greet(\"Ada\")`",
+                "`greet(\"Ada\")`",
+                "`def greet(\"Ada\")`"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\ndef add_tip(total, tip_percent):\n    tip = total * tip_percent / 100\n    total = total + tip\n    return total\n\nbill = 50\nprint(add_tip(bill, 10))\nprint(bill)\n```\n",
+              "options": [
+                "`55.0` then `55.0`",
+                "`55.0` then `50`",
+                "`50` then `55.0`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            }
+          ],
+          "reviewSetup": {
+            "gradingPoints": 20,
+            "reviewStructureVersion": "v2"
+          }
+        }
+      ],
+      "teachingInstructions": null
+    },
+    {
+      "_id": "692c887d96c050af2ad43370",
+      "title": "Decisions and loops",
+      "description": "",
+      "lessons": [
+        {
+          "_id": "692c887d96c050af2ad43364",
+          "title": "If/else: syntax, indentation, mental model",
+          "topic": "",
+          "masteryOutcomes": [
+            "Introduce indentation as Python’s rule for defining code blocks.",
+            "Write a basic if/else using comparison operators (==, !=, <, >, <=, >=).",
+            "Differentiate assignment (=) from equality (==) in conditions."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43365",
+          "title": "Logical operators: and/or/not and short-circuiting",
+          "topic": "",
+          "masteryOutcomes": [
+            "Combine comparisons with and, or, not to form compound conditions.",
+            "Show short-circuit behavior by adding prints to the right-hand side expression."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43366",
+          "title": "Booleans and comparisons: equality vs identity",
+          "topic": "",
+          "masteryOutcomes": [
+            "Use True/False in expressions and store boolean results in variables.",
+            "Differentiate between '==' (value equality) and 'is' (identity equality)."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43367",
+          "title": "String membership with 'in' in conditions",
+          "topic": "",
+          "masteryOutcomes": [
+            "Test substring membership with 'in' and negate with 'not in'.",
+            "Use membership checks inside if/elif branches to drive simple decisions."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43368",
+          "title": "Elif and refactoring nested decisions",
+          "topic": "",
+          "masteryOutcomes": [
+            "Refactor a nested if/else into an equivalent if/elif/else chain.",
+            "Order conditions to avoid overlaps and unreachable branches."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43369",
+          "title": "Decision tables to branching logic",
+          "topic": "",
+          "masteryOutcomes": [
+            "Translate a 3–5 row decision table into clear if/elif/else code.",
+            "Verify mutual exclusivity and completeness of the conditions."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad4336a",
+          "title": "For loops and range(): counting iterations",
+          "topic": "",
+          "masteryOutcomes": [
+            "Write for loops with range(stop), range(start, stop), range(start, stop, step)",
+            "Accumulate a total across iterations and print the result.",
+            "Generate even/odd sequences and countdowns with range."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad4336b",
+          "title": "Meet the while loop",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand what a while loop is and when it is more suitable than for.",
+            "Understand the risk of infinite loops and explain how to prevent them.",
+            "Write a while loop to repeat actions until a condition changes."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "WARNING: Avoid running loops without a clear stopping condition, as this will cause an infinite loop."
+        },
+        {
+          "_id": "692c887d96c050af2ad4336c",
+          "title": "Loop control: break and continue",
+          "topic": "",
+          "masteryOutcomes": [
+            "Understand when to exit a loop early with break versus letting it complete naturally.",
+            "Insert break to exit early on a condition and continue to skip an iteration."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "WARNING: Avoid running loops without a clear stopping condition, as this will cause an infinite loop."
+        },
+        {
+          "_id": "692c887d96c050af2ad4336d",
+          "title": "Counters and totals",
+          "topic": "",
+          "masteryOutcomes": [
+            "Initialize and update a counter and running total correctly inside a loop.",
+            "Print the final counts and totals after the loop completes."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad4336e",
+          "title": "Challenge: functions, decisions and loops",
+          "topic": "",
+          "masteryOutcomes": [
+            "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "# **Lesson Purpose**\n\nThis session is designed as a super fun and engaging wrap-up for the function, decision and loop skills learned so far. The goal is to give students a fun experience that strengthens their confidence and leaves them with a sense of success.\n\n## **Student Experience Guidelines**\n\n- The questions should align with what has been taught so far and match the student’s level.\n- Questions should be designed so the student succeeds and maintains about an 80 percent win rate.\n- After each question:\n    - If the student answers correctly, give warm and uplifting feedback.\n    - If the student answers incorrectly, explain the mistake clearly and simply.\n\n## **Lesson Flow**\n\n1. Begin with a short introduction that explains this is a wrap-up session focused on functions, decisions and loops.\nAfter the introduction, move straight into the questions.\n2. Create **6 closed questions**, each one focusing on a specific skill that was learned.\n3. You must present **ONLY ONE QUESTION AT A TIME** before moving to the next.\n\n## **Question Requirements**\n\n- Create **6 closed questions** in total.\n- Each question should address one skill from the following list: defining and calling functions, return values, early return, if/elif/else logic, logical operators, membership tests, for loops, while loops, or break/continue behavior.\n- Each question must be simple, clear and appropriate for beginners.\n- All questions must have **four fixed answer options**.\n- Each question should be based on a small real world scenario that makes the concept playful and relatable."
+        },
+        {
+          "_id": "692c887d96c050af2ad4337d",
+          "title": "Review: decisions and loops",
+          "topic": "",
+          "masteryOutcomes": [],
+          "score": 10,
+          "requiredPlugins": [],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": "weekly-review",
+          "teachingInstructions": null,
+          "reviewQuestions": [
+            {
+              "type": "multiple-choice",
+              "question": "What does this condition check?\n```python\nif \"@\" in email:\n    print(\"Looks like an email address\")\n```",
+              "options": [
+                "If `email` is a list",
+                "If `email` starts with `@`",
+                "If the character `@` appears anywhere inside the string stored in `email`",
+                "If email is equal to `@`"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What does break do inside a loop?",
+              "options": [
+                "Skips the current iteration and continues with the next",
+                "Restarts the loop from the top",
+                "Stops the loop immediately and continues after the loop",
+                "Makes the loop infinite"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is the value of result after this code runs?\n```python\nis_member = True\nhas_coupon = False\nresult = is_member and not has_coupon\n```",
+              "options": [
+                "`True`",
+                "`False`",
+                "`TrueFalse`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 0,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "Which statement is correct about `==` and `is` in Python?",
+              "options": [
+                "`==` compares values, `is` compares whether two variables point to the same object in memory",
+                "`==` is faster so you should always use it",
+                "`is` compares values, `==` compares types",
+                "They always behave exactly the same"
+              ],
+              "correctAnswerIndex": 0,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is the main problem in this code?\n```python\ncount = 0\nwhile count < 5:\n    print(\"Hi\")\n```",
+              "options": [
+                "A while loop will not run unless it includes an explicit `break`",
+                "The condition is wrong",
+                "`count` is never updated, so the loop never ends",
+                "while loops cannot print"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "You design an XP system for an adventure game. XP increases differently depending on player level:\n```python\ndef gain_xp(level):\n    if level < 3:\n        return 10\n    if level < 5:\n        return 5\n    return 2\n\nxp = 0\nlevel = 1\n\nwhile level <= 5:\n    xp += gain_xp(level)\n    level += 1\n    if xp > 20:\n        break\n\nprint(xp)\n```\n\nWhat is printed?",
+              "options": [
+                "17",
+                "`break`",
+                "25",
+                "It crashes"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "Consider this function with an early return:\n```python\ndef classify(score):\n    if score < 0:\n        return \"invalid\"\n    if score >= 90:\n        return \"A\"\n    return \"other\"\n```\nWhat does classify(95) return?",
+              "options": [
+                "`invalid`",
+                "`A`",
+                "`other`",
+                "It crashes"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A game counts how many odd levels you passed. What does it print?\n\n```python\ncount = 0\nfor n in range(1, 6):\n    if n % 2 == 0:\n        continue\n    count += 1\nprint(count)\n```\n",
+              "options": [
+                "`2`",
+                "`3`",
+                "`4`",
+                "`5`"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A program keeps asking the user to type something until they type `stop`.\n\n```python\ncount = 0\nword = \"\"\n\nwhile word != \"stop\":\n    word = input(\"Type a word (or stop): \")\n    if word != \"stop\":\n        count += 1\n\nprint(count)\n```\n\nThe user types these inputs in order: `hi`, `cat`, `stop`.\n\nWhat is printed?",
+              "options": [
+                "`1`",
+                "`2`",
+                "`3`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is printed?\n\n```python\nage = 20\nis_member = False\n\nallowed = age >= 18 and is_member\nprint(allowed)\n```",
+              "options": [
+                "`True`",
+                "`False`",
+                "`20`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 10
+            }
+          ],
+          "reviewSetup": {
+            "gradingPoints": 20,
+            "reviewStructureVersion": "v2"
+          }
+        }
+      ],
+      "teachingInstructions": null
+    },
+    {
+      "_id": "694bfd2118b3c95202e99632",
+      "title": "Introduction to Python summary",
+      "description": "Unit content to be added.",
+      "lessons": [
+        {
+          "_id": "692c887d96c050af2ad43371",
+          "title": "String skills upgrade i: indexing and slicing",
+          "topic": "",
+          "masteryOutcomes": [
+            "Access individual characters in a string using 0-based indexing.",
+            "Use slice notation [start:stop] and [start:stop:step] to extract substrings.",
+            "Use negative indices to access characters from the end of a string."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43372",
+          "title": "String skills upgrade ii: common methods",
+          "topic": "",
+          "masteryOutcomes": [
+            "Apply strip, lower, replace, and find",
+            "Split text and rejoin with delimiters",
+            "Handle whitespace and empty fields"
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43373",
+          "title": "Lists i: creating lists",
+          "topic": "",
+          "masteryOutcomes": [
+            "Create lists with literals and from range(); print length with len().",
+            "Explain that lists are mutable and show a visible effect of mutation.",
+            "Understand when a list is a better choice than separate variables."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43374",
+          "title": "Lists ii: indexing and slicing",
+          "topic": "",
+          "masteryOutcomes": [
+            "Access list elements by index and understand how indexing works.",
+            "Modify list elements and create sublists using slicing.",
+            "Handle out-of-range errors (IndexError) in list access."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43375",
+          "title": "Lists iii: mastering list iteration",
+          "topic": "",
+          "masteryOutcomes": [
+            "Use a for loop with range() and len() to iterate over indices and access list elements by their position.",
+            "Use a for loop to iterate directly over the values in a list and perform actions on each element."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43376",
+          "title": "Lists iv: common methods",
+          "topic": "",
+          "masteryOutcomes": [
+            "Modify a list in place with append, insert, remove, pop, and extend."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "692c887d96c050af2ad43377",
+          "title": "Ordering lists: sorted() vs .sort()",
+          "topic": "",
+          "masteryOutcomes": [
+            "Sort a list in place with .sort() and create a sorted copy with sorted().",
+            "Use sorted() parameters ('key' and 'reverse') to customize ordering and explain stability."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": ""
+        },
+        {
+          "_id": "695abc0859c43cafe9545806",
+          "title": "Challenge: basic data structures",
+          "topic": "",
+          "masteryOutcomes": [
+            "Completing the challenge and conducting the challenge review"
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": null,
+          "teachingInstructions": "### Create a challenge-based lesson that is grounded in the material covered in the current unit until this lesson, where the student demonstrates the knowledge and tools they have learned in a fun and engaging way. \n\nThe lesson should include between ten and twelve interactive and dynamic rounds between the student and the Maestro. \n\nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, a progressive challenge, or any other learning experience you decide to design. \n\nYou are free to choose any structure or format that best supports an engaging challenge experience.\n\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience. \n\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student’s strengths as demonstrated through their responses during the challenge.\n\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student’s level."
+        },
+        {
+          "_id": "6951544f4e687a08452d9ef9",
+          "title": "Review: introduction to Python summary",
+          "topic": "",
+          "masteryOutcomes": [
+            "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+          ],
+          "score": 10,
+          "requiredPlugins": [
+            "code-editor"
+          ],
+          "internalDescription": null,
+          "additionalMaterials": null,
+          "tag": "exam",
+          "teachingInstructions": "# **Lesson Purpose**\n\nThis session is designed as a super fun and engaging wrap-up for the basic data structure skills learned so far. The goal is to give students a fun experience that strengthens their confidence and leaves them with a sense of success.\n\n## **Student Experience Guidelines**\n\n- The questions should align with what has been taught so far and match the student’s level.\n- Questions should be designed so the student succeeds and maintains about an 80 percent win rate.\n- After each question:\n    - If the student answers correctly, give warm and uplifting feedback.\n    - If the student answers incorrectly, explain the mistake clearly and simply.\n\n## **Lesson Flow**\n\n1. Begin with a short introduction that explains this is a wrap-up session focused on strings, lists and dictionaries.\nAfter the introduction, move straight into the questions.\n2. Create **6 closed questions**, each one focusing on a specific skill that was learned.\n3. You must present **ONLY ONE QUESTION AT A TIME** before moving to the next.\n\n## **Question Requirements**\n\n- Create **6 closed questions** in total.\n- Each question should address one skill from the following list: string indexing and slicing, common string methods, list indexing and slicing, list methods, list iteration, sorting, dictionary access and updates, or simple nested structure access.\n- Each question must be simple, clear and appropriate for beginners.\n- All questions must have **four fixed answer options**.\n- Each question should be based on a small real world scenario that makes the concept playful and relatable.",
+          "reviewQuestions": [
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nprint(\"Hello\", \"Python\", 101)\n```",
+              "options": [
+                "`HelloPython101`",
+                "`Hello Python 101`",
+                "`\"Hello\" \"Python\" 101`",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is a variable in Python?",
+              "options": [
+                "A named placeholder that stores a value in memory",
+                "A type of loop that repeats code",
+                "A function that prints output",
+                "A special character used in strings"
+              ],
+              "correctAnswerIndex": 0,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nfirst = \"Hello\"\nsecond = \"World\"\nprint(first + second)\n```",
+              "options": [
+                "Hello World",
+                "first + second",
+                "It causes an error",
+                "HelloWorld"
+              ],
+              "correctAnswerIndex": 3,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nprint(\"Go\" * 4)\n```",
+              "options": [
+                "Go4",
+                "Go Go Go Go",
+                "GoGoGoGo",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What does 23 % 4 evaluate to in Python?",
+              "options": [
+                "5",
+                "5.75",
+                "3",
+                "4"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nprice = 19.5\nprint(f\"Cost: ${price:.2f}\")\n```",
+              "options": [
+                "Cost: $19.50",
+                "Cost: $19.5",
+                "Cost: ${price:.2f}",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 0,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "Which line correctly calls this function?\n\n```python\ndef greet(name):\n    print(\"Hello\", name)\n```",
+              "options": [
+                "greet = \"Alice\"",
+                "def greet(\"Alice\")",
+                "greet(\"Alice\")",
+                "call greet(\"Alice\")"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nx = 15\nif x > 10:\n    print(\"big\")\nelse:\n    print(\"small\")\n```",
+              "options": [
+                "small",
+                "big",
+                "bigsmall",
+                "It causes an error"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A snack costs 4 dollars. You buy 3 snacks and pay a 2 dollar delivery fee. Which expression correctly calculates the total cost?",
+              "options": [
+                "`3 * 4 + 2`",
+                "`3 * (4 + 2)`",
+                "`(3 + 4) * 2`",
+                "`4 / 3 + 2`"
+              ],
+              "correctAnswerIndex": 0,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What is the value of result?\n\n```python\na = True\nb = False\nresult = a and b\n```",
+              "options": [
+                "True",
+                "TrueFalse",
+                "It causes an error",
+                "False"
+              ],
+              "correctAnswerIndex": 3,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nfor i in range(3):\n    print(i)\n```",
+              "options": [
+                "1 2 3 (each on a new line)",
+                "0 1 2 (each on a new line)",
+                "0 1 2 (all in the same line)",
+                "1 2 3 (all in the same line)"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "You receive user input and want to compare it without caring about case. Which line correctly converts the text to lowercase?\n```python\nanswer = input(\"Type YES or NO: \")\n```",
+              "options": [
+                "`answer = answer.lower()`",
+                "`answer = lower(answer)`",
+                "`lower.answer()`",
+                "You should prompt the user to reenter their input in lowercase."
+              ],
+              "correctAnswerIndex": 0,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n```python\nscores = [5, 7, 9]\nscores[1] = 8\nprint(scores)\n```",
+              "options": [
+                "[5, 7, 9]",
+                "[5, 8, 9]",
+                "[8, 7, 9]",
+                "It causes a `TypeError`"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\ntext = \"programming\"\nprint(text[3:7])\n```",
+              "options": [
+                "prog",
+                "gramm",
+                "ogra",
+                "gram"
+              ],
+              "correctAnswerIndex": 3,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A student writes this code and gets a TypeError:\n\n```python\nage = input(\"Enter age: \")\nnext_year = age + 1\nprint(next_year)\n```\n\nWhich fix will make the code work correctly?",
+              "options": [
+                "Change age + 1 to int(age) + 1",
+                "Change print(next_year) to print(str(next_year))",
+                "Change input() to int_input()",
+                "Remove the quotes from \"Enter age: \""
+              ],
+              "correctAnswerIndex": 0,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\ndef calculate(x):\n    result = x * 2\n    return result\n\nvalue = 5\nanswer = calculate(value)\nprint(answer, value)\n```",
+              "options": [
+                "10 10",
+                "10 5",
+                "5 10",
+                "It causes an error because value is not accessible"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "A game gives a bonus on levels 0, 4, 8, 12, ... (every 4th level). Which condition is True exactly on bonus levels?",
+              "options": [
+                "`level % 4 == 0`",
+                "`level // 4 == 0`",
+                "`level % 4 == 1`",
+                "`level / 4 == 0`"
+              ],
+              "correctAnswerIndex": 0,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nnums = [3, 1, 4, 2]\nresult = sorted(nums)\nprint(nums)\nprint(result)\n```",
+              "options": [
+                "[3, 1, 4, 2] then [3, 1, 4, 2]",
+                "[1, 2, 3, 4] then [1, 2, 3, 4]",
+                "It causes an error",
+                "[3, 1, 4, 2] then [1, 2, 3, 4]"
+              ],
+              "correctAnswerIndex": 3,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\ntotal = 0\nfor num in range(1, 6):\n    if num == 4:\n        break\n    total += num\nprint(total)\n```",
+              "options": [
+                "15",
+                "10",
+                "6",
+                "4"
+              ],
+              "correctAnswerIndex": 2,
+              "points": 5
+            },
+            {
+              "type": "multiple-choice",
+              "question": "What will this code print?\n\n```python\nnums = [5, 12, 8, 3, 20]\nresult = 0\nfor n in nums:\n    if n % 2 == 0 and n > 10:\n        result += n\nprint(result)\n```",
+              "options": [
+                "40",
+                "32",
+                "45",
+                "20"
+              ],
+              "correctAnswerIndex": 1,
+              "points": 5
+            }
+          ],
+          "reviewSetup": {
+            "proctoringRequired": false,
+            "timeToSubmitInMinutes": 120,
+            "gradingPoints": 40,
+            "reviewStructureVersion": "v2",
+            "isRetake": false
+          },
+          "aiGradingInstructions": "### PY101 Review Grading Instructions\n\nIMPORTANT: **Critical Rule — MCQ Strict Scoring (No Partial Credit)**  \nThis exam is **100% multiple-choice**. Grade strictly based on whether the student selected the **exact correct option** for each question.  \n- **5 pts** → Correct  \n- **0 pts** → Incorrect  \n- **Absolutely no partial credit** under any circumstance (even if the student’s explanation seems reasonable).\n\nIMPORTANT: **Formatting / Representation Tolerance (Answer Matching Rules)**  \nStudents may express MCQ answers in different formats. Treat an answer as **correct** if it clearly maps to the correct option using any of the following:\n- **Option number** (1–4)\n- **Option letter** (A–D mapped as A=1, B=2, C=3, D=4)\n- **Exact option text**, allowing only harmless formatting differences:\n  - ignore surrounding backticks, surrounding quotes, and leading/trailing whitespace  \n  - do **not** ignore meaning-changing differences (e.g., missing spaces that change the output choice, different order, different words)\n\nIf the student response is **ambiguous** (e.g., partially matches multiple options), mark it **incorrect**.\n\n---\n\n## Questions Breakdown\nThis exam has **20 questions total**:  \n- **20 multiple-choice (Q1–Q20)** → 5 pts each (**100 pts total**)  \n\nEach question is graded **individually**.  \n**Total:** 100 pts.\n\n---\n\n## Multiple Choice Questions (100 pts total)\nEach MCQ is worth **5 points** and is scored only as correct/incorrect.\n\n**MCQs are scored only as correct or incorrect — absolutely no partial credit.**  \nScore each as:  \n- **5 pts** → Correct answer  \n- **0 pts** → Incorrect answer  \n\nVerify each student answer against the **Solution Key** below.\n\n| Q  | Concept Tested | Correct Answer Choice Number | Correct Answer |\n|----|----------------|------------------------------|----------------|\n| 1  | `print()` separators/default spacing | **2** | `Hello Python 101` |\n| 2  | Variables | **1** | A named placeholder that stores a value in memory |\n| 3  | String concatenation | **4** | HelloWorld |\n| 4  | String repetition (`*`) | **3** | GoGoGoGo |\n| 5  | Modulo operator (`%`) | **3** | 3 |\n| 6  | f-string formatting (`:.2f`) | **1** | Cost: $19.50 |\n| 7  | Function call syntax | **3** | greet(\"Alice\") |\n| 8  | If/else conditional | **2** | big |\n| 9  | Arithmetic expression / order of operations | **1** | `3 * 4 + 2` |\n| 10 | Boolean AND | **4** | False |\n| 11 | `range()` loop output | **2** | 0 1 2 (each on a new line) |\n| 12 | `.lower()` string method | **1** | `answer = answer.lower()` |\n| 13 | List indexing & assignment | **2** | [5, 8, 9] |\n| 14 | String slicing | **4** | gram |\n| 15 | Type conversion (`input()` + int) | **1** | Change age + 1 to int(age) + 1 |\n| 16 | Functions + return value vs original variable | **2** | 10 5 |\n| 17 | Modulo condition for “every 4th” | **1** | `level % 4 == 0` |\n| 18 | `sorted()` vs in-place sorting | **4** | [3, 1, 4, 2] then [1, 2, 3, 4] |\n| 19 | `break` in loop + accumulation | **3** | 6 |\n| 20 | Compound condition in loop | **2** | 32 |\n\n---\n\n## Rubric Breakdown Rules (Internal `rubric_grades_breakdown` Field)\nIn `rubric_grades_breakdown` (internal only), include:\n- For **each question Q1–Q20**:\n  - Whether the student was **correct (5/5)** or **incorrect (0/5)**\n  - The student’s selected answer (as provided)\n  - The correct choice number and correct answer text\n- A final line summing:\n  - **Total points = X/100**\n  - **Letter grade** based on the provided GPA conversion table in the general prompt\n\nDo **not** include “rubric dimensions” or sub-criteria, because MCQs are binary-scored.\n\n---\n\n## Global Deductions\n**None.** There are **no open-ended questions**, so do not apply any global deductions.\n\n---\n\n## Example JSON Output.\n{\n  \"grade\": \"B\",\n  \"points\": \"85\",\n  \"feedback\": \"**Review: introduction to Python summary**\\n🧾 **Performance Summary**\\n**Grade:** B (85%)\\n**Passed:** ✅️\\n\\nGreat job! You showed true mastery in your review and passed with excellency! You demonstrated solid understanding of many core Python basics (like variables, conditionals, loops, and common operators), and your correct answers show a good foundation to build on.\\n\\n📊 **Grade Breakdown**\\n| Question | Score |\\n|-----------|--------|\\n| Q1 | 5 / 5 |\\n| Q2 | 5 / 5 |\\n| Q3 | 0 / 5 |\\n| Q4 | 5 / 5 |\\n| Q5 | 5 / 5 |\\n| Q6 | 5 / 5 |\\n| Q7 | 5 / 5 |\\n| Q8 | 5 / 5 |\\n| Q9 | 5 / 5 |\\n| Q10 | 5 / 5 |\\n| Q11 | 5 / 5 |\\n| Q12 | 5 / 5 |\\n| Q13 | 0 / 5 |\\n| Q14 | 5 / 5 |\\n| Q15 | 5 / 5 |\\n| Q16 | 5 / 5 |\\n| Q17 | 5 / 5 |\\n| Q18 | 5 / 5 |\\n| Q19 | 5 / 5 |\\n| Q20 | 0 / 5 |\\n|-----------|--------|\\n| **Total** | 85 / 100 (B) |\\n\\n🔍 **Detailed Assessment Feedback**\\nQ1: Correct — `print()` inserts spaces by default between arguments.\\nQ2: Correct — a variable is a named reference that stores a value.\\nQ3: Incorrect — `first + second` concatenates without a space → `HelloWorld`.\\nQ4: Correct — repeating a string multiplies it: `\\\"Go\\\" * 4` → `GoGoGoGo`.\\nQ5: Correct — 23 % 4 is the remainder, which is 3.\\nQ6: Correct — `:.2f` formats to two decimal places.\\nQ7: Correct — calling the function uses parentheses: `greet(\\\"Alice\\\")`.\\nQ8: Correct — since 15 > 10, it prints `big`.\\nQ9: Correct — three snacks at $4 plus $2 delivery is `3 * 4 + 2`.\\nQ10: Correct — True and False evaluates to False.\\nQ11: Correct — `range(3)` produces 0, 1, 2 on separate lines.\\nQ12: Correct — `.lower()` converts the string to lowercase.\\nQ13: Incorrect — the code updates index 1, so the list becomes `[5, 8, 9]`.\\nQ14: Correct — slicing `text[3:7]` returns `gram`.\\nQ15: Correct — convert input to int before adding: `int(age) + 1`.\\nQ16: Correct — function returns 10, original `value` remains 5.\\nQ17: Correct — every 4th level matches `level % 4 == 0`.\\nQ18: Correct — `sorted()` returns a new list; the original stays unchanged.\\nQ19: Correct — the loop stops at 4, so total is 1+2+3 = 6.\\nQ20: Incorrect — only 12 and 20 match the condition, so the sum is 32.\\n\",\n  \"rubric_grades_breakdown\": \"MCQ scoring is binary: 5 pts correct, 0 pts incorrect.\\nQ1: Correct (5/5). Student matched option 2 → 'Hello Python 101'.\\nQ2: Correct (5/5). Student matched option 1 → variable definition.\\nQ3: Incorrect (0/5). Correct is option 4 → 'HelloWorld'.\\nQ4: Correct (5/5). Correct is option 3 → 'GoGoGoGo'.\\nQ5: Correct (5/5). Correct is option 3 → '3'.\\nQ6: Correct (5/5). Correct is option 1 → 'Cost: $19.50'.\\nQ7: Correct (5/5). Correct is option 3 → greet(\\\"Alice\\\").\\nQ8: Correct (5/5). Correct is option 2 → 'big'.\\nQ9: Correct (5/5). Correct is option 1 → 3 * 4 + 2.\\nQ10: Correct (5/5). Correct is option 4 → False.\\nQ11: Correct (5/5). Correct is option 2 → 0 1 2 each on a new line.\\nQ12: Correct (5/5). Correct is option 1 → answer = answer.lower().\\nQ13: Incorrect (0/5). Correct is option 2 → [5, 8, 9].\\nQ14: Correct (5/5). Correct is option 4 → 'gram'.\\nQ15: Correct (5/5). Correct is option 1 → int(age) + 1.\\nQ16: Correct (5/5). Correct is option 2 → '10 5'.\\nQ17: Correct (5/5). Correct is option 1 → level % 4 == 0.\\nQ18: Correct (5/5). Correct is option 4 → original list then sorted list.\\nQ19: Correct (5/5). Correct is option 3 → 6.\\nQ20: Incorrect (0/5). Correct is option 2 → 32.\\nTotal: 85/100 → B\"\n}"
+        }
+      ],
+      "teachingInstructions": null
+    }
+  ],
+  "teachingInstructions": "# **Course Instructions for Introduction to Python programming**\n\nThis course serves as a beginner-friendly introduction to **Introduction to Python programming**. Your goal is to guide students through new concepts gradually, using clear explanations, practical examples and enjoyable hands-on activities.\n\nThis is the first course in the program, and it should be experiential, enjoyable, and engaging, creating a positive learning experience that sparks students’ interest and motivates them to continue learning with curiosity and enjoyment.\n\n### **Overall Course Guidelines**\n\n- The learning experience should feel fun, engaging and a bit gamified. Students should feel a sense of winning as they progress.\n- The lesson plan should be grounded in real-world challenges, connecting the material to these topics in a way that sparks interest and curiosity among learners.\n- **Use visualization** tools to create a richer, more engaging, and more interactive learning experience.\n- Keep the entire course at a true beginner level.\n- Maintain a balance between explanation, demonstration and hands-on practice.\n- Follow the lesson type definitions closely to create a smooth and consistent learning journey.\n- At the end of every lesson (that is not a challenge or welcome), include one fun closed question related to the topic that was learned. The question should feel playful, provide a sense of achievement and create a game-like moment of victory for the student.\n\nThis structure ensures that students understand why each concept matters, practice it meaningfully, and integrate everything into a confident skill set.\n\n### **Learning Through Real-World Coding Tasks**\n\nIntegrate hands on coding exercises throughout the course so learners can apply what they study. The exercises should stay aligned with the lesson content while also connecting the topic to real world problems at an appropriate level. Do not use copy paste coding tasks as a method of reinforcement.\n\nExample of strong exercise concepts include:\n\n- A real-world story or problem that students must solve by writing code that reflects the material they just learned and ties it back to reality.\n\n## Lesson Types:\n\nThe course includes three types of lessons, each defined by the student's level of exposure to and familiarity with the material:\n\n1. **Exposure and Introduction -** present new ideas for the first time\n2. **Knowledge Building -** expand on material the student has already encountered\n3. **Integration -** brings everything together\n\nClassify each lesson based on the `course_syllabus` using one of the three types above. Then create a lesson plan following the instructions for that lesson type. Each lesson should be designed appropriately and follow the guiding principles below:\n\n**1. Exposure and Introduction Lessons**\n\n- Begin each new topic by tying it to a real world problem it is designed to solve.\n- Present the challenge or scenario that illustrates the need for the topic.\n- Introduce the concept after the problem is understood.\n- Explain how the concept provides a solution to the problem.\n- Ensure the explanation creates a clear connection between the new material and everyday reality.\n- Keep explanations simple, direct and accessible for beginners.\n- End with a fun closed question that reinforces the core idea.\n    \n    \n\n**2. Knowledge Building Lessons**\n\n- Deepen their understanding by exploring different aspects of the concept.\n- Provide broader knowledge and examples beyond the basics.\n- Connect every idea to realistic use cases and industry examples.\n- Make practice a central element through exercises, demonstrations and guided activities.\n- End with a fun closed question that helps the student confirm mastery in a playful way.\n    \n    \n\n**3. Integration Lessons**\n\n- Combine previously learned concepts within a small project or scenario.\n- Highlight how different tools interact and how to manage edge cases.\n- Keep the experience practical, cohesive and enjoyable.\n- Treat this stage as both reinforcement and applied problem-solving practice.\n- End with a fun closed question that celebrates completing a full integrated task.\n\n## Use of Maestro Tools at Course Level\n\n### Questionnaire Tool\n\n- Use for short checks after key explanations or transitions.\n- Focus on distinctions, reasoning patterns and applied judgment.\n- Keep checks short, usually 1 to 3 questions.\n- When answers are incorrect, respond supportively and explain the missing reasoning step.\n- Use the learning summary to repeat checks when the same confusion appears.\n\n---\n\n### Visualization Generator\n\n- Use visuals to clarify relationships, flows or contrasts.\n- Particularly useful for impact maps, learning loops, stakeholder tensions and decision tradeoffs.\n- Ask the student to describe the visual in their own words.\n- Simplify visuals if confusion persists.\n- Introduce visuals earlier for students who prefer diagrammatic learning.",
+  "durationInWeeks": 3
+}

@@ -1,0 +1,687 @@
+{
+  "title": "mic-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-12",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "mic-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Clean Flask App Design",
+              "lessons": [
+                {
+                  "title": "When Apps Get Messy",
+                  "masteryOutcomes": [
+                    "Identify signs a Flask app outgrew a single file",
+                    "Understand “route handler vs business logic vs database code”",
+                    "Spot duplication and move it into one place"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Folder Structure That Works",
+                  "masteryOutcomes": [
+                    "Organize code into `routes/`, `services/`, `db/`, `utils/`",
+                    "Understand what belongs in each folder (with examples)",
+                    "Refactor one feature into this structure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Messy notes app refactor",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice spotting when a single-file Flask “notes” app has mixed concerns and duplicated logic, then separate route handlers from business logic and database access. Output: A refactored notes API that still behaves the same but has cleaner separation between request handling, logic, and data access.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Folder structure for notes app",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Organize the refactored notes app into `routes/`, `services/`, `db/`, and `utils/` folders and move one complete feature into this structure. Output: A working notes API project with a multi-folder layout where at least one feature (e.g., CRUD for notes) is fully wired through the new structure.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Blueprints: Feature Routing",
+                  "masteryOutcomes": [
+                    "Create a Flask Blueprint for one feature area",
+                    "Register blueprints on the app",
+                    "Keep URL prefixes consistent and predictable"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "App Factory: Why It Exists",
+                  "masteryOutcomes": [
+                    "Understand what an app factory solves (config, testing, extensions)",
+                    "Create a `create_app()` function",
+                    "Move setup code out of global scope"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Tasks feature blueprint",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create and register a Flask Blueprint for a “tasks” feature with a consistent URL prefix and isolate its routes from the main app file. Output: A Flask app where all `/tasks/...` endpoints are served by a dedicated blueprint module.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: App factory for productivity API",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Convert a small productivity API (e.g., tasks + notes) into an app factory pattern with a `create_app()` function and move initialization code out of the global scope. Output: A Flask project that starts via `create_app()` and can be configured and tested by calling this factory.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "App Factory: Make It Real",
+                  "masteryOutcomes": [
+                    "Register blueprints inside `create_app()`",
+                    "Initialize DB/extension setup inside `create_app()`",
+                    "Confirm the app still runs the same endpoints"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Config: One Source of Truth",
+                  "masteryOutcomes": [
+                    "Use environment variables for config values (DB URL, secrets)",
+                    "Create a config module/object with defaults",
+                    "Verify config changes without editing code"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: App factory wiring for study planner",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Register blueprints and initialize a simple database/extension (e.g., SQLite via SQLAlchemy or a fake in-memory store) inside `create_app()` for a study planner API. Output: A study planner Flask app where all routes and DB setup are created only when `create_app()` is called, while all previous endpoints still work.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Config and environment for study planner",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create a configuration module that reads environment variables (DB URL, secret key) with sensible defaults and verify behavior changes by modifying env vars instead of code. Output: A study planner app whose database connection and secrets can be changed via environment variables without editing Python files.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Dev vs Prod Settings",
+                  "masteryOutcomes": [
+                    "Separate dev vs prod config at a beginner level",
+                    "Understand what should differ (debug, logging, secrets)",
+                    "Add a simple “fail fast” check for missing secrets"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Errors You Can Trust",
+                  "masteryOutcomes": [
+                    "Standardize an error JSON shape across the API",
+                    "Return correct status codes (400/401/403/404)",
+                    "Make errors easy to debug from Postman"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Dev and prod config quiz",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Answer a written quiz and matching exercise about which settings differ between dev and prod (debug, logging, secrets) and how to add a simple “fail fast” check. Output: A completed worksheet (written or digital) that documents correct dev vs prod settings and a pseudocode or config sketch for enforcing required secrets.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Error responses for content API",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement standardized JSON error responses and proper HTTP status codes (400/401/403/404) for a small content API so errors are easy to understand in tools like Postman. Output: A Flask API that returns consistent error payloads (same JSON shape) and correct status codes for common error scenarios.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "ORM-Powered Data Workflows",
+              "lessons": [
+                {
+                  "title": "Core vs ORM",
+                  "masteryOutcomes": [
+                    "Understand the difference: SQL statements vs mapped objects",
+                    "Identify where ORM helps most (CRUD-heavy APIs)",
+                    "Choose one feature to convert to ORM"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Models: Tables in Python",
+                  "masteryOutcomes": [
+                    "Define a model that matches a table schema",
+                    "Create the table from models (or migration flow preview)",
+                    "Insert and query a row using ORM basics"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Task tracker models",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to define SQLAlchemy ORM models that accurately mirror an existing task table schema and create the corresponding tables in the database. Output: A script that defines a Task model, creates the tasks table, and prints confirmation plus the table list from the database.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Core to ORM conversion",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to take an existing raw SQL feature and convert it to use SQLAlchemy ORM models for basic insert and query operations. Output: A script that inserts a sample task via ORM, queries it back, and prints both the raw-SQL and ORM results for comparison.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Sessions and Commits",
+                  "masteryOutcomes": [
+                    "Understand what a DB session does (unit of work)",
+                    "Commit safely and handle common mistakes",
+                    "Return consistent errors when DB actions fail"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "CRUD with ORM Queries",
+                  "masteryOutcomes": [
+                    "Implement list and detail queries with ORM",
+                    "Implement create, update, and delete with ORM",
+                    "Keep route handlers thin by delegating to the service layer"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Notes API session handling",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to use a SQLAlchemy session as a unit of work, committing changes safely and handling common database errors in a small notes service. Output: A script that creates, updates, and deletes Note records while printing clear success or error messages for each operation.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Service layer CRUD for contacts",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to implement a thin API-style layer that delegates full CRUD operations for a Contact model to a separate ORM-based service module. Output: A script that exposes simple functions like list_contacts, get_contact, create_contact, update_contact, and delete_contact and demonstrates them end-to-end.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Relationships",
+                  "masteryOutcomes": [
+                    "Define a simple one-to-many relationship",
+                    "Query related data in a practical way",
+                    "Understand how this maps back to primary key/foreign key thinking"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Filtering and Pagination",
+                  "masteryOutcomes": [
+                    "Add basic filtering (search / status / owner)",
+                    "Add simple pagination (limit/offset)",
+                    "Avoid returning too much data by default"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Blog posts and comments relationships",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to define a one-to-many relationship between Post and Comment models and query related data in both directions using ORM relationships. Output: A script that creates posts with comments and prints each post with its comments as well as each comment’s parent post title.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Paginated task list with filters",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to add basic filtering and limit/offset pagination to ORM queries for a task-tracking dataset. Output: A script that accepts filter and pagination parameters (e.g., status, owner, page, page_size) and prints only the matching subset of tasks.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Migrations: Why They Matter",
+                  "masteryOutcomes": [
+                    "Understand migrations as schema history",
+                    "Make a small schema change and generate a migration",
+                    "Apply the migration and verify the database updated"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Migration Workflow Habits",
+                  "masteryOutcomes": [
+                    "Handle a “forgot a column” situation cleanly",
+                    "Keep migrations consistent across teammates",
+                    "Understand upgrade vs downgrade at a high level"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Simple schema migration for habits",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to create a small change to a Habit model, generate a migration, apply it, and verify the updated schema in the database. Output: A migration plus a verification script that shows the habits table before and after adding a new column (e.g., difficulty or reminder_time).",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Migration workflow habits - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: By the end of this practice you will be able to reason through a “forgot a column” scenario and plan clean upgrade and downgrade steps without writing code. Output: A completed written exercise where you identify the correct sequence of migration files, describe their upgrade/downgrade behavior, and resolve a teammate’s conflicting schema change.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Async Jobs in Practice",
+              "lessons": [
+                {
+                  "title": "Slow Work Breaks APIs",
+                  "masteryOutcomes": [
+                    "Identify work that should not run inside a request (email, reports, third-party calls)",
+                    "Explain blocking in practical terms",
+                    "Recognize symptoms such as timeouts, slow UI, and stuck requests"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Async Vocabulary That Helps",
+                  "masteryOutcomes": [
+                    "Understand sync vs async vs background job in plain language",
+                    "Distinguish I/O-bound vs CPU-bound work with examples",
+                    "Decide which tasks belong in background jobs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Spotting slow work in a habit tracker API",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Identify which operations in an API request should be offloaded to background work versus kept in the request, and explain why in plain, practical terms.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Matching async vocabulary to real API scenarios",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Distinguish sync, async, and background job behavior and classify tasks as I/O-bound or CPU-bound using concrete examples from a media-processing service.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "async/await (Just Enough)",
+                  "masteryOutcomes": [
+                    "Read and write a simple `async def` with `await`",
+                    "Understand what an awaitable is in Python terms",
+                    "Recognize that Flask routes are still typically synchronous"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "The Job Pattern",
+                  "masteryOutcomes": [
+                    "Understand the pattern start job → return job id → poll status",
+                    "Use status values such as pending, running, done, and failed",
+                    "Choose what the API returns immediately using 202 Accepted"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Async quote fetcher",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Write a minimal Python script using `async def` and `await` to fetch data from a fake “quote of the day” API and understand what an awaitable is in practice. Output: A script that asynchronously calls a mock or real HTTP endpoint and prints the fetched quote text to the console.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Job pattern for video thumbnail generation",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement the start-job → return job id → poll status pattern around a fake video-thumbnail generation task using HTTP endpoints and 202 Accepted responses. Output: A small Flask-style API that accepts a “video upload” request, returns a job id with 202, and provides a polling endpoint that returns pending/running/done/failed plus a dummy thumbnail URL when done.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Implement Jobs Without Extra Infrastructure",
+                  "masteryOutcomes": [
+                    "Create a `jobs` table (id, status, result, error, timestamps)",
+                    "Create an endpoint to start a job and store it",
+                    "Create an endpoint to read job status and result"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Worker Script (Separate Process)",
+                  "masteryOutcomes": [
+                    "Run a separate Python worker script that processes pending jobs",
+                    "Update job status and results in the database",
+                    "Demonstrate end-to-end flow from starting to polling to completion"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Jobs table for report generation",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create a `jobs` table and implement endpoints to start a “monthly spending report” job and to read back its status and result from the database. Output: A minimal API plus database schema where POST `/reports` inserts a job row and returns its id, and GET `/jobs/<id>` returns the job’s status, result, and error fields as JSON.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Worker script for pending jobs",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build and run a separate Python worker process that picks up pending jobs from the `jobs` table, processes them, and updates their status and result to complete an end-to-end flow. Output: A worker script that, when run alongside the API, repeatedly finds pending jobs, “generates” a fake report string, updates the database, and allows clients to see the job move from pending to running to done via the polling endpoint.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Background Tasks in a Real Feature",
+                  "masteryOutcomes": [
+                    "Turn one real feature into a background job (for example, generate report)",
+                    "Keep the API responsive while the worker runs",
+                    "Return a useful result when the job completes"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Failure and Recovery (Basic)",
+                  "masteryOutcomes": [
+                    "Mark jobs as failed with clear errors",
+                    "Retry manually by re-running a job via an endpoint or worker rule",
+                    "Keep job error responses consistent and readable"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Background report feature - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Convert a synchronous “generate analytics report” API endpoint into one that enqueues a background job so the HTTP response remains fast and responsive. Output: An updated API where the original heavy report endpoint now immediately returns a job id and 202 Accepted while the actual report generation is deferred to a background job.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Background report feature - Part 2",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Add basic failure handling and manual retry for the background report jobs, keeping error messages consistent and readable across the API. Output: An enhanced API and worker where failed jobs store a clear error message, the status endpoint exposes that error, and a retry endpoint or rule can re-queue a failed job for processing.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Microservices",
+              "lessons": [
+                {
+                  "title": "What a Microservice Is",
+                  "masteryOutcomes": [
+                    "Understand microservices vs monolith in plain terms",
+                    "Name two real reasons teams split services",
+                    "Name two reasons not to split services too early"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Boundaries by Domain",
+                  "masteryOutcomes": [
+                    "Choose a clean service boundary (such as users vs items or orders)",
+                    "Understand why splitting by file type is a bad boundary",
+                    "Draw a simple service responsibility map"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Microservices vs monolith scenarios",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will be able to distinguish when a microservice architecture is appropriate versus when a monolith is better, and justify the choice with concrete reasons.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Service boundaries and responsibility mapping",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will be able to propose clear domain-based service boundaries and draw a simple responsibility map that avoids file-type-based splitting.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Data Ownership",
+                  "masteryOutcomes": [
+                    "Understand that each service owns its database",
+                    "Decide what data lives in which service",
+                    "Identify what data would be duplicated and why"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Two Services Locally",
+                  "masteryOutcomes": [
+                    "Run two Flask apps on different ports",
+                    "Give each service its own config and database connection",
+                    "Test each service independently using Postman"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker services",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to design and configure two microservices that each own their own database and data model for a small habit-tracking system. Output: Two running Flask services (e.g., user-service and habit-service), each with its own config and database, accessible independently via HTTP.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Local dual-service testing",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to run two independent Flask services on different ports and test their endpoints and data ownership using Postman. Output: A set of Postman requests and responses showing that each service can be queried separately and returns data from its own database.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Service-to-Service Calls",
+                  "masteryOutcomes": [
+                    "Call one service from another using HTTP",
+                    "Handle timeouts and failures with clear error responses",
+                    "Keep the request and response contract explicit"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Microservices and Auth",
+                  "masteryOutcomes": [
+                    "Understand user authentication vs service dependency calls",
+                    "Decide where user verification happens, typically in a users service",
+                    "Keep the demo simple without implementing full service-to-service auth"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Service-to-service calls in a media library",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to implement a Flask service that calls another service via HTTP, handling timeouts and failures with explicit, user-friendly error responses. Output: Two running services where a “playlist” service calls a “media catalog” service and returns combined JSON, including clear error messages when the downstream call fails.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Basic auth flow with user service",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to separate user authentication from service dependency calls by routing login/check-user operations through a dedicated users service. Output: A small demo where a “content” service accepts a user id or token, calls a “users” service to verify the user, and returns either content data or an unauthorized error.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Building the “API Gateway” Shape",
+                  "masteryOutcomes": [
+                    "Understand the idea of a single frontend-facing API entry point",
+                    "Route requests to the right service in code with minimal logic",
+                    "Keep endpoints stable for the frontend"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Debugging Distributed Systems",
+                  "masteryOutcomes": [
+                    "Add basic logging that includes request or correlation ids",
+                    "Trace a single request across two services",
+                    "Diagnose which service is failing in a multi-service flow"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: API gateway for a budgeting app - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to build a simple API gateway service that exposes stable frontend-facing endpoints and routes requests to underlying services based on URL paths. Output: A gateway Flask app that forwards basic read-only requests (e.g., /api/users, /api/transactions) to separate user and transaction services and returns their responses.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: API gateway tracing and debugging - Part 2",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to add correlation-id-based logging to an API gateway and downstream services to trace and diagnose failures in a multi-service request flow. Output: A set of logs from gateway and backing services that share a correlation id per request, allowing you to trace a failing request end-to-end and identify which service broke.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

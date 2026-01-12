@@ -1,0 +1,697 @@
+{
+  "title": "cs102-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-12",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "cs102-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Arrays and Data Structures",
+              "lessons": [
+                {
+                  "title": "Welcome to CS102",
+                  "masteryOutcomes": [
+                    "Overview of the course structure",
+                    "Understand what data structures and algorithms are about",
+                    "Learn how the course progresses across units"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "What Is a Data Structure?",
+                  "masteryOutcomes": [
+                    "Explain the purpose of data structures for organizing and managing data",
+                    "Describe why different data structures are necessary"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Index-Based Data Structures",
+                  "masteryOutcomes": [
+                    "Explain indexing and sequential access",
+                    "Understand how positions map to stored values"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Data structures foundations",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Demonstrate understanding of what data structures are, why different ones exist, and how index-based access works conceptually.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Understanding Arrays",
+                  "masteryOutcomes": [
+                    "Identify arrays as ordered collections with fixed positions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Accessing Elements in Arrays",
+                  "masteryOutcomes": [
+                    "Explain how indices map to element locations",
+                    "Validate index boundaries and detect out-of-range access",
+                    "Add new elements to an existing array"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Updating and Replacing Array Values",
+                  "masteryOutcomes": [
+                    "Modify elements at specific indices",
+                    "Replace first, middle, and last elements",
+                    "Evaluate the effect of in-place updates"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Study planner array",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply array concepts to create, access, and update a list of planned study sessions using index-based operations. Output: A simple script that creates an array of study tasks, safely accesses elements by index, updates specific positions, and prints the final updated plan.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Removing Elements from Arrays",
+                  "masteryOutcomes": [
+                    "Remove elements using operations like `pop`",
+                    "Predict how removal affects index positions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Basic Array Operations",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of basic array manipulation"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Combined Array Operations in Sequence",
+                  "masteryOutcomes": [
+                    "Execute access, update, and remove operations in order",
+                    "Return multiple values from array manipulation"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Media playlist manager",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use combined array operations to access, update, remove, and return elements in sequence within a playlist-like structure. Output: A script that manages a playlist array by updating tracks, popping/removing items, and printing both removed tracks and the final playlist state.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Using Arrays for Structured Problem Solving",
+                  "masteryOutcomes": [
+                    "Break problems into steps using array operations",
+                    "Translate requirements into index-based actions",
+                    "Design input and output structures"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introducing High-Dimensional Arrays",
+                  "masteryOutcomes": [
+                    "Describe what high-dimensional arrays are",
+                    "Identify real-world use cases for nested data"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Implementing High-Dimensional Arrays in Python",
+                  "masteryOutcomes": [
+                    "Create and access nested lists using multiple indices",
+                    "Modify elements while preserving structure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Weekly habit tracker grid",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use 2D (high-dimensional) arrays to design, access, and modify a simple weekly habit-tracking grid. Output: A script that builds a nested list for days and habits, updates completion status via indices, and prints the resulting structured habit-tracking table.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Stacks and Queues",
+              "lessons": [
+                {
+                  "title": "What Is LIFO?",
+                  "masteryOutcomes": [
+                    "Define the LIFO principle",
+                    "Identify real-world LIFO examples"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introduce the Stack",
+                  "masteryOutcomes": [
+                    "Define the stack data structure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Stack Operations: Push and Pop",
+                  "masteryOutcomes": [
+                    "Add items to the top of a stack",
+                    "Remove the most recent item"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Browser history stack",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice identifying LIFO behavior and using push/pop operations conceptually to model how a browser’s back button works. Output: A written step-by-step trace showing how pages are added to and removed from a browser history stack.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Building a Stack Using Lists",
+                  "masteryOutcomes": [
+                    "Construct a stack with list operations",
+                    "Simulate stack growth and reduction",
+                    "Identify when a stack is empty"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Applying Stacks to Undo Behavior",
+                  "masteryOutcomes": [
+                    "Translate actions into stack entries",
+                    "Undo recent actions using `pop`",
+                    "Predict stack state after undo operations"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Stacks",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of stack behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Text editor undo stack",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a stack using Python lists and use push and pop to simulate an undo feature in a simple text editor. Output: A Python script that records text editing actions on a stack and can undo the most recent actions, printing the document state after each operation.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "What Is FIFO?",
+                  "masteryOutcomes": [
+                    "Define the FIFO principle",
+                    "Identify real-world FIFO systems",
+                    "Explain why FIFO is needed alongside LIFO"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introduce the Queue",
+                  "masteryOutcomes": [
+                    "Define the queue data structure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Queue Operations: Enqueue and Dequeue",
+                  "masteryOutcomes": [
+                    "Add items to the end of a queue",
+                    "Remove items from the front of a queue"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Customer service queue",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply FIFO concepts to model a queue where customers are served in arrival order using enqueue and dequeue operations. Output: A written or step-by-step simulation that shows customers joining and leaving a service queue and the queue’s state after each operation.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Implementing Queues with Deque",
+                  "masteryOutcomes": [
+                    "Construct a queue using `deque`",
+                    "Apply `popleft` for FIFO behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Queues",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of queue behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Integrating Stacks and Queues",
+                  "masteryOutcomes": [
+                    "Compare LIFO and FIFO processing",
+                    "Choose between stacks and queues in scenarios",
+                    "Simulate combined stack and queue behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Task processor with stacks and queues",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement a queue using `collections.deque` and combine it with a list-based stack to decide when to process tasks in FIFO vs LIFO order. Output: A Python script that accepts a small set of predefined tasks, routes them through either a queue or a stack, then prints the order in which tasks are processed under each strategy.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Algorithm Thinking and Speed",
+              "lessons": [
+                {
+                  "title": "Why We Need Algorithms in Real Life",
+                  "masteryOutcomes": [
+                    "Explain algorithms using everyday examples",
+                    "Identify real-world processes that follow algorithms"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Turning Everyday Problems into Step-by-Step Solutions",
+                  "masteryOutcomes": [
+                    "Break problems into ordered steps",
+                    "Represent solutions as pseudocode or instructions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Algorithms",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of basic algorithmic thinking"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Daily Algorithms",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Apply algorithmic thinking to everyday activities by breaking them into clear, ordered steps and expressing them as simple pseudocode or instructions.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Counting Work: How Many Steps Does an Algorithm Take?",
+                  "masteryOutcomes": [
+                    "Trace an algorithm and count steps",
+                    "Understand how steps grow with input size"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Complexity: What It Means and Why It Matters",
+                  "masteryOutcomes": [
+                    "Define complexity in beginner-friendly terms",
+                    "Explain why different algorithms run at different speeds",
+                    "Relate complexity to user experience"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introducing Big O Notation",
+                  "masteryOutcomes": [
+                    "Explain what `n` represents",
+                    "Understand Big O at a conceptual level",
+                    "Compare basic growth rates"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Step Counting and Big O Intuition",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Practice tracing small algorithms, counting their steps, and classifying their growth using beginner-friendly Big O descriptions.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Analyzing Algorithms with Big O",
+                  "masteryOutcomes": [
+                    "Ignore constants and lower-order terms",
+                    "Identify the dominant growth behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Algorithm Analysis",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of complexity concepts"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Comparing Two Solutions to the Same Problem",
+                  "masteryOutcomes": [
+                    "Evaluate solutions by efficiency",
+                    "Recognize trade-offs between readability and speed",
+                    "Choose appropriate algorithms for scenarios"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Choosing the Better Algorithm",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Analyze and compare pairs of algorithms for the same task to decide which is more efficient and when trade-offs like readability vs. speed matter.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Safe Algorithms: Edge Cases and Bad Input",
+                  "masteryOutcomes": [
+                    "Identify common edge cases",
+                    "Adjust logic to prevent crashes",
+                    "Predict behavior with invalid input"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Advanced Algorithm Analysis",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of advanced analysis skills"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Edge Cases and Robust Algorithms",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Identify edge cases and bad inputs for simple algorithms, then reason about how to adjust the steps so the algorithm handles them safely.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Searching and Sorting",
+              "lessons": [
+                {
+                  "title": "Linear Search with Small and Unsorted Data",
+                  "masteryOutcomes": [
+                    "Describe linear search",
+                    "Apply it to unsorted lists",
+                    "Identify when it is appropriate"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Binary Search with Large Sorted Collections",
+                  "masteryOutcomes": [
+                    "Understand the idea of halving the search space",
+                    "Perform binary search step by step",
+                    "Explain why sorting is required"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Comparing Linear and Binary Search",
+                  "masteryOutcomes": [
+                    "Compare step counts for different list sizes",
+                    "Choose the correct search method per scenario",
+                    "Use informal complexity language"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Search helper for movie watchlist",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply linear and binary search to different list types and justify which is appropriate based on data size and ordering. Output: A small program that lets a user search for movies in an unsorted and a sorted watchlist and reports whether the movie was found and how many steps each search took.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Searching",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of search strategies"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Why Sorting Is Useful",
+                  "masteryOutcomes": [
+                    "Explain how sorting improves searching and decision-making",
+                    "Identify real-world sorting benefits"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Sorting: Different Approaches",
+                  "masteryOutcomes": [
+                    "Describe high-level sorting strategies",
+                    "Match explanations to sorting behaviors"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Sorting and searching strategy quiz",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Demonstrate understanding of when and why to sort data, and match search and sort strategies to real-world scenarios.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Bubble Sort",
+                  "masteryOutcomes": [
+                    "Describe bubble sort as swapping neighboring elements"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Insertion Sort",
+                  "masteryOutcomes": [
+                    "Describe insertion sort behavior",
+                    "Understand its average time complexity"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Bubble vs. Insertion Sort",
+                  "masteryOutcomes": [
+                    "Compare movement and scanning behavior",
+                    "Recognize similar large-scale complexity"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Sorting student scores with bubble and insertion sort",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement bubble sort and insertion sort step by step and compare how each algorithm moves and scans elements in a list of scores. Output: A script that takes a list of student scores, sorts it using both bubble sort and insertion sort, and prints the sorted lists along with a simple count or log of swaps/insertions for each method.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: Sorting",
+                  "masteryOutcomes": [
+                    "Demonstrate understanding of sorting concepts"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Using Python Sorting Tools in Practice",
+                  "masteryOutcomes": [
+                    "Use `sorted` and `list.sort`",
+                    "Apply sorting keys and order",
+                    "Relate built-in tools to manual algorithms"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Advanced Sorting with Python Tools",
+                  "masteryOutcomes": [
+                    "Combine `key` and `reverse`",
+                    "Sort structured data",
+                    "Decide when to rely on built-in tools"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Media library sorter",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use Python’s built-in sorting tools with keys and reverse order to organize structured media data in multiple useful ways. Output: A script that loads a small list of media items (e.g., songs or videos) and prints different sorted views by title, duration, and rating using `sorted`, `list.sort`, `key`, and `reverse`.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

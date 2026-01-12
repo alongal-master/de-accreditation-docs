@@ -1,0 +1,689 @@
+{
+  "title": "fe102-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-11",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "fe102-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Node, npm, and Modules",
+              "lessons": [
+                {
+                  "title": "Client-side vs Server-side JavaScript",
+                  "masteryOutcomes": [
+                    "Distinguish client-side JavaScript (runs in the browser) vs server-side JavaScript (runs in Node.js)",
+                    "Explain what Node.js is and why it exists (run JavaScript outside the browser)",
+                    "Identify one thing each environment can do (browser: interact with the page, Node: run scripts / tools)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Node and npm",
+                  "masteryOutcomes": [
+                    "Know how to install Node.js and confirm it works (`node -v`, `npm -v`)",
+                    "Explain what npm is used for in a JS project",
+                    "Run a simple JS file locally with Node"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Client-side vs server-side basics",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: You will be able to clearly distinguish client-side JavaScript from server-side JavaScript and identify what each environment can and cannot do.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Node setup and first script",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to install Node.js, verify your installation, and run a simple JavaScript file locally using Node. Output: A Node-executed script that prints a short system report (Node version, npm version, and a custom message) to the terminal.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "package.json and Scripts",
+                  "masteryOutcomes": [
+                    "Create a project with `package.json`",
+                    "Run scripts from `package.json` (e.g., `dev`, `start`)",
+                    "Explain what a “script” is and why teams use them"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "npm vs yarn",
+                  "masteryOutcomes": [
+                    "Describe what yarn is and how it relates to npm",
+                    "Install dependencies using npm (and recognize yarn commands in docs)",
+                    "Explain lockfiles at a high level (`package-lock.json`, `yarn.lock`)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: package.json and scripts for a study timer",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to create a project with `package.json` and define and run custom npm scripts to automate common tasks. Output: A small Node project where `npm run start` (or `npm run study`) runs a script that simulates a simple study session timer in the terminal.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Dependency management and lockfiles in a notes app",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to install dependencies with npm, recognize equivalent yarn commands, and explain the role of lockfiles in keeping installs consistent. Output: A minimal Node-based “notes” script that uses an installed dependency (e.g., for colored output) and generates a `package-lock.json` file.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Modules: import/export",
+                  "masteryOutcomes": [
+                    "Use import/export to split code into files",
+                    "Explain what a module is in practical terms",
+                    "Fix a broken import by reasoning about file paths and exports"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "JavaScript Functions",
+                  "masteryOutcomes": [
+                    "Understand the difference between named and anonymous functions",
+                    "Identify arrow functions and understand their syntax",
+                    "Use named, anonymous and arrow functions and callbacks"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Study helper modules",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to split code into multiple modules using import/export and fix common path/export issues in a small project. Output: A multi-file Node or browser-based “study helper” program where separate modules handle topics, questions, and scoring, all successfully imported into a main file.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Functions and callbacks in a quiz engine",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to define and use named, anonymous, and arrow functions, including passing functions as callbacks to control program behavior. Output: A small quiz engine script that presents questions and uses callback functions to check answers and display feedback in the console.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Arrays",
+                  "masteryOutcomes": [
+                    "Create arrays and access/update values using indexes",
+                    "Use common array methods to add/remove items (e.g., `push`, `pop`, `slice`) without getting lost",
+                    "Transform and filter arrays using `.map()` and `.filter()` to produce new arrays"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Loops",
+                  "masteryOutcomes": [
+                    "Identify and understand the syntax of classic for loop (`for (let i = 0",
+                    "i < ...",
+                    "i++)`)",
+                    "Identify and understand the syntax of classic for… of loop",
+                    "Explain when each loop is a better fit (index-based vs value-based iteration)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker arrays",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to create and update arrays, use basic array methods, and apply `.map()` and `.filter()` to transform habit data. Output: A console-based habit tracker script that stores habits in arrays, filters them by status (e.g., completed vs pending), and prints a summary report.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Looping through workout plans",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: You will be able to choose and write appropriate `for` and `for...of` loops to iterate over arrays, using index-based and value-based iteration effectively. Output: A script that loops through a weekly workout plan, printing each day’s exercises with set numbers and counting totals using both loop styles.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "React Foundations Week",
+              "lessons": [
+                {
+                  "title": "Destructuring and Spread Operator",
+                  "masteryOutcomes": [
+                    "Use destructuring to pull values from objects and arrays",
+                    "Use the spread operator to copy arrays and objects",
+                    "Update one field in an object immutably (copy + change)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Welcome to React",
+                  "masteryOutcomes": [
+                    "Explain what React is used for (building UIs with components) and mention other popular frameworks",
+                    "Identify what a React app renders (JSX → UI in the browser)",
+                    "Describe props in plain terms (data passed into a component)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker data setup",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice destructuring arrays/objects and using the spread operator to immutably update a simple habit-tracking dataset. Output: A small Node/JS script that logs original and updated habit data without mutating the original structures.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: React concepts checkup",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Reinforce conceptual understanding of React, components, JSX rendering, and props through a written/quiz-style exercise (no coding). Output: A completed answer sheet where you’ve matched terms, corrected misconceptions, and written short explanations about React and props.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Create a Vite React App",
+                  "masteryOutcomes": [
+                    "Create a React project with Vite",
+                    "Install dependencies and start the dev server (`npm install`, `npm run dev`)",
+                    "Confirm the app is running and changes show up in the browser"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Dev Server vs Build",
+                  "masteryOutcomes": [
+                    "Explain what the dev server is used for (local testing + fast feedback)",
+                    "Create a production build (`npm run build`) and preview it (`npm run preview`)",
+                    "Describe the difference between “development” and “production” output in simple terms"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Vite React app setup",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create and run a new React project with Vite, verifying hot reloading and making a visible UI change in the browser. Output: A running local React app that shows a custom message you edited in the starter component.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Dev vs build comparison",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build and preview a production version of a Vite React app and compare development vs production behavior and output. Output: A built React project (dist folder) plus a short notes file describing the differences you observed between `npm run dev`, `npm run build`, and `npm run preview`.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "JSX: UI as Code",
+                  "masteryOutcomes": [
+                    "Read and write basic JSX",
+                    "Explain the difference between HTML and JSX (practical differences only)",
+                    "Fix common JSX mistakes (closing tags, expressions in `{}`)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Components: UI Building Blocks",
+                  "masteryOutcomes": [
+                    "Create a React component as a function",
+                    "Compose multiple components into a page",
+                    "Explain what “reusable UI” means in React"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Study planner JSX",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Write JSX for a simple study planner page, fixing common JSX mistakes and contrasting it with equivalent HTML. Output: A React component file that renders a basic study planner layout using valid JSX and displays correctly in the browser.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Reusable flashcard components",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create and compose reusable React function components to build a small flashcard-style study UI. Output: A React page that shows multiple flashcard components, each displaying different question/answer content.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Components in Files",
+                  "masteryOutcomes": [
+                    "Create components as separate files and import them correctly",
+                    "Organize components into a simple folder structure (`components/`)",
+                    "Add a basic CSS file for a component and apply styles cleanly (e.g., `User.css` imported in `User.jsx`)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Props: passing data down",
+                  "masteryOutcomes": [
+                    "Pass props into a component and render them",
+                    "Choose good prop names that match the UI intent",
+                    "Debug missing/undefined props by tracing component usage"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Component files for movie list",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Organize a small movie list UI into separate component files with a simple folder structure and component-scoped CSS. Output: A React app where a movie list is rendered via components stored in a `components/` folder, each with its own imported CSS file.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Props in wellness dashboard",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Pass and render props through multiple components in a small wellness dashboard, debugging any missing or undefined props. Output: A React wellness dashboard that displays user name, daily stats, and activity cards using clearly named props passed down the component tree.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Interactive State & Lists",
+              "lessons": [
+                {
+                  "title": "Arrays to UI Lists",
+                  "masteryOutcomes": [
+                    "Render a list from an array using `map`",
+                    "Provide a stable `key` and explain what it’s for",
+                    "Refactor repeated JSX into a reusable component"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Event Handlers as props",
+                  "masteryOutcomes": [
+                    "Add a click handler to a button",
+                    "Explain what an event handler does in UI terms",
+                    "Pass a handler as a prop and trigger it in a child"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Playlist tracks list",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a reusable component that renders a list of playlist tracks from an array using `map` with stable keys. Output: A small React UI that displays a playlist where each track is rendered via a reusable `TrackItem` component with proper keys.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Task actions with event handlers",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Wire up click handlers passed as props so that child components can trigger actions like marking tasks as done or removing them. Output: A simple task list UI where clicking buttons in each task item triggers parent-defined handlers to update the visible list.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "State: when UI changes",
+                  "masteryOutcomes": [
+                    "Define state as UI data that can change over time",
+                    "Use `useState` to update visible UI",
+                    "Explain “re-render” using observable behavior (not theory)"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "State Updates: Direct vs Functional",
+                  "masteryOutcomes": [
+                    "Use `setState(newValue)` when the new value does not depend on the previous state",
+                    "Use `setState(prev => newValue)` when the update depends on the previous state (e.g., counters, toggles, appending to arrays)",
+                    "Explain why the functional form avoids “stale state” bugs when multiple updates happen quickly"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit counter state",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use `useState` to manage and update a habit counter, observing how changes in state cause the UI to re-render. Output: A habit-tracking counter UI where clicking buttons increases, decreases, and resets the visible count.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Shopping cart quantity updates",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice using direct vs functional `setState` to correctly update item quantities in a cart, avoiding stale state bugs when multiple updates happen quickly. Output: A mini shopping cart UI where quantity changes respond correctly even when multiple increment actions occur in rapid succession.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Conditional Rendering",
+                  "masteryOutcomes": [
+                    "Show/hide UI based on a state",
+                    "Use a button click handler to change a conditionally rendered div",
+                    "Explain the difference between “not rendered” vs “hidden by CSS”"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Objects and Arrays in State",
+                  "masteryOutcomes": [
+                    "Store an array in state and update it (add/remove)",
+                    "Store an object in state and update one field",
+                    "Use spread/destructuring to keep updates readable"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Quiz question reveal",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement conditional rendering to show or hide quiz answers based on state, and distinguish between “not rendered” and “CSS-hidden” content. Output: A small quiz UI where a button toggles whether the answer is conditionally rendered or just visually hidden.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Reading list state",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Manage an array and object in state to add, remove, and update books in a reading list using spread and destructuring for clear updates. Output: A reading list UI where you can add books, mark one as “finished,” and remove entries while the list updates correctly on screen.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Updating State Correctly",
+                  "masteryOutcomes": [
+                    "Understand why we must use a setter to update the state",
+                    "Avoid direct mutation of objects/arrays in state",
+                    "Explain why “copy then update” matters in React"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "State vs Props",
+                  "masteryOutcomes": [
+                    "Distinguish props (inputs) vs state (local UI memory)",
+                    "Decide where state should live (parent vs child)",
+                    "Move state upward when multiple components need it"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Meal planner state updates",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Update array and object state in a meal planner without mutation, always using the state setter and “copy then update” patterns. Output: A meal planner UI where you can safely add, edit, and remove meals and see the updated plan without mutation-related bugs.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Shared filter state vs props",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Decide where state should live and lift it to a parent so multiple child components receive it via props and stay in sync. Output: A product list UI with a shared filter bar where changing filters in the parent updates multiple child lists through props.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Forms, Effects, and Data",
+              "lessons": [
+                {
+                  "title": "Form Submit Basics",
+                  "masteryOutcomes": [
+                    "Build a simple form with an input + button",
+                    "Handle `onSubmit` and use `preventDefault()` to stop page reload",
+                    "Read the submitted value from state and use it in the UI"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Derived Values vs State",
+                  "masteryOutcomes": [
+                    "Explain the difference between state and derived values",
+                    "Render a filtered list based on an input value (without storing a second list)",
+                    "Explain why storing both “all items” and “filtered items” can cause bugs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Quick note submit",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice wiring up a basic form with `onSubmit`, `preventDefault()`, and reading the submitted value from React state to render it in the UI. Output: A tiny “quick note” widget that shows the last submitted note text below the form without reloading the page.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Filtered movie list",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Reinforce the difference between state and derived values by implementing a search box that filters a static list in render without storing a second “filtered” list in state. Output: A movie list component where typing in a search input dynamically filters visible movies based on the query while keeping only the original list in state.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "useEffect: when it runs",
+                  "masteryOutcomes": [
+                    "Use `useEffect` for a simple side effect",
+                    "Explain dependency array behavior at a beginner level",
+                    "Debug “effect runs too often” by adjusting dependencies"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Effects and Cleanup",
+                  "masteryOutcomes": [
+                    "Create an effect that sets up something (e.g., timer or event listener)",
+                    "Add a cleanup function and explain why it exists",
+                    "Verify cleanup behavior by observing the app"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Page title reminder",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply `useEffect` with a dependency array to update the document title based on a counter and debug when the effect runs too often by adjusting dependencies. Output: A small counter app that updates the browser tab title to reflect the current count only when the count changes.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Typing speed timer",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement an effect that sets up and cleans up a timer or event listener, and verify that the cleanup stops the side effect when the component unmounts or dependencies change. Output: A typing practice box that starts a timer when you begin typing, shows elapsed seconds, and correctly stops/cleans the timer when you reset or leave the exercise.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Fetch API + Promises",
+                  "masteryOutcomes": [
+                    "Use the fetch API to request JSON from an endpoint",
+                    "Handle async results with `.then()` and explain what a Promise represents",
+                    "Parse a JSON response and handle a basic fetch failure"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Async/Await for Fetch",
+                  "masteryOutcomes": [
+                    "Rewrite a fetch request using `async` / `await`",
+                    "Use `try/catch` for error handling in async code",
+                    "Explain when async/await is easier to read than chaining `.then()`"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Joke fetcher with promises",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use the Fetch API with `.then()` to request JSON, understand what a Promise represents, parse the response, and handle a basic failure case. Output: A “random joke” widget that fetches and displays a joke from a public API with a simple error message if the request fails.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Weather lookup with async/await",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Rewrite a fetch-based data request using `async`/`await` with `try/catch` for error handling, and compare its readability to a `.then()` chain. Output: A minimal weather search box that fetches and shows current weather data for a city using async/await, with graceful error messages on failure.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Fetch in useEffect",
+                  "masteryOutcomes": [
+                    "Fetch data inside `useEffect` and store results in React state",
+                    "Show loading vs loaded UI based on state",
+                    "Handle and display an error state in the component"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Effect Dependencies That Make Sense",
+                  "masteryOutcomes": [
+                    "Choose dependencies intentionally (what should trigger the effect)",
+                    "Prevent infinite loops caused by state updates inside effects",
+                    "Explain the “why” of a dependency list using examples"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Book list loader",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Fetch data inside `useEffect`, store it in React state, and show distinct loading, success, and error states in the UI. Output: A book list component that loads a list of books from an API on mount, shows a loading spinner while fetching, and displays either the list or an error message.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Searchable user directory",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Design effect dependencies that make sense by triggering a fetch when a search term changes, avoid infinite loops from state updates in effects, and clearly justify the chosen dependency list. Output: A user directory search component that fetches and displays matching users as the search query changes without causing repeated or infinite refetching.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

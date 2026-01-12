@@ -1,0 +1,674 @@
+{
+  "title": "py101-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-12",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "py101-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Programming Basics",
+              "lessons": [
+                {
+                  "title": "Welcome to PY101",
+                  "masteryOutcomes": [
+                    "Understand the course main topics and grading"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Writing your first program",
+                  "masteryOutcomes": [
+                    "Introduce the Maestro Code Editor",
+                    "Write and execute a simple Python script using the print() function"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Unlocking print() power-ups",
+                  "masteryOutcomes": [
+                    "Print multiple values using commas",
+                    "Understand that printing is always in a new line",
+                    "Print multiple text and numeric values using the + and * operators."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Hello message board",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice writing and running simple Python scripts that use print() to display different kinds of messages on separate lines. Output: A script that prints a short multi-line “message board” with greetings and simple text/number combinations.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Introduction to variables",
+                  "masteryOutcomes": [
+                    "Explain that a variable is a named placeholder for a value in memory.",
+                    "Write a valid variable name following Python conventions.",
+                    "Assign a value (e.g., a number or a piece of text) to a variable using the = operator.",
+                    "Use the print() function to display the value stored in a variable."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Working with text",
+                  "masteryOutcomes": [
+                    "Define a \"data type\" as a category of data that determines what you can do with it.",
+                    "Create a string variable by enclosing text in single (') or double (\") quotes.",
+                    "Combine two strings using the + operator (concatenation).",
+                    "Predict the output when printing string variables."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Profile card",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use variables and strings to store basic profile information and print it out in a clear, formatted way using concatenation. Output: A script that prints a simple “profile card” (name, age, favorite hobby) built from string variables.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Story snippets",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Reinforce working with string variables and concatenation by assembling a short story from separate text pieces and predicting its printed output. Output: A script that prints a short, coherent story made by joining multiple string variables.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Working with numbers",
+                  "masteryOutcomes": [
+                    "Distinguish between an integer (int, a whole number) and a float (float, a number with a decimal).",
+                    "Create variables to store integer and float values.",
+                    "Perform basic arithmetic operations (+, -, *, /) on numeric variables.",
+                    "Explain why 5 is different from \"5\"."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Modeling real-world calculations",
+                  "masteryOutcomes": [
+                    "Translate a two-step word problem into an arithmetic expression and compute the result.",
+                    "Do arithmetic directly inside print() to produce clear, useful outputs.",
+                    "Compare two equivalent formulations and choose the clearer one."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Snack shop calculator",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply integer and float variables with arithmetic operators to model a small purchase scenario and compute totals. Output: A script that calculates and prints the total cost of several snack items, including at least one float price.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Distance tracker",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Translate a two-step word problem into numeric variables and arithmetic expressions, then print clear explanations of the results. Output: A script that calculates and prints total and average distance covered over several days using integers and floats.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Review: writing your first program",
+                  "masteryOutcomes": [
+                    "Review and consolidate key concepts from writing and running first Python programs",
+                    "Demonstrate basic proficiency with variables, data types, and print() through practice"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Division modes: / vs // with quotient and remainder",
+                  "masteryOutcomes": [
+                    "Compute and contrast true division (/) and floor division (//) on integers",
+                    "explain the difference.",
+                    "Use // and % together to derive quotient and remainder for practical cases (e.g., packing/scheduling)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Concepts checkup",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Review and solidify understanding of variables, data types, and print() through written prediction, matching, and error-spotting exercises (no coding).",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Box packing planner",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use /, //, and % to compute and clearly display how many full boxes can be packed and how many items remain unpacked in a logistics scenario. Output: A script that prints the quotient and remainder for packing items into boxes, showing full boxes, leftover items, and any fractional comparison using true division.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Functions, Input, and Errors",
+              "lessons": [
+                {
+                  "title": "Checking the facts",
+                  "masteryOutcomes": [
+                    "Use type() to check a variable's data type",
+                    "Use the str(), int(), and float() functions to convert values between data types."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Talking to your program: getting input from users",
+                  "masteryOutcomes": [
+                    "Explain why programs interact with users and when input() is appropriate",
+                    "collect input with clear prompts.",
+                    "Convert numeric inputs to the correct type before computing and print a friendly summary."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker input",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice using type(), str(), int(), and float() to inspect and convert user input while building a small habit-tracking summary. Output: A script that asks the user about a habit, converts numeric answers, and prints a friendly typed summary of their daily habit stats.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Study planner prompts",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Reinforce collecting user input with clear prompts, converting to the correct numeric types, and printing a readable multi-line report. Output: A script that asks the user about subjects and planned study time, converts inputs to numbers, and prints a simple study plan summary with totals.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Python errors: meet the traceback",
+                  "masteryOutcomes": [
+                    "Understand why Python provides a traceback and how it helps identify what went wrong",
+                    "Identify parts of a traceback and different types of tracebacks"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge: core foundations",
+                  "masteryOutcomes": [
+                    "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Traceback detective quiz",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Strengthen the ability to read Python tracebacks, identify error types, and match them to likely causes without writing code. Output: A completed quiz where the learner labels parts of tracebacks, identifies error types, and selects the most likely bug descriptions for each.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Error hunt scenarios",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Develop skill in interpreting different traceback examples and explaining, in plain language, what went wrong and where. Output: A written set of answers where the learner matches short “bug stories” to given tracebacks and briefly explains the error location and cause.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions i: why, define, and call",
+                  "masteryOutcomes": [
+                    "Understand how functions reduce repetition and improve reuse.",
+                    "Understand the structure of Python functions",
+                    "Define a function with one or two parameters and call it with literals and variables"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions ii: inside the function",
+                  "masteryOutcomes": [
+                    "Understand the structure of a function, including its name, parameters, indentation, and return value.",
+                    "Call functions with arguments correctly and trace how values are passed from the call site to parameters, verifying the flow using print statements."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness calculator functions - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice defining simple functions with one or two parameters and calling them with both literals and variables to reduce repetition. Output: A script that defines and calls small fitness-related functions (e.g., calories_burned, minutes_to_hours) and prints the computed values.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness calculator functions - Part 2",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Deepen understanding of function structure and argument flow by tracing how values move from calls into parameters using print statements. Output: A script that reuses the earlier fitness functions, adds debug prints inside them, and shows step-by-step how arguments are received and processed.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Functions iii: return vs print and early return",
+                  "masteryOutcomes": [
+                    "Differentiate printing vs returning values",
+                    "Use return to pass results and apply early returns."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Scope and local variables",
+                  "masteryOutcomes": [
+                    "Understand that variables created inside a function exist only within that function’s scope (local).",
+                    "Explain how local and global scopes differ and identify when each is used.",
+                    "Demonstrate how data can be passed into functions through parameters instead of relying on global variables."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Budget helper returns - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Differentiate clearly between printing and returning values by writing budget-related helper functions that return numbers instead of just displaying them. Output: A script where budget functions compute and return totals or remaining amounts, and the main code prints formatted budget summaries using those returned values.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Budget helper returns - Part 2",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply early returns and scope rules by using local variables inside functions and passing data through parameters instead of relying on globals. Output: A script that refactors budget calculations into functions with local variables and early-return checks (e.g., invalid input or overspending), printing clear messages based on the returned results.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Logical Decisions & Loops",
+              "lessons": [
+                {
+                  "title": "Logical operators: and/or/not and short-circuiting",
+                  "masteryOutcomes": [
+                    "Combine comparisons with and, or, not to form compound conditions.",
+                    "Show short-circuit behavior by adding prints to the right-hand side expression."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Booleans and comparisons: equality vs identity",
+                  "masteryOutcomes": [
+                    "Use True/False in expressions and store boolean results in variables.",
+                    "Differentiate between '==' (value equality) and 'is' (identity equality)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Access control checker",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice combining comparisons with and/or/not and observe short-circuit behavior to build clear compound conditions for access decisions. Output: A script that prints whether a user is granted or denied access based on age, subscription status, and account flags.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Identity vs equality tester",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Learn to store boolean results from comparisons and distinguish clearly between == (value equality) and is (identity) in practical checks. Output: A script that compares several pairs of values and objects, printing labeled results that show when values are equal, when objects are identical, and when they differ.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String membership with 'in' in conditions",
+                  "masteryOutcomes": [
+                    "Test substring membership with 'in' and negate with 'not in'.",
+                    "Use membership checks inside if/elif branches to drive simple decisions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Elif and refactoring nested decisions",
+                  "masteryOutcomes": [
+                    "Refactor a nested if/else into an equivalent if/elif/else chain.",
+                    "Order conditions to avoid overlaps and unreachable branches."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Content filter assistant",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply string membership with in and not in inside if/elif conditions to classify user-entered text into different categories. Output: A script that reads a message and prints which category (e.g., “urgent”, “question”, “spam-like”, or “other”) it falls into based on keyword membership.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Grade feedback classifier",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Refactor nested if/else logic into a clean if/elif/else chain with correctly ordered, non-overlapping conditions. Output: A script that takes a numeric score and prints a feedback message (A/B/C/D/F style) using an if/elif/else chain without unreachable branches.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Decision tables to branching logic",
+                  "masteryOutcomes": [
+                    "Translate a 3-5 row decision table into clear if/elif/else code.",
+                    "Verify mutual exclusivity and completeness of the conditions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "For loops and range(): counting iterations",
+                  "masteryOutcomes": [
+                    "Write for loops with range(stop), range(start, stop), range(start, stop, step)",
+                    "Accumulate a total across iterations and print the result.",
+                    "Generate even/odd sequences and countdowns with range."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Shipping fee decision table",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Translate a small decision table into mutually exclusive and complete if/elif/else branches that implement business rules. Output: A script that asks for order amount and membership status, then prints the correct shipping fee or “free shipping” based on the decision table.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness step counter",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use for loops with different range() forms to count, accumulate totals, and generate even/odd/countdown sequences. Output: A script that simulates daily step counts over several days, prints each day’s steps, and then prints totals, averages, and a countdown to a goal.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Meet the while loop",
+                  "masteryOutcomes": [
+                    "Understand what a while loop is and when it is more suitable than for.",
+                    "Understand the risk of infinite loops and explain how to prevent them.",
+                    "Write a while loop to repeat actions until a condition changes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Loop control: break and continue",
+                  "masteryOutcomes": [
+                    "Understand when to exit a loop early with break versus letting it complete naturally.",
+                    "Insert break to exit early on a condition and continue to skip an iteration."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker loop",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use a while loop to repeatedly ask for user input until a stopping condition is met, avoiding infinite loops by correctly updating the condition. Output: A script that keeps asking the user to log completed habit repetitions (like glasses of water) until they type a quit command, then prints a summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Number guessing game",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice using while with break and continue to control loop flow, exiting early on a win condition and skipping invalid inputs. Output: A script that runs a guessing game where the user repeatedly guesses a secret number, with attempts limited, invalid inputs skipped, and the loop ending early on a correct guess.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Strings and Lists",
+              "lessons": [
+                {
+                  "title": "Review: decisions and loops",
+                  "masteryOutcomes": [
+                    "Review and integrate concepts from conditionals and loops",
+                    "Solve mixed exercises that require choosing appropriate decision and loop structures"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String skills upgrade i: indexing and slicing",
+                  "masteryOutcomes": [
+                    "Access individual characters in a string using 0-based indexing.",
+                    "Use slice notation [start:stop] and [start:stop:step] to extract substrings.",
+                    "Use negative indices to access characters from the end of a string."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Study planner checker",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice combining conditionals, loops, and basic string indexing/slicing to analyze and validate a simple weekly study plan description. Output: A script that reads a text description of planned study sessions, checks for missing days or too-short sessions, and prints feedback along with extracted key phrases using string slices.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Secret message slicer",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Strengthen understanding of string indexing, slicing (including negative indices and step values) by decoding and reformatting hidden messages. Output: A script that takes a coded sentence and uses various slices to reveal specific words, reverse parts of the text, and print a cleaned, readable secret message.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "String skills upgrade ii: common methods",
+                  "masteryOutcomes": [
+                    "Apply strip, lower, replace, and find",
+                    "Split text and rejoin with delimiters",
+                    "Handle whitespace and empty fields"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists i: creating lists",
+                  "masteryOutcomes": [
+                    "Create lists with literals and from range()",
+                    "print length with len().",
+                    "Explain that lists are mutable and show a visible effect of mutation.",
+                    "Understand when a list is a better choice than separate variables."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Comment cleaner",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply common string methods (strip, lower, replace, find, split/join) to normalize and clean user-generated text comments. Output: A script that takes a messy comment, removes extra spaces, normalizes case, censors a list of banned words, and prints a cleaned version plus basic info about found keywords.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Shopping list organizer",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice creating and mutating lists while deciding when a list is better than separate variables, using list literals, range(), len(), and visible mutations. Output: A script that builds a shopping list from user input, shows its length, updates items in place, and prints the final organized list.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists ii: indexing and slicing",
+                  "masteryOutcomes": [
+                    "Access list elements by index and understand how indexing works.",
+                    "Modify list elements and create sublists using slicing.",
+                    "Handle out-of-range errors (IndexError) in list access."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists iii: mastering list iteration",
+                  "masteryOutcomes": [
+                    "Use a for loop with range() and len() to iterate over indices and access list elements by their position.",
+                    "Use a for loop to iterate directly over the values in a list and perform actions on each element."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Quiz score tracker",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use list indexing and slicing to access, modify, and safely handle quiz scores while avoiding IndexError. Output: A script that stores quiz scores in a list, updates specific scores by index, prints sublists for different quiz ranges, and safely attempts to read indices with basic error handling.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness log analyzer",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice iterating over lists using both index-based loops and direct value loops to compute summaries and generate feedback. Output: A script that processes a list of daily step counts, calculates totals and averages, labels each day as “goal met” or “goal missed,” and prints a short weekly summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Lists iv: common methods",
+                  "masteryOutcomes": [
+                    "Modify a list in place with append, insert, remove, pop, and extend."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Ordering lists: sorted() vs .sort()",
+                  "masteryOutcomes": [
+                    "Sort a list in place with .sort() and create a sorted copy with sorted().",
+                    "Use sorted() parameters ('key' and 'reverse') to customize ordering and explain stability."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Task list manager",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use core list methods (append, insert, remove, pop, extend) to build and modify a task list for a simple productivity tool. Output: A script that maintains a to-do list, lets you add, insert, remove, and complete tasks, and prints the updated list after each operation.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie ranking sorter",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Compare .sort() and sorted() and apply key/reverse parameters to order lists of movie ratings and titles while explaining the effect of stability. Output: A script that takes a list of movies with ratings, produces differently sorted views (by title, by rating ascending/descending) using both .sort() and sorted(), and prints each ordered list.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

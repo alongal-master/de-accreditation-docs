@@ -1,0 +1,1492 @@
+{
+  "title": "capstone-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-12",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "capstone-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Capstone Foundations",
+              "lessons": [
+                {
+                  "title": "Capstone Scope & MVP",
+                  "masteryOutcomes": [
+                    "Define the application as a system",
+                    "Identify minimum usable functionality",
+                    "Separate required features from stretch ideas"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define Capstone as a System - Part 1",
+                  "masteryOutcomes": [
+                    "Clearly describe the application as a complete system, including its purpose, primary user flows, and high-level architecture (client, server, data). Output: A short project brief (1-2 pages) that explains what the app does, who uses it, and a simple system diagram or text description of major components."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define MVP & Minimum Usable Functionality - Part 2",
+                  "masteryOutcomes": [
+                    "Identify and document the minimum usable functionality that delivers value to users, separating it from “nice-to-have” features. Output: A prioritized MVP feature list grouped into “Must have for launch” vs “Later / Stretch,” with 3-7 core MVP capabilities described in user terms."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Separate Required Features from Stretch Ideas - Part 3",
+                  "masteryOutcomes": [
+                    "Refine the feature list into concrete, testable items and explicitly mark which are required for the capstone vs stretch goals. Output: A feature specification table (or backlog) where each row has: feature name, user story, priority (Required/Stretch), and acceptance notes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Core Entities",
+                  "masteryOutcomes": [
+                    "Identify 2-4 core entities",
+                    "Define relationships between entities",
+                    "Validate entities against user actions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Identify Core Entities & Attributes - Part 1",
+                  "masteryOutcomes": [
+                    "Determine 2-4 core data entities for the application and list their essential attributes based on user needs. Output: A draft data model document listing each core entity, its key fields, and a brief description of what each field represents."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define Relationships Between Entities - Part 2",
+                  "masteryOutcomes": [
+                    "Map how the core entities relate to each other (one-to-many, many-to-many, etc.) and capture the cardinality and direction of those relationships. Output: An entity-relationship sketch (diagram or structured text) that shows entities, their relationships, and example foreign keys or linking tables."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Validate Entities Against User Actions - Part 3",
+                  "masteryOutcomes": [
+                    "Cross-check that each user action from the MVP can be expressed using the defined entities and relationships, adjusting the model where needed. Output: A matrix or checklist mapping core user actions to entities/relationships, plus any revisions made to the data model to support those actions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Users, Roles, Ownership",
+                  "masteryOutcomes": [
+                    "Identify user types",
+                    "Define ownership of data",
+                    "Establish at least one access rule"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Identify User Types & Personas - Part 1",
+                  "masteryOutcomes": [
+                    "Define the main user types (roles) that will interact with the system and describe their goals and constraints. Output: A short set of role descriptions (e.g., “End User,” “Admin,” etc.) with 2-3 bullet points each on what they need to do in the app."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define Data Ownership Rules - Part 2",
+                  "masteryOutcomes": [
+                    "Decide which user types own which pieces of data (e.g., who can create, edit, or delete specific entities) and document those rules. Output: A data ownership map that lists each entity and clarifies which roles can create, view, update, or delete records, plus who is considered the “owner.”"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Establish Access Control & One Access Rule - Part 3",
+                  "masteryOutcomes": [
+                    "Translate ownership into at least one concrete access control rule and outline how it will be enforced in the system. Output: A short access control spec with at least one explicit rule (e.g., “Users can only edit items they own”), including example scenarios that show allowed vs denied actions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "One Advanced Capability",
+                  "masteryOutcomes": [
+                    "Identify one automated or intelligent feature",
+                    "Distinguish it from standard CRUD logic",
+                    "Define how users interact with its output"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Identify One Advanced / Intelligent Capability - Part 1",
+                  "masteryOutcomes": [
+                    "Select a single automated or intelligent feature that enhances the core app (e.g., recommendation, scoring, scheduling, summarization). Output: A concise description of the chosen advanced capability, including its purpose, when it runs, and which users benefit from it."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Distinguish Advanced Logic from Standard CRUD - Part 2",
+                  "masteryOutcomes": [
+                    "Clarify how the advanced capability differs from basic create/read/update/delete operations and what extra logic or data it needs. Output: A logic outline that contrasts “normal CRUD flows” with the advanced feature flow, listing any additional inputs, computations, or external services."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define User Interaction with Advanced Feature Output - Part 3",
+                  "masteryOutcomes": [
+                    "Specify how users will see, trigger, and respond to the advanced feature’s results within the UI and workflow. Output: A mini interaction spec (with wireframe sketches or detailed text) showing where the feature appears in the app, how users trigger it, and how they interpret or act on its output."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "System Design Foundations",
+              "lessons": [
+                {
+                  "title": "Inputs and Outputs",
+                  "masteryOutcomes": [
+                    "Define valid inputs for core features",
+                    "Define inputs and outputs for the automated feature",
+                    "Identify which outputs must be stored"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define core feature inputs & outputs - Part 1",
+                  "masteryOutcomes": [
+                    "Identify all core user-facing features of your app and list valid inputs for each (including type, format, required/optional, and constraints). Clarify how users or other systems will provide these inputs (UI fields, API params, files, etc.). Output: A structured document (or markdown table) listing each core feature with its complete set of validated inputs and their rules."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Map automated feature inputs & outputs - Part 2",
+                  "masteryOutcomes": [
+                    "Choose one automated feature (e.g., background job, scheduled task, webhook handler) and define its inputs (triggers, data payloads, config) and outputs (side effects, responses, notifications). Distinguish between immediate outputs vs delayed/derived outputs. Output: A detailed spec describing the automated feature’s input sources, data shapes, and full list of outputs."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Decide which outputs must be stored - Part 3",
+                  "masteryOutcomes": [
+                    "From all identified outputs (core and automated features), decide which must be persisted, which can be cached, and which can be ephemeral. Justify storage decisions based on business rules, audit needs, and performance. Output: A persistence plan listing each output, whether it’s stored, where it’s stored, and for how long (including retention or archival notes)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "System Boundaries",
+                  "masteryOutcomes": [
+                    "Separate frontend, backend, database, and services",
+                    "Decide where validation belongs",
+                    "Avoid leaking responsibilities across layers"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define system boundaries & layers - Part 1",
+                  "masteryOutcomes": [
+                    "Break the system into frontend, backend, database, and external services. For each feature, assign which layer is responsible for which part of the work. Clarify what types of data and operations are allowed to cross each boundary. Output: A system boundaries document (or diagram) showing each layer, its responsibilities, and the data that flows between them."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Place validation in the right layer - Part 2",
+                  "masteryOutcomes": [
+                    "For each key input (from Chapter 1), decide which validations run in the frontend, which in the backend, and which are enforced by the database. Separate UX validations (e.g., instant feedback) from security/integrity validations. Output: A validation matrix mapping each validation rule to the responsible layer(s) and describing how it will be implemented."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Prevent responsibility leaks across layers - Part 3",
+                  "masteryOutcomes": [
+                    "Review current design decisions and identify any responsibility leaks (e.g., frontend doing business rules, database doing presentation formatting). Refactor responsibilities so each layer has a clear, minimal role. Output: A revised responsibility map listing each layer’s final responsibilities and a short “do/don’t” checklist for future changes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "System Diagram",
+                  "masteryOutcomes": [
+                    "Draw a complete system diagram",
+                    "Label standard routes vs advanced behavior",
+                    "Validate diagram against MVP scope"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Draw the complete system diagram - Part 1",
+                  "masteryOutcomes": [
+                    "Create a high-level system diagram including frontend components, backend services, database(s), and external APIs/services. Show data flows and main communication paths (HTTP, WebSocket, queues, etc.). Output: A complete system diagram (drawn in any tool) with all components and connections labeled."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Label standard routes vs advanced behavior - Part 2",
+                  "masteryOutcomes": [
+                    "On the system diagram, distinguish standard CRUD/API routes from advanced behaviors (background jobs, webhooks, event processing, complex workflows). Clarify how advanced behavior is triggered and where it runs. Output: An annotated system diagram where each route/interaction is labeled as “standard” or “advanced,” with a brief legend."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Validate diagram against MVP scope - Part 3",
+                  "masteryOutcomes": [
+                    "Compare the system diagram to the defined MVP features. Remove or mark non-MVP components and flows. Confirm that every MVP feature is represented and nothing critical is missing. Output: A “MVP-validated” version of the diagram plus a short note listing what’s in MVP vs deferred to later versions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Tables That Match Reality",
+                  "masteryOutcomes": [
+                    "Finalize relational schema",
+                    "Define constraints and relationships",
+                    "Validate schema against API usage"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Finalize relational schema for core entities - Part 1",
+                  "masteryOutcomes": [
+                    "Translate your real-world concepts (users, items, orders, etc.) into tables with clear names and columns. Ensure the schema matches how the business actually talks about things (no misleading or over-abstract names). Output: A finalized list of tables with columns, data types, and brief descriptions of what each table represents in the real world."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Define constraints & relationships - Part 2",
+                  "masteryOutcomes": [
+                    "For each table, define primary keys, foreign keys, unique constraints, and required vs optional fields. Map out one-to-one, one-to-many, and many-to-many relationships with join tables where needed. Output: A schema specification including all constraints and relationship definitions (PK/FK/UNIQUE/NOT NULL) and a relationship diagram or list."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Validate schema against API usage - Part 3",
+                  "masteryOutcomes": [
+                    "Take your main API endpoints and user flows and walk through how they read/write data using the schema. Identify any missing fields, awkward joins, or denormalization needs. Adjust schema where necessary. Output: A revised schema plus an “API-to-tables” mapping document showing which tables/columns each key endpoint touches and confirming that the schema supports the planned usage."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Secure API Behavior",
+              "lessons": [
+                {
+                  "title": "CRUD with Rules",
+                  "masteryOutcomes": [
+                    "Implement CRUD endpoints",
+                    "Enforce ownership and access rules",
+                    "Return consistent HTTP responses"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: CRUD with Rules - Basic CRUD Skeleton (Part 1)",
+                  "masteryOutcomes": [
+                    "Implement basic Create, Read, Update, Delete endpoints for a core resource (e.g., “tasks” or “posts”) without rules yet",
+                    "wire them to the database or in-memory store",
+                    "ensure each endpoint follows a consistent URL and method convention (e.g., POST /tasks, GET /tasks/:id). Output: A running API with working CRUD endpoints for one resource that can create, list, fetch by ID, update, and delete items."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: CRUD with Rules - Ownership & Access Rules (Part 2)",
+                  "masteryOutcomes": [
+                    "Enforce ownership rules on the CRUD endpoints so users can only modify or delete their own resources",
+                    "add access checks on read operations (e.g., private vs public items)",
+                    "centralize ownership checks in helper functions or middleware to avoid duplication. Output: A CRUD API where each operation validates that the current user is allowed to read, update, or delete the targeted resource based on ownership or visibility flags."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: CRUD with Rules - Consistent HTTP Responses (Part 3)",
+                  "masteryOutcomes": [
+                    "Standardize success and error responses across all CRUD endpoints",
+                    "use appropriate HTTP status codes (201, 200, 400, 404, 422, 500, etc.)",
+                    "define a common error response shape (e.g., { error: { code, message, details } })",
+                    "add basic validation errors and not-found handling. Output: A CRUD API that returns predictable, well-structured JSON responses and correct HTTP status codes for all typical success and failure paths."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Auth as Infrastructure",
+                  "masteryOutcomes": [
+                    "Implement login and token handling",
+                    "Attach user identity to requests",
+                    "Protect sensitive routes"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Auth as Infrastructure - Login & Token Handling (Part 1)",
+                  "masteryOutcomes": [
+                    "Implement a login endpoint that verifies user credentials",
+                    "issue a signed token (e.g., JWT) or session ID on successful login",
+                    "define token payload structure (user id, roles, expiration)",
+                    "implement token verification utilities. Output: An authentication flow where users can log in with valid credentials and receive a token that can later be used to authenticate requests."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Auth as Infrastructure - Attaching User Identity to Requests (Part 2)",
+                  "masteryOutcomes": [
+                    "Implement middleware that reads the token from headers (or cookies), verifies it, and attaches the user identity (id, roles, claims) to the request context",
+                    "handle invalid or expired tokens gracefully",
+                    "make the user object easily accessible inside route handlers. Output: An API where every authenticated request automatically has a populated user context available for downstream handlers."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Auth as Infrastructure - Protecting Sensitive Routes (Part 3)",
+                  "masteryOutcomes": [
+                    "Mark specific routes as “auth required” and enforce authentication via middleware",
+                    "reject unauthenticated requests with a clear 401 response",
+                    "ensure previously built CRUD endpoints that need a user now require a valid token",
+                    "keep public routes (like login, registration) accessible without auth. Output: An API where sensitive CRUD and profile endpoints are protected, only accessible when a valid token is provided."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Authorization That Bites",
+                  "masteryOutcomes": [
+                    "Enforce at least one authorization rule",
+                    "Prevent unauthorized reads or writes",
+                    "Distinguish 401 from 403"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Authorization That Bites - Defining & Enforcing Rules (Part 1)",
+                  "masteryOutcomes": [
+                    "Choose at least one concrete authorization rule (e.g., “only admins can delete any resource,” “users can edit only their own tasks,” “moderators can archive content”)",
+                    "implement this rule in code using role/permission checks",
+                    "centralize the rule logic in an authorization helper or policy function. Output: An API with at least one robust authorization policy that is checked before performing a sensitive operation."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Authorization That Bites - Preventing Unauthorized Reads/Writes (Part 2)",
+                  "masteryOutcomes": [
+                    "Apply authorization checks to both read and write endpoints where needed",
+                    "ensure unauthorized users cannot see restricted data or modify protected resources",
+                    "sanitize list endpoints so they only return resources the caller is allowed to see",
+                    "add tests or manual checks for common bypass attempts. Output: An API that reliably blocks unauthorized reads and writes, returning only the data the caller is entitled to access."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Authorization That Bites - Distinguishing 401 vs 403 (Part 3)",
+                  "masteryOutcomes": [
+                    "Update error handling to clearly differentiate between “not authenticated” (401) and “authenticated but not allowed” (403)",
+                    "ensure routes first check authentication, then authorization",
+                    "return consistent error bodies explaining why access is denied",
+                    "verify that both 401 and 403 paths behave correctly across key endpoints. Output: An API that uses 401 and 403 correctly, giving clients clear signals whether they need to log in or lack sufficient permissions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Adding an Automated Endpoint",
+                  "masteryOutcomes": [
+                    "Add a non-CRUD endpoint to the API",
+                    "Define clear request and response schemas",
+                    "Keep automation logic isolated"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Adding an Automated Endpoint - Designing the Endpoint (Part 1)",
+                  "masteryOutcomes": [
+                    "Choose a non-CRUD automation scenario (e.g., “/reports/daily-summary”, “/tasks/bulk-complete”, “/users/invite”)",
+                    "define a clear request schema (inputs, filters, options) and response schema (shape of the result, metadata)",
+                    "document the endpoint contract in code comments or an OpenAPI snippet. Output: A well-specified non-CRUD endpoint design with agreed request/response formats ready to be implemented."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Adding an Automated Endpoint - Implementing Logic & Isolation (Part 2)",
+                  "masteryOutcomes": [
+                    "Implement the automated endpoint handler",
+                    "move core automation logic into a separate service/module (not directly inside the route)",
+                    "ensure the logic can be reused or tested independently",
+                    "handle edge cases and errors from the automation layer. Output: A working non-CRUD endpoint that executes a piece of automation while keeping business logic isolated from HTTP wiring."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Adding an Automated Endpoint - Integration & Response Quality (Part 3)",
+                  "masteryOutcomes": [
+                    "Integrate the automated endpoint with existing auth and authorization layers",
+                    "validate inputs and return meaningful error responses on invalid requests",
+                    "ensure responses follow the same structure and status code conventions as the rest of the API",
+                    "optionally add logging or metrics for the automated action. Output: A production-ready automated endpoint that is authenticated/authorized, validates input, and returns consistent, well-structured responses."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Core Data & Flows",
+              "lessons": [
+                {
+                  "title": "Persisting Derived Results",
+                  "masteryOutcomes": [
+                    "Decide what derived output to store",
+                    "Design tables for computed data",
+                    "Link results to users or entities"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Designing derived results storage schema - Part 1",
+                  "masteryOutcomes": [
+                    "Decide which derived outputs from your app are worth persisting (e.g., analytics summaries, precomputed recommendations, cached AI responses). Identify which are ephemeral vs. which must be stored for reuse, auditing, or performance. Output: A written list of derived results to persist, with justification for each and a simple data contract (fields, types, update frequency) for every chosen derived result."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Designing derived results storage schema - Part 2",
+                  "masteryOutcomes": [
+                    "Translate the selected derived results into concrete database tables or collections. Define primary keys, indexes, and relationships (e.g., result-to-user, result-to-source-entity). Output: A finalized database schema (DDL or migration file plus diagram or structured description) for all derived result tables/collections, ready to be applied to your database."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Linking derived results to users and entities",
+                  "masteryOutcomes": [
+                    "Implement the actual persistence logic that writes and reads derived results while correctly associating them with users and domain entities (e.g., documents, projects, tasks). Ensure referential integrity and handle updates/invalidations. Output: Working backend code (or scripts) that can create, read, update, and delete derived results linked to real user/entity IDs in your project’s database."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Cost & Usage Controls",
+                  "masteryOutcomes": [
+                    "Identify cost drivers",
+                    "Limit frequency or scope of calls",
+                    "Prevent accidental overuse"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Identifying AI cost drivers in the app",
+                  "masteryOutcomes": [
+                    "Analyze where and how your app uses AI calls (which models, which endpoints, typical payload sizes, and frequencies). Estimate per-feature usage and cost, and flag the top cost drivers. Output: A cost profile document or spreadsheet mapping each AI feature to expected call volume, token usage, and monthly cost, highlighting the highest-impact cost drivers."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implementing frequency and scope limits - Part 1",
+                  "masteryOutcomes": [
+                    "Design concrete limits for high-cost operations (rate limits per user, per workspace, per endpoint",
+                    "maximum input sizes",
+                    "batching strategies). Decide on user-facing rules and error messages. Output: A set of explicit limit rules and configuration (e.g., YAML/JSON/env config or written spec) that defines allowed frequencies, scopes, and payload bounds for each AI-powered feature."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implementing frequency and scope limits - Part 2",
+                  "masteryOutcomes": [
+                    "Implement the designed limits in code (middleware, guards, or service wrappers) and add protections against accidental overuse (e.g., safe defaults, caps, alerts/logging when thresholds are approached). Output: Running code that enforces rate and scope limits on AI calls, with observable behavior (logs, metrics, or test cases) showing that overuse is blocked gracefully."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Core Pages and Flows",
+                  "masteryOutcomes": [
+                    "Implement list, detail, and form pages",
+                    "Map pages to backend endpoints",
+                    "Validate flows against user stories"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implementing core list and detail pages",
+                  "masteryOutcomes": [
+                    "Build the main list view (e.g., items, documents, or projects) and the corresponding detail view for a single item. Wire basic navigation between them and ensure they render real data from your backend. Output: Functional list and detail pages that fetch data from live endpoints and allow users to move from the list to a specific item’s detail and back."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implementing create/edit forms and backend mapping - Part 1",
+                  "masteryOutcomes": [
+                    "Design and build form pages for creating and editing your core entity (fields, validation rules, default values). Map these forms to the appropriate backend endpoints (create, update) at the API level. Output: Working create/edit form UIs that can submit valid payloads to stubbed or real backend endpoints, with client-side validation in place."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implementing create/edit forms and validating user flows - Part 2",
+                  "masteryOutcomes": [
+                    "Fully integrate forms with the backend and walk through key user stories end-to-end (e.g., “user creates item → sees it in list → opens detail → edits item”). Fix any navigation, validation, or state issues uncovered. Output: A validated core flow where users can create, view, update, and (optionally) delete entities through list, detail, and form pages, matching the defined user stories."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "API Integration Patterns",
+                  "masteryOutcomes": [
+                    "Centralize API calls",
+                    "Handle loading and error states",
+                    "Keep UI behavior predictable"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Centralizing API integration layer",
+                  "masteryOutcomes": [
+                    "Refactor or implement a single, centralized module/service responsible for all API calls (including AI and non-AI endpoints). Standardize request construction, authentication headers, and base URLs. Output: A unified API client layer (e.g., `apiClient.ts` or similar) that all parts of the app use for network requests, replacing scattered, ad-hoc fetch/axios calls."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Handling loading and error states consistently - Part 1",
+                  "masteryOutcomes": [
+                    "Define a standard pattern for representing loading, success, and error states across the UI (spinners, skeletons, toasts, inline errors). Implement this pattern in a few core pages using the centralized API client. Output: Updated core pages that show consistent loading indicators and clear error messages driven by a shared state model from the API integration layer."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Predictable UI behavior and edge-case handling - Part 2",
+                  "masteryOutcomes": [
+                    "Extend the integration patterns to handle edge cases (timeouts, retries, cancellation, stale data, and optimistic updates where appropriate). Ensure UI reactions are predictable and reversible from the user’s perspective. Output: A robust API interaction flow where network failures and edge cases are gracefully handled, with the UI staying in a consistent, predictable state across your main user flows."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Reliable App Interactions",
+              "lessons": [
+                {
+                  "title": "Forms That Behave",
+                  "masteryOutcomes": [
+                    "Implement controlled inputs",
+                    "Handle submit, success, and failure",
+                    "Prevent duplicate submissions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Controlled form inputs - Part 1",
+                  "masteryOutcomes": [
+                    "Implement fully controlled inputs for a multi-field form (e.g., title, description, priority)",
+                    "keep form state in a single source of truth",
+                    "sync UI values with state updates on every keystroke. Output: A form component where all fields are controlled by state and reliably reflect user input."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Submit handling, success & failure - Part 2",
+                  "masteryOutcomes": [
+                    "Wire the form’s submit button to a handler",
+                    "simulate a backend call",
+                    "show different UI states for success and error (e.g., success message, inline error messages)",
+                    "reset or preserve fields appropriately after submission. Output: A form that can be submitted, shows clear success or failure feedback, and manages its own state after submission."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Preventing duplicate submissions & edge cases - Part 3",
+                  "masteryOutcomes": [
+                    "Disable the submit button while a request is in progress",
+                    "guard against double-clicks and rapid re-submits",
+                    "handle edge cases like empty required fields or repeated failures gracefully. Output: A robust form that cannot be submitted multiple times concurrently and validates basic input before sending."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Long-Running Actions",
+                  "masteryOutcomes": [
+                    "Handle slow backend responses",
+                    "Show clear loading states",
+                    "Prevent user confusion"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Handling slow responses & timeouts - Part 1",
+                  "masteryOutcomes": [
+                    "Simulate a deliberately slow backend (e.g., delayed promise)",
+                    "implement request tracking",
+                    "avoid race conditions when multiple requests are triggered",
+                    "optionally add a timeout or cancellation behavior. Output: A component that safely manages slow or overlapping requests without breaking the UI."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Clear loading and progress states - Part 2",
+                  "masteryOutcomes": [
+                    "Add visible loading indicators (spinner, skeleton, or “Loading…” text)",
+                    "differentiate between initial load and subsequent updates",
+                    "provide contextual messages so users know what is happening. Output: An interface that clearly communicates when data is loading and what the user should expect."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Preventing confusion during long-running actions - Part 3",
+                  "masteryOutcomes": [
+                    "Temporarily lock or adjust interactive elements during loading (e.g., disable buttons, show “Processing…”)",
+                    "prevent users from triggering conflicting actions",
+                    "show completion confirmations and next-step guidance. Output: A flow where users cannot accidentally interrupt or duplicate long-running actions and always understand the current state."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Displaying Derived Output",
+                  "masteryOutcomes": [
+                    "Render computed or generated results",
+                    "Label automated content clearly",
+                    "Handle partial or empty output"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Computing and rendering derived results - Part 1",
+                  "masteryOutcomes": [
+                    "Take raw user input or fetched data and compute derived values (e.g., totals, summaries, generated text)",
+                    "centralize computation logic",
+                    "ensure recalculation when inputs change. Output: A component that displays up-to-date derived results whenever the underlying data changes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Labeling automated and generated content - Part 2",
+                  "masteryOutcomes": [
+                    "Clearly distinguish between user-entered data and system-generated output",
+                    "add labels, tooltips, or badges to indicate “Auto-generated”, “Suggested”, or “Calculated”",
+                    "explain in brief how the result was derived. Output: A results view where users can easily see which parts are automated and why they appear."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Handling partial, empty, or invalid output - Part 3",
+                  "masteryOutcomes": [
+                    "Design UI states for no data, incomplete data, or failed computations",
+                    "show placeholders or guidance instead of blank areas",
+                    "avoid misleading or stale derived results when inputs are missing or invalid. Output: A resilient results panel that degrades gracefully when there is no or partial input and never shows confusing or broken output."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "User Review & Control",
+                  "masteryOutcomes": [
+                    "Allow users to accept or edit results",
+                    "Persist final user-approved data",
+                    "Avoid silent automation"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: User review and in-place editing - Part 1",
+                  "masteryOutcomes": [
+                    "Present generated or derived results in a review screen",
+                    "allow users to edit key fields directly (inline editing or editable form)",
+                    "highlight what has been changed from the original suggestion. Output: A review interface where users can inspect and modify system-generated content before finalizing."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Persisting user-approved data - Part 2",
+                  "masteryOutcomes": [
+                    "Add a “Confirm” or “Save” action that persists the reviewed data (mock or real backend)",
+                    "ensure only the user-approved version is stored",
+                    "handle save success and failure states with clear feedback. Output: A confirmation flow that stores the final, user-approved version of the data and reports whether saving worked."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Avoiding silent automation & surfacing controls - Part 3",
+                  "masteryOutcomes": [
+                    "Make all automated changes visible and explainable",
+                    "provide clear controls to opt in, override, or revert automated suggestions",
+                    "log or display what automation did for transparency. Output: A system where automation never changes user data silently and users always have explicit control over accepting or rejecting automated behavior."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Reliable Systems in Practice",
+              "lessons": [
+                {
+                  "title": "Retry and Recovery",
+                  "masteryOutcomes": [
+                    "Allow retry for failed actions",
+                    "Prevent infinite retries",
+                    "Surface actionable feedback"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implement basic retry and recovery flows - Part 1",
+                  "masteryOutcomes": [
+                    "Design and implement a simple retry mechanism around one or two high-value operations (e.g., saving a task, sending an email notification). Configure maximum retry attempts and backoff timing. Output: A script/service function that wraps a core action with retry logic and logs each attempt, stopping after a configured limit."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implement basic retry and recovery flows - Part 2",
+                  "masteryOutcomes": [
+                    "Extend the retry mechanism to support different error types (transient vs permanent), skipping retries for non-retryable failures. Add structured logging or metrics for retries. Output: An updated module that classifies errors, retries only transient ones, and exposes retry stats (attempt count, last error) for monitoring."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Surface actionable feedback for failed actions",
+                  "masteryOutcomes": [
+                    "Map common failure scenarios (validation, network, permissions) to clear, user-facing messages and developer-oriented logs. Ensure the UI/API returns specific, actionable error details without leaking sensitive info. Output: An API/handler layer that returns standardized, human-readable error responses for failed actions and logs technical details for debugging."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Integration Check",
+                  "masteryOutcomes": [
+                    "Validate full CRUD + automation flows",
+                    "Align frontend and backend assumptions",
+                    "Fix mismatched data or behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Validate CRUD flows end-to-end - Part 1",
+                  "masteryOutcomes": [
+                    "Walk through and implement full Create, Read, Update, Delete flows for a primary resource (e.g., Project or Task) from frontend to backend. Confirm payload shapes, status codes, and response bodies are consistent. Output: A working CRUD path where a user can create, list, update, and delete a resource through the UI or API client without errors."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Validate automation and background flows - Part 2",
+                  "masteryOutcomes": [
+                    "Implement and verify at least one automation flow (e.g., auto-archive old tasks, send reminders on due dates). Ensure triggers, conditions, and side effects behave as expected. Output: A background job or automation script that runs against real data, performs the intended action, and logs its execution results."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Align frontend-backend contracts and fix mismatches",
+                  "masteryOutcomes": [
+                    "Compare frontend expectations (field names, types, required fields) with backend contracts. Identify and fix mismatches in schemas, default values, and behavior (e.g., sorting, pagination). Output: Updated API definitions and/or frontend adapters so that data contracts are synchronized and documented, reducing integration bugs."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Testing What Matters",
+                  "masteryOutcomes": [
+                    "Identify critical backend paths",
+                    "Test validation and authorization",
+                    "Avoid testing external dependencies directly"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Identify and cover critical backend paths",
+                  "masteryOutcomes": [
+                    "Enumerate the most business-critical backend operations (e.g., create order, complete payment, assign task). Prioritize them and implement focused tests that cover happy paths and key edge cases. Output: A test suite (unit/integration) that reliably exercises the top critical endpoints or service functions with clear pass/fail criteria."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Test validation and authorization rules",
+                  "masteryOutcomes": [
+                    "Implement tests that verify validation rules (required fields, formats, limits) and authorization checks (roles, ownership, permissions) for selected endpoints. Ensure unauthorized access is blocked and correctly reported. Output: A set of tests that fail when validation or permission rules are weakened or bypassed, protecting core resources."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Isolate external dependencies in tests",
+                  "masteryOutcomes": [
+                    "Refactor code to avoid calling real external services (e.g., payment gateway, email provider, third-party APIs) in tests. Introduce interfaces, fakes, or mocks for these dependencies. Output: A testable backend module where external dependencies are abstracted and tests run deterministically without network calls."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Error Paths Are Features",
+                  "masteryOutcomes": [
+                    "Test failure modes deliberately",
+                    "Ensure consistent error responses",
+                    "Avoid silent failures"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Design and test key failure modes - Part 1",
+                  "masteryOutcomes": [
+                    "Identify common and high-impact failure scenarios (DB down, timeout, invalid input, third-party failure). Simulate these failures in a controlled way and observe current behavior. Output: A documented list of tested failure modes plus minimal test cases or scripts that reproduce each failure and capture current responses."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Standardize and implement consistent error responses - Part 2",
+                  "masteryOutcomes": [
+                    "Define an error response format (codes, messages, fields) and apply it across selected endpoints or services. Ensure clients receive predictable structures for both success and failure. Output: An error-handling layer that converts internal exceptions into standardized API responses, verified by tests for multiple error types."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Prevent silent failures and improve observability",
+                  "masteryOutcomes": [
+                    "Audit the codebase for silent catches, swallowed errors, or missing logs. Replace them with explicit error handling, logging, or notifications. Add minimal monitoring hooks (e.g., counters for failures). Output: Updated code where important failures are logged or surfaced (instead of silently ignored), enabling faster detection and debugging."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Backend Logging & Storytelling",
+              "lessons": [
+                {
+                  "title": "Logging and Debugging",
+                  "masteryOutcomes": [
+                    "Log key backend actions",
+                    "Log external service interactions",
+                    "Use logs to debug incorrect behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implement core backend logging - Part 1",
+                  "masteryOutcomes": [
+                    "Configure a centralized logging solution in the backend",
+                    "add structured logs to key request/response points",
+                    "ensure logs include correlation IDs or request IDs. Output: Backend service that logs incoming requests and outgoing responses with structured fields (user, route, status, latency, request ID)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Instrument external service interactions - Part 2",
+                  "masteryOutcomes": [
+                    "Add detailed logs around external API/database/cache calls",
+                    "capture timing, payload summaries, and error states",
+                    "differentiate between internal and external failures in logs. Output: Backend service that records clear, structured logs for each external integration call, including success/failure and performance metrics."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Debugging via logs and log-based alerts - Part 3",
+                  "masteryOutcomes": [
+                    "Use existing logs to trace and fix at least one simulated bug",
+                    "refine log messages to improve debuggability",
+                    "define simple log patterns or queries to detect anomalies. Output: A bug-fixed backend flow plus a set of improved log statements and saved log queries that make future debugging faster."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "README & Architecture",
+                  "masteryOutcomes": [
+                    "Document setup and environment",
+                    "Describe system architecture clearly",
+                    "Explain advanced feature decisions"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Draft README with setup and environment - Part 1",
+                  "masteryOutcomes": [
+                    "Document prerequisites, environment variables, and installation steps",
+                    "provide clear run and test commands",
+                    "describe how to configure external services locally. Output: A README section that lets a new developer clone the repo, set environment variables, and run the project end-to-end."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Document system architecture - Part 2",
+                  "masteryOutcomes": [
+                    "Create a high-level architecture description",
+                    "define main components, data flows, and external dependencies",
+                    "include a diagram or structured description of request lifecycle. Output: An “Architecture” section (plus diagram or textual equivalent) in the README describing how the system components interact."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Explain advanced feature decisions and tradeoffs - Part 3",
+                  "masteryOutcomes": [
+                    "Identify at least one advanced feature (e.g., auth, caching, async jobs, vector search)",
+                    "document why its design was chosen",
+                    "explain tradeoffs, limitations, and possible future improvements. Output: A “Design Decisions” or “Advanced Features” section in the README explaining rationale, tradeoffs, and future work."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Portfolio Narrative",
+                  "masteryOutcomes": [
+                    "Frame the project as a system",
+                    "Highlight one advanced capability",
+                    "Justify scope and tradeoffs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Frame the project as a coherent system - Part 1",
+                  "masteryOutcomes": [
+                    "Write a narrative that explains the problem the project solves, target users, and main workflows",
+                    "connect features into a single coherent system story. Output: A “Project Overview” / “System Narrative” text that can be reused in portfolio descriptions and presentations."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Highlight and demonstrate one advanced capability - Part 2",
+                  "masteryOutcomes": [
+                    "Select one standout capability (e.g., intelligent routing, retrieval, complex UI flow)",
+                    "describe its purpose and impact",
+                    "prepare a short, step-by-step usage scenario or demo script. Output: A concise narrative + demo script that showcases the advanced capability in a way that is understandable to non-technical reviewers."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Justify scope and tradeoffs for portfolio audiences - Part 3",
+                  "masteryOutcomes": [
+                    "Explain what was intentionally included/excluded given time and complexity",
+                    "articulate technical and product tradeoffs",
+                    "position the project level (junior/mid/senior) and learning outcomes. Output: A “Scope & Tradeoffs” write-up suitable for a portfolio page or case study, clarifying decisions and demonstrating mature thinking."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Optional: Knowledge Retrieval",
+                  "masteryOutcomes": [
+                    "Retrieve relevant stored data dynamically",
+                    "Inject retrieved context into processing",
+                    "Prevent irrelevant or unsafe inputs"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Design and implement basic knowledge retrieval pipeline - Part 1",
+                  "masteryOutcomes": [
+                    "Choose a storage format (e.g., vector DB, embeddings file, indexed docs)",
+                    "implement a function to retrieve relevant items based on a query",
+                    "define relevance criteria. Output: A retrieval module that, given a query, returns a ranked list of relevant stored documents or chunks."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Inject retrieved context into processing pipeline - Part 2",
+                  "masteryOutcomes": [
+                    "Integrate retrieval results into the main processing flow (e.g., LLM prompt, response generator)",
+                    "design a context window strategy (what to include, how much, in what order). Output: A processing function that automatically augments user queries with retrieved context before generating responses."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Guardrails against irrelevant or unsafe retrieval - Part 3",
+                  "masteryOutcomes": [
+                    "Add filters to drop low-relevance or unsafe content",
+                    "implement basic checks (e.g., minimum similarity score, content-type filters, safety rules)",
+                    "define fallback behavior when no safe context exists. Output: A safeguarded retrieval-augmented flow that only uses relevant, allowed context and gracefully handles no-match or unsafe cases."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Automation & Demo Systems",
+              "lessons": [
+                {
+                  "title": "Optional: Multi-Step Automation",
+                  "masteryOutcomes": [
+                    "Chain multiple automated steps",
+                    "Define stopping conditions",
+                    "Maintain control flow explicitly"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Multi-step automation pipeline design",
+                  "masteryOutcomes": [
+                    "Design a multi-step automation workflow using your existing project entities (e.g., tasks, orders, or tickets). Identify each step, its inputs/outputs, and how it links to the next. Output: A documented flow (diagram or structured config) describing each automated step, its triggers, and data passed between steps."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implement chained automation with control flow - Part 1",
+                  "masteryOutcomes": [
+                    "Implement the first half of the multi-step automation: create code that executes at least 2-3 chained steps, passing data forward. Add explicit control flow (branching based on conditions, success/failure paths). Output: A working automation function or job that runs multiple steps in sequence and branches based on simple conditions."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implement stopping conditions and failure handling - Part 2",
+                  "masteryOutcomes": [
+                    "Extend the automation to include clear stopping conditions (e.g., max retries, state flags, timeouts) and explicit error handling or rollback. Log or surface the automation state so it’s observable. Output: A robust multi-step automation that can stop safely, handle failures, and expose its status (via logs, DB flags, or an API)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Optional: Backend Extensions",
+                  "masteryOutcomes": [
+                    "Background jobs for slow actions",
+                    "Cache derived results",
+                    "Version non-CRUD endpoints"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Design background jobs and caching strategy",
+                  "masteryOutcomes": [
+                    "Identify slow or expensive backend actions and decide which should move to background jobs. Choose which derived results to cache and define cache invalidation rules. Output: A technical plan (or config file) listing background job types, their triggers, and the cache keys/TTL and invalidation strategy."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Implement background jobs and result caching - Part 1",
+                  "masteryOutcomes": [
+                    "Implement at least one background job for a slow action (e.g., report generation, external API call) and wire it to your existing endpoints. Add caching for at least one derived result and use it in a read endpoint. Output: Working background job(s) plus an endpoint that serves cached derived data with correct reads/writes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Version and extend non-CRUD endpoints - Part 2",
+                  "masteryOutcomes": [
+                    "Introduce versioning for at least one non-CRUD endpoint (e.g., `/v1/summary` vs `/v2/summary`) and adjust it to use your caching and/or background job results. Maintain backward compatibility while adding new behavior. Output: Versioned non-CRUD endpoints that demonstrate both old and new behavior, backed by jobs and cache."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Optional: Frontend Extensions",
+                  "masteryOutcomes": [
+                    "Progressive or streaming UI updates",
+                    "Configuration UI for advanced behavior",
+                    "Result comparison views"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Progressive/streaming UI for long-running actions",
+                  "masteryOutcomes": [
+                    "Connect the frontend to long-running or background actions, showing progressive or streaming updates (polling, SSE, websockets, or incremental UI states). Output: A UI view where users trigger a long-running action and see status updates or partial results without a full page reload."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Configuration UI for advanced behavior",
+                  "masteryOutcomes": [
+                    "Build a configuration screen that lets users adjust advanced behavior (e.g., automation thresholds, feature toggles, notification preferences). Persist settings and have them influence backend behavior. Output: A functional configuration UI that reads/writes settings and affects at least one existing flow."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Result comparison and insights view",
+                  "masteryOutcomes": [
+                    "Implement a UI that can display and compare two or more result sets (e.g., before/after runs, different configurations, or versions). Support clear visual differentiation and key metrics. Output: A comparison view that loads multiple result sets and highlights differences (tables, charts, or side-by-side panels)."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Final Demo & Review",
+                  "masteryOutcomes": [
+                    "Demo core CRUD flows",
+                    "Demo one advanced feature",
+                    "Show one failure and recovery path"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Final demo script and data preparation",
+                  "masteryOutcomes": [
+                    "Define the demo narrative: which core CRUD flows, which advanced feature, and which failure/recovery scenario to show. Seed or prepare demo data so all flows can be run live and reliably. Output: A written demo script plus a prepared dataset or seeding script that sets the app into a ready-to-demo state."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Demo core CRUD and advanced feature - Part 1",
+                  "masteryOutcomes": [
+                    "Rehearse and refine the live path for core CRUD operations (create, read, update, delete) and one advanced feature (automation, background job, or advanced UI). Ensure flows are smooth and visible in the UI. Output: A polished, time-bounded walkthrough that reliably demonstrates CRUD plus one advanced capability."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Project phase: Failure, recovery, and review - Part 2",
+                  "masteryOutcomes": [
+                    "Implement and practice a controlled failure scenario (e.g., validation error, job failure, external API issue) and its recovery path. Conduct a brief self-review: note strengths, gaps, and next steps. Output: A demo-ready failure+recovery flow plus a short review document summarizing lessons learned and future improvements."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 8,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

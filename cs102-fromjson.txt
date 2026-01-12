@@ -1,0 +1,392 @@
+{
+  "lessons": [
+    {
+      "lessonTitle": "Welcome to CS102",
+      "masteryOutcomes": []
+    },
+    {
+      "lessonTitle": "What is a data structure",
+      "masteryOutcomes": [
+        "Explain the purpose of data structures in organizing and managing data.",
+        "Describe the necessity of different data structures"
+      ]
+    },
+    {
+      "lessonTitle": "Index-based data structures",
+      "masteryOutcomes": [
+        "Explain the idea of indexing and sequential access."
+      ]
+    },
+    {
+      "lessonTitle": "Understanding arrays",
+      "masteryOutcomes": [
+        "Identify arrays as ordered collections with fixed positions."
+      ]
+    },
+    {
+      "lessonTitle": "Accessing elements in arrays",
+      "masteryOutcomes": [
+        "Explain how indices map to element locations.",
+        "Validate index boundaries and recognize out of range conditions.",
+        "Demonstrate the ability to add new elements to an existing array"
+      ]
+    },
+    {
+      "lessonTitle": "Updating and replacing array values",
+      "masteryOutcomes": [
+        "Modify elements at specific indices.",
+        "Apply replacement logic to update first, middle and last elements.",
+        "Evaluate the effect of in place updates on the overall structure."
+      ]
+    },
+    {
+      "lessonTitle": "Removing elements from arrays",
+      "masteryOutcomes": [
+        "Remove elements using operations such as pop and handle removal from different parts of the array",
+        "Predict how deletion affects subsequent index positions."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: basic array operations",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Combined array operations in sequence",
+      "masteryOutcomes": [
+        "Execute multiple operations in correct order: access, update, remove.",
+        "Return multiple values from an array manipulation function."
+      ]
+    },
+    {
+      "lessonTitle": "Using arrays for structured problem solving",
+      "masteryOutcomes": [
+        "Break a problem into steps based on array operations.",
+        "Translate requirements into index based actions.",
+        "Design input and output structures for array related tasks."
+      ]
+    },
+    {
+      "lessonTitle": "Introducing high dimensional arrays",
+      "masteryOutcomes": [
+        "Describe what a high dimensional array is.",
+        "Identify real world scenarios that require multi level data representation."
+      ]
+    },
+    {
+      "lessonTitle": "Implementing high dimensional arrays in Python",
+      "masteryOutcomes": [
+        "Create and access nested lists using multiple indices.",
+        "Modify elements inside nested lists while maintaining structure."
+      ]
+    },
+    {
+      "lessonTitle": "Edge cases and reliability in array operations",
+      "masteryOutcomes": [
+        "Evaluate behavior when arrays contain fewer than three elements.",
+        "Adjust logic to avoid index errors or empty structure access."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: advanced array operations",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Weekly review: foundations of data structures",
+      "masteryOutcomes": []
+    },
+    {
+      "lessonTitle": "What is LIFO?",
+      "masteryOutcomes": [
+        "Define the LIFO principle.",
+        "Identify real world examples that follow LIFO behavior."
+      ]
+    },
+    {
+      "lessonTitle": "Introduce the Stack",
+      "masteryOutcomes": [
+        "Define the Stack data structure"
+      ]
+    },
+    {
+      "lessonTitle": "Stack operations, push and pop",
+      "masteryOutcomes": [
+        "Implement push to add items to the top of a stack.",
+        "Implement pop to remove the most recent element."
+      ]
+    },
+    {
+      "lessonTitle": "Building a stack using lists",
+      "masteryOutcomes": [
+        "Construct a stack with list based operations.",
+        "Simulate stack growth and reduction.",
+        "Identify when a stack becomes empty."
+      ]
+    },
+    {
+      "lessonTitle": "Applying stacks to undo behavior",
+      "masteryOutcomes": [
+        "Translate user actions into stack entries.",
+        "Remove the last two actions using pop.",
+        "Produce the stack state after undoing actions."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: stacks",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "What is FIFO",
+      "masteryOutcomes": [
+        "Define the FIFO principle.",
+        "Identify real world systems that use queue order.",
+        "Explain why FIFO is needed in addition to LIFO, and the distinct purpose each one serves."
+      ]
+    },
+    {
+      "lessonTitle": "Introduce the Queue",
+      "masteryOutcomes": [
+        "Define the Queue data structure"
+      ]
+    },
+    {
+      "lessonTitle": "Queue operations, enqueue and dequeue",
+      "masteryOutcomes": [
+        "Implement enqueue to add items at the end.",
+        "Implement dequeue to remove the first item."
+      ]
+    },
+    {
+      "lessonTitle": "Implementing queues with deque",
+      "masteryOutcomes": [
+        "Construct a queue using deque.",
+        "Apply popleft for FIFO removal."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: queues",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Integrating stacks and queues",
+      "masteryOutcomes": [
+        "Compare how LIFO and FIFO behaviors affect data processing.",
+        "Practice choosing when to use a stack or a queue in simple scenarios.",
+        "Simulate a small adventure where characters move through a queue while carrying a stack of items."
+      ]
+    },
+    {
+      "lessonTitle": "Weekly review: stacks & queues",
+      "masteryOutcomes": []
+    },
+    {
+      "lessonTitle": "Welcome to algorithms",
+      "masteryOutcomes": [
+        "Describe what the algorithms unit will cover and how it connects to previous units.",
+        "Identify how learning algorithms will help with future coding and problem solving."
+      ]
+    },
+    {
+      "lessonTitle": "Why we need algorithms in real life",
+      "masteryOutcomes": [
+        "Explain in simple words what an algorithm is using everyday examples.",
+        "Identify at least two real world situations that can be described as algorithms."
+      ]
+    },
+    {
+      "lessonTitle": "Turning everyday problems into step by step solutions",
+      "masteryOutcomes": [
+        "Break a simple real world problem into clear ordered steps.",
+        "Represent these steps as basic pseudocode or numbered instructions."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: algorithms",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Counting work: how many steps does an algorithm take",
+      "masteryOutcomes": [
+        "Trace a simple algorithm and count how many basic steps it performs for a given small input.",
+        "Describe how the number of steps changes when the input size grows."
+      ]
+    },
+    {
+      "lessonTitle": "Complexity, what it means and why it matters",
+      "masteryOutcomes": [
+        "Define algorithmic complexity in beginner friendly language.",
+        "Explain with an example why two correct algorithms can have very different running times.",
+        "Relate complexity to user experience, for example waiting time in an app or game."
+      ]
+    },
+    {
+      "lessonTitle": "Introduce the big O notation",
+      "masteryOutcomes": [
+        "Explain what the variable “n” represents in Big O notation",
+        "Simply explain what Big O notation means",
+        "Identify and compare common growth rates such as constant, linear, polynomial and exponential, and explain how each one influences how an algorithm’s steps increase with input size."
+      ]
+    },
+    {
+      "lessonTitle": "Analyzing algorithm with big O",
+      "masteryOutcomes": [
+        "Recognize that Big O notation ignores constant factors and lower order terms, and determine the correct complexity class by focusing on the dominant growth behavior of a function.",
+        "Identify the Big O class of simple algorithms by observing how their steps grow with input size."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: algorithms analysis",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Comparing two solutions to the same problem",
+      "masteryOutcomes": [
+        "Evaluate two algorithms that solve the same task using their time complexity and number of operations.",
+        "Identify simple trade offs such as one solution being easier to read while the other is faster.",
+        "Choose an appropriate algorithm for a given beginner level scenario and explain the choice."
+      ]
+    },
+    {
+      "lessonTitle": "Safe algorithms: handling edge cases and bad input",
+      "masteryOutcomes": [
+        "Identify common edge cases for simple algorithms, such as empty lists or missing values.",
+        "Adjust existing pseudocode to handle edge cases without crashing.",
+        "Predict how an algorithm should behave when it receives invalid or unexpected input."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: advanced algorithm analysis",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Weekly review: algorithm analysis",
+      "masteryOutcomes": []
+    },
+    {
+      "lessonTitle": "Why searching matters",
+      "masteryOutcomes": [
+        "Describe everyday situations where searching is needed, such as finding a contact or a file.",
+        "Explain why choosing a good search approach can save time in real programs."
+      ]
+    },
+    {
+      "lessonTitle": "How searching works with simple examples",
+      "masteryOutcomes": [
+        "Trace simple search processes in small lists or collections.",
+        "Identify whether a described process is performing a search and name what is being searched for."
+      ]
+    },
+    {
+      "lessonTitle": "Linear search with small and unsorted data",
+      "masteryOutcomes": [
+        "Describe linear search in your own words.",
+        "Apply linear search to find an item in a small unsorted list.",
+        "Identify when linear search is a reasonable and simple choice."
+      ]
+    },
+    {
+      "lessonTitle": "Binary search with large sorted collections",
+      "masteryOutcomes": [
+        "Describe the core idea of binary search, repeatedly cutting the search space in half.",
+        "Perform binary search step by step on a small sorted list.",
+        "Explain why binary search only works correctly on sorted data."
+      ]
+    },
+    {
+      "lessonTitle": "Comparing linear and binary search",
+      "masteryOutcomes": [
+        "Compare linear and binary search in terms of how many steps they take for different list sizes.",
+        "Decide which search method to use for a given scenario, such as a small unsorted list or a large sorted list.",
+        "Use informal complexity language, such as \"grows linearly\" or \"grows much slower\", when comparing them."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: searching",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Why sorting is useful",
+      "masteryOutcomes": [
+        "Explain why sorting data can make searching, reporting and decision making easier.",
+        "Identify real world tasks that become simpler once data is sorted."
+      ]
+    },
+    {
+      "lessonTitle": "Sorting: different approaches",
+      "masteryOutcomes": [
+        "Describe at a high level different sorting approaches, for example swapping neighbors or selecting the smallest item.",
+        "Match short stories or visual explanations to the corresponding sorting approach."
+      ]
+    },
+    {
+      "lessonTitle": "Bubble sort",
+      "masteryOutcomes": [
+        "Describe bubble sort as repeatedly swapping out-of-order neighboring elements."
+      ]
+    },
+    {
+      "lessonTitle": "Insertion sort",
+      "masteryOutcomes": [
+        "Describe insertion sort as repeatedly inserting each element into its correct position.",
+        "Understanding insertion sort’s average time complexity, rather than its best-case and worst-case behavior."
+      ]
+    },
+    {
+      "lessonTitle": "Bubble vs. Insertion",
+      "masteryOutcomes": [
+        "Compare bubble sort and insertion sort in terms of how they scan and move values.",
+        "Identify a simple scenario where one of the two might be slightly preferable, for example fewer swaps.",
+        "Recognize that both algorithms have similar time complexity for large lists."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: sorting",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Using Python sorting tools in practice",
+      "masteryOutcomes": [
+        "Use Python tools such as `sorted` and `list.sort` to sort lists in ascending and descending order.",
+        "Apply key functions or parameters to sort basic custom data, for example sorting pairs by score.",
+        "Relate Python's built in sorting tools to the manual sorting algorithms learned earlier."
+      ]
+    },
+    {
+      "lessonTitle": "Advanced sorting with Python sorting tools",
+      "masteryOutcomes": [
+        "Combine Python sorting parameters, such as `key` and `reverse`, to solve slightly richer sorting tasks.",
+        "Design simple data structures, such as lists of dictionaries or tuples, that can be sorted by different fields.",
+        "Decide when to rely on Python's sort tools instead of manually implementing a basic sorting algorithm."
+      ]
+    },
+    {
+      "lessonTitle": "Challenge: advanced sorting",
+      "masteryOutcomes": [
+        "Student demonstrates understanding and can successfully complete the required skills for this challenge."
+      ]
+    },
+    {
+      "lessonTitle": "Weekly review: searching & sorting",
+      "masteryOutcomes": [
+        "New mastery outcome"
+      ]
+    }
+  ]
+}

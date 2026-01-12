@@ -1,0 +1,197 @@
+## Unit 1 — Data Has Shape
+
+### 1. Why Databases Exist
+
+- **Explain** what a database is and what problems it solves.
+- **Distinguish** databases from files and in-memory data.
+- **Identify** data that should live in a database in real applications.
+
+---
+
+### 2. What Is a Relational Database
+
+- **Define** relational databases as tables connected by relationships.
+- **Describe** rows, columns, and tables using concrete examples.
+- **Explain** why relationships matter for real-world data.
+
+---
+
+### 3. DBMS: The Software Behind the Data
+
+- **Define** DBMS and distinguish it from a database.
+- **Name** common relational DBMSs (e.g., SQLite, PostgreSQL).
+- **Explain** at a high level how a DBMS executes queries.
+
+---
+
+### 4. Schema: Tables and Columns
+
+- **Define** schema and explain why it matters.
+- **Draft** a simple schema with table and column names.
+- **Improve** a schema by clarifying column meaning.
+
+---
+
+### 5. Primary Keys: Row Identity
+
+- **Define** primary keys and what “unique row identity” means.
+- **Select** an appropriate primary key for a table.
+- **Identify** poor primary key choices in sample data.
+
+---
+
+### 6. Foreign Keys: Linking Tables
+
+- **Define** foreign keys and how they reference primary keys.
+- **Model** a one-to-many relationship using PK and FK.
+- **Explain** how foreign keys enable joins.
+
+---
+
+### 7. ER Diagrams, Readable
+
+- **Identify** tables and key columns in a physical ER diagram.
+- **Interpret** relationship lines as FK → PK connections.
+- **Translate** an ER diagram into tables.
+
+---
+
+### 8. Your First SQL Query
+
+- **Define** SQL and describe what kind of language it is (declarative).
+- **Identify** the role of `SELECT` and `FROM`.
+- **Write** a basic `SELECT` query against a single table.
+- **Predict** query results by reading SQL.
+
+---
+
+## Unit 2 — Query with SQL Like a Detective
+
+### 1. SQL: How Queries Are Written
+
+- **Describe** SQL as a declarative query language.
+- **Explain** the structure of a SQL statement.
+- **Distinguish** SQL from procedural languages like Python.
+
+---
+
+### 2. Picking Columns on Purpose
+
+- **Write** SELECT queries with specific columns.
+- **Use** column aliases to rename output.
+- **Explain** how selected columns relate to the schema.
+
+---
+
+### 3. Filtering with WHERE
+
+- **Write** WHERE clauses using comparison operators.
+- **Filter** results based on realistic conditions.
+- **Debug** incorrect filtering logic.
+
+---
+
+### 4. AND vs OR
+
+- **Distinguish** AND from OR using concrete examples.
+- **Combine** multiple conditions correctly.
+- **Explain** filter logic in plain language.
+
+---
+
+### 5. Pattern Matching with LIKE
+
+- **Use** LIKE to match partial text.
+- **Choose** between exact match and pattern match.
+- **Write** readable LIKE patterns.
+
+---
+
+### 6. IN and BETWEEN
+
+- **Filter** using IN for multiple values.
+- **Filter** using BETWEEN for ranges.
+- **Choose** the clearest filtering approach.
+
+---
+
+### 7. NULL Means Missing
+
+- **Define** NULL and distinguish it from empty values.
+- **Write** IS NULL and IS NOT NULL conditions.
+- **Predict** how NULL affects query results.
+
+---
+
+### 8. Sorting Results
+
+- **Sort** query results using ORDER BY.
+- **Choose** meaningful sorting directions.
+- **Explain** the difference between filtering and sorting.
+
+---
+
+### 9. Limiting Output
+
+- **Use** LIMIT to control result size.
+- **Combine** WHERE, ORDER BY, and LIMIT.
+- **Validate** that results match the question asked.
+
+---
+
+### 10. JOIN: Bringing Tables Together
+
+- **Explain** why data is split across tables.
+- **Identify** join keys using PK and FK.
+- **Write** a basic JOIN query.
+
+---
+
+### 11. From Diagram to Query
+
+- **Identify** join paths from ER diagrams.
+- **Write** JOIN queries across two tables.
+- **Modify** queries with filtering and sorting.
+
+---
+
+## Unit 3 — NoSQL in Context
+
+### 1. Beyond Relational: The NoSQL Landscape
+
+- **Define** NoSQL as a family of non-relational databases.
+- **Distinguish** relational databases from NoSQL at a high level.
+- **Identify** major NoSQL types: document, key-value, wide-column, graph.
+- **Recognize** which NoSQL types are covered in this course.
+
+### 2. JSON: The Shape of Modern Data
+
+- **Define** JSON and its core structures, bulduing on knowledge from Python’s dicts.
+- **Read** JSON and explain the data it represents.
+- **Relate** JSON to Python dictionaries and lists.
+
+---
+
+### 3. Document Databases
+
+- **Define** documents and collections.
+- **Explain** how document databases store data.
+- **Identify** common use cases.
+- **Recognize** MongoDB as a common example.
+
+---
+
+### 4. Key-Value Stores
+
+- **Define** key-value storage.
+- **Explain** what key-value stores are good at.
+- **Contrast** key-value access with SQL querying.
+- **Recognize** Redis as a common example.
+
+---
+
+### 5. Choosing the Right Tool
+
+- **Recommend** relational, document, or key-value storage for simple scenarios.
+- **Justify** choices using course vocabulary.
+- **Explain** why relational databases are usually the default.

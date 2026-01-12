@@ -42,6 +42,10 @@ Content:
 {content}
 """
 
+
+
+
+
 def get_week_learning_goals_prompt(lessons_text: str, week_num: int) -> str:
     """Prompt for generating weekly learning goals."""
     return f"""
@@ -56,16 +60,21 @@ Make it clear and specific to the lessons covered. Don't add asterisk (*) to the
 
 Instructions for choose a good week title:
 Short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
-Use one of those styles:
-- neutral statements ("Tables, Rows, Columns")
-- purpose-driven titles ("Why Databases Exist" or "How the web works")
-- term + clear meaning ("Constructor: where objects begin")
-- practical titles (like "HTTP in Action")
-- summary of the work being done in the chapter ("Using APIs with Python")
-- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+Choose one of the following patterns (do not reuse or closely imitate the wording below):
+1. Neutral structure — naming key concepts or components
+Pattern: nouns or noun lists
+2. Purpose-driven — explaining why something exists or how it works
+Pattern: “Why / How / What” + plain language
+3. Term + explanation — introducing a concept with its meaning
+Pattern: “Term: plain explanation”
+4. Action summary — describing what the learner will do
+Pattern: verb phrase or task description
+5. Lightly playful — informal but still professional
+Pattern: friendly phrasing, no metaphors
 **Avoid:**
 - academic phrasing ("Introduction to…", "Overview of..")
 - hype, metaphors, or marketing tone
+
 
 """
 
@@ -80,13 +89,18 @@ Generate:
 
 Instructions for choose a good name for the chapter:
 Write short, clear  titles (2–5 words) that sound natural and confident. Prefer familiar phrasing over cleverness. With some spark added  (still practical, not hype)
-Use one of those styles:
-- neutral statements ("Tables, Rows, Columns")
-- purpose-driven titles ("Why Databases Exist" or "How the web works")
-- term + clear meaning ("Constructor: where objects begin")
-- practical titles (like "HTTP in Action")
-- summary of the work being done in the chapter ("Using APIs with Python")
-- Title with a small wink ("Encapsulation, inheritance, and other scary words")
+Choose one of the following patterns (do not reuse or closely imitate the wording below):
+
+1. Neutral structure — naming key concepts or components
+Pattern: nouns or noun lists
+2. Purpose-driven — explaining why something exists or how it works
+Pattern: “Why / How / What” + plain language
+3. Term + explanation — introducing a concept with its meaning
+Pattern: “Term: plain explanation”
+4. Action summary — describing what the learner will do
+Pattern: verb phrase or task description
+5. Lightly playful — informal but still professional
+Pattern: friendly phrasing, no metaphors
 **Avoid:**
 - academic phrasing ("Introduction to…", "Overview of..")
 - hype, metaphors, or marketing tone
@@ -97,6 +111,63 @@ TITLE: [chapter title]
 GOALS: [learning goals]
 """
 
+
+# def get_practice_sessions_for_week_prompt(chapters_text: str, week_num: int, num_chapters: int, practice_sessions_needed: List[int], total_sessions: int) -> str:
+#     """Prompt for generating practice sessions for all chapters in a week.
+    
+#     Args:
+#         chapters_text: Text description of all chapters and their lessons
+#         week_num: Week number
+#         num_chapters: Number of chapters in the week
+#         practice_sessions_needed: List of practice session counts needed per chapter
+#         total_sessions: Total number of practice sessions to generate
+#     """
+#     # Build instructions for each chapter
+#     chapter_instructions = []
+#     for chapter_idx, session_count in enumerate(practice_sessions_needed, 1):
+#         if session_count > 0:
+#             chapter_instructions.append(f"Chapter {chapter_idx}: {session_count} practice session(s)")
+    
+#     instructions_text = "\n".join(chapter_instructions)
+    
+#     return f"""
+# Create practice sessions for the {num_chapters} chapters below (total {total_sessions} practice sessions).
+
+# Practice sessions needed per chapter:
+# {instructions_text}
+
+# Each practice session should:
+# 1. Have a title that starts with "Practice Lesson: "
+# 2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
+# 3. Include hands-on exercises, projects, or practical applications.
+# 4. Have clear learning outcome of one sentence. After that, add a second sentence with "Output: [short description of the final result of the practice session, meaning what does the script/program will do]".
+# 5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
+# 6. The theme could be one of those:
+#     a. Real life example: A practical exercise with a short story (theme) that adds context and real feeling to the exercise. Choose a theme from one of the following high-level domains: Productivity and personal tools; Media, content creation, or entertainment; Education, learning, or assessment systems; Health, wellness, or habit tracking; Finance, budgeting, or analytics; Games, simulations, or puzzles;  Communication, messaging, or collaboration; Data processing, transformation, or visualization; Scheduling, planning, or time management; Search, recommendation, or ranking systems; Security, access control, or validation; E-commerce platforms and marketplaces; Travel, navigation, or routing; Content organization, tagging, or knowledge management; Environmental, energy, or sustainability systems; Science, research, or data collection tools; Operations, logistics, or supply-chain systems; Creative tools (design, writing, music, video); Lifestyle, food, sports, and entertainment-related systems
+#        Note: The theme should support the learning goal and remain secondary to the technical task. If the theme is not clear, choose a theme from the list above.
+#     b. Classic programming exercise: A classic programming exercise or challenge, that you would find in traditional coding books, courses, or exercises.
+# 8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
+# 9. If the practice session is bigger than others, add two items with 'Part 1' and 'Part 2' to the title. For example, "Practice Lesson: To-Do list - Part 1" and "Practice Lesson: To-Do list - Part 2".
+# 10. If the practice comes after theoretic lessons (where no coding is involved), create a practice session that is basically a quiz / thinking / matching / identifying exercise, not coding. In those cases, the title should be "Theory Practice Lesson: ".
+
+# Week {week_num} Chapters:
+# {chapters_text}
+
+# Return in this exact format:
+
+# CHAPTER: 1
+# TITLE: Practice Session: [Session Title for Chapter 1]
+# OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+# TITLE: Practice Session: [Another Session Title for Chapter 1 if needed]
+# OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+# CHAPTER: 2
+# TITLE: Practice Session: [Session Title for Chapter 2]
+# OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+
+# Continue for all {num_chapters} chapters. Generate exactly the number of practice sessions specified for each chapter above.
+# """
 
 def get_practice_sessions_for_week_prompt(chapters_text: str, week_num: int, num_chapters: int, practice_sessions_needed: List[int], total_sessions: int) -> str:
     """Prompt for generating practice sessions for all chapters in a week.
@@ -117,24 +188,15 @@ def get_practice_sessions_for_week_prompt(chapters_text: str, week_num: int, num
     instructions_text = "\n".join(chapter_instructions)
     
     return f"""
-Create practice sessions for the {num_chapters} chapters below (total {total_sessions} practice sessions).
+Create project work sessions  for the {num_chapters} chapters below (total {total_sessions} practice sessions).
 
-Practice sessions needed per chapter:
+project work needed per chapter:
 {instructions_text}
 
-Each practice session should:
-1. Have a title that starts with "Practice Lesson: "
-2. Focus on applying and reinforcing the concepts from that specific chapter's lessons
-3. Include hands-on exercises, projects, or practical applications.
-4. Have clear learning outcome of one sentence. After that, add a second sentence with "Output: [short description of the final result of the practice session, meaning what does the script/program will do]".
-5. Each session should be a hands-on exercise or practical application of the concepts learned previously.
-6. The theme could be one of those:
-    a. Real life example: A practical exercise with a short story (theme) that adds context and real feeling to the exercise. Choose a theme from one of the following high-level domains: Productivity and personal tools; Media, content creation, or entertainment; Education, learning, or assessment systems; Health, wellness, or habit tracking; Finance, budgeting, or analytics; Games, simulations, or puzzles;  Communication, messaging, or collaboration; Data processing, transformation, or visualization; Scheduling, planning, or time management; Search, recommendation, or ranking systems; Security, access control, or validation; E-commerce platforms and marketplaces; Travel, navigation, or routing; Content organization, tagging, or knowledge management; Environmental, energy, or sustainability systems; Science, research, or data collection tools; Operations, logistics, or supply-chain systems; Creative tools (design, writing, music, video); Lifestyle, food, sports, and entertainment-related systems
-       Note: The theme should support the learning goal and remain secondary to the technical task. If the theme is not clear, choose a theme from the list above.
-    b. Classic programming exercise: A classic programming exercise or challenge, that you would find in traditional coding books, courses, or exercises.
-8. Title should be short, without actions. For example, "Practice Session: Recipe app" and not "Practice Session: Building a Recipe App"
-9. If the practice session is bigger than others, add two items with 'Part 1' and 'Part 2' to the title. For example, "Practice Lesson: To-Do list - Part 1" and "Practice Lesson: To-Do list - Part 2".
-10. If the practice comes after theoretic lessons (where no coding is involved), create a practice session that is basically a quiz / thinking / matching / identifying exercise, not coding. In those cases, the title should be "Theory Practice Lesson: ".
+Each project work session  should:
+1. Have a title that starts with "Project phase: "
+2. Focus on applying the concepts from that specific project phase we just worked on, on the same order (in Lessons list in the chapter). You can write more specific work that needs to done inside this project phase or phases.
+3. If the project phase should take more than 30 minutes, add two or more items with 'Part 1' and 'Part 2' to the title.  For example, "Project phase: XXX - Part 1" and "Practice Lesson: To-Do list - Part 2".
 
 Week {week_num} Chapters:
 {chapters_text}
@@ -142,17 +204,17 @@ Week {week_num} Chapters:
 Return in this exact format:
 
 CHAPTER: 1
-TITLE: Practice Session: [Session Title for Chapter 1]
-OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+TITLE: Project phase:  [Session Title for Chapter 1]
+OUTCOMES: [Learning outcomes for this Project session]. Output: [short description of the final result of the Project session, meaning what does the script/program will do]
 
-TITLE: Practice Session: [Another Session Title for Chapter 1 if needed]
-OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+TITLE: Project phase:  [Another Session Title for Chapter 1 if needed]
+OUTCOMES: [Learning outcomes for this Project session]. Output: [short description of the final result of the Project session, meaning what does the script/program will do]
 
 CHAPTER: 2
-TITLE: Practice Session: [Session Title for Chapter 2]
-OUTCOMES: [Learning outcomes for this practice session]. Output: [short description of the final result of the practice session, meaning what does the script/program will do]
+TITLE: Project phase:  [Session Title for Chapter 2]
+OUTCOMES: [Learning outcomes for this Project session]. Output: [short description of the final result of the Project session, meaning what does the script/program will do]
 
-Continue for all {num_chapters} chapters. Generate exactly the number of practice sessions specified for each chapter above.
+Continue for all {num_chapters} chapters. Generate exactly the number of Project sessions specified for each chapter above.
 """
 
 def get_maestro_json_prompt(units_template: str, num_weeks: int, weeks_lessons_text: str) -> str:

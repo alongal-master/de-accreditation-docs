@@ -65,11 +65,11 @@ NUM_OF_CHAPTERS_PER_WEEK = 5  # Days per week
 
 # Full time 
 if output_course_format == "full_time":
-    NUM_OF_WEEKS = 4 # Full time
+    NUM_OF_WEEKS = 2 # Full time
     NUM_LESSONS_PER_CHAPTER = 9 # Full time
 else:
 # Part time
-    NUM_OF_WEEKS = 8 # Part time
+    NUM_OF_WEEKS = 4 # Part time
     NUM_LESSONS_PER_CHAPTER = 4.5 # Part time
 
 NUM_WEEKLY_REVIEW_PER_WEEK = 1

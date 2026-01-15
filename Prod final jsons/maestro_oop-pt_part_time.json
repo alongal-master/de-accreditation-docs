@@ -1,0 +1,682 @@
+{
+  "title": "oop-pt",
+  "description": "",
+  "modifiedAt": "",
+  "createdAt": "2026-01-12",
+  "isPublished": false,
+  "trackType": "Programming",
+  "version": 1,
+  "terms": [
+    {
+      "courses": [
+        {
+          "title": "oop-pt",
+          "description": "",
+          "displayId": "",
+          "credits": 0,
+          "units": [
+            {
+              "title": "Intro to OOP",
+              "lessons": [
+                {
+                  "title": "Welcome to OOP!",
+                  "masteryOutcomes": [
+                    "Understand the course main topics and grading"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "What is OOP and why do we need it?",
+                  "masteryOutcomes": [
+                    "Understand why different programming paradigms exist.",
+                    "Identify Object-Oriented Programming as a paradigm",
+                    "Understand why Object-Oriented Programming is used based on real-world examples"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Objects = data + behavior",
+                  "masteryOutcomes": [
+                    "Identify an object as an entity that combines data attributes (state) and behavior (actions).",
+                    "Distinguish between the state and behavior of real-world objects."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "📚 Theory Practice Lesson: Everyday objects and OOP",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "Create a challenge-based lesson that is grounded in the material covered in the **current unit until this lesson, where the student demonstrates the knowledge they have learned in a fun and engaging way. Avoid coding in this lesson.\nThe lesson should include between eight and ten interactive and dynamic rounds between the student and the Maestro. \nThe challenge may include different types of questions or learning experiences, such as varied question formats, interactive tasks, MCQ, identification or matching questions, etc.\nYou are free to choose any structure or format that best supports an engaging challenge experience.\nDuring the challenge itself, there is no need to provide feedback or corrections, the focus should remain entirely on the challenge experience.\nAfter all challenge rounds are completed, provide a short summary that offers encouraging feedback, highlights areas for professional improvement and refinement, and points out the student's strengths as demonstrated through their responses during the challenge.\nEnsure the lesson remains aligned with the topics that were taught and is appropriate for the student's level. Don't code in this lesson.\nLesson goals: Identify objects as entities that combine state (data) and behavior (actions) and explain why OOP is useful for modeling real-world systems.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Classes and instances",
+                  "masteryOutcomes": [
+                    "Identify a class as a blueprint that defines shared structure and behavior.",
+                    "Understand what a class instance is and that multiple instances can be created from the same class.",
+                    "Recognize basic CaptialCase convention for Class names."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Object identity vs equality",
+                  "masteryOutcomes": [
+                    "Distinguish between two variables pointing to the same object and two objects having the same value.",
+                    "Explain why identity vs equality matters when working with object state."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Class blueprint for a habit tracker",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Design a simple Python class as a blueprint and create multiple instances to represent different daily habits using proper ClassName conventions. Output: A script that defines a Habit class and creates several Habit instances (e.g., “DrinkWater”, “StudyPython”) with printed output showing each instance’s data.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Identity and equality in a media playlist",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Differentiate between two variables referencing the same object and two distinct objects with equal values by experimenting with == and is in a playlist scenario. Output: A script that creates several “track” dictionaries or simple objects, compares them with == and is, and prints explanatory messages that show when items are identical vs just equal.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Mutable vs immutable, why it matters",
+                  "masteryOutcomes": [
+                    "Understand the necessity of mutability & immutability objects.",
+                    "Identify common mutable types and common immutable types in Python."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Class-level basics: attributes & methods",
+                  "masteryOutcomes": [
+                    "Identify a class attribute as shared data stored on the class.",
+                    "Recognize a class method as behavior called on the class ."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Mutable vs immutable in a budget planner",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Classify and experiment with common mutable and immutable Python types to observe how changes affect references in a simple monthly budget scenario. Output: A script that manipulates numbers, strings, lists, and tuples representing budget categories and prints before/after states to highlight which objects change in place and which do not.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Class attributes and methods in a quiz tracker",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Define a Python class with class-level attributes and methods and use them to track shared statistics across multiple quiz attempts. Output: A script that defines a QuizAttempt class with a class attribute (e.g., total_attempts) and a class method to report overall stats, then creates several instances and prints shared and per-instance data.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Quick detour: built-in modules",
+                  "masteryOutcomes": [
+                    "Recognize a module as a collection of related Python code.",
+                    "Use an import statement to access basic code from a built-in module."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Objects in action",
+                  "masteryOutcomes": [
+                    "Recognize that calling Random() with parenthesis, creates an object (instance) from a class.",
+                    "Understand that the object's actions are called and use methods on a Random object to trigger behavior and produce data.",
+                    "Distinguish between the object itself, its methods, and the data produced by those methods."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Random-based dice game - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use Python’s built-in random module with import statements and distinguish between the module itself and the functions it provides. Output: A script that imports random and simulates rolling one or more dice, printing the random results each time.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Random-based dice game - Part 2",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create and use a Random object instance, call its methods, and clearly separate the object, its methods, and the data they produce in a simple dice game. Output: A script that creates a Random() object, uses its methods to simulate multiple rounds of dice rolls, and prints structured output showing the Random instance, the method calls, and the resulting values.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Objects and Classes",
+              "lessons": [
+                {
+                  "title": "Creating your first class",
+                  "masteryOutcomes": [
+                    "Ability to define a minimal Python class using the class keyword without providing an __init__ method.",
+                    "Ability to create objects from a basic class, inspect it's type, and assign attributes to those objects after instantiation.",
+                    "Ability to diffrentiate between class definition and instantiation, prefereably using comments in code"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Creating multiple objects from one class",
+                  "masteryOutcomes": [
+                    "Understand that each object created from a class maintains its own independent set of attribute values.",
+                    "Ability to create a class from scratch, and then instantiate two more objects from it and assign different attribute values.",
+                    "Ability to seperate between the variable name (the one that holds the instance) and the attributes inside an instance."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Methods",
+                  "masteryOutcomes": [
+                    "Ability to define a class method with self as the first parameter (without exploring its meaning yet).",
+                    "Understand `self` as a reference to the current object, used by methods to access its data and behavior.",
+                    "Create an object and call its instance methods using dot notation to trigger behavior."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Media playlist items",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice defining a minimal class, instantiating multiple objects from it, assigning attributes after creation, and calling simple methods that use self. Output: A small script that creates several media items (like songs or videos), assigns them titles and durations, and prints simple descriptions for each item.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Self param, and methods that use attributes",
+                  "masteryOutcomes": [
+                    "Understand the meaning of the self param",
+                    "Ability to write an instance method that accesses attributes via self to produce output such as printing a stored name.",
+                    "Capability to reason about how changes to object attributes affect the behavior of instance methods that reference those attributes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge I",
+                  "masteryOutcomes": [
+                    "Ability to compose a small Python program that defines and uses classes and objects, representing real life entities.",
+                    "Capability to trace how objects created from different classes interact through method calls and attribute access in a simple application."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker entries",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Reinforce using self inside methods to access and modify attributes, and observe how changing attributes affects method output across multiple objects. Output: A script that creates several HabitEntry objects, updates their status, and prints personalized status messages based on each entry’s attributes.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Mini classroom model",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply classes and objects together in a small program where different classes (like Student and Course) interact through attributes and method calls. Output: A script that creates students and courses, enrolls students into courses via methods, and prints a simple enrollment summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Constructors: where objects begin",
+                  "masteryOutcomes": [
+                    "Understand the __init__ syntax, and the idea of a constructor",
+                    "Recognize that __init__ runs automatically when an object is created."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Constructors with inputs",
+                  "masteryOutcomes": [
+                    "Write an __init__ method that receives parameters and assigns them to attributes.",
+                    "Instantiate objects by passing arguments to the constructor.",
+                    "Understand that required constructor parameters must be provided."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Budget transaction records",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice writing __init__ constructors that run automatically, accept parameters, and assign them to instance attributes. Output: A script that creates multiple Transaction objects with amount, category, and description passed to the constructor and then prints a formatted list of all transactions.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Travel itinerary stops",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Strengthen using constructors with required parameters and understand how missing or incorrect arguments cause errors at instantiation time. Output: A script that builds an itinerary from several Stop objects created with constructor arguments (city, day, activity) and prints the full trip plan in order.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Instance attributes vs class attributes, common pitfalls",
+                  "masteryOutcomes": [
+                    "Understand the difference between per-object state and shared class-level state.",
+                    "Choose when a value should belong to the instance versus the class."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Keeping objects valid",
+                  "masteryOutcomes": [
+                    "Add validation logic inside __init__.",
+                    "Apply safe fallback values when constructor inputs are invalid.",
+                    "Recognize validation as part of responsible object design, with real life examples."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness app settings",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Differentiate clearly between instance attributes and class attributes by modeling shared defaults versus per-user custom values. Output: A script that defines a FitnessUser class with shared defaults (like default_step_goal) and per-user data, then prints how different users share or override those defaults.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Product catalog with validation",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement basic validation logic inside __init__ to keep objects in a valid state and fall back to safe defaults when inputs are invalid. Output: A script that creates Product objects for an e-commerce catalog, automatically correcting or rejecting invalid prices and stock values and then printing a clean, validated product list.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Object State in Action",
+              "lessons": [
+                {
+                  "title": "Challenge II",
+                  "masteryOutcomes": [
+                    "Implement a small program that uses constructors, attributes, and methods to manage object state",
+                    "Reflect on how initialization and methods work together to control object behavior"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Review: bringing objects to life",
+                  "masteryOutcomes": [
+                    "Consolidate understanding of constructors, attributes, and methods",
+                    "Identify common mistakes when initializing and updating objects"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Many objects, one class",
+                  "masteryOutcomes": [
+                    "Create multiple objects from the same class with identical starting state.",
+                    "Modify the state of one object without affecting the others.",
+                    "Compare and interpret the state of multiple objects after different method calls."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker objects",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a small program that uses a class with a constructor, attributes, and methods to manage and update the state of several habit objects independently. Output: A script that creates multiple habit objects, updates their progress through methods, and prints each habit’s current status to show how their states differ.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Reading Object State",
+                  "masteryOutcomes": [
+                    "Read and interpret the current state of an object.",
+                    "Compare the state of multiple objects and explain why their values differ.",
+                    "Identify which attributes changed and which remained the same during execution."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Modeling relationships: one-to-one and one-to-many",
+                  "masteryOutcomes": [
+                    "Understand how to model a one-to-many relationship using objects and attributes.",
+                    "Ability to decide where a relationship should be stored.",
+                    "Understand how relationships affect responsibilities and state changes."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Bank accounts state reader",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice reading and comparing the state of multiple account objects to explain how and why their balances and attributes differ after a sequence of operations. Output: A script that simulates deposits/withdrawals on several account objects and then prints a clear comparison report of each account’s final state and what changed.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Classroom relationships",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Model one-to-one and one-to-many relationships between Teacher and Student objects, deciding where to store the relationships and how they affect responsibilities and state changes. Output: A script that creates teachers and students, links them in one-to-many relationships, and prints a summary showing which students belong to which teacher and how changes propagate.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Working with lists of objects",
+                  "masteryOutcomes": [
+                    "Iterate over a list of objects to access their data or behavior.",
+                    "Call object methods while processing a collection of objects."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Manipulating objects in programs",
+                  "masteryOutcomes": [
+                    "Modify object state while iterating over a list of objects.",
+                    "Use object data and behavior to produce program-level results."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Task list processor",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Iterate over a list of Task objects to access their data and call their methods while processing the collection. Output: A script that loops through a list of tasks, calls methods on each (e.g., mark complete, compute priority label), and prints a formatted overview of all tasks.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness session analyzer",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Modify the state of Workout objects while iterating over a list and use their data and behavior to compute program-level statistics. Output: A script that updates each workout’s status (e.g., completed, calories burned), then calculates and prints totals and averages for the full list.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Building objects from input",
+                  "masteryOutcomes": [
+                    "Create objects using user input inside a loop.",
+                    "Store created objects in a list."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Who owns the state?",
+                  "masteryOutcomes": [
+                    "Understand why putting logic in the right object improves clarity and reduces bugs.",
+                    "Refactor a simple interaction by moving logic to a more appropriate class."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie watchlist builder - Part 1",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Create objects from user input inside a loop and store them in a list for later processing. Output: A script that repeatedly asks the user for movie information, builds Movie objects, stores them in a list, and finally prints a simple watchlist summary.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Movie watchlist builder - Part 2",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Refactor logic so that responsibilities and state changes live in the most appropriate class, clarifying who owns and manages watchlist-related behavior. Output: A script where Movie and Watchlist classes encapsulate their own logic (such as adding, rating, or marking watched), and the main program simply coordinates user input and high-level flow.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Object Design Foundations",
+              "lessons": [
+                {
+                  "title": "Review: when objects meet",
+                  "masteryOutcomes": [
+                    "Review how objects interact through relationships, collections, and shared logic",
+                    "Evaluate whether responsibilities are assigned to appropriate classes"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Encapsulation: owning object state",
+                  "masteryOutcomes": [
+                    "Understand the principle of encapsulation, as one of the core OOP principles",
+                    "Use internal attributes to store object state.",
+                    "Use getter methods to read object data instead of direct access."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Encapsulation: protecting object state",
+                  "masteryOutcomes": [
+                    "Use setter methods to update object state.",
+                    "Apply simple validation rules inside setters to prevent invalid state."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Habit tracker objects",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Practice assigning responsibilities to objects and use encapsulation with getters and setters to safely manage and validate internal object state. Output: A simple console-based habit tracker that lets you create, update, and view habits while preventing invalid data (like negative streaks).",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Keeping it in the family: introducing inheritance",
+                  "masteryOutcomes": [
+                    "Understand the principle of inheritance, as one of the core OOP principles",
+                    "Create a subclass that inherits attributes and methods from a parent class.",
+                    "Use inherited behavior on subclass objects."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Inheritance: sometimes kids are not like their parents",
+                  "masteryOutcomes": [
+                    "Override a method in a subclass to change behavior.",
+                    "Predict which method implementation runs for a subclass object."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Media library inheritance",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Apply inheritance to create a base class and multiple subclasses that share behavior while adding their own attributes and methods. Output: A small media library program that can store and display different item types (e.g., books and movies) using shared parent behavior.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Discount system polymorphic children",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use method overriding in subclasses to change inherited behavior and predict which implementation is called at runtime. Output: A simple checkout simulator where different customer types (e.g., regular, student, VIP) calculate discounts differently via overridden methods.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Composition vs inheritance: a practical decision rule",
+                  "masteryOutcomes": [
+                    "Explain the difference between 'has-a' and 'is-a' relationships.",
+                    "Choose composition when one object should contain or use another object as a part.",
+                    "Choose inheritance when one object is a specialized version of another."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Polymorphism basics: one action, different behaviors",
+                  "masteryOutcomes": [
+                    "Recognize polymorphism as a practical tool for simpler program logic.",
+                    "Call the same method name on different object types and predict what happens.",
+                    "Understand why method overriding enables different behavior under the same interface."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Fitness app composition vs inheritance",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Decide when to use composition versus inheritance by modeling a small domain with both “is-a” and “has-a” relationships. Output: A basic fitness app model where users, workouts, and tracking components interact using an appropriate mix of composed helper objects and specialized subclasses.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Shape drawer polymorphism",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Use polymorphism to call the same method on different object types and understand how overriding enables different behaviors under one interface. Output: A simple “shape drawer” program where different shape objects respond to a common draw() or area() method in their own way.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Making objects readable",
+                  "masteryOutcomes": [
+                    "Implement a simple __str__ method to produce human-friendly output.",
+                    "Recognize the purpose of __repr__ at a beginner level."
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "Challenge",
+                  "masteryOutcomes": [
+                    "Build a small program that uses encapsulation, inheritance, and polymorphism together",
+                    "Explain how design choices affect readability and flexibility"
+                  ],
+                  "teachingInstructions": "",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Task manager readable objects",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Implement __str__ (and optionally simple __repr__) methods to make objects display in a human-friendly way and support easier debugging. Output: A console-based task manager where printed task and project objects show clear, readable summaries instead of default object representations.",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                },
+                {
+                  "title": "⚙ Practice Lesson: Pet adoption system design challenge",
+                  "masteryOutcomes": [],
+                  "teachingInstructions": "This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.\nGuide the student step by step toward the solution without writing the full answer or final code for them.\nBreak the problem into small, manageable steps and ask the student to implement each step before moving on.\nWhen the student is stuck, give progressive hints instead of solutions.\nYou may provide example inputs/outputs, edge cases, and clarification to help the student reason about correctness.\nReview the student's work by pointing out what's correct and what needs improvement, then suggest the next step.\nExercise theme is to be chosen based on the lesson title.\nExercise goals and desired output: Build a small program that combines encapsulation, inheritance, and polymorphism and reflect on how these design choices affect readability and flexibility. Output: A pet adoption system where different pet types share a base interface, validate and protect their internal state, and can be processed polymorphically (e.g., listed, adopted, or described through common methods).",
+                  "requiredPlugins": [
+                    "code-editor"
+                  ]
+                }
+              ]
+            }
+          ],
+          "label": "",
+          "teachingInstructions": "",
+          "durationInWeeks": 4,
+          "isPublished": false
+        }
+      ]
+    }
+  ]
+}

@@ -248,6 +248,56 @@ python syllabus_generator.py --lessons_file lessons.txt -o syllabus.xlsx
 python syllabus_generator.py --json_input output/syllabus.json -o updated_syllabus.xlsx
 ```
 
+## Convert XLSX to Maestro JSON
+
+The `xlsx_to_maestro.py` script converts an existing syllabus XLSX file directly to Maestro JSON format **without requiring an API key**. This is useful when you already have a syllabus in Excel format and need to convert it to Maestro format.
+
+### Usage
+
+```bash
+python xlsx_to_maestro.py <input_xlsx_file> [-o output_filename.json]
+```
+
+### Examples
+
+```bash
+# Basic conversion (output: output_json/maestro_[input_name].json)
+python xlsx_to_maestro.py output/cs102_syllabus.xlsx
+
+# With custom output filename
+python xlsx_to_maestro.py output/cs102_syllabus.xlsx -o my_custom_name.json
+```
+
+### Input Format
+
+The XLSX file should have the following columns:
+- **Column A**: Week number
+- **Column B**: Learning Goal of the week
+- **Column C**: Chapter number
+- **Column D**: Chapter learning goals
+- **Column E**: Chapter title
+- **Column F**: (empty)
+- **Column G**: Lesson title
+- **Column H**: Time to complete
+- **Column I**: Mastery Outcome
+
+### Output
+
+The script generates a Maestro JSON file in the `output_json/` directory with:
+- Course title (derived from input filename)
+- Units (weeks) with lessons
+- Proper handling of Practice Lessons and Theory Practice Lessons
+- Mastery outcomes split by semicolons
+- Automatic filtering of sessions like "Opening session", "Closing session", "Sync Session", "Weekly Review"
+
+### Features
+
+- **No API key required**: Pure conversion script, no AI calls
+- **Automatic lesson filtering**: Skips opening/closing/sync sessions
+- **Practice lesson detection**: Automatically configures teaching instructions for practice sessions
+- **Title normalization**: Strips leading numbers and normalizes dashes
+- **Prefix support**: Adds emoji prefixes to Practice and Theory Practice lessons
+
 ## How It Works
 
 1. **Parse Lessons**: AI parses your input file and extracts lesson titles and learning outcomes

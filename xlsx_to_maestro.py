@@ -33,7 +33,7 @@ DEFAULT_IS_PUBLISHED = False
 SKIP_LESSON_KEYWORDS = ["Closing session","Opening session","Sync Session", "Weekly Review"]
 
 # Practice session configuration
-PRACTICE_SESSION_KEYWORD = "Practice Lesson"
+PRACTICE_SESSION_KEYWORDS = ["Practice Lesson", "Practice Session"]
 PRACTICE_TEACHING_INSTRUCTIONS = """This is a coding challenge lesson. In this lesson, do not introduce new topics; it is about solving an exercise using previously learned concepts only.
 Guide the student step by step toward the solution without writing the full answer or final code for them.
 Break the problem into small, manageable steps and ask the student to implement each step before moving on.
@@ -61,9 +61,11 @@ DEFAULT_TEACHING_INSTRUCTIONS = ""
 # Lesson title prefixes - maps starting characters/strings to prefix text
 # Example: {"X": "Prefix text "} will add "Prefix text " to all lessons starting with "X"
 LESSON_TITLE_PREFIXES = {
-    "Theory Practice Lesson": "📚 ",
-    "Practice Lesson": "⚙ "
+    "Theory Practice Lesson": "📚 "
 }
+# Add all practice session keywords with the same prefix
+for keyword in PRACTICE_SESSION_KEYWORDS:
+    LESSON_TITLE_PREFIXES[keyword] = "⚙ "
 
 
 class XLSXToMaestroConverter:
@@ -165,7 +167,8 @@ class XLSXToMaestroConverter:
         # Make sure it's not a theory practice lesson
         if THEORY_PRACTICE_KEYWORD.lower() in title_lower:
             return False
-        return PRACTICE_SESSION_KEYWORD.lower() in title_lower
+        # Check against list of practice session keywords
+        return any(keyword.lower() in title_lower for keyword in PRACTICE_SESSION_KEYWORDS)
     
     def _is_theory_practice_session(self, lesson_title: str) -> bool:
         """Check if a lesson is a theory practice session."""
@@ -189,6 +192,16 @@ class XLSXToMaestroConverter:
         # Split by colon and take the first part, strip whitespace
         title = learning_goal.split(':', 1)[0].strip()
         return title
+    
+    def _extract_week_description(self, learning_goal: str) -> str:
+        """Extract the description part from learning goal (after colon)."""
+        if not learning_goal:
+            return ""
+        # Split by colon and take the second part if it exists, strip whitespace
+        parts = learning_goal.split(':', 1)
+        if len(parts) > 1:
+            return parts[1].strip()
+        return ""
     
     def _apply_lesson_prefix(self, lesson_title: str) -> str:
         """Apply prefix to lesson title if it starts with a configured prefix key."""
@@ -236,22 +249,27 @@ class XLSXToMaestroConverter:
             week_info = weeks_data[week_num]
             week_learning_goal = week_info['learning_goal']
             
-            # Extract just the title part (before colon) from learning goal
+            # Extract title and description from learning goal (format: "Title: Description")
             week_title = self._extract_week_title(week_learning_goal)
             unit_title = week_title if week_title else f"WEEK {week_num}"
+            unit_description = self._extract_week_description(week_learning_goal)
             
             # Flatten all lessons from all chapters in this week
             lessons = []
             for chapter in week_info['chapters']:
                 for lesson in chapter['lessons']:
-                    lesson_title = lesson['title']
+                    original_lesson_title = lesson['title']
                     
                     # Skip lessons that match skip keywords
-                    if self._should_skip_lesson(lesson_title):
+                    if self._should_skip_lesson(original_lesson_title):
                         continue
                     
+                    # Check for practice sessions on ORIGINAL title (before any processing)
+                    is_theory_practice = self._is_theory_practice_session(original_lesson_title)
+                    is_practice = self._is_practice_session(original_lesson_title)
+                    
                     # Strip leading numbers (e.g., "4. Data-Driven AI" -> "Data-Driven AI")
-                    lesson_title = self._strip_leading_number(lesson_title)
+                    lesson_title = self._strip_leading_number(original_lesson_title)
                     
                     # Normalize dashes (em dash → hyphen)
                     lesson_title = self._normalize_dashes(lesson_title)
@@ -263,7 +281,7 @@ class XLSXToMaestroConverter:
                     mastery_outcomes = [self._normalize_dashes(o) for o in self._split_mastery_outcomes(lesson['learning_outcomes'])]
                     
                     # Determine teaching instructions and mastery outcomes
-                    if self._is_theory_practice_session(lesson_title):
+                    if is_theory_practice:
                         # Theory practice lessons: put everything in teaching instructions, no mastery outcomes
                         # Strip "Output:" part from learning outcomes
                         outcomes_text = lesson['learning_outcomes']
@@ -273,7 +291,7 @@ class XLSXToMaestroConverter:
                             outcomes_text = outcomes_text.split('output:')[0].strip()
                         teaching_instructions = THEORY_PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(outcomes_text)
                         mastery_outcomes = []
-                    elif self._is_practice_session(lesson_title):
+                    elif is_practice:
                         # Practice lessons: put everything in teaching instructions, no mastery outcomes
                         teaching_instructions = PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(lesson['learning_outcomes'])
                         mastery_outcomes = []
@@ -293,37 +311,18 @@ class XLSXToMaestroConverter:
             # Create unit object
             unit_obj = {
                 "title": unit_title,
+                "description": unit_description,
                 "lessons": lessons
             }
             
             units.append(unit_obj)
         
-        # Build the complete Maestro JSON structure
+        # Build the course JSON structure (just the course object, not the full track)
         maestro_data = {
-            "title": course_title,
             "description": DEFAULT_COURSE_DESCRIPTION,
-            "modifiedAt": "",
-            "createdAt": datetime.now().strftime("%Y-%m-%d"),
-            "isPublished": DEFAULT_IS_PUBLISHED,
-            "trackType": DEFAULT_TRACK_TYPE,
-            "version": DEFAULT_VERSION,
-            "terms": [
-                {
-                    "courses": [
-                        {
-                            "title": course_title,
-                            "description": DEFAULT_COURSE_DESCRIPTION,
-                            "displayId": DEFAULT_DISPLAY_ID,
-                            "credits": DEFAULT_CREDITS,
-                            "units": units,
-                            "label": DEFAULT_LABEL,
-                            "teachingInstructions": DEFAULT_TEACHING_INSTRUCTIONS,
-                            "durationInWeeks": num_weeks,
-                            "isPublished": DEFAULT_IS_PUBLISHED
-                        }
-                    ]
-                }
-            ]
+            "credits": DEFAULT_CREDITS,
+            "teachingInstructions": DEFAULT_TEACHING_INSTRUCTIONS,
+            "units": units
         }
         
         # Save to file
@@ -354,17 +353,25 @@ class XLSXToMaestroConverter:
         # Build units from the units_data
         units = []
         for unit_name, unit_info in units_data.items():
+            # Extract title and description from unit_name (format: "Title: Description")
+            unit_title = self._extract_week_title(unit_name)
+            unit_description = self._extract_week_description(unit_name)
+            
             # Process lessons for this unit
             lessons = []
             for lesson in unit_info['lessons']:
-                lesson_title = lesson['title']
+                original_lesson_title = lesson['title']
                 
                 # Skip lessons that match skip keywords
-                if self._should_skip_lesson(lesson_title):
+                if self._should_skip_lesson(original_lesson_title):
                     continue
                 
+                # Check for practice sessions on ORIGINAL title (before any processing)
+                is_theory_practice = self._is_theory_practice_session(original_lesson_title)
+                is_practice = self._is_practice_session(original_lesson_title)
+                
                 # Strip leading numbers
-                lesson_title = self._strip_leading_number(lesson_title)
+                lesson_title = self._strip_leading_number(original_lesson_title)
                 
                 # Normalize dashes
                 lesson_title = self._normalize_dashes(lesson_title)
@@ -376,7 +383,7 @@ class XLSXToMaestroConverter:
                 mastery_outcomes = [self._normalize_dashes(o) for o in self._split_mastery_outcomes(lesson['learning_outcomes'])]
                 
                 # Determine teaching instructions and mastery outcomes
-                if self._is_theory_practice_session(lesson_title):
+                if is_theory_practice:
                     # Theory practice lessons: strip Output: part
                     outcomes_text = lesson['learning_outcomes']
                     if 'Output:' in outcomes_text:
@@ -385,7 +392,7 @@ class XLSXToMaestroConverter:
                         outcomes_text = outcomes_text.split('output:')[0].strip()
                     teaching_instructions = THEORY_PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(outcomes_text)
                     mastery_outcomes = []
-                elif self._is_practice_session(lesson_title):
+                elif is_practice:
                     teaching_instructions = PRACTICE_TEACHING_INSTRUCTIONS + self._normalize_dashes(lesson['learning_outcomes'])
                     mastery_outcomes = []
                 else:
@@ -403,38 +410,19 @@ class XLSXToMaestroConverter:
             
             # Create unit object
             unit_obj = {
-                "title": unit_name,
+                "title": unit_title,
+                "description": unit_description,
                 "lessons": lessons
             }
             
             units.append(unit_obj)
         
-        # Build the complete Maestro JSON structure
+        # Build the course JSON structure (just the course object, not the full track)
         maestro_data = {
-            "title": course_title,
             "description": DEFAULT_COURSE_DESCRIPTION,
-            "modifiedAt": "",
-            "createdAt": datetime.now().strftime("%Y-%m-%d"),
-            "isPublished": DEFAULT_IS_PUBLISHED,
-            "trackType": DEFAULT_TRACK_TYPE,
-            "version": DEFAULT_VERSION,
-            "terms": [
-                {
-                    "courses": [
-                        {
-                            "title": course_title,
-                            "description": DEFAULT_COURSE_DESCRIPTION,
-                            "displayId": DEFAULT_DISPLAY_ID,
-                            "credits": DEFAULT_CREDITS,
-                            "units": units,
-                            "label": DEFAULT_LABEL,
-                            "teachingInstructions": DEFAULT_TEACHING_INSTRUCTIONS,
-                            "durationInWeeks": len(units_data),
-                            "isPublished": DEFAULT_IS_PUBLISHED
-                        }
-                    ]
-                }
-            ]
+            "credits": DEFAULT_CREDITS,
+            "teachingInstructions": DEFAULT_TEACHING_INSTRUCTIONS,
+            "units": units
         }
         
         # Save to file
